@@ -1,22 +1,243 @@
 [
-{
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
-  "issued": {
-    "date-parts": [
-      [
-        2019
+  {
+    "id": "embedseg",
+    "type": "paper-conference",
+    "title": "Embedding-based Instance Segmentation in Microscopy",
+    "container-title": "Proceedings of the Fourth Conference on Medical Imaging with Deep Learning",
+    "collection-title": "Proceedings of Machine Learning Research",
+    "publisher": "PMLR",
+    "page": "399--415",
+    "volume": "143",
+    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
+    "author": [
+      {
+        "family": "Lalit",
+        "given": "Manan"
+      },
+      {
+        "family": "Tomancak",
+        "given": "Pavel"
+      },
+      {
+        "family": "Jug",
+        "given": "Florian"
+      }
+    ],
+    "editor": [
+      {
+        "family": "Heinrich",
+        "given": "Mattias"
+      },
+      {
+        "family": "Dou",
+        "given": "Qi"
+      },
+      {
+        "family": "de Bruijne",
+        "given": "Marleen"
+      },
+      {
+        "family": "Lellmann",
+        "given": "Jan"
+      },
+      {
+        "family": "Schläfer",
+        "given": "Alexander"
+      },
+      {
+        "family": "Ernst",
+        "given": "Floris"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          22
+        ]
       ]
-    ]
-  },
-  "author": [
-    {
-      "given": "Daniel",
-      "family": "Himmelstein"
     }
-  ]
-}
+  },
+  {
+    "id": "swatrain",
+    "type": "paper-conference",
+    "title": "Averaging Weights Leads to Wider Optima and Better Generalization",
+    "container-title": "34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018",
+    "page": "876--885",
+    "URL": "http://auai.org/uai2018/proceedings/papers/313.pdf",
+    "author": [
+      {
+        "family": "Izmailov",
+        "given": "Pavel"
+      },
+      {
+        "family": "Podoprikhin",
+        "given": "Dmitrii"
+      },
+      {
+        "family": "Garipov",
+        "given": "Timur"
+      },
+      {
+        "family": "Vetrov",
+        "given": "Dmitry"
+      },
+      {
+        "family": "Wilson",
+        "given": "Andrew Gordon"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          22
+        ]
+      ]
+    }
+  },
+  {
+    "id": "attentionUnet",
+    "type": "paper-conference",
+    "title": "Attention U-Net: Learning Where to Look for the Pancreas",
+    "container-title": "Proceedings of Medical Imaging with Deep Learning 2018",
+    "URL": "https://openreview.net/forum?id=Skft7cijM",
+    "author": [
+      {
+        "family": "Oktay",
+        "given": "Ozan"
+      },
+      {
+        "family": "Schlemper",
+        "given": "Jo"
+      },
+      {
+        "family": "Le Folgoc",
+        "given": "Loic"
+      },
+      {
+        "family": "Lee",
+        "given": "Matthew"
+      },
+      {
+        "family": "Heinrich",
+        "given": "Matthias"
+      },
+      {
+        "family": "Misawa",
+        "given": "Kazunari"
+      },
+      {
+        "family": "Mori",
+        "given": "Kensaku"
+      },
+      {
+        "family": "McDonagh",
+        "given": "Steven"
+      },
+      {
+        "family": "Hammerla",
+        "given": "Nils Y."
+      },
+      {
+        "family": "Kainz",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Glocker",
+        "given": "Ben"
+      },
+      {
+        "family": "Rueckert",
+        "given": "Daniel"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          24
+        ]
+      ]
+    }
+  },
+  {
+    "id": "swin",
+    "type": "manuscript",
+    "title": "Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images",
+    "publisher-place": "Arxiv",
+    "URL": "https://arxiv.org/abs/2201.01266",
+    "author": [
+      {
+        "family": "Hatamizadeh",
+        "given": "Ali"
+      },
+      {
+        "family": "Vishwesh",
+        "given": "Nath"
+      },
+      {
+        "family": "Tang",
+        "given": "Yucheng"
+      },
+      {
+        "family": "Yang",
+        "given": "Dong"
+      },
+      {
+        "family": "Roth",
+        "given": "Holger"
+      },
+      {
+        "family": "Xu",
+        "given": "Daguang"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          24
+        ]
+      ]
+    }
+  },
+  {
+    "id": "HDN",
+    "type": "paper-conference",
+    "title": "Interpretable Unsupervised Diversity Denoising and Artefact Removal",
+    "container-title": "Proceedings of the Tenth International Conference on Learning Representations",
+    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
+    "author": [
+      {
+        "family": "Prakash",
+        "given": "Mangal"
+      },
+      {
+        "family": "Delbracio",
+        "given": "Mauricio"
+      },
+      {
+        "family": "Milanfar",
+        "given": "Peyman"
+      },
+      {
+        "family": "Jug",
+        "given": "Florian"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          26
+        ]
+      ]
+    }
+  }
 ]

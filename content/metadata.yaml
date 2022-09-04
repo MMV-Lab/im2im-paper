@@ -1,27 +1,29 @@
 ---
-title: "Manuscript Title"
+title: "MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: Justin-Sonneck
+    name: Justin Sonneck
+    initials: JS
+    orcid: 0000-0002-1640-3045
+    twitter: JustinSonneck
+    email: justin.sonneck@isas.de
     affiliations:
-      - Department of Something, University of Whatever
+      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
+  - github: jxchen01
+    name: Jianxu Chen
+    initials: JC
+    orcid: 0000-0002-8500-1357
+    twitter: JianxuChen
+    email: jianxu.chen@isas.de
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
+    funders:
+      - The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
     corresponding: true
