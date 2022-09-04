@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Justin Sonneck" />
+  <meta name="author" content="Jianxu Chen" />
   <meta name="dcterms.date" content="2022-09-04" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <title>MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -16,69 +16,6 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -104,10 +41,10 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta name="citation_title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="og:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="twitter:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta name="dc.date" content="2022-09-04" />
   <meta name="citation_publication_date" content="2022-09-04" />
   <meta name="dc.language" content="en-US" />
@@ -116,408 +53,412 @@
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Justin Sonneck" />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V." />
+  <meta name="citation_author_orcid" content="0000-0002-1640-3045" />
+  <meta name="twitter:creator" content="@JustinSonneck" />
+  <meta name="citation_author" content="Jianxu Chen" />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V." />
+  <meta name="citation_author_orcid" content="0000-0002-8500-1357" />
+  <meta name="twitter:creator" content="@JianxuChen" />
   <link rel="canonical" href="https://MMV-Lab.github.io/im2im-paper/" />
   <meta property="og:url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta property="twitter:url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
-  
-  <!-- pandoc-eqnos: equation style -->
-  <style>
-    .eqnos { display: inline-block; position: relative; width: 100%; }
-    .eqnos br { display: none; }
-    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
-  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://MMV-Lab.github.io/im2im-paper/v/9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262/">permalink</a>)
+(<a href="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/MMV-Lab/im2im-paper/tree/9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262">MMV-Lab/im2im-paper@9504aa7</a>
+from <a href="https://github.com/MMV-Lab/im2im-paper/tree/d59eb7e5a8274f7da462661f5effe5c07e175252">MMV-Lab/im2im-paper@d59eb7e</a>
 on September 4, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>John Doe</strong>
-<br>
+<li><p><strong>Justin Sonneck</strong><br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0002-1640-3045">0000-0002-1640-3045</a>
 · <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/johndoe">johndoe</a>
+<a href="https://github.com/Justin-Sonneck">Justin-Sonneck</a>
 · <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a><br>
+<a href="https://twitter.com/JustinSonneck">JustinSonneck</a><br>
 <small>
-Department of Something, University of Whatever
-· Funded by Grant XXXXXXXX
+Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
+· Funded by The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
 </small></p></li>
-<li><p><strong>Jane Roe</strong>
-<sup><a href="#correspondence">✉</a></sup><br>
+<li><p><strong>Jianxu Chen</strong><br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0002-8500-1357">0000-0002-8500-1357</a>
 · <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a><br>
+<a href="https://github.com/jxchen01">jxchen01</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/JianxuChen">JianxuChen</a><br>
 <small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
+Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
+· Funded by The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
 </small></p></li>
 </ul>
-<div id="correspondence">
-<p>✉ — Correspondence possible via <a href="https://github.com/MMV-Lab/im2im-paper/issues">GitHub Issues</a>
-or email to
-Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
-</div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.</p>
-<p>The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (<code>.md</code> files in the <code>/content</code> directory) to the output you see below.</p>
-<h2 id="basic-formatting">Basic formatting</h2>
-<p><strong>Bold</strong> <strong>text</strong></p>
-<p><span class="semibold">Semi-bold text</span></p>
-<p><span class="center">Centered text</span></p>
-<p><span class="right">Right-aligned text</span></p>
-<p><em>Italic</em> <em>text</em></p>
-<p>Combined <em>italics and <strong>bold</strong></em></p>
-<p><del>Strikethrough</del></p>
-<ol type="1">
-<li>Ordered list item</li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-<li>Sub-item
-<ol type="i">
-<li>Sub-sub-item</li>
-</ol></li>
-</ol></li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-</ol></li>
-</ol>
-<ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-</ul>
-<p>subscript: H<sub>2</sub>O is a liquid</p>
-<p>superscript: 2<sup>10</sup> is 1024.</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode superscripts</a>⁰¹²³⁴⁵⁶⁷⁸⁹</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode subscripts</a>₀₁₂₃₄₅₆₇₈₉</p>
-<p>A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Putting each sentence on its own line has numerous benefits with regard to <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line">editing</a> and <a href="https://rhodesmill.org/brandon/2012/one-sentence-per-line/">version control</a>.</p>
-<p>Line break without starting a new paragraph by putting<br />
-two spaces at end of line.</p>
-<h2 id="document-organization">Document organization</h2>
-<p>Document section headings:</p>
-<h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<h3 class="center page_center" id="a-heading-centered-on-its-own-printed-page">A heading centered on its own printed page</h3>
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
-<p>Horizontal rule:</p>
-<hr />
-<p><code>Heading 1</code>’s are recommended to be reserved for the title of the manuscript.</p>
-<p><code>Heading 2</code>’s are recommended for broad sections such as <em>Abstract</em>, <em>Methods</em>, <em>Conclusion</em>, etc.</p>
-<p><code>Heading 3</code>’s and <code>Heading 4</code>’s are recommended for sub-sections.</p>
-<h2 id="links">Links</h2>
-<p>Bare URL link: <a href="https://manubot.org" class="uri">https://manubot.org</a></p>
-<p><a href="https://manubot.org">Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah</a></p>
-<p><a href="https://manubot.org">Link with text</a></p>
-<p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
-<p><a href="https://manubot.org">Link by reference</a></p>
-<h2 id="citations">Citations</h2>
-<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
-<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>]</span>.</p>
-<p>Citation by PubMed ID <span class="citation" data-cites="126Wi5Us4">[<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>]</span>.</p>
-<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">4</a>]</span>.</p>
-<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>]</span>.</p>
-<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">6</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.</p>
-<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.
-Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">8</a>]</span>.</p>
-<p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
-<h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">1</a></p>
-<p>Figure <a href="#fig:wide-image">2</a></p>
-<p>Figure <a href="#fig:tall-image">3</a></p>
-<p>Figure <a href="#fig:vector-image">4</a></p>
-<p>Table <a href="#tbl:bowling-scores">1</a></p>
-<p>Equation <a href="#eq:regular-equation">1</a></p>
-<p>Equation <a href="#eq:long-equation">2</a></p>
-<h2 id="quotes-and-code">Quotes and code</h2>
-<blockquote>
-<p>Quoted text</p>
-</blockquote>
-<blockquote>
-<p>Quoted block of text</p>
-<p>Two roads diverged in a wood, and I—<br />
-I took the one less traveled by,<br />
-And that has made all the difference.</p>
-</blockquote>
-<p>Code <code>in the middle</code> of normal text, aka <code>inline code</code>.</p>
-<p>Code block with Python syntax highlighting:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> manubot.cite.doi <span class="im">import</span> expand_short_doi</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_expand_short_doi():</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    doi <span class="op">=</span> expand_short_doi(<span class="st">&quot;10/c3bp&quot;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># a string too long to fit within page:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> doi <span class="op">==</span> <span class="st">&quot;10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah&quot;</span></span></code></pre></div>
-<p>Code block with no syntax highlighting:</p>
-<pre><code>Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript</code></pre>
-<h2 id="figures">Figures</h2>
-<div id="fig:square-image" class="fignos">
+<h2 id="introduction">Introduction</h2>
+<p>With the fast development of the machine learning (ML) and computer vision fields, computers are now able to transform images into new forms for better visualization <span class="citation" data-cites="1O0bopKD">[<a href="#ref-1O0bopKD" role="doc-biblioref">1</a>]</span>, better animation <span class="citation" data-cites="LxlUp436">[<a href="#ref-LxlUp436" role="doc-biblioref">2</a>]</span>, better information extraction <span class="citation" data-cites="11chATuF4">[<a href="#ref-11chATuF4" role="doc-biblioref">3</a>]</span> with unprecedented and continuously growing accuracy and efficiency.
+Recently, such techniques have started to be adapted for bioimaging applications and revolutionized image-based biomedical research <span class="citation" data-cites="Yq8wZ6hc WwenuBHa wcCVn8av xPgDok51">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>,<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>,<a href="#ref-xPgDok51" role="doc-biblioref">7</a>]</span>. In principal, these techniques and applications can be formulated as a general image-to-image transformation problem, as illustrated in the central panel in Figure <a href="#fig:overview">1</a>.
+In essence, deep neural networks are trained to perceive the information from the source image(s) and reconstruct the learned knowledge from source images(s) in the form of a new image(s) of the target type.
+Here, the source and target images can be real microscopy images, simulated microscopy images, segmentation masks, or their combinations, such as the examples in Figure <a href="#fig:overview">1</a>.
+Considering the common essential spirit of all the underlying methods, a natural question to ask is whether is it possible to build a single generic codebase for deep learning based image-to-image transformation directly applicable to different biomedical studies?</p>
+<p>In this paper, we introduce <em>MMV_Im2Im</em> an open-source microscopy machine vision (MMV) toolbox for image-to-image transformation that can be used in various biomedical applications.
+Currently, <em>MMV_Im2Im</em> supports 2D~5D microscopy images for supervised image to image translation (e.g., labelfree determination <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, imaging modality transformation <span class="citation" data-cites="UEBDZ3tI WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>), supervised image restoration <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>, supervised semantic segmentation <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span>, supervised instance segmentation <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">10</a>]</span>, unsupervised semantic segmentation <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">11</a>]</span>, unsupervised image to image translation and synthetization <span class="citation" data-cites="6wtIu4QY">[<a href="#ref-6wtIu4QY" role="doc-biblioref">12</a>]</span>.
+The toolbox will continuously grow and more methods will be supported, especially methods based on self-supervised learning.</p>
+<p>Why do we need such a generic codebase for all deep-learning based microscopy image-to-image transformation? <em>MMV_Im2Im</em> is not simply a collection of many existing methods, but with rather systematic design for generality, flexibility and simplicity, attempting to address many fundamental pain points for image-to-image transformation in biomedical applications, as highlighted below.</p>
+<h3 id="universal-boilerplate-with-state-of-the-art-ml-engineering">Universal boilerplate with state-of-the-art ML engineering:</h3>
+<p>The toolbox employs pytorch-lightning <span class="citation" data-cites="YbvSvdyB">[<a href="#ref-YbvSvdyB" role="doc-biblioref">13</a>]</span> as the core in the backend, which offers numerous benefits, such as readability, flexibility and simplicity. First of all, have you ever encountered the situation where you want to understand the code from two different papers, even solving the same problem, e.g. semantic segmentation, but not quite easy to grasp quickly since the two repositories are implemented in very different ways? It is not rare that even different researchers from the same group may implement similar methods in very different manners. This is not only a barrier for other people to learn and re-use the open-source code, but also poses challenges for developers in maintenance, further development, and interoperability among different packages.
+We follow the pytorch-lightning framework and carefully design a universal boilerplate for image-to-image transformation for biomedical applications, where the implementation of all the methods share the same modularized code structure. This greatly lowers the learning curve for people to read and understand the code, and makes implementing new methods or extending existing methods simple and fast.</p>
+<p>Moreover, as ML scientists, have you ever overwhelmed by different training tricks for different methods or been curious about if certain state-of-the-art training methods can boost the performance of your models? With the pytorch-lightning backend, <em>MMV_Im2Im</em> allows you to enjoy different state-of-the-art ML engineering techniques without changing any line of code, e.g., stochastic weight averaging <span class="citation" data-cites="qzeQFRn9">[<a href="#ref-qzeQFRn9" role="doc-biblioref">14</a>]</span>, single precision training, automatic batch size determination, different optimizers, different learning rate schedulers, easy deployment on different devices, distributed training on multi-GPU (even multi-node), logging with common loggers such as Tensorboard, etc. In short, with the pytorch-lightning based universal boilerplate, one can really focus on research and develop novel methods for bioimaging applications, without worrying on the ML engineering works (which are usually lack in non-computer-science labs).</p>
+<h3 id="modularization-and-human-readable-configuration-system">Modularization and human-readable configuration system:</h3>
+<p>The toolbox is designed for both computational biomedical imaging researchers (e.g., with expertise in biomedical imaging but only basic knowledge of Python or ML) and ML researchers (e.g. deep knowledge of ML methodology but with limited experience in microscopy).
+For this purpose, we design the toolbox in a systematically modularized way with various levels of configurability.
+One can use the toolbox with a single command as simple as <code>run_im2im --config train_semanticseg_3d --data.data_path /path/to/data</code> or make customization on details directly from a human-readable configuration file, such as choosing batch normalization or instance normalization in certain layers of the model, or adding extra data augmentation steps, etc.
+For users without experience in Python programming, another MMV toolbox has been planned as the extension of <em>MMV_Im2Im</em> (See the Discussion section for details).
+In addition, the modularization and configuration system is designed to allow not only configuring with the elements offered by the package itself, but also any compatible elements from a third-party package or from a public repository on Github.
+For example, one can easily switch the 3D neural network in the original <em>Embedseg</em> method to any customized U-Net from FastAI by specifying the network as <code>fastai.vision.models.unet</code>. Such painless extendability releases the power of the toolbox, amplifies the benefit of the open-source ML community and upholds our philosophy of open science.</p>
+<h3 id="customization-for-biomedical-imaging-applications">Customization for biomedical imaging applications:</h3>
+<p>The original idea of a general toolbox actually stems from the OpenMMLab project, which provides generic codebase for a wide range of computer vision research topics.
+For instance, MMSegmentation is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box.
+It has become one of most widely used codebase for research in semantic segmentation (1.6K forks and 4.3K stars on Github as of August 30, 2022).
+This inspires us to develop <em>MMV_Im2Im</em> to fascinate research in general image-to-image transformation with special focus on biomedical applications.</p>
+<p>First of all, different from general computer vision datasets, such as ImageNet <span class="citation" data-cites="lt4BNUoG">[<a href="#ref-lt4BNUoG" role="doc-biblioref">15</a>]</span>, where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), bioimaging applications usually involves large-scale high dimensional data (e.g., 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI <span class="citation" data-cites="UU62HYC6">[<a href="#ref-UU62HYC6" role="doc-biblioref">16</a>]</span> with partial loading and sampling support, as well as delayed image reading in aicsimageio <span class="citation" data-cites="ONdyoUIo">[<a href="#ref-ONdyoUIo" role="doc-biblioref">17</a>]</span>.
+As a result, in our stress test, training an 3D nuclei instance segmentation model with more than 125,000 3D images can be conducted efficiently, even with limited resource.</p>
+<p>Second, because microscopy data is not restricted to 2D, we re-implement common frameworks, such as fully convolutional networks (FCN), conditional generative models, cycle-consistent generative models, etc., in a generic way to easily switch between different dimensionalities.</p>
+<p>Third, the toolbox pre-packs common functionalities specific to microscopy images. For example, we incorporate the special image normalization method introduced in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, where only the middle chunk along Z dimension of 3D microscopy images will be used for calculating the mean and standard deviation of image intensity for standard normalization. Also, 3D light microscopy images are usually anisotropic, i.e., much lower resolution along Z than XY dimension. So, we adopt the anisotropic variation of UNet as proposed in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">18</a>]</span>.</p>
+<p>Finally, to deploy the model in production, a model trained on small 3D patches sometimes need to be applied not only on much large images, but also with additional dimensionalities (e.g., multi-scene timelapse). Combining the efficient data handling of aicsimageio <span class="citation" data-cites="ONdyoUIo">[<a href="#ref-ONdyoUIo" role="doc-biblioref">17</a>]</span> and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production.</p>
+<p>All in all, the <em>MMV_Im2Im</em> toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&amp;D for biomedical applications. The source code of <strong>MMV_Im2Im</strong> is available at <a href="https://github.com/MMV-Lab/mmv_im2im" class="uri">https://github.com/MMV-Lab/mmv_im2im</a>. This manuscript is generated with open-source package Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">19</a>]</span>. The manuscript source code is available at <a href="https://github.com/MMV-Lab/manuscript-im2im" class="uri">https://github.com/MMV-Lab/manuscript-im2im</a>.</p>
+<div id="fig:overview" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
-Loaded from the latest version of image on GitHub.</figcaption>
+<img src="images/overview_figure.png" style="height:90.0%" alt="Figure 1: Overview of the image-to-image transformation concept and its example applications" />
+<figcaption aria-hidden="true"><span>Figure 1:</span> Overview of the image-to-image transformation concept and its example applications</figcaption>
 </figure>
 </div>
-<div id="fig:wide-image" class="fignos">
-<figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 2: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
-</figure>
-</div>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 3: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
-</figure>
-</div>
-<div id="fig:vector-image" class="fignos">
-<figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 4: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
-The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
-</figure>
-</div>
-<h2 id="tables">Tables</h2>
-<div id="tbl:bowling-scores" class="tablenos">
-<table id="tbl:bowling-scores">
-<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
-</caption>
+<h2 id="results">Results</h2>
+<p>In this section, we demonstrated the versatility of the <strong>MMV_Im2Im</strong> toolbox with over 10 different biomedical applications from different R&amp;D use cases at different scales. All experiments and results in this section were conducted on public datasets and can be reproduced with the scripts (for pulling the public dataset online and data wrangling) and configuration files (for setting up training and inference details) released with the <strong>MMV_Im2Im</strong> package. It is worth emphasizing that the aim of these experiments were not to achieve the state-of-the-art performance on each individual task (may require further tuning of hyper-parameters, see Discussion section for more details). All experiments were conducted without much tuning, and essentially meant to demonstrate different features of the package and the general applicability. We intend to provide a holistic view of the image-to-image transformation concepts to biomedical researchers using a diverse set of applications. Hopefully, such concepts could help biomedical researchers to better integrate AI into traditional assay development strategies and inspire more computational and experimental co-design methods to realize new biomedical studies that were not very feasible before.</p>
+<h3 id="labelfree-prediction-of-nuclear-structure-from-2d3d-brightfield-images">Labelfree prediction of nuclear structure from 2D/3D brightfield images</h3>
+<p>The labelfree method refers a deep learning method that can predict fluorescent images directly from transmitted light brightfield images <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Comparing to brightfield images, fluorescent images can resolve subcellular structures in living cells at high resolution but with the cost of expensive and slow procedures and high phototoxicity. The labelfree method provides a new perspective in assay development to conduct integrated computational analysis of multiple organelles only with a single brightfield imaging acquisition. In our first demonstration, we applied <strong>MMV_Im2Im</strong> to build 2D/3D models that can predict fluorescent images of nuclear structures from brightfield images. For 3D models, we also compared (1) different image normalization methods, (2) different network backbones, and (3) different types of models.</p>
+<p>It is worth mentioning that systematic evaluation of the prediction is beyond the scope of this paper. We argue that a proper evaluation depends on specific downstream quantitative analysis goals. For example, if we want to quantify the size of the nucleoli, we have to compare the segmentation from real nucleoli signals and the segmentation from predicted nucleoli, and make sure the sizes measured from real signal are consistent with measurement from predictions. In contrast, if the goal is to roughly localize the nucleoli within the cell, pearson correlation might be more suitable. As a result, we only compare the results by visual inspection, for the sake of simplicity and focusing on the applicability of our <strong>MMV_Im2Im</strong> package, and leave the systematic evaluations to users in specific problems in real studies.</p>
+<p><em>2D Model:</em> We started with a simple problem using 2D images from the HeLa “Kyoto” cells dataset <span class="citation" data-cites="xv2VIyRP">[<a href="#ref-xv2VIyRP" role="doc-biblioref">20</a>]</span>. For all images, we took the brightfield channel and the mCherry-H2B channel out of the multi-channel timelapse movies. 2D images were acquired at 20x with 0.8 N.A. and then downscaled by 4 (pixel size: 0.299 nm x 0.299 nm). Example predictions can be found in Figure <a href="#fig:labelfree">2</a>-A. We compared a basic UNet model <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span> and a 2D version of the fnet model in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. The fnet model achieved slightly more accurate predictions.</p>
+<p><em>3D Model:</em> We tested with 3D images from the hiPS single cell image dataset <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span>. Specifically, we extracted the brightfield channel and the structure channel from the full field-of-view (FOV) multi-channel images, from the HIST1H2BJ, FBL, NPM1, LMNB1 cell lines, so as to predict from one brightfield image various nuclear structures, histones, nucleoli (dense fibrillar component via fibrillarin), nucleoli (granular component via nucleophosmin), and nuclear envelope, respectively. Images were acquired at 100x with 1.25 NA. (voxel size: 0.108 micron x 0.108 micron x 0.29 micron).</p>
+<p>We conducted three groups of comparisons (see results in Figure <a href="#fig:labelfree">2</a>). First, we compared three different image normalization methods for 3D images (percentile normalization, standard normalization, center normalization <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>). Percentile normalization refers to cutting the intensity out of the range of [0.5, 99.5] percentile of the image intensity and then rescale to the range of [-1, 1], while the standard normalization is simply subtracting mean intensity and then divided by the standard deviation of all pixel intensities. Center normalization is similar to standard normalization, but the statistics are calculated only near around center along the Z-axis. One could easily test different percentile or rescaling to [0, 1] instead of [-1, 1]. Qualitatively, we found center normalization slightly more accurate and more robust than the other two (ref. the first row in Figure <a href="#fig:labelfree">2</a>-B).</p>
+<p>Second, we compared different network backbone architectures, including original fnet model <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, enhanced UNet <span class="citation" data-cites="M7480NLD">[<a href="#ref-M7480NLD" role="doc-biblioref">22</a>]</span>, attention UNet <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">23</a>]</span>, two transformer-based models, SwinUNETR <span class="citation" data-cites="ZWL3IrVc">[<a href="#ref-ZWL3IrVc" role="doc-biblioref">24</a>]</span> and UNETR<span class="citation" data-cites="XCKUntOB">[<a href="#ref-XCKUntOB" role="doc-biblioref">25</a>]</span> (all with center normalization). Inspecting the predictions on a holdout validation set suggested that fnet achieved the best performance, and the selected transformer-based models did not work well with in labelfree problems (ref. the second row and the “c + fnet” from the first row in Figure <a href="#fig:labelfree">2</a>-B).</p>
+<p>Finally, we showed the comparison between three different types of models, an FCN-type model (i.e., fnet), a pix2pix-type model, and a cycleGAN-type model. For fair comparison, we used fnet as the generator in the pix2pix-type model, while coupling with the multi-scale discriminator from pix2pixHD <span class="citation" data-cites="Nh6ArbP5">[<a href="#ref-Nh6ArbP5" role="doc-biblioref">26</a>]</span>. Then, the pix2pix-type model can be trained in two different ways: from scratch or initializing the generator with a pre-trained fnet. Examples of the comparison results are shown in the last two rows in Figure <a href="#fig:labelfree">2</a>-B. Visually, it is evident that the additional adversarial components (i.e., the discriminator) could boost the performance of a typical FCN-type model to generate more realistic images than an FCN-type model alone.</p>
+<p>From the experiments above, we found that center normalization + pix2pix with fnet as the generator achieved the best performance. So, we employed the same strategy on all other nuclear structures. At the end, we had four different labelfree models, each predicting one different nuclear structure from 3D brightfield images. As an example of evaluation, we calculated the pearson correlation and structural similarity on the validation set. The results were summarized in Table <a href="#tbl:labelfree_table">1</a>. Again, these numbers are merely examples of evaluation, systematic evaluation based each specific biological problem is necessary before deployment. Figure <a href="#fig:labelfree">2</a>-C shows one example of all four different structures predicted from a single unseen brightfield image. This would permit an integrated analysis of cell nuclear components that could hardly be done with real experiments and real images.</p>
+<div id="tbl:labelfree_table" class="tablenos">
+<table id="tbl:labelfree_table">
+<caption><span>Table 1:</span> Evaluation of the final 3D label-free models for the four different nuclear structures. </caption>
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"><em>Bowling Scores</em></th>
-<th style="text-align: center;">Jane</th>
-<th style="text-align: center;">John</th>
-<th style="text-align: center;">Alice</th>
-<th style="text-align: center;">Bob</th>
+<th>Dataset</th>
+<th>Pearson Correlation</th>
+<th>Structural Similarity</th>
+<th># of Test Data</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Game 1</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">187</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">105</td>
+<td>FBL</td>
+<td>0.864 &amp;pm 0.021</td>
+<td>0.831 &amp;pm 0.034</td>
+<td>50</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Game 2</td>
-<td style="text-align: center;">98</td>
-<td style="text-align: center;">202</td>
-<td style="text-align: center;">197</td>
-<td style="text-align: center;">102</td>
+<td>HIST1H2BJ</td>
+<td>0.825 &amp;pm 0.034</td>
+<td>0.675 &amp;pm 0.073</td>
+<td>55</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Game 3</td>
-<td style="text-align: center;">123</td>
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">238</td>
-<td style="text-align: center;">134</td>
+<td>LMNB1</td>
+<td>0.853 &amp;pm 0.027</td>
+<td>0.669 &amp;pm 0.059</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>NPM1</td>
+<td>0.912 &amp;pm 0.015</td>
+<td>0.795 &amp;pm 0.039</td>
+<td>55</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tbl:constant-digits" class="tablenos">
-<table id="tbl:constant-digits">
-<caption><span>Table 2:</span> A table too wide to fit within page.
-</caption>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 20%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 34%" />
-</colgroup>
+<div id="fig:labelfree" class="fignos">
+<figure>
+<img src="images/labelfree.png" style="width:90.0%" alt="Figure 2: Examples of labelfree results." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> Examples of labelfree results.</figcaption>
+</figure>
+</div>
+<h3 id="d-semantic-segmentation-of-tissues-from-he-images">2D semantic segmentation of tissues from H&amp;E images</h3>
+<p>Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. Deep learning based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrate <strong>MMV_Im2Im</strong> on a pathology application to segment glands from hematoxylin and eosin (H&amp;E) stained tissue images from the 2015 Gland Segmentation challenge <span class="citation" data-cites="45Sirz1X XAffSYIR">[<a href="#ref-45Sirz1X" role="doc-biblioref">27</a>,<a href="#ref-XAffSYIR" role="doc-biblioref">28</a>]</span>. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. <strong>MMV_Im2Im</strong> included a classic stain normalization method <span class="citation" data-cites="tQhnZyjK">[<a href="#ref-tQhnZyjK" role="doc-biblioref">29</a>]</span> as a pre-processing step. The effect of stain normalization can be observed in Figure <a href="#fig:2d_gland">3</a>-A and B. We trained a simple attention UNet model <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">23</a>]</span>. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.883 and 0.888 on test set A and test set B, respectively. The performance is competitive comparing to the methods reported in <span class="citation" data-cites="XAffSYIR">[<a href="#ref-XAffSYIR" role="doc-biblioref">28</a>]</span>, especially with much more consistent performance across the two different test sets. Example results can be found in Figure <a href="#fig:2d_gland">3</a>-C.</p>
+<div id="fig:2d_gland" class="fignos">
+<figure>
+<img src="images/gland.png" style="width:90.0%" alt="Figure 3: Example results of 2D semantic segmentation of gland in H&amp;E images." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> Example results of 2D semantic segmentation of gland in H&amp;E images.</figcaption>
+</figure>
+</div>
+<h3 id="d-semantic-segmentation-of-organelles-from-electron-microscopy-images">3D semantic segmentation of organelles from electron microscopy images</h3>
+<p>Semantic segmentation in 3D biomedical image analysis application is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. <strong>MMV_Im2Im</strong> is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, we are able to greatly reduce GPU memory workload for each sample and therefore increase the batch size. When multiple GPUs are available, we can easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. Here, we trained a 3D model to segment seven different types of organelles (e.g., cell, mitochondrion, alpha granule, etc.) from SBF-SEM image volumes <span class="citation" data-cites="3L5MIyIB">[<a href="#ref-3L5MIyIB" role="doc-biblioref">30</a>]</span>. Example results can be found in Figure <a href="#fig:3dseg">4</a>.</p>
+<div id="fig:3dseg" class="fignos">
+<figure>
+<img src="images/semantci_seg3d.png" style="width:90.0%" alt="Figure 4: Result of 3D semantic segmentation results on z-slice 30, 60, 90. From left to right: raw images, ground truth, predictions" />
+<figcaption aria-hidden="true"><span>Figure 4:</span> Result of 3D semantic segmentation results on z-slice 30, 60, 90. From left to right: raw images, ground truth, predictions</figcaption>
+</figure>
+</div>
+<h3 id="unsupervised-semantic-segmentation-of-intracelluar-structures-from-2d3d-confocal-microscopy-images">Unsupervised semantic segmentation of intracelluar structures from 2D/3D confocal microscopy images</h3>
+<p>Large amount of high-quality training ground truth is not always available or may take endless effort to collect. CycleGAN based methods opened a new venue for segmentation without pixel-wise ground truth <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">11</a>]</span>. We demonstrated unsupervised learning based segmentation method for four examples: 2D tight-junction (via ZO1) segmentation from 2D FP-tagged ZO1 images (max-projected from 3D stacks) and segmentation of nuclei, mitochondria and golgi from 3D confocal microscopy images. Here, we took raw images from the hiPS single cell image dataset <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span> and their corresponding segmentation. We shuffled the raw images and their segmentation to perform unsupervised learning. In theory, the segmentation masks could be simulated as suggested in <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">11</a>]</span>. Here, for the sake of simplicity in the demonstration, we took the original segmentation (shuffled) as a set of simulated segmentation masks. The concept is illustrated in Figure <a href="#fig:unsupervised">5</a>-A and example results of all 3D models are shown in Figure <a href="#fig:unsupervised">5</a>-B. The F1-scores of on test set were summarized in Table <a href="#tbl:unsuper">2</a>. According to <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">11</a>]</span>, the quality of unsupervised nuclei segmentation could be further improved with additional simulation strategies. In general, we can observe that unsupervised learning could offer an effective way to generate preliminary segmentation, which can be further curated to train additional models in supervised ways, like the iterative deep learning workflow in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">18</a>]</span>.</p>
+<div id="tbl:unsuper" class="tablenos">
+<table id="tbl:unsuper">
+<caption><span>Table 2:</span> F1 scores of the unsupervised semantic segmentation predictions. </caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Digits 1-33</th>
-<th style="text-align: left;">Digits 34-66</th>
-<th style="text-align: left;">Digits 67-99</th>
-<th style="text-align: left;">Ref.</th>
+<th>Dimensionality</th>
+<th>Dataset</th>
+<th>F1 Score</th>
+<th># of Test Data</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">pi</td>
-<td style="text-align: left;">3.14159265358979323846264338327950</td>
-<td style="text-align: left;">288419716939937510582097494459230</td>
-<td style="text-align: left;">781640628620899862803482534211706</td>
-<td style="text-align: left;"><a href="https://www.piday.org/million/"><code>piday.org</code></a></td>
+<td>2D</td>
+<td>TJP1</td>
+<td>0.888 &amp;pm 0.022</td>
+<td>29</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">e</td>
-<td style="text-align: left;">2.71828182845904523536028747135266</td>
-<td style="text-align: left;">249775724709369995957496696762772</td>
-<td style="text-align: left;">407663035354759457138217852516642</td>
-<td style="text-align: left;"><a href="https://apod.nasa.gov/htmltest/gifcity/e.2mil"><code>nasa.gov</code></a></td>
+<td>3D</td>
+<td>AAVS1</td>
+<td>0.465 &amp;pm 0.046</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3D</td>
+<td>HIST1H2BJ</td>
+<td>0.811 &amp;pm 0.150</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>3D</td>
+<td>ST6GAL1</td>
+<td>0.705 &amp;pm 0.022</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>3D</td>
+<td>TOMM20</td>
+<td>0.783 &amp;pm 0.005</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tbl:c2b357bd-2fdf-4fe6-a16c-ebe1d8dd0066" class="tablenos">
-<table id="tbl:">
-<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Colors</strong> <!-- $colspan="2" --></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>Size</strong></td>
-<td style="text-align: center;"><strong>Text Color</strong></td>
-<td style="text-align: center;"><strong>Background Color</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">big</td>
-<td style="text-align: center;">blue</td>
-<td style="text-align: center;">orange</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">small</td>
-<td style="text-align: center;">black</td>
-<td style="text-align: center;">white</td>
-</tr>
-</tbody>
-</table>
+<div id="fig:unsupervised" class="fignos">
+<figure>
+<img src="images/unsupervised.png" style="width:90.0%" alt="Figure 5: (A) Illustration of the unsupervised training scheme and results in the 2D tight-junction segmentation problem. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised training." />
+<figcaption aria-hidden="true"><span>Figure 5:</span> (A) Illustration of the unsupervised training scheme and results in the 2D tight-junction segmentation problem. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised training.</figcaption>
+</figure>
 </div>
-<h2 id="equations">Equations</h2>
-<p>A LaTeX equation:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
-<p>An equation too long to fit within page:</p>
-<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
-<h2 id="special">Special</h2>
-<p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
-<em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>
-<p><a href="https://manubot.org" class="button" title="Manubot Homepage">Link styled as a button</a></p>
-<p>Adding arbitrary HTML attributes to an element using Pandoc’s attribute syntax:</p>
-<div id="some_id_1" class="some_class" style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true">
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.</p>
+<h3 id="instance-segmentation-in-microscopy-images">Instance segmentation in microscopy images</h3>
+<p>Another type of segmentation, other than semantic segmentation, is the instance segmentation problem. The goal is to not only differentiate different types of objects, but also different instances of the same type of objects. Currently, <strong>MMV_Im2Im</strong> supports <em>EmbedSeg</em>-type models (re-implemented from the original paper following the generic boilerplate in <strong>MMV_Im2Im</strong>). The major benefit of <em>EmbedSeg</em>-type models is that the method is agnostic to the morphology and dimensionality of the objects, comparing to other FCN-type models like StarDist <span class="citation" data-cites="tIIG2f8K 14h90Vfg0">[<a href="#ref-tIIG2f8K" role="doc-biblioref">31</a>,<a href="#ref-14h90Vfg0" role="doc-biblioref">32</a>]</span> (difficult in handling different shapes, e.g. elongated objects) and CellPose <span class="citation" data-cites="TugPkOLy">[<a href="#ref-TugPkOLy" role="doc-biblioref">33</a>]</span> or SplineDist <span class="citation" data-cites="17Yrl6WGQ">[<a href="#ref-17Yrl6WGQ" role="doc-biblioref">34</a>]</span> (not straightforward to generalize to higher dimensions). Another category of mainstream instance segmentation methods is detection based models, such as Mask-RCNN <span class="citation" data-cites="xi8wnibR">[<a href="#ref-xi8wnibR" role="doc-biblioref">35</a>]</span>, which fits more to the detection framework, instead of image-to-image transformation (See Discussion section for details). As a demonstration, we applied <em>EmbedSeg</em>-like models on a 2D problem of segmenting <em>C. elegans</em> from widefield images <span class="citation" data-cites="138foKNOh">[<a href="#ref-138foKNOh" role="doc-biblioref">36</a>]</span> and a 3D problem of nuclear segmentation from fluorescent images and brightfield images from the hiPS single cell image dataset <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span>.</p>
+<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper.
+Example results on a small holdout set are shown in Figure <a href="#fig:instance">6</a>-A (IoU = 0.86).
+For the 3D problem, the original method is not directly applicable for two reasons.
+First, we cannot use the original network architecture, ERF-Net-3D, because the images have very anisotropic dimensions and there are not enough Z-slices to run through all down sampler blocks in 3D. Second, we cannot use the original training function, because some parts of the images do not have ground truth and the original training method requires fully annotated images. (Note: the segmentation results from the public dataset <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span> contain nuclear instance segmentation of all cells. But, the cells touch the image borders are ignored from downstream analysis and therefore not curated. In other words, the segmentation from this public dataset can be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders. See more details in <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span>.)
+In this example, we showcase (1) how to easily swap the network backbone with a network from public repositories on Github, and (2) hwo to easily train the model with pixel-wise cost map or exclusion masks (i.e., certain pixels can be excluded from training). Another extension comparing to the original implementation, the <strong>MMV_Im2Im</strong> package makes sliding windowing inference straightforward, and therefore permits easy handling of images of any size during inference in practice.
+For network, we directly imported a model from a public github repository https://github.com/AllenCell/aics-ml-segmentation for segmentation in fluorescent images and a model from another public Github repository https://github.com/AllenCellModeling/pytorch_fnet for segmentation in brightfield images.
+For exclusion masks, all the areas covered by cells touching the image border were assigned to 0, otherwise 1, as a cost map.</p>
+<p>Example results are presented in <a href="#fig:instance">6</a>-B. The green box highlight a mitotic cell, where the DNA signals form “spaghetti” shapes. Besides roughly separating the DNA signals from background, the model is also able to correctly identify the instance identity, which is theoretically infeasible for other FCN-type instance segmentation models.
+Nuclear instance segmentation from brightfield images is much more challenging than from fluorescent images. Arguably, this could be thought of as one single model doing two transformations: predicting the DNA signals from brightfield and running instance segmentation on predicted DNA signals. From Figure <a href="#fig:instance">6</a>-B, it is shown that the segmentation from brightfield images is comparable to the segmentation from fluorescent images, but with two caveats. First, the performance on mitotic cells is worse than the model using fluorescent images. We hypothesize this is due to the limited information in brightfield images for mitotic cells, compounded with limited number of mitotic cells in the whole training set (much less than 10%). Second, the performance along Z dimension is also worse than the fluorescent model, as explained by the side view in Figure <a href="#fig:instance">6</a>-B. This could be explained by the different properties of brightfield imaging and fluorescent imaging, but would need further comprehensive studies to investigate.</p>
+<div id="fig:instance" class="fignos">
+<figure>
+<img src="images/embedseg.png" style="width:90.0%" alt="Figure 6: (A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side." />
+<figcaption aria-hidden="true"><span>Figure 6:</span> (A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side.</figcaption>
+</figure>
 </div>
-<p>Adding arbitrary HTML attributes to an element with the Manubot <code>attributes</code> plugin (more flexible than Pandoc’s method in terms of which elements you can add attributes to):</p>
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" --></p>
-<p>Available background colors for text, images, code, banners, etc:</p>
-<p><code class="white">white</code>
-<code class="lightgrey">lightgrey</code>
-<code class="grey">grey</code>
-<code class="darkgrey">darkgrey</code>
-<code class="black">black</code>
-<code class="lightred">lightred</code>
-<code class="lightyellow">lightyellow</code>
-<code class="lightgreen">lightgreen</code>
-<code class="lightblue">lightblue</code>
-<code class="lightpurple">lightpurple</code>
-<code class="red">red</code>
-<code class="orange">orange</code>
-<code class="yellow">yellow</code>
-<code class="green">green</code>
-<code class="blue">blue</code>
-<code class="purple">purple</code></p>
-<p>Using the <a href="https://fontawesome.com/">Font Awesome</a> icon set:</p>
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
-<p><i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i></p>
-<p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Light Grey Banner</strong><br>
-useful for <em>general information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightblue"><i class="fas fa-info-circle fa-lg"></i> <strong>Blue Banner</strong><br>
-useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
-useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
+<h3 id="generating-synthetic-microscopy-images-from-binary-masks">Generating synthetic microscopy images from binary Masks</h3>
+<p>Sometimes, being able to generate a large amount of synthetic microscopy images would be an important step for developing image analysis methods. For example, we can use the synthetic images to train other deep learning models As long as the images can be synthesized good enough, we could have unlimited amount of training data “for free” for certain applications. In addition, the synthetic images could also be used to evaluate other models when validation data are not easy to obtain. We want to demonstrate that <strong>MMV_Im2Im</strong> can also be used to generate 2D/3D synthetic microscopy images with high realism, either in a supervised or unsupervised manner. To do this, we collect a subset data from the hiPS single cell image dataset <span class="citation" data-cites="scdyUQvV">[<a href="#ref-scdyUQvV" role="doc-biblioref">21</a>]</span>. For a 3D demonstration, we took the nuclear segmentation from the dataset as input, and the real H2B images as the training target. In the 2D case, we extract the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary mask. With the paired “mask + microscopy image” data, we can train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data and train the model in an unsupervised fashion. Example results can be found in Figure <a href="#fig:synthetic">7</a>.</p>
+<div id="fig:synthetic" class="fignos">
+<figure>
+<img src="images/synthetic.png" style="width:90.0%" alt="Figure 7: Overview of synthetic generated NPM1 fluorescence images." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> Overview of synthetic generated NPM1 fluorescence images.</figcaption>
+</figure>
+</div>
+<h3 id="image-denoising-for-microscopy-images">Image denoising for microscopy images</h3>
+<p><strong>MMV_Im2Im</strong> can also be used to significantly reduce image noise or restore the data from various sources of imaging artifacts, so as to increase the feasibility and efficiency in downstream analysis. In the current version of <em>MMV_Im2Im</em>, the restoration model can only be trained in a fully supervised manner. Therefore, aligned low quality and high quality images are required for supervision, even though such pair data can be partially simulated <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>. Other methods, such as unsupervised learning based solutions <span class="citation" data-cites="JVOCBBq0">[<a href="#ref-4vnyY9J9" role="doc-biblioref">38</a>]</span>, will be made available within <strong>MMV_Im2Im</strong> in future versions.</p>
+<p>In this example, we present an image denoising demonstration with sample data from <span class="citation" data-cites="12G712Zky">[<a href="#ref-12G712Zky" role="doc-biblioref">39</a>]</span>. The goal is to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models are trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 &amp; 0.029 and structural similarity of 0.627 &amp;pm 0.175. Based on the results in Figure <a href="#fig:denoising">8</a>, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations are necessary to confirm the biological validity, but beyond the scope of this paper.</p>
+<div id="fig:denoising" class="fignos">
+<figure>
+<img src="images/denoising.png" style="width:90.0%" alt="Figure 8: (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction." />
+<figcaption aria-hidden="true"><span>Figure 8:</span> (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.</figcaption>
+</figure>
+</div>
+<h3 id="imaging-modality-transformation-from-3d-confocal-microscopy-images-to-stimulated-emission-depletion-sted-microscopy-images">Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images</h3>
+<p>Another important application of image-to-image transformation is imaging modality transformation <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>, usually from one “cheaper” modality with lower resolution (e.g., larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a completely new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of <strong>MMV_Im2Im</strong> in this scenario, we take an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. Sample results are summarized in Figure <a href="#fig:modality">9</a>. For microtubule, the model achieved pearson correlation of 0.779 &amp;pm 0.019, while for nuclear pore complex, the pearson correlation is 0.784 &amp;pm 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it is necessary to conduct further quantitative evaluation to ensure the validity in users’ specific problems.</p>
+<div id="fig:modality" class="fignos">
+<figure>
+<img src="images/modality.png" style="width:90.0%" alt="Figure 9: Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images." />
+<figcaption aria-hidden="true"><span>Figure 9:</span> Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.</figcaption>
+</figure>
+</div>
+<h3 id="staining-transformation-in-multiplex-experiments">Staining transformation in multiplex experiments</h3>
+<p>Beyond common light microscope for bioimaging, deep learning based image-to-image transformation has become one of the important weapons in multiplex studies <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. The capability of transforming tissue images among different stainings, such as immunohistochemistry (IHC) and multiplex immunofluorescence (mpIF), would create new possibility for efficient co-registration, co-localization and quantitative analysis. In this section, we demonstrate the applicability of <strong>MMV_Im2Im</strong> in transforming tissue images from one staining to others with sample data from <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. In this example, we train three different models to transform IHC images to images of standard hematoxylin stain, mpIF nuclear (DAPI) and mpIF LAP2beta (a nuclear envelope stain). Example results can be observed in Figure <a href="#fig:multiplex">10</a> to verify the results qualitatively.</p>
+<div id="fig:multiplex" class="fignos">
+<figure>
+<img src="images/multiplex.png" alt="Figure 10: Qualitative visualization of staining transformation results with the MMV_Im2Im package." />
+<figcaption aria-hidden="true"><span>Figure 10:</span> Qualitative visualization of staining transformation results with the <strong>MMV_Im2Im</strong> package.</figcaption>
+</figure>
+</div>
+<h2 id="methods">Methods</h2>
+<h3 id="major-components-of-the-package">Major components of the package</h3>
+<h2 id="discussions">Discussions</h2>
+<p>This ….</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+<div id="ref-1O0bopKD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Enhanced Deep Residual Networks for Single Image Super-Resolution</strong> <div class="csl-block">Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee</div> <em>2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</em> (2017-07) <a href="https://doi.org/gfxhp3">https://doi.org/gfxhp3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvprw.2017.151">10.1109/cvprw.2017.151</a></div></div>
 </div>
-<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+<div id="ref-LxlUp436" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Image-to-Image Translation with Conditional Adversarial Networks</strong> <div class="csl-block">Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A Efros</div> <em>2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em> (2017-07) <a href="https://doi.org/gfrfv9">https://doi.org/gfrfv9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2017.632">10.1109/cvpr.2017.632</a></div></div>
 </div>
-<div id="ref-126Wi5Us4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Bitcoin for the biological literature.</strong> <div class="csl-block">Douglas Heaven</div> <em>Nature</em> (2019-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">https://www.ncbi.nlm.nih.gov/pubmed/30718888</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-019-00447-9">10.1038/d41586-019-00447-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">30718888</a></div></div>
+<div id="ref-11chATuF4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Panoptic Segmentation</strong> <div class="csl-block">Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr Dollar</div> <em>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> (2019-06) <a href="https://doi.org/ggp9z4">https://doi.org/ggp9z4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2019.00963">10.1109/cvpr.2019.00963</a></div></div>
 </div>
-<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
+<div id="ref-Yq8wZ6hc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy</strong> <div class="csl-block">Chawin Ounkomol, Sharmishtaa Seshamani, Mary M Maleckar, Forrest Collman, Gregory R Johnson</div> <em>Nature Methods</em> (2018-09-17) <a href="https://doi.org/gd7d5f">https://doi.org/gd7d5f</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0111-2">10.1038/s41592-018-0111-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30224672">30224672</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6212323">PMC6212323</a></div></div>
 </div>
-<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
+<div id="ref-WwenuBHa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Deep learning-inferred multiplex immunofluorescence for immunohistochemical image quantification</strong> <div class="csl-block">Parmida Ghahremani, Yanyun Li, Arie Kaufman, Rami Vanguri, Noah Greenwald, Michael Angelo, Travis J Hollmann, Saad Nadeem</div> <em>Nature Machine Intelligence</em> (2022-04) <a href="https://doi.org/gqc7gd">https://doi.org/gqc7gd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-022-00471-x">10.1038/s42256-022-00471-x</a></div></div>
 </div>
-<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
+<div id="ref-wcCVn8av" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Deep learning-based point-scanning super-resolution imaging</strong> <div class="csl-block">Linjing Fang, Fred Monroe, Sammy Weiser Novak, Lyndsey Kirk, Cara R Schiavon, Seungyoon B Yu, Tong Zhang, Melissa Wu, Kyle Kastner, Alaa Abdel Latif, … Uri Manor</div> <em>Nature Methods</em> (2021-03-08) <a href="https://doi.org/gjhgrw">https://doi.org/gjhgrw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01080-z">10.1038/s41592-021-01080-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33686300">33686300</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8035334">PMC8035334</a></div></div>
 </div>
-<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
+<div id="ref-xPgDok51" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>LIVECell—A large-scale dataset for label-free live cell segmentation</strong> <div class="csl-block">Christoffer Edlund, Timothy R Jackson, Nabeel Khalid, Nicola Bevan, Timothy Dale, Andreas Dengel, Sheraz Ahmed, Johan Trygg, Rickard Sjögren</div> <em>Nature Methods</em> (2021-08-30) <a href="https://doi.org/gmptqs">https://doi.org/gmptqs</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01249-6">10.1038/s41592-021-01249-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34462594">34462594</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8440198">PMC8440198</a></div></div>
+</div>
+<div id="ref-UEBDZ3tI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Three-dimensional residual channel attention networks denoise and sharpen fluorescence microscopy image volumes</strong> <div class="csl-block">Jiji Chen, Hideki Sasaki, Hoyin Lai, Yijun Su, Jiamin Liu, Yicong Wu, Alexander Zhovmer, Christian A Combs, Ivan Rey-Suarez, Hung-Yu Chang, … Hari Shroff</div> <em>Nature Methods</em> (2021-05-31) <a href="https://doi.org/gkbctn">https://doi.org/gkbctn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01155-x">10.1038/s41592-021-01155-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34059829">34059829</a></div></div>
+</div>
+<div id="ref-TutLhFSz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>U-Net: Convolutional Networks for Biomedical Image Segmentation</strong> <div class="csl-block">Olaf Ronneberger, Philipp Fischer, Thomas Brox</div> <em>Lecture Notes in Computer Science</em> (2015) <a href="https://doi.org/gcgk7j">https://doi.org/gcgk7j</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-24574-4_28">10.1007/978-3-319-24574-4_28</a></div></div>
+</div>
+<div id="ref-QmYuUQ5K" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Embedding-based Instance Segmentation in Microscopy</strong> <div class="csl-block">Manan Lalit, Pavel Tomancak, Florian Jug</div> <em>Proceedings of the Fourth Conference on Medical Imaging with Deep Learning</em> <a href="https://proceedings.mlr.press/v143/lalit21a.html">https://proceedings.mlr.press/v143/lalit21a.html</a></div>
+</div>
+<div id="ref-RuFP3CS3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Unsupervised data to content transformation with histogram-matching cycle-consistent generative adversarial networks</strong> <div class="csl-block">Stephan J Ihle, Andreas M Reichmuth, Sophie Girardin, Hana Han, Flurin Stauffer, Anne Bonnin, Marco Stampanoni, Karthik Pattisapu, János Vörös, Csaba Forró</div> <em>Nature Machine Intelligence</em> (2019-09-16) <a href="https://doi.org/ggwbcv">https://doi.org/ggwbcv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-019-0096-2">10.1038/s42256-019-0096-2</a></div></div>
+</div>
+<div id="ref-6wtIu4QY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks</strong> <div class="csl-block">Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A Efros</div> <em>2017 IEEE International Conference on Computer Vision (ICCV)</em> (2017-10) <a href="https://doi.org/gfhw33">https://doi.org/gfhw33</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/iccv.2017.244">10.1109/iccv.2017.244</a></div></div>
+</div>
+<div id="ref-YbvSvdyB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>PyTorchLightning/pytorch-lightning: 0.7.6 release</strong> <div class="csl-block">William Falcon, Jirka Borovec, Adrian Wälchli, Nic Eggert, Justus Schock, Jeremy Jordan, Nicki Skafte, Ir1dXD, Vadim Bereznyuk, Ethan Harris, … Anton Bakhtin</div> <em>Zenodo</em> (2020-05-15) <a href="https://doi.org/gqc7f9">https://doi.org/gqc7f9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3828935">10.5281/zenodo.3828935</a></div></div>
+</div>
+<div id="ref-qzeQFRn9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Averaging Weights Leads to Wider Optima and Better Generalization</strong> <div class="csl-block">Pavel Izmailov, Dmitrii Podoprikhin, Timur Garipov, Dmitry Vetrov, Andrew Gordon Wilson</div> <em>34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018</em> <a href="http://auai.org/uai2018/proceedings/papers/313.pdf">http://auai.org/uai2018/proceedings/papers/313.pdf</a></div>
+</div>
+<div id="ref-lt4BNUoG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>ImageNet: A large-scale hierarchical image database</strong> <div class="csl-block">Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei</div> <em>2009 IEEE Conference on Computer Vision and Pattern Recognition</em> (2009-06) <a href="https://doi.org/cvc7xp">https://doi.org/cvc7xp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2009.5206848">10.1109/cvpr.2009.5206848</a></div></div>
+</div>
+<div id="ref-UU62HYC6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Project MONAI</strong> <div class="csl-block">The MONAI Consortium</div> <em>Zenodo</em> (2020-12-15) <a href="https://doi.org/gqc7gb">https://doi.org/gqc7gb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.4323059">10.5281/zenodo.4323059</a></div></div>
+</div>
+<div id="ref-ONdyoUIo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>AllenCellModeling/aicsimageio: Types, Filesystem Management, and BioformatsReader Fixes</strong> <div class="csl-block">Jackson Maxfield Brown, Jamie Sherman, Toloudis, Madison Swain-Bowden, Talley Lambert, Matte Bailey, Basu Chaudhuri, Gregory Johnson, Ian Hunt-Isaak, Nicholas-Schaub, … Peter Sobolewski</div> <em>Zenodo</em> (2022-05-27) <a href="https://doi.org/gqc7gc">https://doi.org/gqc7gc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.6585658">10.5281/zenodo.6585658</a></div></div>
+</div>
+<div id="ref-jM3v1UjQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>The Allen Cell and Structure Segmenter: a new open source toolkit for segmenting 3D intracellular structures in fluorescence microscopy images</strong> <div class="csl-block">Jianxu Chen, Liya Ding, Matheus P Viana, HyeonWoo Lee, MFilip Sluezwski, Benjamin Morris, Melissa C Hendershott, Ruian Yang, Irina A Mueller, Susanne M Rafelski</div> <em>Cold Spring Harbor Laboratory</em> (2018-12-08) <a href="https://doi.org/gkspnm">https://doi.org/gkspnm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/491035">10.1101/491035</a></div></div>
 </div>
 <div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+</div>
+<div id="ref-xv2VIyRP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>HeLa "Kyoto" cells under the scope</strong> <div class="csl-block">Romain Guiet</div> <em>Zenodo</em> (2022-02-25) <a href="https://doi.org/gqdkdm">https://doi.org/gqdkdm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.6139958">10.5281/zenodo.6139958</a></div></div>
+</div>
+<div id="ref-scdyUQvV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Robust integrated intracellular organization of the human iPS cell: where, how much, and how variable</strong> <div class="csl-block">Matheus P Viana, Jianxu Chen, Theo A Knijnenburg, Ritvik Vasan, Calysta Yan, Joy E Arakaki, Matte Bailey, Ben Berry, Antoine Borensztejn, Jackson M Brown, … </div> <em>Cold Spring Harbor Laboratory</em> (2020-12-10) <a href="https://doi.org/gqdkdk">https://doi.org/gqdkdk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2020.12.08.415562">10.1101/2020.12.08.415562</a></div></div>
+</div>
+<div id="ref-M7480NLD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Left-Ventricle Quantification Using Residual U-Net</strong> <div class="csl-block">Eric Kerfoot, James Clough, Ilkay Oksuz, Jack Lee, Andrew P King, Julia A Schnabel</div> <em>Statistical Atlases and Computational Models of the Heart. Atrial Segmentation and LV Quantification Challenges</em> (2019) <a href="https://doi.org/gqdkdp">https://doi.org/gqdkdp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-030-12029-0_40">10.1007/978-3-030-12029-0_40</a></div></div>
+</div>
+<div id="ref-OCow1hly" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Attention U-Net: Learning Where to Look for the Pancreas</strong> <div class="csl-block">Ozan Oktay, Jo Schlemper, Loic Le Folgoc, Matthew Lee, Matthias Heinrich, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Y Hammerla, Bernhard Kainz, … Daniel Rueckert</div> <em>Proceedings of Medical Imaging with Deep Learning 2018</em> <a href="https://openreview.net/forum?id=Skft7cijM">https://openreview.net/forum?id=Skft7cijM</a></div>
+</div>
+<div id="ref-ZWL3IrVc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images</strong> <div class="csl-block">Ali Hatamizadeh, Vishwesh Nath, Yucheng Tang, Dong Yang, Holger R Roth, Daguang Xu</div> <em>Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries</em> (2022) <a href="https://doi.org/gqrg93">https://doi.org/gqrg93</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-031-08999-2_22">10.1007/978-3-031-08999-2_22</a></div></div>
+</div>
+<div id="ref-XCKUntOB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>UNETR: Transformers for 3D Medical Image Segmentation</strong> <div class="csl-block">Ali Hatamizadeh, Yucheng Tang, Vishwesh Nath, Dong Yang, Andriy Myronenko, Bennett Landman, Holger R Roth, Daguang Xu</div> <em>2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em> (2022-01) <a href="https://doi.org/gqrg96">https://doi.org/gqrg96</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/wacv51458.2022.00181">10.1109/wacv51458.2022.00181</a></div></div>
+</div>
+<div id="ref-Nh6ArbP5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs</strong> <div class="csl-block">Ting-Chun Wang, Ming-Yu Liu, Jun-Yan Zhu, Andrew Tao, Jan Kautz, Bryan Catanzaro</div> <em>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</em> (2018-06) <a href="https://doi.org/ggv75b">https://doi.org/ggv75b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2018.00917">10.1109/cvpr.2018.00917</a></div></div>
+</div>
+<div id="ref-45Sirz1X" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>A Stochastic Polygons Model for Glandular Structures in Colon Histology Images</strong> <div class="csl-block">Korsuk Sirinukunwattana, David RJ Snead, Nasir M Rajpoot</div> <em>IEEE Transactions on Medical Imaging</em> (2015-11) <a href="https://doi.org/gqrg95">https://doi.org/gqrg95</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tmi.2015.2433900">10.1109/tmi.2015.2433900</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25993703">25993703</a></div></div>
+</div>
+<div id="ref-XAffSYIR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Gland segmentation in colon histology images: The glas challenge contest</strong> <div class="csl-block">Korsuk Sirinukunwattana, Josien PW Pluim, Hao Chen, Xiaojuan Qi, Pheng-Ann Heng, Yun Bo Guo, Li Yang Wang, Bogdan J Matuszewski, Elia Bruni, Urko Sanchez, … Nasir M Rajpoot</div> <em>Medical Image Analysis</em> (2017-01) <a href="https://doi.org/c5t7">https://doi.org/c5t7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.media.2016.08.008">10.1016/j.media.2016.08.008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27614792">27614792</a></div></div>
+</div>
+<div id="ref-tQhnZyjK" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>A method for normalizing histology slides for quantitative analysis</strong> <div class="csl-block">Marc Macenko, Marc Niethammer, JS Marron, David Borland, John T Woosley, Xiaojun Guan, Charles Schmitt, Nancy E Thomas</div> <em>2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro</em> (2009-06) <a href="https://doi.org/bmbj4h">https://doi.org/bmbj4h</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi.2009.5193250">10.1109/isbi.2009.5193250</a></div></div>
+</div>
+<div id="ref-3L5MIyIB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Dense cellular segmentation for EM using 2D–3D neural network ensembles</strong> <div class="csl-block">Matthew D Guay, Zeyad AS Emam, Adam B Anderson, Maria A Aronova, Irina D Pokrovskaya, Brian Storrie, Richard D Leapman</div> <em>Scientific Reports</em> (2021-01-28) <a href="https://doi.org/gqdxxg">https://doi.org/gqdxxg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41598-021-81590-0">10.1038/s41598-021-81590-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33510185">33510185</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7844272">PMC7844272</a></div></div>
+</div>
+<div id="ref-tIIG2f8K" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Cell Detection with Star-Convex Polygons</strong> <div class="csl-block">Uwe Schmidt, Martin Weigert, Coleman Broaddus, Gene Myers</div> <em>Medical Image Computing and Computer Assisted Intervention – MICCAI 2018</em> (2018) <a href="https://doi.org/ggnzqb">https://doi.org/ggnzqb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-030-00934-2_30">10.1007/978-3-030-00934-2_30</a></div></div>
+</div>
+<div id="ref-14h90Vfg0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy</strong> <div class="csl-block">Martin Weigert, Uwe Schmidt, Robert Haase, Ko Sugawara, Gene Myers</div> <em>2020 IEEE Winter Conference on Applications of Computer Vision (WACV)</em> (2020-03) <a href="https://doi.org/gjp4g9">https://doi.org/gjp4g9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/wacv45572.2020.9093435">10.1109/wacv45572.2020.9093435</a></div></div>
+</div>
+<div id="ref-TugPkOLy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Cellpose: a generalist algorithm for cellular segmentation</strong> <div class="csl-block">Carsen Stringer, Tim Wang, Michalis Michaelos, Marius Pachitariu</div> <em>Nature Methods</em> (2020-12-14) <a href="https://doi.org/ghrgms">https://doi.org/ghrgms</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-020-01018-x">10.1038/s41592-020-01018-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33318659">33318659</a></div></div>
+</div>
+<div id="ref-17Yrl6WGQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Splinedist: Automated Cell Segmentation With Spline Curves</strong> <div class="csl-block">Soham Mandal, Virginie Uhlmann</div> <em>2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)</em> (2021-04-13) <a href="https://doi.org/gqrg94">https://doi.org/gqrg94</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi48211.2021.9433928">10.1109/isbi48211.2021.9433928</a></div></div>
+</div>
+<div id="ref-xi8wnibR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Mask R-CNN</strong> <div class="csl-block">Kaiming He, Georgia Gkioxari, Piotr Dollar, Ross Girshick</div> <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (2020-02-01) <a href="https://doi.org/gfxfwn">https://doi.org/gfxfwn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tpami.2018.2844175">10.1109/tpami.2018.2844175</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29994331">29994331</a></div></div>
+</div>
+<div id="ref-138foKNOh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>High-Throughput Screen for Novel Antimicrobials using a Whole Animal Infection Model</strong> <div class="csl-block">Terence I Moy, Annie L Conery, Jonah Larkins-Ford, Gang Wu, Ralph Mazitschek, Gabriele Casadei, Kim Lewis, Anne E Carpenter, Frederick M Ausubel</div> <em>ACS Chemical Biology</em> (2009-06-29) <a href="https://doi.org/bdwdfc">https://doi.org/bdwdfc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1021/cb900084v">10.1021/cb900084v</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19572548">19572548</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2745594">PMC2745594</a></div></div>
+</div>
+<div id="ref-JVOCBBq0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Fully Unsupervised Probabilistic Noise2Void</strong> <div class="csl-block">Mangal Prakash, Manan Lalit, Pavel Tomancak, Alexander Krul, Florian Jug</div> <em>2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)</em> (2020-04) <a href="https://doi.org/gjnw2v">https://doi.org/gjnw2v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi45749.2020.9098612">10.1109/isbi45749.2020.9098612</a></div></div>
+</div>
+<div id="ref-4vnyY9J9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Interpretable Unsupervised Diversity Denoising and Artefact Removal</strong> <div class="csl-block">Mangal Prakash, Mauricio Delbracio, Peyman Milanfar, Florian Jug</div> <em>Proceedings of the Tenth International Conference on Learning Representations</em> <a href="https://proceedings.mlr.press/v143/lalit21a.html">https://proceedings.mlr.press/v143/lalit21a.html</a></div>
+</div>
+<div id="ref-12G712Zky" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Content-aware image restoration: pushing the limits of fluorescence microscopy</strong> <div class="csl-block">Martin Weigert, Uwe Schmidt, Tobias Boothe, Andreas Müller, Alexandr Dibrov, Akanksha Jain, Benjamin Wilhelm, Deborah Schmidt, Coleman Broaddus, Siân Culley, … Eugene W Myers</div> <em>Nature Methods</em> (2018-11-26) <a href="https://doi.org/gfkkfd">https://doi.org/gfkkfd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0216-7">10.1038/s41592-018-0216-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30478326">30478326</a></div></div>
 </div>
 </div>
 <!-- default theme -->
