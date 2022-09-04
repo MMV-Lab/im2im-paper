@@ -1,9 +1,9 @@
 ---
 title: 'MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation'
 keywords:
-- markdown
-- publishing
-- manubot
+- deep learning
+- microscopy image analysis
+- open source
 lang: en-US
 date-meta: '2022-09-04'
 author-meta:
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/d59eb7e5a8274f7da462661f5effe5c07e175252/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/))
 was automatically generated
-from [MMV-Lab/im2im-paper@d59eb7e](https://github.com/MMV-Lab/im2im-paper/tree/d59eb7e5a8274f7da462661f5effe5c07e175252)
+from [MMV-Lab/im2im-paper@6beaa0e](https://github.com/MMV-Lab/im2im-paper/tree/6beaa0e5edd4b574279adb3eb5a9ad812e86a483)
 on September 4, 2022.
 </em></small>
 
@@ -163,7 +163,7 @@ All in all, the *MMV_Im2Im* toolbox stands on the shoulders of many giants in th
 
 
 
-![Overview of the image-to-image transformation concept and its example applications](images/overview_figure.png){#fig:overview height="90%"}
+![Overview of the image-to-image transformation concept and its example applications](images/overview_figure.png){#fig:overview width="100%" height="53%"}
 
 ## Results
 
@@ -190,15 +190,15 @@ From the experiments above, we found that center normalization + pix2pix with fn
 
 | Dataset | Pearson Correlation | Structural Similarity | # of Test Data |
 |----------|----------|----------|----------|
-| FBL | 0.864 &pm 0.021| 0.831 &pm 0.034| 50 |
-| HIST1H2BJ | 0.825 &pm 0.034| 0.675 &pm 0.073| 55 |
-| LMNB1 | 0.853 &pm 0.027| 0.669 &pm 0.059| 50 |
-| NPM1 | 0.912 &pm 0.015| 0.795 &pm 0.039| 55 |
+| FBL | 0.864 ± 0.021| 0.831 ± 0.034| 50 |
+| HIST1H2BJ | 0.825 ± 0.034| 0.675 ± 0.073| 55 |
+| LMNB1 | 0.853 ± 0.027| 0.669 ± 0.059| 50 |
+| NPM1 | 0.912 ± 0.015| 0.795 ± 0.039| 55 |
 
 Table: Evaluation of the final 3D label-free models for the four different nuclear structures. {#tbl:labelfree_table}
 
 
-![Examples of labelfree results.](images/labelfree.png){#fig:labelfree width="90%"} 
+![Examples of labelfree results.](images/labelfree.png){#fig:labelfree width="80%" height="100%"} 
 
 
 ### 2D semantic segmentation of tissues from H&E images
@@ -221,11 +221,11 @@ Large amount of high-quality training ground truth is not always available or ma
 
 | Dimensionality | Dataset | F1 Score | # of Test Data |
 |----------|----------|----------|----------|
-| 2D | TJP1 | 0.888 &pm 0.022 | 29 |
-| 3D | AAVS1 | 0.465 &pm 0.046| 3 |
-| 3D | HIST1H2BJ | 0.811 &pm 0.150| 15 |
-| 3D | ST6GAL1 | 0.705 &pm 0.022| 6 |
-| 3D | TOMM20 | 0.783 &pm 0.005| 2 |
+| 2D | TJP1 | 0.888 ± 0.022 | 29 |
+| 3D | AAVS1 | 0.465 ± 0.046| 3 |
+| 3D | HIST1H2BJ | 0.811 ± 0.150| 15 |
+| 3D | ST6GAL1 | 0.705 ± 0.022| 6 |
+| 3D | TOMM20 | 0.783 ± 0.005| 2 |
 
 Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:unsuper}
 
@@ -262,16 +262,16 @@ Sometimes, being able to generate a large amount of synthetic microscopy images 
 
 **MMV_Im2Im** can also be used to significantly reduce image noise or restore the data from various sources of imaging artifacts, so as to increase the feasibility and efficiency in downstream analysis. In the current version of *MMV_Im2Im*, the restoration model can only be trained in a fully supervised manner. Therefore, aligned low quality and high quality images are required for supervision, even though such pair data can be partially simulated [@doi:10.1038/s41592-021-01080-z]. Other methods, such as unsupervised learning based solutions [@doi:10.1109/ISBI45749.2020.9098612,@HDN], will be made available within **MMV_Im2Im** in future versions. 
 
-In this example, we present an image denoising demonstration with sample data from [@doi:10.1038/s41592-018-0216-7]. The goal is to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models are trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 & 0.029 and structural similarity of 0.627 &pm 0.175. Based on the results in Figure {@fig:denoising}, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations are necessary to confirm the biological validity, but beyond the scope of this paper.
+In this example, we present an image denoising demonstration with sample data from [@doi:10.1038/s41592-018-0216-7]. The goal is to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models are trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 & 0.029 and structural similarity of 0.627 ± 0.175. Based on the results in Figure {@fig:denoising}, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations are necessary to confirm the biological validity, but beyond the scope of this paper.
 
 ![(A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.](images/denoising.png){#fig:denoising width="90%"}
 
 ### Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images
 
-Another important application of image-to-image transformation is imaging modality transformation [@doi:10.1038/s41592-021-01155-x], usually from one "cheaper" modality with lower resolution (e.g., larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a completely new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of **MMV_Im2Im** in this scenario, we take an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures [@doi:10.1038/s41592-021-01155-x]. Sample results are summarized in Figure {@fig:modality}. For microtubule, the model achieved pearson correlation of 0.779 &pm 0.019, while for nuclear pore complex, the pearson correlation is 0.784 &pm 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it is necessary to conduct further quantitative evaluation to ensure the validity in users' specific problems.
+Another important application of image-to-image transformation is imaging modality transformation [@doi:10.1038/s41592-021-01155-x], usually from one "cheaper" modality with lower resolution (e.g., larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a completely new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of **MMV_Im2Im** in this scenario, we take an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures [@doi:10.1038/s41592-021-01155-x]. Sample results are summarized in Figure {@fig:modality}. For microtubule, the model achieved pearson correlation of 0.779 ± 0.019, while for nuclear pore complex, the pearson correlation is 0.784 ± 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it is necessary to conduct further quantitative evaluation to ensure the validity in users' specific problems.
 
 
-![Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.](images/modality.png){#fig:modality width="90%"}
+![Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.](images/modality.png){#fig:modality width="70%" height="100%"}
 
 ### Staining transformation in multiplex experiments
 

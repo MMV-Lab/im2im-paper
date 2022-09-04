@@ -20,11 +20,11 @@ Dataset
 datasets
 Denoising
 dimensionalities
-Dimensionality
+dimensionality
 downscaled
 dseg
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERF
 extendability
