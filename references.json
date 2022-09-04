@@ -1,176 +1,2048 @@
 [
   {
-    "publisher": "The Royal Society",
-    "issue": "141",
-    "abstract": "<jats:p>Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains. Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well suited to solve problems of these fields. We examine applications of deep learning to a variety of biomedical problems—patient classification, fundamental biological processes and treatment of patients—and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges. Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art. Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation. Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge. Furthermore, the limited amount of labelled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records. Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.</jats:p>",
-    "DOI": "10.1098/rsif.2017.0387",
-    "type": "article-journal",
-    "page": "20170387",
-    "source": "Crossref",
-    "title": "Opportunities and obstacles for deep learning in biology and medicine",
-    "volume": "15",
+    "id": "4vnyY9J9",
+    "type": "paper-conference",
+    "title": "Interpretable Unsupervised Diversity Denoising and Artefact Removal",
+    "container-title": "Proceedings of the Tenth International Conference on Learning Representations",
+    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
     "author": [
       {
-        "given": "Travers",
-        "family": "Ching"
+        "family": "Prakash",
+        "given": "Mangal"
       },
       {
-        "given": "Daniel S.",
-        "family": "Himmelstein"
+        "family": "Delbracio",
+        "given": "Mauricio"
       },
       {
-        "given": "Brett K.",
-        "family": "Beaulieu-Jones"
+        "family": "Milanfar",
+        "given": "Peyman"
       },
       {
-        "given": "Alexandr A.",
-        "family": "Kalinin"
+        "family": "Jug",
+        "given": "Florian"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          26
+        ]
+      ]
+    },
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: HDN"
+  },
+  {
+    "id": "OCow1hly",
+    "type": "paper-conference",
+    "title": "Attention U-Net: Learning Where to Look for the Pancreas",
+    "container-title": "Proceedings of Medical Imaging with Deep Learning 2018",
+    "URL": "https://openreview.net/forum?id=Skft7cijM",
+    "author": [
+      {
+        "family": "Oktay",
+        "given": "Ozan"
       },
       {
-        "given": "Brian T.",
-        "family": "Do"
+        "family": "Schlemper",
+        "given": "Jo"
       },
       {
-        "given": "Gregory P.",
-        "family": "Way"
+        "family": "Le Folgoc",
+        "given": "Loic"
       },
       {
-        "given": "Enrico",
-        "family": "Ferrero"
+        "family": "Lee",
+        "given": "Matthew"
       },
       {
-        "given": "Paul-Michael",
-        "family": "Agapow"
+        "family": "Heinrich",
+        "given": "Matthias"
       },
       {
-        "given": "Michael",
-        "family": "Zietz"
+        "family": "Misawa",
+        "given": "Kazunari"
       },
       {
-        "given": "Michael M.",
-        "family": "Hoffman"
+        "family": "Mori",
+        "given": "Kensaku"
       },
       {
-        "given": "Wei",
-        "family": "Xie"
+        "family": "McDonagh",
+        "given": "Steven"
       },
       {
-        "given": "Gail L.",
-        "family": "Rosen"
+        "family": "Hammerla",
+        "given": "Nils Y."
       },
       {
-        "given": "Benjamin J.",
-        "family": "Lengerich"
+        "family": "Kainz",
+        "given": "Bernhard"
       },
       {
-        "given": "Johnny",
-        "family": "Israeli"
+        "family": "Glocker",
+        "given": "Ben"
+      },
+      {
+        "family": "Rueckert",
+        "given": "Daniel"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          6,
+          24
+        ]
+      ]
+    },
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: attentionUnet"
+  },
+  {
+    "publisher": "Springer International Publishing",
+    "DOI": "10.1007/978-3-030-00934-2_30",
+    "type": "chapter",
+    "page": "265-273",
+    "source": "Crossref",
+    "title": "Cell Detection with Star-Convex Polygons",
+    "author": [
+      {
+        "given": "Uwe",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Martin",
+        "family": "Weigert"
+      },
+      {
+        "given": "Coleman",
+        "family": "Broaddus"
+      },
+      {
+        "given": "Gene",
+        "family": "Myers"
+      }
+    ],
+    "container-title": "Medical Image Computing and Computer Assisted Intervention – MICCAI 2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggnzqb",
+    "id": "tIIG2f8K",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-030-00934-2_30"
+  },
+  {
+    "publisher": "Springer International Publishing",
+    "DOI": "10.1007/978-3-030-12029-0_40",
+    "type": "chapter",
+    "page": "371-380",
+    "source": "Crossref",
+    "title": "Left-Ventricle Quantification Using Residual U-Net",
+    "author": [
+      {
+        "given": "Eric",
+        "family": "Kerfoot"
+      },
+      {
+        "given": "James",
+        "family": "Clough"
+      },
+      {
+        "given": "Ilkay",
+        "family": "Oksuz"
       },
       {
         "given": "Jack",
-        "family": "Lanchantin"
+        "family": "Lee"
       },
       {
-        "given": "Stephen",
-        "family": "Woloszynek"
+        "given": "Andrew P.",
+        "family": "King"
+      },
+      {
+        "given": "Julia A.",
+        "family": "Schnabel"
+      }
+    ],
+    "container-title": "Statistical Atlases and Computational Models of the Heart. Atrial Segmentation and LV Quantification Challenges",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqdkdp",
+    "id": "M7480NLD",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-030-12029-0_40"
+  },
+  {
+    "publisher": "Springer International Publishing",
+    "DOI": "10.1007/978-3-031-08999-2_22",
+    "type": "chapter",
+    "page": "272-284",
+    "source": "Crossref",
+    "title": "Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images",
+    "author": [
+      {
+        "given": "Ali",
+        "family": "Hatamizadeh"
+      },
+      {
+        "given": "Vishwesh",
+        "family": "Nath"
+      },
+      {
+        "given": "Yucheng",
+        "family": "Tang"
+      },
+      {
+        "given": "Dong",
+        "family": "Yang"
+      },
+      {
+        "given": "Holger R.",
+        "family": "Roth"
+      },
+      {
+        "given": "Daguang",
+        "family": "Xu"
+      }
+    ],
+    "container-title": "Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqrg93",
+    "id": "ZWL3IrVc",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-031-08999-2_22"
+  },
+  {
+    "publisher": "Springer International Publishing",
+    "DOI": "10.1007/978-3-319-24574-4_28",
+    "type": "chapter",
+    "page": "234-241",
+    "source": "Crossref",
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "author": [
+      {
+        "given": "Olaf",
+        "family": "Ronneberger"
+      },
+      {
+        "given": "Philipp",
+        "family": "Fischer"
+      },
+      {
+        "given": "Thomas",
+        "family": "Brox"
+      }
+    ],
+    "container-title": "Lecture Notes in Computer Science",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gcgk7j",
+    "id": "TutLhFSz",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-319-24574-4_28"
+  },
+  {
+    "publisher": "Elsevier BV",
+    "DOI": "10.1016/j.media.2016.08.008",
+    "type": "article-journal",
+    "page": "489-502",
+    "source": "Crossref",
+    "title": "Gland segmentation in colon histology images: The glas challenge contest",
+    "volume": "35",
+    "author": [
+      {
+        "given": "Korsuk",
+        "family": "Sirinukunwattana"
+      },
+      {
+        "given": "Josien P.W.",
+        "family": "Pluim"
+      },
+      {
+        "given": "Hao",
+        "family": "Chen"
+      },
+      {
+        "given": "Xiaojuan",
+        "family": "Qi"
+      },
+      {
+        "given": "Pheng-Ann",
+        "family": "Heng"
+      },
+      {
+        "given": "Yun Bo",
+        "family": "Guo"
+      },
+      {
+        "given": "Li Yang",
+        "family": "Wang"
+      },
+      {
+        "given": "Bogdan J.",
+        "family": "Matuszewski"
+      },
+      {
+        "given": "Elia",
+        "family": "Bruni"
+      },
+      {
+        "given": "Urko",
+        "family": "Sanchez"
+      },
+      {
+        "given": "Anton",
+        "family": "Böhm"
+      },
+      {
+        "given": "Olaf",
+        "family": "Ronneberger"
+      },
+      {
+        "given": "Bassem Ben",
+        "family": "Cheikh"
+      },
+      {
+        "given": "Daniel",
+        "family": "Racoceanu"
+      },
+      {
+        "given": "Philipp",
+        "family": "Kainz"
+      },
+      {
+        "given": "Michael",
+        "family": "Pfeiffer"
+      },
+      {
+        "given": "Martin",
+        "family": "Urschler"
+      },
+      {
+        "given": "David R.J.",
+        "family": "Snead"
+      },
+      {
+        "given": "Nasir M.",
+        "family": "Rajpoot"
+      }
+    ],
+    "container-title": "Medical Image Analysis",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/c5t7",
+    "container-title-short": "Medical Image Analysis",
+    "PMID": "27614792",
+    "id": "XAffSYIR",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.media.2016.08.008"
+  },
+  {
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "7",
+    "DOI": "10.1021/cb900084v",
+    "type": "article-journal",
+    "page": "527-533",
+    "source": "Crossref",
+    "title": "High-Throughput Screen for Novel Antimicrobials using a Whole Animal Infection Model",
+    "volume": "4",
+    "author": [
+      {
+        "given": "Terence I.",
+        "family": "Moy"
+      },
+      {
+        "given": "Annie L.",
+        "family": "Conery"
+      },
+      {
+        "given": "Jonah",
+        "family": "Larkins-Ford"
+      },
+      {
+        "given": "Gang",
+        "family": "Wu"
+      },
+      {
+        "given": "Ralph",
+        "family": "Mazitschek"
+      },
+      {
+        "given": "Gabriele",
+        "family": "Casadei"
+      },
+      {
+        "given": "Kim",
+        "family": "Lewis"
       },
       {
         "given": "Anne E.",
         "family": "Carpenter"
       },
       {
-        "given": "Avanti",
-        "family": "Shrikumar"
-      },
-      {
-        "given": "Jinbo",
-        "family": "Xu"
-      },
-      {
-        "given": "Evan M.",
-        "family": "Cofer"
-      },
-      {
-        "given": "Christopher A.",
-        "family": "Lavender"
-      },
-      {
-        "given": "Srinivas C.",
-        "family": "Turaga"
-      },
-      {
-        "given": "Amr M.",
-        "family": "Alexandari"
-      },
-      {
-        "given": "Zhiyong",
-        "family": "Lu"
-      },
-      {
-        "given": "David J.",
-        "family": "Harris"
-      },
-      {
-        "given": "Dave",
-        "family": "DeCaprio"
-      },
-      {
-        "given": "Yanjun",
-        "family": "Qi"
-      },
-      {
-        "given": "Anshul",
-        "family": "Kundaje"
-      },
-      {
-        "given": "Yifan",
-        "family": "Peng"
-      },
-      {
-        "given": "Laura K.",
-        "family": "Wiley"
-      },
-      {
-        "given": "Marwin H. S.",
-        "family": "Segler"
-      },
-      {
-        "given": "Simina M.",
-        "family": "Boca"
-      },
-      {
-        "given": "S. Joshua",
-        "family": "Swamidass"
-      },
-      {
-        "given": "Austin",
-        "family": "Huang"
-      },
-      {
-        "given": "Anthony",
-        "family": "Gitter"
-      },
-      {
-        "given": "Casey S.",
-        "family": "Greene"
+        "given": "Frederick M.",
+        "family": "Ausubel"
       }
     ],
-    "container-title": "Journal of The Royal Society Interface",
+    "container-title": "ACS Chemical Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          29
+        ]
+      ]
+    },
+    "URL": "https://doi.org/bdwdfc",
+    "container-title-short": "ACS Chem. Biol.",
+    "PMCID": "PMC2745594",
+    "PMID": "19572548",
+    "id": "138foKNOh",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1021/cb900084v"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "11",
+    "DOI": "10.1038/s41592-018-0111-2",
+    "type": "article-journal",
+    "page": "917-920",
+    "source": "Crossref",
+    "title": "Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Chawin",
+        "family": "Ounkomol"
+      },
+      {
+        "given": "Sharmishtaa",
+        "family": "Seshamani"
+      },
+      {
+        "given": "Mary M.",
+        "family": "Maleckar"
+      },
+      {
+        "given": "Forrest",
+        "family": "Collman"
+      },
+      {
+        "given": "Gregory R.",
+        "family": "Johnson"
+      }
+    ],
+    "container-title": "Nature Methods",
     "language": "en",
     "issued": {
       "date-parts": [
         [
           2018,
+          9,
+          17
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gd7d5f",
+    "container-title-short": "Nat Methods",
+    "PMCID": "PMC6212323",
+    "PMID": "30224672",
+    "id": "Yq8wZ6hc",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-018-0111-2"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "12",
+    "DOI": "10.1038/s41592-018-0216-7",
+    "type": "article-journal",
+    "page": "1090-1097",
+    "source": "Crossref",
+    "title": "Content-aware image restoration: pushing the limits of fluorescence microscopy",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Martin",
+        "family": "Weigert"
+      },
+      {
+        "given": "Uwe",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Tobias",
+        "family": "Boothe"
+      },
+      {
+        "given": "Andreas",
+        "family": "Müller"
+      },
+      {
+        "given": "Alexandr",
+        "family": "Dibrov"
+      },
+      {
+        "given": "Akanksha",
+        "family": "Jain"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Wilhelm"
+      },
+      {
+        "given": "Deborah",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Coleman",
+        "family": "Broaddus"
+      },
+      {
+        "given": "Siân",
+        "family": "Culley"
+      },
+      {
+        "given": "Mauricio",
+        "family": "Rocha-Martins"
+      },
+      {
+        "given": "Fabián",
+        "family": "Segovia-Miranda"
+      },
+      {
+        "given": "Caren",
+        "family": "Norden"
+      },
+      {
+        "given": "Ricardo",
+        "family": "Henriques"
+      },
+      {
+        "given": "Marino",
+        "family": "Zerial"
+      },
+      {
+        "given": "Michele",
+        "family": "Solimena"
+      },
+      {
+        "given": "Jochen",
+        "family": "Rink"
+      },
+      {
+        "given": "Pavel",
+        "family": "Tomancak"
+      },
+      {
+        "given": "Loic",
+        "family": "Royer"
+      },
+      {
+        "given": "Florian",
+        "family": "Jug"
+      },
+      {
+        "given": "Eugene W.",
+        "family": "Myers"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          11,
+          26
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfkkfd",
+    "container-title-short": "Nat Methods",
+    "PMID": "30478326",
+    "id": "12G712Zky",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-018-0216-7"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "DOI": "10.1038/s41592-020-01018-x",
+    "type": "article-journal",
+    "page": "100-106",
+    "source": "Crossref",
+    "title": "Cellpose: a generalist algorithm for cellular segmentation",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Carsen",
+        "family": "Stringer"
+      },
+      {
+        "given": "Tim",
+        "family": "Wang"
+      },
+      {
+        "given": "Michalis",
+        "family": "Michaelos"
+      },
+      {
+        "given": "Marius",
+        "family": "Pachitariu"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          14
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ghrgms",
+    "container-title-short": "Nat Methods",
+    "PMID": "33318659",
+    "id": "TugPkOLy",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-020-01018-x"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "4",
+    "DOI": "10.1038/s41592-021-01080-z",
+    "type": "article-journal",
+    "page": "406-416",
+    "source": "Crossref",
+    "title": "Deep learning-based point-scanning super-resolution imaging",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Linjing",
+        "family": "Fang"
+      },
+      {
+        "given": "Fred",
+        "family": "Monroe"
+      },
+      {
+        "given": "Sammy Weiser",
+        "family": "Novak"
+      },
+      {
+        "given": "Lyndsey",
+        "family": "Kirk"
+      },
+      {
+        "given": "Cara R.",
+        "family": "Schiavon"
+      },
+      {
+        "given": "Seungyoon B.",
+        "family": "Yu"
+      },
+      {
+        "given": "Tong",
+        "family": "Zhang"
+      },
+      {
+        "given": "Melissa",
+        "family": "Wu"
+      },
+      {
+        "given": "Kyle",
+        "family": "Kastner"
+      },
+      {
+        "given": "Alaa Abdel",
+        "family": "Latif"
+      },
+      {
+        "given": "Zijun",
+        "family": "Lin"
+      },
+      {
+        "given": "Andrew",
+        "family": "Shaw"
+      },
+      {
+        "given": "Yoshiyuki",
+        "family": "Kubota"
+      },
+      {
+        "given": "John",
+        "family": "Mendenhall"
+      },
+      {
+        "given": "Zhao",
+        "family": "Zhang"
+      },
+      {
+        "given": "Gulcin",
+        "family": "Pekkurnaz"
+      },
+      {
+        "given": "Kristen",
+        "family": "Harris"
+      },
+      {
+        "given": "Jeremy",
+        "family": "Howard"
+      },
+      {
+        "given": "Uri",
+        "family": "Manor"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          8
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gjhgrw",
+    "container-title-short": "Nat Methods",
+    "PMCID": "PMC8035334",
+    "PMID": "33686300",
+    "id": "wcCVn8av",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-021-01080-z"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "6",
+    "DOI": "10.1038/s41592-021-01155-x",
+    "type": "article-journal",
+    "page": "678-687",
+    "source": "Crossref",
+    "title": "Three-dimensional residual channel attention networks denoise and sharpen fluorescence microscopy image volumes",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Jiji",
+        "family": "Chen"
+      },
+      {
+        "given": "Hideki",
+        "family": "Sasaki"
+      },
+      {
+        "given": "Hoyin",
+        "family": "Lai"
+      },
+      {
+        "given": "Yijun",
+        "family": "Su"
+      },
+      {
+        "given": "Jiamin",
+        "family": "Liu"
+      },
+      {
+        "given": "Yicong",
+        "family": "Wu"
+      },
+      {
+        "given": "Alexander",
+        "family": "Zhovmer"
+      },
+      {
+        "given": "Christian A.",
+        "family": "Combs"
+      },
+      {
+        "given": "Ivan",
+        "family": "Rey-Suarez"
+      },
+      {
+        "given": "Hung-Yu",
+        "family": "Chang"
+      },
+      {
+        "given": "Chi Chou",
+        "family": "Huang"
+      },
+      {
+        "given": "Xuesong",
+        "family": "Li"
+      },
+      {
+        "given": "Min",
+        "family": "Guo"
+      },
+      {
+        "given": "Srineil",
+        "family": "Nizambad"
+      },
+      {
+        "given": "Arpita",
+        "family": "Upadhyaya"
+      },
+      {
+        "given": "Shih-Jong J.",
+        "family": "Lee"
+      },
+      {
+        "given": "Luciano A. G.",
+        "family": "Lucas"
+      },
+      {
+        "given": "Hari",
+        "family": "Shroff"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          31
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gkbctn",
+    "container-title-short": "Nat Methods",
+    "PMID": "34059829",
+    "id": "UEBDZ3tI",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-021-01155-x"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "9",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Light microscopy combined with well-established protocols of two-dimensional cell culture facilitates high-throughput quantitative imaging to study biological phenomena. Accurate segmentation of individual cells in images enables exploration of complex biological questions, but can require sophisticated imaging processing pipelines in cases of low contrast and high object density. Deep learning-based methods are considered state-of-the-art for image segmentation but typically require vast amounts of annotated data, for which there is no suitable resource available in the field of label-free cellular imaging. Here, we present LIVECell, a large, high-quality, manually annotated and expert-validated dataset of phase-contrast images, consisting of over 1.6 million cells from a diverse set of cell morphologies and culture densities. To further demonstrate its use, we train convolutional neural network-based models using LIVECell and evaluate model segmentation accuracy with a proposed a suite of benchmarks.</jats:p>",
+    "DOI": "10.1038/s41592-021-01249-6",
+    "type": "article-journal",
+    "page": "1038-1045",
+    "source": "Crossref",
+    "title": "LIVECell—A large-scale dataset for label-free live cell segmentation",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Christoffer",
+        "family": "Edlund"
+      },
+      {
+        "given": "Timothy R.",
+        "family": "Jackson"
+      },
+      {
+        "given": "Nabeel",
+        "family": "Khalid"
+      },
+      {
+        "given": "Nicola",
+        "family": "Bevan"
+      },
+      {
+        "given": "Timothy",
+        "family": "Dale"
+      },
+      {
+        "given": "Andreas",
+        "family": "Dengel"
+      },
+      {
+        "given": "Sheraz",
+        "family": "Ahmed"
+      },
+      {
+        "given": "Johan",
+        "family": "Trygg"
+      },
+      {
+        "given": "Rickard",
+        "family": "Sjögren"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          30
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gmptqs",
+    "container-title-short": "Nat Methods",
+    "PMCID": "PMC8440198",
+    "PMID": "34462594",
+    "id": "xPgDok51",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41592-021-01249-6"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Biologists who use electron microscopy (EM) images to build nanoscale 3D models of whole cells and their organelles have historically been limited to small numbers of cells and cellular features due to constraints in imaging and analysis. This has been a major factor limiting insight into the complex variability of cellular environments. Modern EM can produce gigavoxel image volumes containing large numbers of cells, but accurate manual segmentation of image features is slow and limits the creation of cell models. Segmentation algorithms based on convolutional neural networks can process large volumes quickly, but achieving EM task accuracy goals often challenges current techniques. Here, we define <jats:italic>dense cellular segmentation</jats:italic> as a multiclass semantic segmentation task for modeling cells and large numbers of their organelles, and give an example in human blood platelets. We present an algorithm using novel hybrid 2D–3D segmentation networks to produce dense cellular segmentations with accuracy levels that outperform baseline methods and approach those of human annotators. To our knowledge, this work represents the first published approach to automating the creation of cell models with this level of structural detail.</jats:p>",
+    "DOI": "10.1038/s41598-021-81590-0",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "Dense cellular segmentation for EM using 2D–3D neural network ensembles",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Matthew D.",
+        "family": "Guay"
+      },
+      {
+        "given": "Zeyad A. S.",
+        "family": "Emam"
+      },
+      {
+        "given": "Adam B.",
+        "family": "Anderson"
+      },
+      {
+        "given": "Maria A.",
+        "family": "Aronova"
+      },
+      {
+        "given": "Irina D.",
+        "family": "Pokrovskaya"
+      },
+      {
+        "given": "Brian",
+        "family": "Storrie"
+      },
+      {
+        "given": "Richard D.",
+        "family": "Leapman"
+      }
+    ],
+    "container-title": "Scientific Reports",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          28
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqdxxg",
+    "container-title-short": "Sci Rep",
+    "PMCID": "PMC7844272",
+    "PMID": "33510185",
+    "id": "3L5MIyIB",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41598-021-81590-0"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "10",
+    "DOI": "10.1038/s42256-019-0096-2",
+    "type": "article-journal",
+    "page": "461-470",
+    "source": "Crossref",
+    "title": "Unsupervised data to content transformation with histogram-matching cycle-consistent generative adversarial networks",
+    "volume": "1",
+    "author": [
+      {
+        "given": "Stephan J.",
+        "family": "Ihle"
+      },
+      {
+        "given": "Andreas M.",
+        "family": "Reichmuth"
+      },
+      {
+        "given": "Sophie",
+        "family": "Girardin"
+      },
+      {
+        "given": "Hana",
+        "family": "Han"
+      },
+      {
+        "given": "Flurin",
+        "family": "Stauffer"
+      },
+      {
+        "given": "Anne",
+        "family": "Bonnin"
+      },
+      {
+        "given": "Marco",
+        "family": "Stampanoni"
+      },
+      {
+        "given": "Karthik",
+        "family": "Pattisapu"
+      },
+      {
+        "given": "János",
+        "family": "Vörös"
+      },
+      {
+        "given": "Csaba",
+        "family": "Forró"
+      }
+    ],
+    "container-title": "Nature Machine Intelligence",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          16
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggwbcv",
+    "container-title-short": "Nat Mach Intell",
+    "id": "RuFP3CS3",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s42256-019-0096-2"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "4",
+    "DOI": "10.1038/s42256-022-00471-x",
+    "type": "article-journal",
+    "page": "401-412",
+    "source": "Crossref",
+    "title": "Deep learning-inferred multiplex immunofluorescence for immunohistochemical image quantification",
+    "volume": "4",
+    "author": [
+      {
+        "given": "Parmida",
+        "family": "Ghahremani"
+      },
+      {
+        "given": "Yanyun",
+        "family": "Li"
+      },
+      {
+        "given": "Arie",
+        "family": "Kaufman"
+      },
+      {
+        "given": "Rami",
+        "family": "Vanguri"
+      },
+      {
+        "given": "Noah",
+        "family": "Greenwald"
+      },
+      {
+        "given": "Michael",
+        "family": "Angelo"
+      },
+      {
+        "given": "Travis J.",
+        "family": "Hollmann"
+      },
+      {
+        "given": "Saad",
+        "family": "Nadeem"
+      }
+    ],
+    "container-title": "Nature Machine Intelligence",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
           4
         ]
       ]
     },
-    "URL": "https://doi.org/gddkhn",
-    "container-title-short": "J. R. Soc. Interface.",
-    "PMCID": "PMC5938574",
-    "PMID": "29618526",
-    "id": "PZMP42Ak",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1098/rsif.2017.0387"
+    "URL": "https://doi.org/gqc7gd",
+    "container-title-short": "Nat Mach Intell",
+    "id": "WwenuBHa",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s42256-022-00471-x"
+  },
+  {
+    "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>Summary</jats:title><jats:p>Despite the intimate link between cell organization and function, the principles underlying intracellular organization and the relation between organization, gene expression and phenotype are not well understood. We address this by creating a benchmark for mean cell organization and the natural range of cell-to-cell variation. This benchmark can be used for comparison to other normal or abnormal cell states. To do this, we developed a reproducible microscope imaging pipeline to generate a high-quality dataset of 3D, high-resolution images of over 200,000 live cells from 25 isogenic human induced pluripotent stem cell (hiPSC) lines from the Allen Cell Collection. Each line contains one fluorescently tagged protein, created via endogenous CRISPR/Cas9 gene editing, representing a key cellular structure or organelle. We used these images to develop a new multi-part and generalizable analysis approach of the locations, amounts, and variation of these 25 cellular structures. Taking an integrated approach, we found that both the extent to which a structure’s individual location varied (“stereotypy”) and the extent to which the structure localized relative to all the other cellular structures (“concordance”) were robust to a wide range of cell shape variation, from flatter to taller, smaller to larger, or less to more polarized cells. We also found that these cellular structures varied greatly in how their volumes scaled with cell and nuclear size. These analyses create a data-driven set of quantitative rules for the locations, amounts, and variation of 25 cellular structures within the hiPSC as a normal baseline for cell organization.</jats:p>",
+    "DOI": "10.1101/2020.12.08.415562",
+    "type": "manuscript",
+    "source": "Crossref",
+    "title": "Robust integrated intracellular organization of the human iPS cell: where, how much, and how variable",
+    "author": [
+      {
+        "given": "Matheus P.",
+        "family": "Viana"
+      },
+      {
+        "given": "Jianxu",
+        "family": "Chen"
+      },
+      {
+        "given": "Theo A.",
+        "family": "Knijnenburg"
+      },
+      {
+        "given": "Ritvik",
+        "family": "Vasan"
+      },
+      {
+        "given": "Calysta",
+        "family": "Yan"
+      },
+      {
+        "given": "Joy E.",
+        "family": "Arakaki"
+      },
+      {
+        "given": "Matte",
+        "family": "Bailey"
+      },
+      {
+        "given": "Ben",
+        "family": "Berry"
+      },
+      {
+        "given": "Antoine",
+        "family": "Borensztejn"
+      },
+      {
+        "given": "Jackson M.",
+        "family": "Brown"
+      },
+      {
+        "given": "Sara",
+        "family": "Carlson"
+      },
+      {
+        "given": "Julie A.",
+        "family": "Cass"
+      },
+      {
+        "given": "Basudev",
+        "family": "Chaudhuri"
+      },
+      {
+        "given": "Kimberly R.",
+        "family": "Cordes Metzler"
+      },
+      {
+        "given": "Mackenzie E.",
+        "family": "Coston"
+      },
+      {
+        "given": "Zach J.",
+        "family": "Crabtree"
+      },
+      {
+        "given": "Steve",
+        "family": "Davidson"
+      },
+      {
+        "given": "Colette M.",
+        "family": "DeLizo"
+      },
+      {
+        "given": "Shailja",
+        "family": "Dhaka"
+      },
+      {
+        "given": "Stephanie Q.",
+        "family": "Dinh"
+      },
+      {
+        "given": "Thao P.",
+        "family": "Do"
+      },
+      {
+        "given": "Justin",
+        "family": "Domingus"
+      },
+      {
+        "given": "Rory M.",
+        "family": "Donovan-Maiye"
+      },
+      {
+        "given": "Tyler J.",
+        "family": "Foster"
+      },
+      {
+        "given": "Christopher L.",
+        "family": "Frick"
+      },
+      {
+        "given": "Griffin",
+        "family": "Fujioka"
+      },
+      {
+        "given": "Margaret A.",
+        "family": "Fuqua"
+      },
+      {
+        "given": "Jamie L.",
+        "family": "Gehring"
+      },
+      {
+        "given": "Kaytlyn A.",
+        "family": "Gerbin"
+      },
+      {
+        "given": "Tanya",
+        "family": "Grancharova"
+      },
+      {
+        "given": "Benjamin W.",
+        "family": "Gregor"
+      },
+      {
+        "given": "Lisa J.",
+        "family": "Harrylock"
+      },
+      {
+        "given": "Amanda",
+        "family": "Haupt"
+      },
+      {
+        "given": "Melissa C.",
+        "family": "Hendershott"
+      },
+      {
+        "given": "Caroline",
+        "family": "Hookway"
+      },
+      {
+        "given": "Alan R.",
+        "family": "Horwitz"
+      },
+      {
+        "given": "Chris",
+        "family": "Hughes"
+      },
+      {
+        "given": "Eric J.",
+        "family": "Isaac"
+      },
+      {
+        "given": "Gregory R.",
+        "family": "Johnson"
+      },
+      {
+        "given": "Brian",
+        "family": "Kim"
+      },
+      {
+        "given": "Andrew N.",
+        "family": "Leonard"
+      },
+      {
+        "given": "Winnie W.",
+        "family": "Leung"
+      },
+      {
+        "given": "Jordan J.",
+        "family": "Lucas"
+      },
+      {
+        "given": "Susan A.",
+        "family": "Ludmann"
+      },
+      {
+        "given": "Blair M.",
+        "family": "Lyons"
+      },
+      {
+        "given": "Haseeb",
+        "family": "Malik"
+      },
+      {
+        "given": "Ryan",
+        "family": "McGregor"
+      },
+      {
+        "given": "Gabe E.",
+        "family": "Medrash"
+      },
+      {
+        "given": "Sean L.",
+        "family": "Meharry"
+      },
+      {
+        "given": "Kevin",
+        "family": "Mitcham"
+      },
+      {
+        "given": "Irina A.",
+        "family": "Mueller"
+      },
+      {
+        "given": "Timothy L.",
+        "family": "Murphy-Stevens"
+      },
+      {
+        "given": "Aditya",
+        "family": "Nath"
+      },
+      {
+        "given": "Angelique M.",
+        "family": "Nelson"
+      },
+      {
+        "given": "Luana",
+        "family": "Paleologu"
+      },
+      {
+        "given": "T.",
+        "family": "Alexander Popiel"
+      },
+      {
+        "given": "Megan M.",
+        "family": "Riel-Mehan"
+      },
+      {
+        "given": "Brock",
+        "family": "Roberts"
+      },
+      {
+        "given": "Lisa M.",
+        "family": "Schaefbauer"
+      },
+      {
+        "given": "Magdalena",
+        "family": "Schwarzl"
+      },
+      {
+        "given": "Jamie",
+        "family": "Sherman"
+      },
+      {
+        "given": "Sylvain",
+        "family": "Slaton"
+      },
+      {
+        "given": "M.",
+        "family": "Filip Sluzewski"
+      },
+      {
+        "given": "Jacqueline E.",
+        "family": "Smith"
+      },
+      {
+        "given": "Youngmee",
+        "family": "Sul"
+      },
+      {
+        "given": "Madison J.",
+        "family": "Swain-Bowden"
+      },
+      {
+        "given": "W.",
+        "family": "Joyce Tang"
+      },
+      {
+        "given": "Derek J.",
+        "family": "Thirstrup"
+      },
+      {
+        "given": "Daniel M.",
+        "family": "Toloudis"
+      },
+      {
+        "given": "Andrew P.",
+        "family": "Tucker"
+      },
+      {
+        "given": "Veronica",
+        "family": "Valencia"
+      },
+      {
+        "given": "Winfried",
+        "family": "Wiegraebe"
+      },
+      {
+        "given": "Thushara",
+        "family": "Wijeratna"
+      },
+      {
+        "given": "Ruian",
+        "family": "Yang"
+      },
+      {
+        "given": "Rebecca J.",
+        "family": "Zaunbrecher"
+      },
+      {
+        "given": "Graham T.",
+        "family": "Johnson"
+      },
+      {
+        "given": "Ruwanthi N.",
+        "family": "Gunawardane"
+      },
+      {
+        "given": "Nathalie",
+        "family": "Gaudreault"
+      },
+      {
+        "given": "Julie A.",
+        "family": "Theriot"
+      },
+      {
+        "given": "Susanne M.",
+        "family": "Rafelski"
+      },
+      {}
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          10
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqdkdk",
+    "id": "scdyUQvV",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/2020.12.08.415562"
+  },
+  {
+    "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>A continuing challenge in quantitative cell biology is the accurate and robust 3D segmentation of structures of interest from fluorescence microscopy images in an automated, reproducible, and widely accessible manner for subsequent interpretable data analysis. We describe the Allen Cell and Structure Segmenter (Segmenter), a Python-based open source toolkit developed for 3D segmentation of cells and intracellular structures in fluorescence microscope images. This toolkit brings together classic image segmentation and iterative deep learning workflows first to generate initial high-quality 3D intracellular structure segmentations and then to easily curate these results to generate the ground truths for building robust and accurate deep learning models. The toolkit takes advantage of the high-replicate 3D live cell image data collected at the Allen Institute for Cell Science of over 30 endogenous fluorescently tagged human induced pluripotent stem cell (hiPSC) lines. Each cell line represents a different intracellular structure with one or more distinct localization patterns within undifferentiated hiPS cells and hiPSC-derived cardiomyocytes. The Segmenter consists of two complementary elements, a classic image segmentation workflow with a restricted set of algorithms and parameters and an iterative deep learning segmentation workflow. We created a collection of 20 classic image segmentation workflows based on 20 distinct and representative intracellular structure localization patterns as a “lookup table” reference and starting point for users. The iterative deep learning workflow can take over when the classic segmentation workflow is insufficient. Two straightforward “human-in-the-loop” curation strategies convert a set of classic image segmentation workflow results into a set of 3D ground truth images for iterative model training without the need for manual painting in 3D. The deep learning model architectures used in this toolkit were designed and tested specifically for 3D fluorescence microscope images and implemented as readable scripts. The Segmenter thus leverages state of the art computer vision algorithms in an accessible way to facilitate their application by the experimental biology researcher.</jats:p><jats:p>We include two useful applications to demonstrate how we used the classic image segmentation and iterative deep learning workflows to solve more challenging 3D segmentation tasks. First, we introduce the ‘Training Assay’ approach, a new experimental-computational co-design concept to generate more biologically accurate segmentation ground truths. We combined the iterative deep learning workflow with three Training Assays to develop a robust, scalable cell and nuclear instance segmentation algorithm, which could achieve accurate target segmentation for over 98% of individual cells and over 80% of entire fields of view. Second, we demonstrate how to extend the lamin B1 segmentation model built from the iterative deep learning workflow to obtain more biologically accurate lamin B1 segmentation by utilizing multi-channel inputs and combining multiple ML models. The steps and workflows used to develop these algorithms are generalizable to other similar segmentation challenges. More information, including tutorials and code repositories, are available at allencell.org/segmenter.</jats:p>",
+    "DOI": "10.1101/491035",
+    "type": "manuscript",
+    "source": "Crossref",
+    "title": "The Allen Cell and Structure Segmenter: a new open source toolkit for segmenting 3D intracellular structures in fluorescence microscopy images",
+    "author": [
+      {
+        "given": "Jianxu",
+        "family": "Chen"
+      },
+      {
+        "given": "Liya",
+        "family": "Ding"
+      },
+      {
+        "given": "Matheus P.",
+        "family": "Viana"
+      },
+      {
+        "given": "HyeonWoo",
+        "family": "Lee"
+      },
+      {
+        "given": "M. Filip",
+        "family": "Sluezwski"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Morris"
+      },
+      {
+        "given": "Melissa C.",
+        "family": "Hendershott"
+      },
+      {
+        "given": "Ruian",
+        "family": "Yang"
+      },
+      {
+        "given": "Irina A.",
+        "family": "Mueller"
+      },
+      {
+        "given": "Susanne M.",
+        "family": "Rafelski"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          8
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gkspnm",
+    "id": "jM3v1UjQ",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/491035"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/cvpr.2009.5206848",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "ImageNet: A large-scale hierarchical image database",
+    "author": [
+      {
+        "given": "Jia",
+        "family": "Deng"
+      },
+      {
+        "given": "Wei",
+        "family": "Dong"
+      },
+      {
+        "given": "Richard",
+        "family": "Socher"
+      },
+      {
+        "given": "Li-Jia",
+        "family": "Li"
+      },
+      {
+        "family": "Kai Li"
+      },
+      {
+        "family": "Li Fei-Fei"
+      }
+    ],
+    "event": "2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPR Workshops)",
+    "container-title": "2009 IEEE Conference on Computer Vision and Pattern Recognition",
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/cvc7xp",
+    "id": "lt4BNUoG",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/cvpr.2009.5206848"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/cvpr.2017.632",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+    "author": [
+      {
+        "given": "Phillip",
+        "family": "Isola"
+      },
+      {
+        "given": "Jun-Yan",
+        "family": "Zhu"
+      },
+      {
+        "given": "Tinghui",
+        "family": "Zhou"
+      },
+      {
+        "given": "Alexei A.",
+        "family": "Efros"
+      }
+    ],
+    "event": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "container-title": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfrfv9",
+    "id": "LxlUp436",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/cvpr.2017.632"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/cvpr.2018.00917",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs",
+    "author": [
+      {
+        "given": "Ting-Chun",
+        "family": "Wang"
+      },
+      {
+        "given": "Ming-Yu",
+        "family": "Liu"
+      },
+      {
+        "given": "Jun-Yan",
+        "family": "Zhu"
+      },
+      {
+        "given": "Andrew",
+        "family": "Tao"
+      },
+      {
+        "given": "Jan",
+        "family": "Kautz"
+      },
+      {
+        "given": "Bryan",
+        "family": "Catanzaro"
+      }
+    ],
+    "event": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "container-title": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggv75b",
+    "id": "Nh6ArbP5",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/cvpr.2018.00917"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/cvpr.2019.00963",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Panoptic Segmentation",
+    "author": [
+      {
+        "given": "Alexander",
+        "family": "Kirillov"
+      },
+      {
+        "given": "Kaiming",
+        "family": "He"
+      },
+      {
+        "given": "Ross",
+        "family": "Girshick"
+      },
+      {
+        "given": "Carsten",
+        "family": "Rother"
+      },
+      {
+        "given": "Piotr",
+        "family": "Dollar"
+      }
+    ],
+    "event": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "container-title": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggp9z4",
+    "id": "11chATuF4",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/cvpr.2019.00963"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/cvprw.2017.151",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Enhanced Deep Residual Networks for Single Image Super-Resolution",
+    "author": [
+      {
+        "given": "Bee",
+        "family": "Lim"
+      },
+      {
+        "given": "Sanghyun",
+        "family": "Son"
+      },
+      {
+        "given": "Heewon",
+        "family": "Kim"
+      },
+      {
+        "given": "Seungjun",
+        "family": "Nah"
+      },
+      {
+        "given": "Kyoung Mu",
+        "family": "Lee"
+      }
+    ],
+    "event": "2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "container-title": "2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfxhp3",
+    "id": "1O0bopKD",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/cvprw.2017.151"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/iccv.2017.244",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks",
+    "author": [
+      {
+        "given": "Jun-Yan",
+        "family": "Zhu"
+      },
+      {
+        "given": "Taesung",
+        "family": "Park"
+      },
+      {
+        "given": "Phillip",
+        "family": "Isola"
+      },
+      {
+        "given": "Alexei A.",
+        "family": "Efros"
+      }
+    ],
+    "event": "2017 IEEE International Conference on Computer Vision (ICCV)",
+    "container-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfhw33",
+    "id": "6wtIu4QY",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/iccv.2017.244"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/isbi.2009.5193250",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "A method for normalizing histology slides for quantitative analysis",
+    "author": [
+      {
+        "given": "Marc",
+        "family": "Macenko"
+      },
+      {
+        "given": "Marc",
+        "family": "Niethammer"
+      },
+      {
+        "given": "J. S.",
+        "family": "Marron"
+      },
+      {
+        "given": "David",
+        "family": "Borland"
+      },
+      {
+        "given": "John T.",
+        "family": "Woosley"
+      },
+      {
+        "family": "Xiaojun Guan"
+      },
+      {
+        "given": "Charles",
+        "family": "Schmitt"
+      },
+      {
+        "given": "Nancy E.",
+        "family": "Thomas"
+      }
+    ],
+    "event": "2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI)",
+    "container-title": "2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro",
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/bmbj4h",
+    "id": "tQhnZyjK",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/isbi.2009.5193250"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/isbi45749.2020.9098612",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Fully Unsupervised Probabilistic Noise2Void",
+    "author": [
+      {
+        "given": "Mangal",
+        "family": "Prakash"
+      },
+      {
+        "given": "Manan",
+        "family": "Lalit"
+      },
+      {
+        "given": "Pavel",
+        "family": "Tomancak"
+      },
+      {
+        "given": "Alexander",
+        "family": "Krul"
+      },
+      {
+        "given": "Florian",
+        "family": "Jug"
+      }
+    ],
+    "event": "2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)",
+    "container-title": "2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gjnw2v",
+    "id": "JVOCBBq0",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/isbi45749.2020.9098612"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/isbi48211.2021.9433928",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Splinedist: Automated Cell Segmentation With Spline Curves",
+    "author": [
+      {
+        "given": "Soham",
+        "family": "Mandal"
+      },
+      {
+        "given": "Virginie",
+        "family": "Uhlmann"
+      }
+    ],
+    "event": "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)",
+    "container-title": "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          13
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqrg94",
+    "id": "17Yrl6WGQ",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/isbi48211.2021.9433928"
+  },
+  {
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "11",
+    "DOI": "10.1109/tmi.2015.2433900",
+    "type": "article-journal",
+    "page": "2366-2378",
+    "source": "Crossref",
+    "title": "A Stochastic Polygons Model for Glandular Structures in Colon Histology Images",
+    "volume": "34",
+    "author": [
+      {
+        "given": "Korsuk",
+        "family": "Sirinukunwattana"
+      },
+      {
+        "given": "David R. J.",
+        "family": "Snead"
+      },
+      {
+        "given": "Nasir M.",
+        "family": "Rajpoot"
+      }
+    ],
+    "container-title": "IEEE Transactions on Medical Imaging",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqrg95",
+    "container-title-short": "IEEE Trans. Med. Imaging",
+    "PMID": "25993703",
+    "id": "45Sirz1X",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/tmi.2015.2433900"
+  },
+  {
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "2",
+    "DOI": "10.1109/tpami.2018.2844175",
+    "type": "article-journal",
+    "page": "386-397",
+    "source": "Crossref",
+    "title": "Mask R-CNN",
+    "volume": "42",
+    "author": [
+      {
+        "given": "Kaiming",
+        "family": "He"
+      },
+      {
+        "given": "Georgia",
+        "family": "Gkioxari"
+      },
+      {
+        "given": "Piotr",
+        "family": "Dollar"
+      },
+      {
+        "given": "Ross",
+        "family": "Girshick"
+      }
+    ],
+    "container-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfxfwn",
+    "container-title-short": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "PMID": "29994331",
+    "id": "xi8wnibR",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/tpami.2018.2844175"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/wacv45572.2020.9093435",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy",
+    "author": [
+      {
+        "given": "Martin",
+        "family": "Weigert"
+      },
+      {
+        "given": "Uwe",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Robert",
+        "family": "Haase"
+      },
+      {
+        "given": "Ko",
+        "family": "Sugawara"
+      },
+      {
+        "given": "Gene",
+        "family": "Myers"
+      }
+    ],
+    "event": "2020 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+    "container-title": "2020 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gjp4g9",
+    "id": "14h90Vfg0",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/wacv45572.2020.9093435"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/wacv51458.2022.00181",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "UNETR: Transformers for 3D Medical Image Segmentation",
+    "author": [
+      {
+        "given": "Ali",
+        "family": "Hatamizadeh"
+      },
+      {
+        "given": "Yucheng",
+        "family": "Tang"
+      },
+      {
+        "given": "Vishwesh",
+        "family": "Nath"
+      },
+      {
+        "given": "Dong",
+        "family": "Yang"
+      },
+      {
+        "given": "Andriy",
+        "family": "Myronenko"
+      },
+      {
+        "given": "Bennett",
+        "family": "Landman"
+      },
+      {
+        "given": "Holger R.",
+        "family": "Roth"
+      },
+      {
+        "given": "Daguang",
+        "family": "Xu"
+      }
+    ],
+    "event": "2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+    "container-title": "2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gqrg96",
+    "id": "XCKUntOB",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/wacv51458.2022.00181"
   },
   {
     "publisher": "Public Library of Science (PLoS)",
@@ -236,240 +2108,380 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1007128"
   },
   {
-    "publisher": "eLife Sciences Publications, Ltd",
-    "abstract": "<jats:p>The website Sci-Hub enables users to download PDF versions of scholarly articles, including many articles that are paywalled at their journal’s site. Sci-Hub has grown rapidly since its creation in 2011, but the extent of its coverage has been unclear. Here we report that, as of March 2017, Sci-Hub’s database contains 68.9% of the 81.6 million scholarly articles registered with Crossref and 85.1% of articles published in toll access journals. We find that coverage varies by discipline and publisher, and that Sci-Hub preferentially covers popular, paywalled content. For toll access articles, we find that Sci-Hub provides greater coverage than the University of Pennsylvania, a major research university in the United States. Green open access to toll access articles via licit services, on the other hand, remains quite limited. Our interactive browser at https://greenelab.github.io/scihub allows users to explore these findings in more detail. For the first time, nearly all scholarly literature is available gratis to anyone with an Internet connection, suggesting the toll access business model may become unsustainable.</jats:p>",
-    "DOI": "10.7554/elife.32822",
-    "type": "article-journal",
-    "source": "Crossref",
-    "title": "Sci-Hub provides access to nearly all scholarly literature",
-    "volume": "7",
+    "type": "book",
+    "id": "YbvSvdyB",
     "author": [
       {
-        "given": "Daniel S",
-        "family": "Himmelstein"
+        "family": "Falcon",
+        "given": "William"
       },
       {
-        "given": "Ariel Rodriguez",
-        "family": "Romero"
+        "family": "Borovec",
+        "given": "Jirka"
       },
       {
-        "given": "Jacob G",
-        "family": "Levernier"
+        "family": "Wälchli",
+        "given": "Adrian"
       },
       {
-        "given": "Thomas Anthony",
-        "family": "Munro"
+        "family": "Eggert",
+        "given": "Nic"
       },
       {
-        "given": "Stephen Reid",
-        "family": "McLaughlin"
+        "family": "Schock",
+        "given": "Justus"
       },
       {
-        "given": "Bastian",
-        "family": "Greshake Tzovaras"
+        "family": "Jordan",
+        "given": "Jeremy"
       },
       {
-        "given": "Casey S",
-        "family": "Greene"
+        "family": "Skafte",
+        "given": "Nicki"
+      },
+      {
+        "literal": "Ir1dXD"
+      },
+      {
+        "family": "Bereznyuk",
+        "given": "Vadim"
+      },
+      {
+        "family": "Harris",
+        "given": "Ethan"
+      },
+      {
+        "literal": "Tullie Murrell"
+      },
+      {
+        "family": "Yu",
+        "given": "Peter"
+      },
+      {
+        "family": "Præsius",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Addair",
+        "given": "Travis"
+      },
+      {
+        "family": "Zhong",
+        "given": "Jacob"
+      },
+      {
+        "family": "Lipin",
+        "given": "Dmitry"
+      },
+      {
+        "family": "Uchida",
+        "given": "So"
+      },
+      {
+        "literal": "Shreyas Bapat"
+      },
+      {
+        "family": "Schröter",
+        "given": "Hendrik"
+      },
+      {
+        "family": "Dayma",
+        "given": "Boris"
+      },
+      {
+        "family": "Karnachev",
+        "given": "Alexey"
+      },
+      {
+        "literal": "Akshay Kulkarni"
+      },
+      {
+        "literal": "Shunta Komatsu"
+      },
+      {
+        "literal": "Martin.B"
+      },
+      {
+        "literal": "Jean-Baptiste SCHIRATTI"
+      },
+      {
+        "family": "Mary",
+        "given": "Hadrien"
+      },
+      {
+        "family": "Byrne",
+        "given": "Donal"
+      },
+      {
+        "literal": "Cristobal Eyzaguirre"
+      },
+      {
+        "literal": "Cinjon"
+      },
+      {
+        "family": "Bakhtin",
+        "given": "Anton"
       }
     ],
-    "container-title": "eLife",
-    "language": "en",
     "issued": {
       "date-parts": [
         [
-          2018,
-          3,
-          1
+          2020,
+          5,
+          15
         ]
       ]
     },
-    "URL": "https://doi.org/ckcj",
-    "PMCID": "PMC5832410",
-    "PMID": "29424689",
-    "id": "IhliSZDo",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.32822"
+    "abstract": "The lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate",
+    "DOI": "10.5281/zenodo.3828935",
+    "publisher": "Zenodo",
+    "title": "PyTorchLightning/pytorch-lightning: 0.7.6 release",
+    "URL": "https://doi.org/gqc7f9",
+    "version": "0.7.6",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.3828935"
   },
   {
-    "id": "zBPP9YKu",
     "type": "book",
-    "call-number": "Z286.O63 S83 2012",
-    "collection-title": "MIT Press essential knowledge series",
-    "event-place": "Cambridge, Mass",
-    "ISBN": "9780262517638",
-    "note": "OCLC: ocn754518563\nThis CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: isbn:9780262517638",
-    "number-of-pages": "242",
-    "publisher": "MIT Press",
-    "publisher-place": "Cambridge, Mass",
-    "source": "Library of Congress ISBN",
-    "title": "Open access",
+    "id": "UU62HYC6",
     "author": [
       {
-        "family": "Suber",
+        "family": "Consortium",
+        "given": "The MONAI"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          15
+        ]
+      ]
+    },
+    "abstract": "MONAI is a PyTorch-based, open-source framework for deep learning in healthcare imaging, part of PyTorch Ecosystem. Its ambitions are: - developing a community of academic, industrial and clinical researchers collaborating on a common foundation; - creating state-of-the-art, end-to-end training workflows for healthcare imaging; - providing researchers with the optimized and standardized way to create and evaluate deep learning models.",
+    "DOI": "10.5281/zenodo.4323059",
+    "publisher": "Zenodo",
+    "title": "Project MONAI",
+    "URL": "https://doi.org/gqc7gb",
+    "version": "0.4.0",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.4323059"
+  },
+  {
+    "type": "dataset",
+    "id": "xv2VIyRP",
+    "categories": [
+      "Light microscopy",
+      "Digital Phase Contrast",
+      "HeLa cells",
+      "Live microscopy"
+    ],
+    "language": "en",
+    "author": [
+      {
+        "family": "Guiet",
+        "given": "Romain"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          25
+        ]
+      ]
+    },
+    "abstract": "<strong>Name</strong>: HeLa “Kyoto” cells under the scope <strong>Microscope</strong>: Perkin Elmer Operetta microscope with a 20x N.A. 0.8 objective and an Andor Zyla 5.5 camera. <strong>Microscopy data type</strong>: The time-lapse datasets were acquired every 15 minutes, for 60 hours. From the individual plan images (channels, time-points, field of view exported by the PerkinElmer software Harmony) multi-dimension images were generated using the Operetta_Importer-0.1.21 with a downscaling of 4. Channel 1 : Low Contrast DPC (Digital Phase Contrast) Channel 2 : High Contrast DPC Channel 3 : Brightfield Channel 4 : EGFP-α-tubulin Channel 5 : mCherry-H2B <strong>File format</strong>: .tif (16-bit) <strong>Image size</strong>: 540x540 (Pixel size: 0.299 nm), 5c, 1z , 240t <strong>Cell type</strong>: HeLa “Kyoto” cells, expressing EGFP-α-tubulin and mCherry-H2B ( Schmitz <em>et al</em>, 2010 ) <strong>Protocol</strong>: Cells were resuspended in <strong>Imaging media</strong> and were seeded in a microscopy grade 96 wells plate ( CellCarrier Ultra 96, Perkin Elmer). The day after seeding, and for 60 hours, images were acquired in 3 wells, in 25 different fields of view, every 15 minutes. <strong>Imaging media</strong>: DMEM red-phenol-free media (FluoroBrite™ DMEM, Gibco) complemented with Fetal Calf Serum and Glutamax. <strong>NOTE: </strong>This dataset was used to automatically generate label images in the following Zenodo entry: <strong> https://doi.org/10.5281/zenodo.6140064</strong> <strong>NOTE: </strong>This dataset was used to train the cellpose models in the following Zenodo entry:<strong> https://doi.org/10.5281/zenodo.6140111</strong>",
+    "DOI": "10.5281/zenodo.6139958",
+    "publisher": "Zenodo",
+    "title": "HeLa \"Kyoto\" cells under the scope",
+    "URL": "https://doi.org/gqdkdm",
+    "version": "v0",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.6139958"
+  },
+  {
+    "type": "book",
+    "id": "ONdyoUIo",
+    "author": [
+      {
+        "family": "Brown",
+        "given": "Jackson Maxfield"
+      },
+      {
+        "family": "Sherman",
+        "given": "Jamie"
+      },
+      {
+        "literal": "Toloudis"
+      },
+      {
+        "family": "Swain-Bowden",
+        "given": "Madison"
+      },
+      {
+        "literal": "Talley Lambert"
+      },
+      {
+        "literal": "Matte Bailey"
+      },
+      {
+        "literal": "Basu Chaudhuri"
+      },
+      {
+        "family": "Johnson",
+        "given": "Gregory"
+      },
+      {
+        "family": "Hunt-Isaak",
+        "given": "Ian"
+      },
+      {
+        "literal": "Nicholas-Schaub"
+      },
+      {
+        "family": "Fujioka",
+        "given": "Griffin"
+      },
+      {
+        "family": "Patterson",
+        "given": "Heath"
+      },
+      {
+        "family": "Russell",
+        "given": "John"
+      },
+      {
+        "family": "Casero",
+        "given": "Ramón"
+      },
+      {
+        "family": "Hürlimann",
+        "given": "Dimitri"
+      },
+      {
+        "literal": "Emay2022"
+      },
+      {
+        "family": "Sobolewski",
         "given": "Peter"
       }
     ],
     "issued": {
       "date-parts": [
         [
-          "2012"
-        ]
-      ]
-    }
-  },
-  {
-    "source": "PubMed",
-    "accessed": {
-      "date-parts": [
-        [
           2022,
-          9,
-          4
+          5,
+          27
         ]
       ]
     },
-    "id": "mSMVRkoc",
-    "title": "Reproducibility of computational workflows is automated using continuous analysis",
-    "author": [
-      {
-        "family": "Beaulieu-Jones",
-        "given": "Brett K"
-      },
-      {
-        "family": "Greene",
-        "given": "Casey S"
-      }
-    ],
-    "container-title-short": "Nat Biotechnol",
-    "container-title": "Nature biotechnology",
-    "ISSN": "1087-0156",
-    "issued": {
-      "date-parts": [
-        [
-          2017,
-          4
-        ]
-      ]
-    },
-    "page": "342-346",
-    "volume": "35",
-    "issue": "4",
-    "PMID": "28288103",
-    "PMCID": "PMC6103790",
-    "DOI": "10.1038/nbt.3780",
-    "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: pmc:PMC6103790"
+    "abstract": "The <code>aicsimageio</code> v4.8.0 release includes three main groups of changes: <code>aicsimageio</code> now ships with mypy type annotations. If you are using mypy, our types can now be properly imported and type checked against. <code>aicsimageio</code> image containers and writer functions now have an <code>fs_kwargs</code> parameter to pass down any arguments for creating the <code>fsspec</code> Filesystem object with. i.e. <code>AICSImage(\"s3://some-bucket/some-image.ome.tiff\", fs_kwargs=dict(anon=True))</code> for anonymous / no credential S3 file reading. <code>BioformatsReader</code> bugfixes for scene management / switching and preparing the reader for the next release of the underlying <code>bioformats_jar</code> version. An additional minor package admin change has been added which runs our <code>aicsimageio</code> test suite multiple times a week but installs with our upstream dependencies <code>main</code> branches instead of released versions. This is so we can help catch bugs earlier in the release process rather than post release. What's Changed admin/ship-mypy-type-annotations-drop-py37-add-py310-manage-test-dependencies-separate-for-each-tox-env by @JacksonMaxfield in https://github.com/AllenCellModeling/aicsimageio/pull/397 bugfix/pass-series-index-in-biofile-init by @JacksonMaxfield in https://github.com/AllenCellModeling/aicsimageio/pull/401 feature-and-admin/create-aicsimage-objects-with-fs-kwargs-and-remove-need-for-creds by @JacksonMaxfield in https://github.com/AllenCellModeling/aicsimageio/pull/407 admin/add-test-upstreams-action by @JacksonMaxfield in https://github.com/AllenCellModeling/aicsimageio/pull/406 admin/prepare-bioformats_reader-to-work-with-new-bioformats_jar-based-on-scyjava by @tlambert03 in https://github.com/AllenCellModeling/aicsimageio/pull/402 Contributors @toloudis @AetherUnbound @tlambert03 @jrbourbeau @JacksonMaxfield <strong>Full Changelog</strong>: https://github.com/AllenCellModeling/aicsimageio/compare/v4.7.0...v4.8.0",
+    "DOI": "10.5281/zenodo.6585658",
+    "publisher": "Zenodo",
+    "title": "AllenCellModeling/aicsimageio: Types, Filesystem Management, and BioformatsReader Fixes",
+    "URL": "https://doi.org/gqc7gc",
+    "version": "v4.8.0",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.6585658"
   },
   {
-    "title": "Bitcoin for the biological literature.",
-    "volume": "566",
-    "issue": "7742",
-    "page": "141-142",
-    "container-title": "Nature",
-    "container-title-short": "Nature",
-    "ISSN": "1476-4687",
-    "issued": {
-      "date-parts": [
-        [
-          2019,
-          2
-        ]
-      ]
-    },
+    "id": "QmYuUQ5K",
+    "type": "paper-conference",
+    "title": "Embedding-based Instance Segmentation in Microscopy",
+    "container-title": "Proceedings of the Fourth Conference on Medical Imaging with Deep Learning",
+    "collection-title": "Proceedings of Machine Learning Research",
+    "publisher": "PMLR",
+    "page": "399--415",
+    "volume": "143",
+    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
     "author": [
       {
-        "given": "Douglas",
-        "family": "Heaven"
+        "family": "Lalit",
+        "given": "Manan"
+      },
+      {
+        "family": "Tomancak",
+        "given": "Pavel"
+      },
+      {
+        "family": "Jug",
+        "given": "Florian"
       }
     ],
-    "PMID": "30718888",
-    "DOI": "10.1038/d41586-019-00447-9",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/30718888",
-    "type": "article-journal",
-    "id": "126Wi5Us4",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: pubmed:30718888"
-  },
-  {
-    "id": "1GGGHdsew",
-    "type": "report",
-    "language": "en-US",
-    "publisher": "Manubot",
-    "source": "greenelab.github.io",
-    "title": "Open collaborative writing with Manubot",
-    "URL": "https://greenelab.github.io/meta-review/",
-    "author": [
+    "editor": [
       {
-        "family": "Himmelstein",
-        "given": "Daniel S."
+        "family": "Heinrich",
+        "given": "Mattias"
       },
       {
-        "family": "Rubinetti",
-        "given": "Vincent"
+        "family": "Dou",
+        "given": "Qi"
       },
       {
-        "family": "Slochower",
-        "given": "David R."
+        "family": "de Bruijne",
+        "given": "Marleen"
       },
       {
-        "family": "Hu",
-        "given": "Dongbo"
+        "family": "Lellmann",
+        "given": "Jan"
       },
       {
-        "family": "Malladi",
-        "given": "Venkat S."
+        "family": "Schläfer",
+        "given": "Alexander"
       },
       {
-        "family": "Greene",
-        "given": "Casey S."
-      },
-      {
-        "family": "Gitter",
-        "given": "Anthony"
+        "family": "Ernst",
+        "given": "Floris"
       }
     ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          9,
-          4
+          6,
+          22
         ]
       ]
     },
-    "issued": {
-      "date-parts": [
-        [
-          "2020",
-          5,
-          25
-        ]
-      ]
-    },
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://greenelab.github.io/meta-review/"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: embedseg"
   },
   {
-    "id": "QhC8yJ7V",
-    "type": "article",
-    "note": "QID: Q56458321\nThis CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: wikidata:Q56458321",
-    "source": "Wikidata",
-    "title": "Plan S: Accelerating the transition to full and immediate Open Access to scientific publications",
-    "title-short": "Plan S",
+    "id": "qzeQFRn9",
+    "type": "paper-conference",
+    "title": "Averaging Weights Leads to Wider Optima and Better Generalization",
+    "container-title": "34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018",
+    "page": "876--885",
+    "URL": "http://auai.org/uai2018/proceedings/papers/313.pdf",
     "author": [
       {
-        "family": "S",
-        "given": "cOAlition"
+        "family": "Izmailov",
+        "given": "Pavel"
+      },
+      {
+        "family": "Podoprikhin",
+        "given": "Dmitrii"
+      },
+      {
+        "family": "Garipov",
+        "given": "Timur"
+      },
+      {
+        "family": "Vetrov",
+        "given": "Dmitry"
+      },
+      {
+        "family": "Wilson",
+        "given": "Andrew Gordon"
       }
     ],
-    "issued": {
+    "accessed": {
       "date-parts": [
         [
-          "2018",
-          9,
-          4
+          "2022",
+          6,
+          22
         ]
       ]
     },
-    "URL": "https://www.wikidata.org/wiki/Q56458321"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: swatrain"
   }
 ]
