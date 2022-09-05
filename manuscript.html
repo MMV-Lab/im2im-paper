@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Justin Sonneck" />
   <meta name="author" content="Jianxu Chen" />
-  <meta name="dcterms.date" content="2022-09-04" />
+  <meta name="dcterms.date" content="2022-09-05" />
   <meta name="keywords" content="deep learning, microscopy image analysis, open source" />
   <title>MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</title>
   <style>
@@ -45,8 +45,8 @@
   <meta name="citation_title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2022-09-04" />
-  <meta name="citation_publication_date" content="2022-09-04" />
+  <meta name="dc.date" content="2022-09-05" />
+  <meta name="citation_publication_date" content="2022-09-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -86,10 +86,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://MMV-Lab.github.io/im2im-paper/v/6beaa0e5edd4b574279adb3eb5a9ad812e86a483/">permalink</a>)
+(<a href="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/MMV-Lab/im2im-paper/tree/6beaa0e5edd4b574279adb3eb5a9ad812e86a483">MMV-Lab/im2im-paper@6beaa0e</a>
-on September 4, 2022.
+from <a href="https://github.com/MMV-Lab/im2im-paper/tree/1f20f1846c0764639a444cb7d54425003946c2de">MMV-Lab/im2im-paper@1f20f18</a>
+on September 5, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -117,6 +117,7 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
+<p>The deep learning research in computer vision has been growing extremely fast in the past decade, many of which have been translated into novel image analysis methods for biomedical problems. Broadly speaking, many deep learning based biomedical image analysis methods can be considered as a general image-to-image transformation framework. In this work, we introduce a new open source python package <strong>MMV_Im2Im</strong> for image-to-image transformation in bioimaging applications. The overall package is designed with a generic image-to-image transformation framework, which could be directly used for semantic segmentation, instance segmentation, image restoration, image generation, etc. The implementation takes advantage of the state-of-the-art machine learning engineering techniques for users to focus on the research without worrying about the engineering details. We demonstrate the effectiveness of <strong>MMV_Im2Im</strong> in more than ten different biomedical problems. For biomedical machine learning researchers, we hope this new package could serve as the starting point for their specific problems to stimulate new biomedical image analysis or machine learning methods. For experimental biomedical researchers, we hope this work can provide a holistic view of the image-to-image transformation concept with diverse examples, so that deep learning based image-to-image transformation could be further integrated into the assay development process and permit new biomedical studies that can hardly be done only with traditional experimental methods.</p>
 <h2 id="introduction">Introduction</h2>
 <p>With the fast development of the machine learning (ML) and computer vision fields, computers are now able to transform images into new forms for better visualization <span class="citation" data-cites="1O0bopKD">[<a href="#ref-1O0bopKD" role="doc-biblioref">1</a>]</span>, better animation <span class="citation" data-cites="LxlUp436">[<a href="#ref-LxlUp436" role="doc-biblioref">2</a>]</span>, better information extraction <span class="citation" data-cites="11chATuF4">[<a href="#ref-11chATuF4" role="doc-biblioref">3</a>]</span> with unprecedented and continuously growing accuracy and efficiency.
 Recently, such techniques have started to be adapted for bioimaging applications and revolutionized image-based biomedical research <span class="citation" data-cites="Yq8wZ6hc WwenuBHa wcCVn8av xPgDok51">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>,<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>,<a href="#ref-xPgDok51" role="doc-biblioref">7</a>]</span>. In principal, these techniques and applications can be formulated as a general image-to-image transformation problem, as illustrated in the central panel in Figure <a href="#fig:overview">1</a>.
@@ -324,7 +325,7 @@ Nuclear instance segmentation from brightfield images is much more challenging t
 <p>Another important application of image-to-image transformation is imaging modality transformation <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>, usually from one “cheaper” modality with lower resolution (e.g., larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a completely new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of <strong>MMV_Im2Im</strong> in this scenario, we take an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. Sample results are summarized in Figure <a href="#fig:modality">9</a>. For microtubule, the model achieved pearson correlation of 0.779 ± 0.019, while for nuclear pore complex, the pearson correlation is 0.784 ± 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it is necessary to conduct further quantitative evaluation to ensure the validity in users’ specific problems.</p>
 <div id="fig:modality" class="fignos">
 <figure>
-<img src="images/modality.png" style="width:70.0%;height:100.0%" alt="Figure 9: Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images." />
+<img src="images/modality.png" style="width:70.0%;height:97.0%" alt="Figure 9: Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images." />
 <figcaption aria-hidden="true"><span>Figure 9:</span> Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.</figcaption>
 </figure>
 </div>
@@ -337,9 +338,23 @@ Nuclear instance segmentation from brightfield images is much more challenging t
 </figure>
 </div>
 <h2 id="methods">Methods</h2>
-<h3 id="major-components-of-the-package">Major components of the package</h3>
+<h3 id="overview-of-the-code-base">Overview of the code base</h3>
+<p>Overall, the package adapts the boilerplate concept from pytorch-lightning (https://www.pytorchlightning.ai/), and is fully configurable via yaml files supported by pyrallis (https://github.com/eladrich/pyrallis), as well as largely employs state-of-the-art deep learning components from MONAI (https://monai.io/). There XX key parts in the package: mmv_im2im.models, mmv_im2im.data_modules, and Trainers. Each will be further described below.</p>
+<h3 id="main-frameworks-for-mmv_im2im.models">Main frameworks for mmv_im2im.models</h3>
+<p><em>mmv_im2im.models</em> is the core module defining the deep learning framework for your problem, where we can instantiate the neural network architecture and define what to do before training starts, what to do in each training and validation step, what to do at the end of each epoch, etc.. All implemented following the same lightning module from pytorch-lightning, which makes the code very easy to read, to understand, and even to extend.</p>
+<p>In general, there are mainly four major deep learning frameworks that could be applied to microscopy image-to-image transformation: supervised learning with a fully convolutional networks (FCN) type models, supervised learning with pix2pix type models, unsupervised learning to learn mapping between visual domains, and Self2Self-type self-supervised learning <span class="citation" data-cites="srrRoFXR">[<a href="#ref-srrRoFXR" role="doc-biblioref">40</a>]</span>. The major difference between FCN based supervised learning and pix2pix based supervised learning is that the pix2pix framework extends an FCN model with an adversarial head as a discriminator to further improves the realism of the prediction. The major difference between the unsupervised framework and the self-supervised framework is that the unsupervised methods still requires examples of the target images, even though the source images and target images do not need to be from the same sample or pixel-wise aligned. But, the self-supervised framework would only need the original images, which could be really helpful when it is impossible to acquire the target images (e.g., there is no truely noise-free or artifact-free image).</p>
+<p>Currently, both the FCN-type and pix2pix-type supervised frameworks are fully supported in the <strong>MMV_Im2im</strong> package. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire (https://github.com/NVlabs/imaginaire), which will greatly extend the applicability of <strong>MMV_Im2Im</strong> (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone.</p>
+<h3 id="customized-mmv_im2im.data_modules-for-bioimaging-applications">Customized mmv_im2im.data_modules for bioimaging applications</h3>
+<p>The <em>data_modules</em> implements a general module for data handling, from how to load the data to how to set up the dataloader for training and validation. Different people may prefer to organize their training data in different ways, such as using csv to organize input and the corresponding ground truth, or making different folders (e.g. “image” and “ground_truth”) with input and the corresponding ground truth sharing the same file name, etc. Or some people may prefer to do a random train/validation split, while others like to pre-split train and validation into different folders, etc. Currently, the <em>data_module</em> in <strong>MMV_Im2Im</strong> supports four different ways of data loading, where we try to cover as many common scenario as possible, so that everyone will feel comfortable using it.</p>
+<p>A big challenge in the dataloader in bioimaging applications is that there could be not only a large amount of files, but also files of very large sizes. To deal with each individual large image, we used the delayed loading from aicsimageio for efficient image reading. Besides, we adopted the PersistentDataloader from MONAI to further optimize the efficiency. In specific, after loading a large image and running through all the deterministic operations, like intensity normalization or spatial padding, the PersistentDataLoader will pickle and save the data in a temporary folder, to avoid repeating the heavy computation on large files in each training iteration. To handle the potentially large number of files, we implemented the data_module with capability of loading only a certain portion of the data into the memory in each epoch and reloading with a different portion every certain number of epochs. By doing this, we were able to efficiently train an instance segmentation model with more than 125K images, where each raw image is about 15MB.</p>
+<h3 id="state-of-the-art-training-with-the-pytorch-lightning-trainer">State-of-the-art training with the pytorch-lightning Trainer</h3>
+<p>We fully adopted the Trainer from pytorch-lightning, which has been widely used by the machine learning community, and wildly tested on both R&amp;D problems and industrial-scale applications. In a nutshell, simply by specifying the training parameters in the yaml file, users can setup multi-GPU training, half-precision training, automatic learning rate finder, automatic batch size finder, early stopping, stochastic weight averaging, etc.. This allows users to focus on the research problems without worrying about the ML engineering.</p>
 <h2 id="discussions">Discussions</h2>
-<p>This ….</p>
+<p>In this work, we present a new open source python package <strong>MMV_Im2Im</strong> package for image-to-image transformations in bioimaging applications. We demonstrated the applicability om more than ten different problems or datasets to give biomedical researchers a holistic view of the general image-to-image transformation concepts with diverse examples. This package is not a simple collection of existing methods. Instead, we distilled the knowledge from existing methods and created this generic version with state-of-the-art ML engineering techniques, which made the package easy to understand, easy to use, and easy to extend for future. We hope this package can serve the starting point for other researchers doing AI-based image-to-image transformation research, and eventually build a large shared community in the field of image-to-image transformation for bioimaging.</p>
+<p>Besides the continuous improvement on the functionalities of the package, we also plan to develop two auxillary packages <strong>MMV_Im2Im_Auto</strong> and <strong>MMV_Im2Im_Active</strong>. In specific, when you have a reasonable amount of training data, MMV_Im2Im_Auto will take advantage of fact that <strong>MMV_Im2Im</strong> is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, <strong>MMV_Im2Im_Active</strong> will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning. All the packages will also be wrapped into Napari plugins <span class="citation" data-cites="YEMgt2T4">[<a href="#ref-YEMgt2T4" role="doc-biblioref">41</a>]</span> to allow no-code operation.</p>
+<p>Finally, beyond <strong>MMV_Im2Im</strong>, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our <strong>MMV_NDet</strong> (NDet = N-dimensional detection) package.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advices on how to integrate aicsimageio into the package. This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -459,6 +474,12 @@ Nuclear instance segmentation from brightfield images is much more challenging t
 </div>
 <div id="ref-12G712Zky" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Content-aware image restoration: pushing the limits of fluorescence microscopy</strong> <div class="csl-block">Martin Weigert, Uwe Schmidt, Tobias Boothe, Andreas Müller, Alexandr Dibrov, Akanksha Jain, Benjamin Wilhelm, Deborah Schmidt, Coleman Broaddus, Siân Culley, … Eugene W Myers</div> <em>Nature Methods</em> (2018-11-26) <a href="https://doi.org/gfkkfd">https://doi.org/gfkkfd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0216-7">10.1038/s41592-018-0216-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30478326">30478326</a></div></div>
+</div>
+<div id="ref-srrRoFXR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>DeStripe: A Self2Self Spatio-Spectral Graph Neural Network with Unfolded Hessian for Stripe Artifact Removal in Light-sheet Microscopy</strong> <div class="csl-block">Yu Liu, Kurt Weiss, Nassir Navab, Carsten Marr, Jan Huisken, Tingying Peng</div> <em>arXiv</em> (2022) <a href="https://doi.org/gqrnwr">https://doi.org/gqrnwr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.13419">10.48550/arxiv.2206.13419</a></div></div>
+</div>
+<div id="ref-YEMgt2T4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>napari: a multi-dimensional image viewer for Python</strong> <div class="csl-block">Nicholas Sofroniew, Talley Lambert, Kira Evans, Juan Nunez-Iglesias, Grzegorz Bokota, Philip Winston, Gonzalo Peña-Castellanos, Kevin Yamauchi, Matthias Bussonnier, Draga Doncila Pop, … Abigail McGovern</div> <em>Zenodo</em> (2022-05-31) <a href="https://doi.org/gjpsxz">https://doi.org/gjpsxz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3555620">10.5281/zenodo.3555620</a></div></div>
 </div>
 </div>
 <!-- default theme -->
