@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/eb9367ed27ff8c565c20a7a83cce74cb1d690436/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/eb9367ed27ff8c565c20a7a83cce74cb1d690436/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/eb9367ed27ff8c565c20a7a83cce74cb1d690436/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/1f20f1846c0764639a444cb7d54425003946c2de/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/eb9367ed27ff8c565c20a7a83cce74cb1d690436/))
 was automatically generated
-from [MMV-Lab/im2im-paper@1f20f18](https://github.com/MMV-Lab/im2im-paper/tree/1f20f1846c0764639a444cb7d54425003946c2de)
+from [MMV-Lab/im2im-paper@eb9367e](https://github.com/MMV-Lab/im2im-paper/tree/eb9367ed27ff8c565c20a7a83cce74cb1d690436)
 on September 5, 2022.
 </em></small>
 
@@ -103,7 +103,7 @@ on September 5, 2022.
 
 ## Abstract {.page_break_before}
 
-The deep learning research in computer vision has been growing extremely fast in the past decade, many of which have been translated into novel image analysis methods for biomedical problems. Broadly speaking, many deep learning based biomedical image analysis methods can be considered as a general image-to-image transformation framework. In this work, we introduce a new open source python package **MMV_Im2Im** for image-to-image transformation in bioimaging applications. The overall package is designed with a generic image-to-image transformation framework, which could be directly used for semantic segmentation, instance segmentation, image restoration, image generation, etc. The implementation takes advantage of the state-of-the-art machine learning engineering techniques for users to focus on the research without worrying about the engineering details. We demonstrate the effectiveness of **MMV_Im2Im** in more than ten different biomedical problems. For biomedical machine learning researchers, we hope this new package could serve as the starting point for their specific problems to stimulate new biomedical image analysis or machine learning methods. For experimental biomedical researchers, we hope this work can provide a holistic view of the image-to-image transformation concept with diverse examples, so that deep learning based image-to-image transformation could be further integrated into the assay development process and permit new biomedical studies that can hardly be done only with traditional experimental methods.
+The deep learning research in computer vision has been growing extremely fast in the past decade, many of which have been translated into novel image analysis methods for biomedical problems. Broadly speaking, many deep learning based biomedical image analysis methods can be considered as a general image-to-image transformation framework. In this work, we introduce a new open source python package **MMV_Im2Im** for image-to-image transformation in bioimaging applications. The overall package is designed with a generic image-to-image transformation framework, which could be directly used for semantic segmentation, instance segmentation, image restoration, image generation, etc. The implementation takes advantage of the state-of-the-art machine learning engineering techniques for users to focus on the research without worrying about the engineering details. We demonstrate the effectiveness of **MMV_Im2Im** in more than ten different biomedical problems. For biomedical machine learning researchers, we hope this new package could serve as the starting point for their specific problems to stimulate new biomedical image analysis or machine learning methods. For experimental biomedical researchers, we hope this work can provide a holistic view of the image-to-image transformation concept with diverse examples, so that deep learning based image-to-image transformation could be further integrated into the assay development process and permit new biomedical studies that can hardly be done only with traditional experimental methods. Source code can be found at <https://github.com/MMV-Lab/mmv_im2im>. 
 
 ## Introduction
 
@@ -158,7 +158,7 @@ Third, the toolbox pre-packs common functionalities specific to microscopy image
 
 Finally, to deploy the model in production, a model trained on small 3D patches sometimes need to be applied not only on much large images, but also with additional dimensionalities (e.g., multi-scene timelapse). Combining the efficient data handling of aicsimageio [@doi:10.5281/zenodo.6585658] and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production. 
 
-All in all, the *MMV_Im2Im* toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&D for biomedical applications. The source code of **MMV_Im2Im** is available at <https://github.com/MMV-Lab/mmv_im2im>. This manuscript is generated with open-source package Manubot [@doi:10.1371/journal.pcbi.1007128]. The manuscript source code is available at <https://github.com/MMV-Lab/manuscript-im2im>.
+All in all, the *MMV_Im2Im* toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&D for biomedical applications. The source code of **MMV_Im2Im** is available at <https://github.com/MMV-Lab/mmv_im2im>. This manuscript is generated with open-source package Manubot [@doi:10.1371/journal.pcbi.1007128]. The manuscript source code is available at <https://github.com/MMV-Lab/im2im-paper>.
 
 
 
@@ -197,7 +197,7 @@ From the experiments above, we found that center normalization + pix2pix with fn
 Table: Evaluation of the final 3D label-free models for the four different nuclear structures. {#tbl:labelfree_table}
 
 
-![Examples of labelfree results.](images/labelfree.png){#fig:labelfree width="80%" height="100%"} 
+![Examples of labelfree results (see main text for details).](images/labelfree.png){#fig:labelfree width="80%" height="100%"} 
 
 
 ### 2D semantic segmentation of tissues from H&E images
@@ -208,7 +208,7 @@ Segmentation is a common image processing task, and can be considered as a speci
 
 ### 3D semantic segmentation of organelles from electron microscopy images
 
-Semantic segmentation in 3D biomedical image analysis application is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. **MMV_Im2Im** is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, we are able to greatly reduce GPU memory workload for each sample and therefore increase the batch size. When multiple GPUs are available, we can easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. Here, we trained a 3D model to segment seven different types of organelles (e.g., cell, mitochondrion, alpha granule, etc.) from SBF-SEM image volumes [@doi:10.1038/s41598-021-81590-0]. Example results can be found in Figure {@fig:3dseg}.
+Semantic segmentation in 3D biomedical image analysis application is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. **MMV_Im2Im** is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, we are able to greatly reduce GPU memory workload for each sample and therefore increase the batch size. When multiple GPUs are available, we can easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. Here, we trained a 3D model to segment seven different types of organelles (e.g., cell, mitochondrion, alpha granule, etc.) from SBF-SEM image volumes [@doi:10.1038/s41598-021-81590-0]. Example results can be found in Figure {@fig:3dseg}. The prediction still suffers from considerable errors, very likely due to the limited training data (only one image).
 
 
 ![Result of 3D semantic segmentation results on z-slice 30, 60, 90. From left to right: raw images, ground truth, predictions](images/semantci_seg3d.png){#fig:3dseg width="90%"}
@@ -220,11 +220,10 @@ Large amount of high-quality training ground truth is not always available or ma
 
 | Dimensionality | Dataset | F1 Score | # of Test Data |
 |----------|----------|----------|----------|
-| 2D | TJP1 | 0.888 ± 0.022 | 29 |
-| 3D | AAVS1 | 0.465 ± 0.046| 3 |
-| 3D | HIST1H2BJ | 0.811 ± 0.150| 15 |
-| 3D | ST6GAL1 | 0.705 ± 0.022| 6 |
-| 3D | TOMM20 | 0.783 ± 0.005| 2 |
+| 2D | tight-junction | 0.888 ± 0.022 | 29 |
+| 3D | nucleus | 0.811 ± 0.150| 15 |
+| 3D | golgi | 0.705 ± 0.022| 6 |
+| 3D | mitochondria | 0.783 ± 0.005| 2 |
 
 Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:unsuper}
 
@@ -241,7 +240,7 @@ Example results on a small holdout set are shown in Figure {@fig:instance}-A (Io
 For the 3D problem, the original method is not directly applicable for two reasons. 
 First, we cannot use the original network architecture, ERF-Net-3D, because the images have very anisotropic dimensions and there are not enough Z-slices to run through all down sampler blocks in 3D. Second, we cannot use the original training function, because some parts of the images do not have ground truth and the original training method requires fully annotated images. (Note: the segmentation results from the public dataset [@doi:10.1101/2020.12.08.415562] contain nuclear instance segmentation of all cells. But, the cells touch the image borders are ignored from downstream analysis and therefore not curated. In other words, the segmentation from this public dataset can be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders. See more details in [@doi:10.1101/2020.12.08.415562].) 
 In this example, we showcase (1) how to easily swap the network backbone with a network from public repositories on Github, and (2) hwo to easily train the model with pixel-wise cost map or exclusion masks (i.e., certain pixels can be excluded from training). Another extension comparing to the original implementation, the **MMV_Im2Im** package makes sliding windowing inference straightforward, and therefore permits easy handling of images of any size during inference in practice. 
-For network, we directly imported a model from a public github repository https://github.com/AllenCell/aics-ml-segmentation for segmentation in fluorescent images and a model from another public Github repository https://github.com/AllenCellModeling/pytorch_fnet for segmentation in brightfield images. 
+For network, we directly imported a model from a public github repository <https://github.com/AllenCell/aics-ml-segmentation> for segmentation in fluorescent images and a model from another public Github repository <https://github.com/AllenCellModeling/pytorch_fnet> for segmentation in brightfield images. 
 For exclusion masks, all the areas covered by cells touching the image border were assigned to 0, otherwise 1, as a cost map. 
 
 Example results are presented in {@fig:instance}-B. The green box highlight a mitotic cell, where the DNA signals form "spaghetti" shapes. Besides roughly separating the DNA signals from background, the model is also able to correctly identify the instance identity, which is theoretically infeasible for other FCN-type instance segmentation models. 
@@ -255,7 +254,7 @@ Nuclear instance segmentation from brightfield images is much more challenging t
 Sometimes, being able to generate a large amount of synthetic microscopy images would be an important step for developing image analysis methods. For example, we can use the synthetic images to train other deep learning models As long as the images can be synthesized good enough, we could have unlimited amount of training data "for free" for certain applications. In addition, the synthetic images could also be used to evaluate other models when validation data are not easy to obtain. We want to demonstrate that **MMV_Im2Im** can also be used to generate 2D/3D synthetic microscopy images with high realism, either in a supervised or unsupervised manner. To do this, we collect a subset data from the hiPS single cell image dataset [@doi:10.1101/2020.12.08.415562]. For a 3D demonstration, we took the nuclear segmentation from the dataset as input, and the real H2B images as the training target. In the 2D case, we extract the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary mask. With the paired "mask + microscopy image" data, we can train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data and train the model in an unsupervised fashion. Example results can be found in Figure {@fig:synthetic}.
 
 
-![Overview of synthetic generated NPM1 fluorescence images.](images/synthetic.png){#fig:synthetic width="90%"}
+![Example results of (A) 2D synthetic fluorescent images of NPM1 and (B) 3D synthetic fluorescent images of H2B (middle z-slices of two example z-stacks).](images/synthetic.png){#fig:synthetic width="80%"}
 
 ### Image denoising for microscopy images
 
@@ -270,7 +269,7 @@ In this example, we present an image denoising demonstration with sample data fr
 Another important application of image-to-image transformation is imaging modality transformation [@doi:10.1038/s41592-021-01155-x], usually from one "cheaper" modality with lower resolution (e.g., larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a completely new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of **MMV_Im2Im** in this scenario, we take an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures [@doi:10.1038/s41592-021-01155-x]. Sample results are summarized in Figure {@fig:modality}. For microtubule, the model achieved pearson correlation of 0.779 ± 0.019, while for nuclear pore complex, the pearson correlation is 0.784 ± 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it is necessary to conduct further quantitative evaluation to ensure the validity in users' specific problems.
 
 
-![Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.](images/modality.png){#fig:modality width="70%" height="97%"}
+![Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.](images/modality.png){#fig:modality width="65%" height="90%"}
 
 ### Staining transformation in multiplex experiments
 
@@ -283,7 +282,7 @@ Beyond common light microscope for bioimaging, deep learning based image-to-imag
 
 ### Overview of the code base
 
-Overall, the package adapts the boilerplate concept from pytorch-lightning (https://www.pytorchlightning.ai/), and is fully configurable via yaml files supported by pyrallis (https://github.com/eladrich/pyrallis), as well as largely employs state-of-the-art deep learning components from MONAI (https://monai.io/). There XX key parts in the package: mmv_im2im.models, mmv_im2im.data_modules, and Trainers. Each will be further described below.
+Overall, the package adapts the boilerplate concept from pytorch-lightning (<https://www.pytorchlightning.ai/>), and is fully configurable via yaml files supported by pyrallis (<https://github.com/eladrich/pyrallis>), as well as largely employs state-of-the-art deep learning components from MONAI (<https://monai.io/>). There three key parts in the package: mmv_im2im.models, mmv_im2im.data_modules, and Trainers. Each will be further described below.
 
 
 ### Main frameworks for mmv_im2im.models
@@ -292,7 +291,7 @@ Overall, the package adapts the boilerplate concept from pytorch-lightning (http
 
 In general, there are mainly four major deep learning frameworks that could be applied to microscopy image-to-image transformation: supervised learning with a fully convolutional networks (FCN) type models, supervised learning with pix2pix type models, unsupervised learning to learn mapping between visual domains, and Self2Self-type self-supervised learning [@doi:10.48550/arXiv.2206.13419]. The major difference between FCN based supervised learning and pix2pix based supervised learning is that the pix2pix framework extends an FCN model with an adversarial head as a discriminator to further improves the realism of the prediction. The major difference between the unsupervised framework and the self-supervised framework is that the unsupervised methods still requires examples of the target images, even though the source images and target images do not need to be from the same sample or pixel-wise aligned. But, the self-supervised framework would only need the original images, which could be really helpful when it is impossible to acquire the target images (e.g., there is no truely noise-free or artifact-free image). 
 
-Currently, both the FCN-type and pix2pix-type supervised frameworks are fully supported in the **MMV_Im2im** package. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire (https://github.com/NVlabs/imaginaire), which will greatly extend the applicability of **MMV_Im2Im** (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone. 
+Currently, both the FCN-type and pix2pix-type supervised frameworks are fully supported in the **MMV_Im2im** package. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire (<https://github.com/NVlabs/imaginaire>), which will greatly extend the applicability of **MMV_Im2Im** (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone. 
 
 
 ### Customized mmv_im2im.data_modules for bioimaging applications
