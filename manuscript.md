@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/d7d9dcb77b17029749065558010299b71050c043/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d7d9dcb77b17029749065558010299b71050c043/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d7d9dcb77b17029749065558010299b71050c043/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/892b10eba1b0990833e32cd62760ac180587170a/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/892b10eba1b0990833e32cd62760ac180587170a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/892b10eba1b0990833e32cd62760ac180587170a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/d7d9dcb77b17029749065558010299b71050c043/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/892b10eba1b0990833e32cd62760ac180587170a/))
 was automatically generated
-from [MMV-Lab/im2im-paper@d7d9dcb](https://github.com/MMV-Lab/im2im-paper/tree/d7d9dcb77b17029749065558010299b71050c043)
+from [MMV-Lab/im2im-paper@892b10e](https://github.com/MMV-Lab/im2im-paper/tree/892b10eba1b0990833e32cd62760ac180587170a)
 on September 6, 2022.
 </em></small>
 
@@ -226,7 +226,7 @@ Large amount of high-quality training ground truth is not always available or ma
 | 3D | golgi | 0.705 ± 0.022| 6 |
 | 3D | mitochondria | 0.783 ± 0.005| 2 |
 
-Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:unsuper}
+Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:unsuper width="90%"}
 
 
 ![(A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. The yellow arrows indicate a region where the unsupervised learning method actually predicted better than the original segmentation results by classic image processing methods. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning.](images/unsupervised.png){#fig:unsupervised width="90%"}
@@ -247,7 +247,7 @@ For exclusion masks, all the areas covered by cells touching the image border we
 Example results were presented in {@fig:instance}-B. The green box highlighted a mitotic cell (the DNA signals forming "spaghetti" shapes). Besides roughly separating the DNA signals from background, the model was also able to correctly identify the instance identity, which would be theoretically infeasible for other FCN-type instance segmentation models. 
 Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images. Arguably, this could be thought of as one single model doing two transformations: predicting the DNA signals from brightfield and running instance segmentation on predicted DNA signals. From Figure {@fig:instance}-B, it was shown that the segmentation from brightfield images was comparable to the segmentation from fluorescent images, but with two caveats. First, the performance on mitotic cells was worse than the model using fluorescent images. We hypothesized this could be due to the limited information in brightfield images for mitotic cells, compounded with limited number of mitotic cells in the whole training set (less than 10%). Second, the performance along Z dimension was also worse than the fluorescent model, as explained by the side view in Figure {@fig:instance}-B. This could be explained by the different properties of brightfield imaging and fluorescent imaging, but would need further comprehensive studies to investigate. 
 
-![(A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side.](images/embedseg.png){#fig:instance width="90%"}
+![(A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side.](images/embedseg.png){#fig:instance width="85%"}
 
 
 ### Generating synthetic microscopy images from binary Masks 
@@ -255,7 +255,7 @@ Nuclear instance segmentation from brightfield images was much more challenging 
 Sometimes, being able to generate a large amount of synthetic microscopy images would be an important step for developing image analysis methods. For example, we can use the synthetic images to train other deep learning models. As long as the images can be synthesized good enough, we could have unlimited amount of training data "for free" for certain applications. In addition, the synthetic images could also be used to evaluate other models when validation data are not easy to obtain. We wanted to demonstrate that *MMV_Im2Im* could also be used to generate 2D/3D synthetic microscopy images with high realism, either in a supervised or unsupervised manner. To do this, we collect a subset data from the hiPS single cell image dataset [@doi:10.1101/2020.12.08.415562]. For a 3D demonstration, we took the nuclear segmentation from the dataset as input, and the real H2B images as the training target. In the 2D case, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary mask. With the paired "mask + microscopy image" data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data and train the model in an unsupervised fashion. Example results can be found in Figure {@fig:synthetic}.
 
 
-![Example results of (A) 2D synthetic fluorescent images of NPM1 and (B) 3D synthetic fluorescent images of H2B (middle z-slices of two example z-stacks).](images/synthetic.png){#fig:synthetic width="70%"}
+![Example results of (A) 2D synthetic fluorescent images of NPM1 and (B) 3D synthetic fluorescent images of H2B (middle z-slices of two example z-stacks).](images/synthetic.png){#fig:synthetic width="60%"}
 
 ### Image denoising for microscopy images
 
@@ -263,7 +263,7 @@ Sometimes, being able to generate a large amount of synthetic microscopy images 
 
 In this example, we presented an image denoising demonstration with sample data from [@doi:10.1038/s41592-018-0216-7]. The goal was to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models were trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 ± 0.029 and structural similarity of 0.627 ± 0.175. Based on the results in Figure {@fig:denoising}, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations would be necessary to confirm the biological validity, but beyond the scope of this paper.
 
-![(A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.](images/denoising.png){#fig:denoising width="80%"}
+![(A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.](images/denoising.png){#fig:denoising width="75%"}
 
 ### Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images
 
