@@ -23,9 +23,9 @@ DAPI
 dataloader
 dataset
 datasets
-Denoising
+denoising
 dimensionalities
-Dimensionality
+dimensionality
 downscaled
 dseg
 elegans
@@ -69,7 +69,7 @@ mCherry
 mediterranea
 microtubule
 MMSegmentation
-MMV
+mmv
 Modularization
 modularized
 MONAI
