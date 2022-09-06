@@ -23,9 +23,9 @@ DAPI
 dataloader
 dataset
 datasets
-denoising
+Denoising
 dimensionalities
-dimensionality
+Dimensionality
 downscaled
 dseg
 elegans
@@ -49,9 +49,8 @@ HeLa
 hematoxylin
 histones
 hoc
-hwo
 IHC
-Im
+im
 ImageNet
 Imaginaire
 immunofluorescence
@@ -71,7 +70,7 @@ mediterranea
 microtubule
 MMSegmentation
 MMV
-modularization
+Modularization
 modularized
 MONAI
 mpIF
@@ -84,7 +83,6 @@ optimizers
 PersistentDataLoader
 PersistentDataset
 phototoxicity
-pixHD
 pre
 pyrallis
 RCNN

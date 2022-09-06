@@ -155,7 +155,6 @@ content/03.results.md:75:anisotropic
 content/03.results.md:75:dataset
 content/03.results.md:75:dataset
 content/03.results.md:75:ERF
-content/03.results.md:76:hwo
 content/03.results.md:77:brightfield
 content/03.results.md:80:FCN
 content/03.results.md:81:brightfield
