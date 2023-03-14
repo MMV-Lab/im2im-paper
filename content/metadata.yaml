@@ -1,5 +1,5 @@
 ---
-title: "MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation"
+title: "MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation"
 keywords:
   - deep learning
   - microscopy image analysis
@@ -13,17 +13,13 @@ authors:
     twitter: JustinSonneck
     email: justin.sonneck@isas.de
     affiliations:
-      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
-    funders:
-      - The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
+      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
   - github: jxchen01
     name: Jianxu Chen
     initials: JC
     orcid: 0000-0002-8500-1357
     twitter: JianxuChen
     email: jianxu.chen@isas.de
-    affiliations:
-      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
-    funders:
-      - The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
     corresponding: true
+    affiliations:
+      - Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
