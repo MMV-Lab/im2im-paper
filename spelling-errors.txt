@@ -26,11 +26,11 @@ CycleGAN
 DAPI
 dataloader
 dataloaders
-Dataset
+dataset
 datasets
-Denoising
+denoising
 dimensionalities
-Dimensionality
+dimensionality
 downscaled
 dseg
 elegans
@@ -56,7 +56,7 @@ hematoxylin
 histones
 hoc
 IHC
-im
+Im
 ImageNet
 Imaginaire
 improvment
@@ -74,8 +74,8 @@ mCherry
 mediterranea
 microtubule
 MMSegmentation
-mmv
-modularization
+MMV
+Modularization
 modularized
 MONAI
 mpIF
@@ -86,7 +86,7 @@ NPM
 nucleophosmin
 OpenMMLab
 optimizers
-PersistentDataLoader
+PersistentDataloader
 PersistentDataset
 phototoxicity
 pre
