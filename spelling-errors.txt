@@ -16,6 +16,7 @@ brightfield
 Bundesministerium
 castaneum
 CellPose
+chanllenging
 codebase
 configuraable
 configurability
@@ -26,11 +27,11 @@ CycleGAN
 DAPI
 dataloader
 dataloaders
-Dataset
+dataset
 datasets
 Denoising
 dimensionalities
-Dimensionality
+dimensionality
 downscaled
 dseg
 elegans
@@ -50,13 +51,15 @@ FOV
 FP
 für
 GPUs
+grayscale
 HDN
 HeLa
 hematoxylin
+histon
 histones
 hoc
 IHC
-im
+Im
 ImageNet
 Imaginaire
 improvment
@@ -74,7 +77,7 @@ mCherry
 mediterranea
 microtubule
 MMSegmentation
-mmv
+MMV
 Modularization
 modularized
 MONAI
@@ -82,6 +85,7 @@ mpIF
 muliplex
 Napari
 NDet
+neighering
 NPM
 nucleophosmin
 OpenMMLab
@@ -96,10 +100,8 @@ rescale
 rescaling
 reusability
 RGB
-SBF
 Schmidtea
 segmentations
-SEM
 SNR
 Sonneck
 specfic
@@ -109,7 +111,9 @@ STED
 stememd
 straighforward
 subcellular
+supervsied
 SwinUNETR
+synthesization
 synthetization
 Tensorboard
 timelapse
