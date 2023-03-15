@@ -3,6 +3,7 @@ aicsimageio
 amound
 Analytische
 anisotropic
+applicabilities
 apprearnce
 auxillary
 backend
@@ -32,10 +33,11 @@ datasets
 Denoising
 dimensionalities
 dimensionality
+DL
 downscaled
 dseg
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 expereiements
@@ -73,12 +75,13 @@ jxchen
 Labelfree
 lightsheet
 LMNB
+MacOS
 mCherry
 mediterranea
 microtubule
 MMSegmentation
 MMV
-Modularization
+modularization
 modularized
 MONAI
 mpIF

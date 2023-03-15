@@ -1,11 +1,11 @@
 ---
-title: 'MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation'
+title: 'MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation'
 keywords:
 - deep learning
 - microscopy image analysis
 - open source
 lang: en-US
-date-meta: '2023-03-14'
+date-meta: '2023-03-15'
 author-meta:
 - Justin Sonneck
 - Jianxu Chen
@@ -16,15 +16,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="citation_title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta property="og:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta property="twitter:title" content="MMV_IM2IM: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-03-14" />
-  <meta name="citation_publication_date" content="2023-03-14" />
-  <meta property="article:published_time" content="2023-03-14" />
-  <meta name="dc.modified" content="2023-03-14T18:04:13+00:00" />
-  <meta property="article:modified_time" content="2023-03-14T18:04:13+00:00" />
+  <meta name="dc.title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta name="dc.date" content="2023-03-15" />
+  <meta name="citation_publication_date" content="2023-03-15" />
+  <meta property="article:published_time" content="2023-03-15" />
+  <meta name="dc.modified" content="2023-03-15T13:47:07+00:00" />
+  <meta property="article:modified_time" content="2023-03-15T13:47:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -32,11 +32,11 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Justin Sonneck" />
-  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V." />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-1640-3045" />
   <meta name="twitter:creator" content="@JustinSonneck" />
   <meta name="citation_author" content="Jianxu Chen" />
-  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V." />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8500-1357" />
   <meta name="twitter:creator" content="@JianxuChen" />
   <link rel="canonical" href="https://MMV-Lab.github.io/im2im-paper/" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/c32563406547c62b8e0e04e565d02aabdeac9843/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/c32563406547c62b8e0e04e565d02aabdeac9843/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/c32563406547c62b8e0e04e565d02aabdeac9843/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/e303b22eb8e0a0ae107c7f0793dfcfb7a1f40736/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e303b22eb8e0a0ae107c7f0793dfcfb7a1f40736/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e303b22eb8e0a0ae107c7f0793dfcfb7a1f40736/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/c32563406547c62b8e0e04e565d02aabdeac9843/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/e303b22eb8e0a0ae107c7f0793dfcfb7a1f40736/))
 was automatically generated
-from [MMV-Lab/im2im-paper@c325634](https://github.com/MMV-Lab/im2im-paper/tree/c32563406547c62b8e0e04e565d02aabdeac9843)
-on March 14, 2023.
+from [MMV-Lab/im2im-paper@e303b22](https://github.com/MMV-Lab/im2im-paper/tree/e303b22eb8e0a0ae107c7f0793dfcfb7a1f40736)
+on March 15, 2023.
 </em></small>
 
 
@@ -91,8 +91,7 @@ on March 14, 2023.
     [JustinSonneck](https://twitter.com/JustinSonneck)
     <br>
   <small>
-     Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
-     · Funded by The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
+     Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
   </small>
 
 + **Jianxu Chen**
@@ -105,15 +104,20 @@ on March 14, 2023.
     [JianxuChen](https://twitter.com/JianxuChen)
     <br>
   <small>
-     Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.
-     · Funded by The Federal Ministry of Education and Research (BMBF) under the funding reference 161L0272
+     Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
   </small>
 
 
 
 ## Abstract
 
-The deep learning research in computer vision has been growing extremely fast in the past decade, many of which have been translated into novel image analysis methods for biomedical problems. Broadly speaking, many deep learning based biomedical image analysis methods can be considered as a general image-to-image transformation framework. In this work, we introduce a new open source python package **MMV_Im2Im** for image-to-image transformation in bioimaging applications. The overall package is designed with a generic image-to-image transformation framework, which could be directly used for semantic segmentation, instance segmentation, image restoration, image generation, etc. The implementation takes advantage of the state-of-the-art machine learning engineering techniques for users to focus on the research without worrying about the engineering details. We demonstrate the effectiveness of **MMV_Im2Im** in more than ten different biomedical problems. For biomedical machine learning researchers, we hope this new package could serve as the starting point for their specific problems to stimulate new biomedical image analysis or machine learning methods. For experimental biomedical researchers, we hope this work can provide a holistic view of the image-to-image transformation concept with diverse examples, so that deep learning based image-to-image transformation could be further integrated into the assay development process and permit new biomedical studies that can hardly be done only with traditional experimental methods. Source code can be found at <https://github.com/MMV-Lab/mmv_im2im>. 
+Over the past decade, deep learning (DL) research in computer vision has been growing rapidly, with many advances in DL-based image analysis methods for biomedical problems. In this work, we introduce MMV_Im2Im, a new open-source python package for image-to-image transformation in bioimaging applications. MMV_Im2Im is designed with a generic image-to-image transformation framework that can be used for a wide range of tasks, including semantic segmentation, instance segmentation, image restoration, and image generation, etc.. Our implementation takes advantage of state-of-the-art machine learning engineering techniques, allowing researchers to focus on their research without worrying about engineering details. We demonstrate the effectiveness of MMV_Im2Im on more than ten different biomedical problems, showcasing its general potentials and applicabilities.
+
+For computational biomedical researchers, MMV_Im2Im provides a starting point for developing new biomedical image analysis or machine learning algorithms, where they can either reuse the code in this package or fork and extend this package to facilitate the development of new methods. Experimental biomedical researchers can benefit from this work by gaining a comprehensive view of the image-to-image transformation concept through diversified examples and use cases. We hope this work can give the community inspirations on how DL-based image-to-image transformation can be integrated into the assay development process, enabling new biomedical studies that cannot be done only with traditional experimental assays. To help researchers get started, we have provided source code, documentation, and tutorials for MMV_Im2Im at https://github.com/MMV-Lab/mmv_im2im under MIT license.
+
+## Keywords
+
+Deep learning, biomedical image analysis, image-to-image transformation, open-source
 
 ## Introduction
 
@@ -329,6 +333,16 @@ One of main directions for extending *MMV_Im2Im* is to pre-pack common bioimagin
 diffusion based models
 
 Finally, beyond *MMV_Im2Im*, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our *MMV_NDet* (NDet = N-dimensional detection) package. 
+
+## Code and data availability
+
+Project name: MMV_Im2Im (Microscopy Machine Vision, Image-to-Image transformation)
+
+Project home page: https://github.com/mmv-lab/mmv_im2im
+Operating system(s): Linux and Windows (when using GPU), also MacOS (when only using CPU)
+Programming language: Python
+Other requirements: PyTorch 1.11 or higher, all other dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py 
+License: MIT license
 
 
 ## Acknowledgments
