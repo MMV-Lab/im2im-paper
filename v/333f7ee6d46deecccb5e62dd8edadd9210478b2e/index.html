@@ -1,0 +1,3720 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Justin Sonneck" />
+  <meta name="author" content="Jianxu Chen" />
+  <meta name="dcterms.date" content="2023-03-16" />
+  <meta name="keywords" content="deep learning, microscopy image analysis, open source" />
+  <title>MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
+  <meta name="dc.title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
+  <meta name="dc.date" content="2023-03-16" />
+  <meta name="citation_publication_date" content="2023-03-16" />
+  <meta property="article:published_time" content="2023-03-16" />
+  <meta name="dc.modified" content="2023-03-16T11:56:59+00:00" />
+  <meta property="article:modified_time" content="2023-03-16T11:56:59+00:00" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Justin Sonneck" />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany" />
+  <meta name="citation_author_orcid" content="0000-0002-1640-3045" />
+  <meta name="twitter:creator" content="@JustinSonneck" />
+  <meta name="citation_author" content="Jianxu Chen" />
+  <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany" />
+  <meta name="citation_author_orcid" content="0000-0002-8500-1357" />
+  <meta name="twitter:creator" content="@JianxuChen" />
+  <link rel="canonical" href="https://MMV-Lab.github.io/im2im-paper/" />
+  <meta property="og:url" content="https://MMV-Lab.github.io/im2im-paper/" />
+  <meta property="twitter:url" content="https://MMV-Lab.github.io/im2im-paper/" />
+  <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
+  <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/333f7ee6d46deecccb5e62dd8edadd9210478b2e/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/333f7ee6d46deecccb5e62dd8edadd9210478b2e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/333f7ee6d46deecccb5e62dd8edadd9210478b2e/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</h1>
+</header>
+<p><small><em>
+This manuscript
+(<a href="https://MMV-Lab.github.io/im2im-paper/v/333f7ee6d46deecccb5e62dd8edadd9210478b2e/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/MMV-Lab/im2im-paper/tree/333f7ee6d46deecccb5e62dd8edadd9210478b2e">MMV-Lab/im2im-paper@333f7ee</a>
+on March 16, 2023.
+</em></small></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Justin Sonneck</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-1640-3045">0000-0002-1640-3045</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/Justin-Sonneck">Justin-Sonneck</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/JustinSonneck">JustinSonneck</a>
+<br>
+<small>
+Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
+</small></p></li>
+<li><p><strong>Jianxu Chen</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-8500-1357">0000-0002-8500-1357</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/jxchen01">jxchen01</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/JianxuChen">JianxuChen</a>
+<br>
+<small>
+Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
+</small></p></li>
+</ul>
+<h2 id="abstract">Abstract</h2>
+<p>Over the past decade, deep learning (DL) research in computer vision has been growing rapidly, with many advances in DL-based image analysis methods for biomedical problems. In this work, we introduce MMV_Im2Im, a new open-source python package for image-to-image transformation in bioimaging applications. MMV_Im2Im is designed with a generic image-to-image transformation framework that can be used for a wide range of tasks, including semantic segmentation, instance segmentation, image restoration, and image generation, etc.. Our implementation takes advantage of state-of-the-art machine learning engineering techniques, allowing researchers to focus on their research without worrying about engineering details. We demonstrate the effectiveness of MMV_Im2Im on more than ten different biomedical problems, showcasing its general potentials and applicabilities.</p>
+<p>For computational biomedical researchers, MMV_Im2Im provides a starting point for developing new biomedical image analysis or machine learning algorithms, where they can either reuse the code in this package or fork and extend this package to facilitate the development of new methods. Experimental biomedical researchers can benefit from this work by gaining a comprehensive view of the image-to-image transformation concept through diversified examples and use cases. We hope this work can give the community inspirations on how DL-based image-to-image transformation can be integrated into the assay development process, enabling new biomedical studies that cannot be done only with traditional experimental assays. To help researchers get started, we have provided source code, documentation, and tutorials for MMV_Im2Im at https://github.com/MMV-Lab/mmv_im2im under MIT license.</p>
+<h2 id="keywords">Keywords</h2>
+<p>Deep learning, biomedical image analysis, image-to-image transformation, open-source</p>
+<h2 id="introduction">Introduction</h2>
+<p>With the rapid advancements in the fields of machine learning (ML) and computer vision, computers can now transform images into new forms, enabling better visualization <span class="citation" data-cites="1O0bopKD">[<a href="#ref-1O0bopKD" role="doc-biblioref">1</a>]</span>, better animation <span class="citation" data-cites="LxlUp436">[<a href="#ref-LxlUp436" role="doc-biblioref">2</a>]</span> and better information extraction <span class="citation" data-cites="11chATuF4">[<a href="#ref-11chATuF4" role="doc-biblioref">3</a>]</span> with unprecedented and continuously growing accuracy and efficiency compared to conventional digital image processing.
+These techniques have recently been adapted for bioimaging applications and have revolutionized image-based biomedical research <span class="citation" data-cites="Yq8wZ6hc WwenuBHa wcCVn8av xPgDok51">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>,<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>,<a href="#ref-xPgDok51" role="doc-biblioref">7</a>]</span>. In principal, these techniques and applications can be formulated as a general image-to-image transformation problem, as depicted in the central panel in Figure <a href="#fig:overview">1</a>. Deep neural networks are trained to perceive the information from the source image(s) and reconstruct the learned knowledge from source images(s) in the form of a new image(s) of the target type.
+The source and target images can be real or simulated microscopy images, segmentation masks, or their combinations, as exemplified in Figure <a href="#fig:overview">1</a>.
+Since these underlying methods share the same essential spirit, a natural question arises: is it possible to develop a single generic codebase for deep learning (DL) based image-to-image transformation applicable to various biomedical studies?</p>
+<p>In this paper, we introduce <em>MMV_Im2Im</em> an open-source microscopy machine vision (MMV) toolbox for image-to-image transformation and demonstrate its applications in over 10 biomedical applications of various types.
+Currently, <em>MMV_Im2Im</em> supports 2D~5D microscopy images for supervised image-to-image translation (e.g., labelfree determination <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, imaging modality transformation <span class="citation" data-cites="UEBDZ3tI WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>), supervised image restoration <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>, supervised semantic segmentation <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span>, supervised instance segmentation <span class="citation" data-cites="K2ugNcVa QmYuUQ5K">[<a href="#ref-K2ugNcVa" role="doc-biblioref">10</a>,<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>, unsupervised semantic segmentation <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>, unsupervised image to image translation and synthetization <span class="citation" data-cites="6wtIu4QY">[<a href="#ref-6wtIu4QY" role="doc-biblioref">13</a>]</span>. The toolbox will continuously grow with more and more methods, such as self-supervised learning based methods, ideally also with contributions from the open-source community.</p>
+<p>Why do we need such a single generic codebase for all deep-learning based microscopy image-to-image transformation? <em>MMV_Im2Im</em> is not simply a collection of many existing methods, but with rather systematic design for generality, flexibility, simplicity and reusability, attempting to address several fundamental bottlenecks for image-to-image transformation in biomedical applications, as highlighted below.</p>
+<h3 id="feature-1-universal-boilerplate-with-state-of-the-art-ml-engineering">Feature 1: universal boilerplate with state-of-the-art ML engineering:</h3>
+<p><em>Bottleneck: existing codd not easy to understand or to extend or re-use</em>.</p>
+<p>Our package <em>MMV_Im2Im</em> employs pytorch-lightning <span class="citation" data-cites="YbvSvdyB">[<a href="#ref-YbvSvdyB" role="doc-biblioref">14</a>]</span> as the core in the backend, which offers numerous benefits, such as readability, flexibility, simplicity and reusability. First of all, have you ever had the moment when you wanted to extend someone’s open-source code to suit your special ML needs, but found it so difficult to figure out where and how to extend, especially for complex methods? Or, have you ever encountered the situation where you want to compare the methods and code from two different papers, even solving the same problem, e.g. semantic segmentation, but not quite easy to grasp quickly since the two repositories are implemented in very different ways? It is not rare that even different researchers from the same group may implement similar methods in very different manners. This is not only a barrier for other people to learn and re-use the open-source code, but also poses challenges for developers in maintenance, further development, and interoperability among different packages.
+We follow the pytorch-lightning framework and carefully design a universal boilerplate for image-to-image transformation for biomedical applications, where the implementation of all the methods share the same modularized code structure. This greatly lowers the learning curve for people to read and understand the code, and makes implementing new methods or extending existing methods simple and fast, at least from an engineering perspective.</p>
+<p>Moreover, as ML scientists, have you ever overwhelmed by different training tricks for different methods or been curious about if certain state-of-the-art training methods can boost the performance of existing models? With the pytorch-lightning backend, <em>MMV_Im2Im</em> allows you to enjoy different state-of-the-art ML engineering techniques without changing the code, e.g., stochastic weight averaging <span class="citation" data-cites="qzeQFRn9">[<a href="#ref-qzeQFRn9" role="doc-biblioref">15</a>]</span>, single precision training, automatic batch size determination, different optimizers, different learning rate schedulers, easy deployment on different devices, distributed training on multi-GPU (even multi-node), logging with common loggers such as Tensorboard, etc.. In short, with the pytorch-lightning based universal boilerplate, bioimaging researchers can really focus on research and develop novel methods for their biomedical applications, without worrying about the ML engineering works (which are usually lack in non-computer-science labs).</p>
+<h3 id="feature-2-modularization-and-human-readable-configuration-system">Feature 2: modularization and human-readable configuration system:</h3>
+<p><em>Bottleneck: Dilemma between simplicity and flexibility</em></p>
+<p>The toolbox is designed for both people with or without extensive experience with ML and Python programming. It is not rare to find biomedical image analysis software that are very easy to use on a set of problems, but very hard to extend or adjust to other different but essentally related problems, or find some with great flexibility with tubable knobs at all levels, but unfortunately not easy for unexperienced users. To address this issue, we design the toolbox in a systematically modularized way with various levels of configurability. One can use the toolbox with a single command as simple as <code>run_im2im --config train_semanticseg_3d --data.data_path /path/to/data</code> or make customization on details directly from a human-readable configuration file, such as choosing batch normalization or instance normalization in certain layers of the model, or adding extra data augmentation steps, etc.. We provide an extensive list of more than 20 example configurations for various appplications and comprehensive documentation to address common questions for users as reference. For users preferring graphical interface, another napari plugin for MMV toolbox has been planned as the extension of <em>MMV_Im2Im</em> (see Discussion for details).</p>
+<p>In addition, the modularization and configuration system is designed to allow not only configuring with the elements offered by the package itself, but also any compatible elements from a third-party package or from a public repository on Github.
+For example, one can easily switch the 3D neural network in the original <em>Embedseg</em> method to any customized U-Net from FastAI by specifying the network as <code>fastai.vision.models.unet</code>. Such painless extendability releases the power of the toolbox, amplifies the benefit of the open-source ML community and upholds our philosophy of open science.</p>
+<h3 id="feature-3-customization-for-biomedical-imaging-applications">Feature 3: customization for biomedical imaging applications:</h3>
+<p><em>Bottleneck: Not enough consideration for specific chanllengs in microscopy images in general DL toolboxes</em></p>
+<p>The original idea of a general toolbox actually stememd from the OpenMMLab project (<a href="https://openmmlab.com/" class="uri">https://openmmlab.com/</a>), which provides generic codebases for a wide range of computer vision research topics. For instance, <em>MMSegmentation</em> (<a href="https://github.com/open-mmlab/mmsegmentation" class="uri">https://github.com/open-mmlab/mmsegmentation</a>) is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box.
+It has become one of most widely used codebase for research in semantic segmentation (2K forks and 5.4K stars on Github as of March 12, 2023).
+This inspires us to develop <em>MMV_Im2Im</em> to facillitate research in image-to-image transformation with special focus on biomedical applications.</p>
+<p>First of all, different from general computer vision datasets, such as ImageNet <span class="citation" data-cites="lt4BNUoG">[<a href="#ref-lt4BNUoG" role="doc-biblioref">16</a>]</span>, where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), biomedical applications usually involves large-scale high dimensional data (e.g., 500 images of 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI <span class="citation" data-cites="UU62HYC6">[<a href="#ref-UU62HYC6" role="doc-biblioref">17</a>]</span> with partial loading and sampling support, as well as delayed image reading powered by aicsimageio <span class="citation" data-cites="ONdyoUIo">[<a href="#ref-ONdyoUIo" role="doc-biblioref">18</a>]</span> as default (configurable if another dataloader is preferred).
+As a result, in our stress test, training a 3D nuclei instance segmentation model with more than 125,000 3D images can be conducted efficiently in a day, even with limited resource.</p>
+<p>Second, because microscopy data is not restricted to 2D, we re-implement common frameworks, such as fully convolutional networks (FCN), conditional generative models, cycle-consistent generative models, etc., in a generic way to easily switch between different dimensionalities for training. During inference, up to 5D images (channel x time x Z x Y x X) can be directly loaded as the input without pre-splitting into smaller 2D/3D chunks.</p>
+<p>Third, the toolbox pre-packs common functionalities specific to microscopy images. For example, we incorporate the special image normalization method introduced in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, where only the middle chunk along Z dimension of 3D microscopy images will be used for calculating the mean and standard deviation of image intensity for standard normalization. Also, 3D light microscopy images are usually anisotropic, i.e., much lower resolution along Z than XY dimension. So, we adopt the anisotropic variation of UNet as proposed in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>.</p>
+<p>Finally, to deploy the model in production, a model trained on small 3D patches sometimes need to be applied not only on much large images. Combining the efficient data handling of aicsimageio <span class="citation" data-cites="ONdyoUIo">[<a href="#ref-ONdyoUIo" role="doc-biblioref">18</a>]</span> and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production.</p>
+<p>All in all, the <em>MMV_Im2Im</em> toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&amp;D for biomedical applications. The source code of <em>MMV_Im2Im</em> is available at <a href="https://github.com/MMV-Lab/mmv_im2im" class="uri">https://github.com/MMV-Lab/mmv_im2im</a>. This manuscript is generated with open-source package Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">20</a>]</span>. The manuscript source code is available at <a href="https://github.com/MMV-Lab/im2im-paper" class="uri">https://github.com/MMV-Lab/im2im-paper</a>.</p>
+<div id="fig:overview" class="fignos">
+<figure>
+<img src="images/overview_figure.png" style="width:100.0%;height:53.0%" alt="Figure 1: Overview of the image-to-image transformation concept and its example applications." />
+<figcaption aria-hidden="true"><span>Figure 1:</span> Overview of the image-to-image transformation concept and its example applications.</figcaption>
+</figure>
+</div>
+<h2 id="results">Results</h2>
+<p>In this section, we showcase the versatility of the <em>MMV_Im2Im</em> toolbox by presenting over ten different biomedical applications across various R&amp;D use cases and scales. All experiments and results in this section were conducted on publicly available datasets released with other publications and our scripts (for pulling the public dataset online and data wrangling) and configuration files (for setting up training and inference details), both included in the MMV_Im2Im package. Our aim is to make it easy to reproduce all of the results in this paper, and more importantly use these data and scripts to get familar with the package and adapt to new problems of users’ interest. It is important to note that the aim of these experiments was not to achieve the best performance on each individual task, as this may require further hyper-parameter tuning (see Discussion section for more details). Rather, the experiments were intended to demonstrate the package’s different features and general applicability, providing a holistic view of image-to-image transformation concepts to biomedical researchers. We hope that these concepts will help researchers integrate AI into traditional assay development strategies and inspire computational and experimental co-design methods, enabling new biomedical studies that were previously unfeasible.</p>
+<h3 id="labelfree-prediction-of-nuclear-structure-from-2d3d-brightfield-images">Labelfree prediction of nuclear structure from 2D/3D brightfield images</h3>
+<p>The labelfree method refers a DL method that can predict fluorescent images directly from transmitted light brightfield images <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Comparing to brightfield images, fluorescent images can resolve subcellular structures in living cells at high resolution but with the cost of expensive and slow procedures and high phototoxicity. The labelfree method provides a new perspective in assay development to conduct integrated computational analysis of multiple organelles only with a single brightfield image acquisition. In our first demonstration, we applied <em>MMV_Im2Im</em> to build 2D/3D models that can predict fluorescent images of nuclear structures from brightfield images. For 3D models, we also compared (1) different image normalization methods, (2) different network backbones, and (3) different types of models.</p>
+<p>It should be noted that while we recognize the importance of systematically evaluating the predictions, such an analysis falls outside the scope of this paper. We argue that an appropriate evaluation methodology should depend on specific downstream quantitative analysis goals (e.g., <span class="citation" data-cites="gPpwGUco EOO2mf0p">[<a href="#ref-gPpwGUco" role="doc-biblioref">21</a>,<a href="#ref-EOO2mf0p" role="doc-biblioref">22</a>]</span>). For example, if our aim is to quantify the size of nucleoli, we must compare the segmentation derived from real nucleoli signals to that of the predicted nucleoli segmentation, ensuring that measurements from both are consistent. Alternatively, if the goal is to localize the nucleoli roughly within the cell, Pearson correlation may be a more appropriate metric. In this work, we concentrate on visual inspection, using Pearson correlation and structural similarity as a rough quantitative reference. Our intent is to demonstrate the utility of our <em>MMV_Im2Im</em> package, and leave appropriate evaluations to users in their specific problems in real studies.</p>
+<p><em>2D Labelfree:</em> We started with a simple problem using 2D images from the HeLa “Kyoto” cells dataset <span class="citation" data-cites="xv2VIyRP">[<a href="#ref-xv2VIyRP" role="doc-biblioref">23</a>]</span>. For all images, we took the brightfield channel and the mCherry-H2B channel out of the multi-channel timelapse movies. 2D images were acquired at 20x with 0.8 N.A. and then downscaled by 4 (pixel size: 0.299 nm x 0.299 nm). Example predictions can be found in Figure <a href="#fig:labelfree">2</a>-A. We compared a basic UNet model <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span> and a 2D version of the fnet model in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. The fnet model achieved slightly more accurate predictions than the basic UNet.</p>
+<p><em>3D Labelfree:</em> We tested with 3D images from the hiPS single cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. Specifically, we extracted the brightfield channel and the structure channel from the full field-of-view (FOV) multi-channel images, from the HIST1H2BJ, FBL, NPM1, LMNB1 cell lines, so as to predict from one brightfield image various nuclear structures, histones, nucleoli (dense fibrillar component via fibrillarin), nucleoli (granular component via nucleophosmin), and nuclear envelope, respectively. Images were acquired at 100x with 1.25 NA (voxel size: 0.108 micron x 0.108 micron x 0.29 micron).</p>
+<p>We conducted three groups of comparisons (see results in Figure <a href="#fig:labelfree">2</a>-B). First, we compared three different image normalization methods for 3D images: percentile normalization, standard normalization, center normalization <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Percentile normalization refers to cutting the intensity out of the range of [0.5, 99.5] percentile of the image intensity and then rescale the values to the range of [-1, 1], while the standard normalization is simply subtracting mean intensity and then divided by the standard deviation of all pixel intensities. Center normalization is similar to standard normalization, but the statistics are calculated only around center along the Z-axis <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. One could easily test different percentile or rescaling to [0, 1] instead of [-1, 1]. Qualitatively, we found center normalization slightly more accurate and more robust than the other two (ref. the first row in Figure <a href="#fig:labelfree">2</a>-B).</p>
+<p>Second, we compared different network backbone architectures, including the original fnet model <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, an enhanced UNet <span class="citation" data-cites="M7480NLD">[<a href="#ref-M7480NLD" role="doc-biblioref">25</a>]</span>, the attention UNet <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">26</a>]</span>, two transformer-based models, SwinUNETR <span class="citation" data-cites="ZWL3IrVc">[<a href="#ref-ZWL3IrVc" role="doc-biblioref">27</a>]</span> and UNETR<span class="citation" data-cites="XCKUntOB">[<a href="#ref-XCKUntOB" role="doc-biblioref">28</a>]</span> (all with center normalization). Inspecting the predictions on a holdout validation set suggested that fnet achieved the best performance, and the recent transformer-based models did not work well with in labelfree problems (ref. the second row and the “c + fnet” from the first row in Figure <a href="#fig:labelfree">2</a>-B).</p>
+<p>Finally, we showed the comparison between three different types of models, an FCN-type model (i.e., fnet), a pix2pix-type model, and a cycleGAN-type model. For fair comparison, we used fnet as the same backbone for all three types of models. In theory, the pix2pix-type model can be trained in two different ways: from scratch or initializing the generator with a pre-trained fnet (trained as FCN). Examples of the comparison results were shown in the last two rows in Figure <a href="#fig:labelfree">2</a>-B. Visually, it is evident that the additional adversarial components (i.e., the discriminator) could generate images with more realistic apprearnce than a typical FCN-type model alone, but again, we leave the appropriate quantitative evaluations to users’ specfic biomedical studies.</p>
+<p>From the experiments above, we found that center normalization + pix2pix with fnet as the generator achieved the best overall performance qualitatively. So, we employed the same strategy on all other nuclear structures. At the end, we had four different labelfree models, each predicting one different nuclear structure from 3D brightfield images. As an example of evaluation, we calculated the pearson correlation and structural similarity on hold-out validation sets. The results were summarized in Table <a href="#tbl:labelfree_table">1</a>. Again, these numbers were merely examples of evaluation, systematic evaluation based on each specific biological problem would be necessary before deployment. Figure <a href="#fig:labelfree">2</a>-C showed one example of all four different structures predicted from a single unseen brightfield image. This would permit an integrated analysis of four different nuclear components that could hardly be acquired simultaneously in real experiments and real images.</p>
+<div id="tbl:labelfree_table" class="tablenos">
+<table id="tbl:labelfree_table">
+<caption><span>Table 1:</span> Evaluation of the final 3D label-free models for four different nuclear structures. </caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Pearson Correlation</th>
+<th>Structural Similarity</th>
+<th># of Test Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FBL</td>
+<td>0.864 ± 0.021</td>
+<td>0.831 ± 0.034</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>HIST1H2BJ</td>
+<td>0.825 ± 0.034</td>
+<td>0.675 ± 0.073</td>
+<td>55</td>
+</tr>
+<tr class="odd">
+<td>LMNB1</td>
+<td>0.853 ± 0.027</td>
+<td>0.669 ± 0.059</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>NPM1</td>
+<td>0.912 ± 0.015</td>
+<td>0.795 ± 0.039</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fig:labelfree" class="fignos">
+<figure>
+<img src="images/labelfree.png" style="width:76.0%;height:90.0%" alt="Figure 2: Examples of labelfree results. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details)." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> Examples of labelfree results. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details).</figcaption>
+</figure>
+</div>
+<h3 id="d-semantic-segmentation-of-tissues-from-he-images">2D semantic segmentation of tissues from H&amp;E images</h3>
+<p>Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrated <em>MMV_Im2Im</em> on a pathology application to segment glands from hematoxylin and eosin (H&amp;E) stained tissue images from the 2015 Gland Segmentation challenge <span class="citation" data-cites="45Sirz1X XAffSYIR">[<a href="#ref-45Sirz1X" role="doc-biblioref">29</a>,<a href="#ref-XAffSYIR" role="doc-biblioref">30</a>]</span>. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. <em>MMV_Im2Im</em> included a classic stain normalization method <span class="citation" data-cites="tQhnZyjK">[<a href="#ref-tQhnZyjK" role="doc-biblioref">31</a>]</span> as a pre-processing step. The effect of stain normalization can be observed in Figure <a href="#fig:2d_gland">3</a>-A and B. We trained a simple attention UNet model <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">26</a>]</span>. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.883 and 0.888 on test set A and test set B, respectively. The performance was competitive comparing to the methods reported in the challenge report <span class="citation" data-cites="XAffSYIR">[<a href="#ref-XAffSYIR" role="doc-biblioref">30</a>]</span>, especially with much more consistent performance across the two different test sets. Example results can be found in Figure <a href="#fig:2d_gland">3</a>-C.</p>
+<div id="fig:2d_gland" class="fignos">
+<figure>
+<img src="images/gland.png" style="width:75.0%" alt="Figure 3: Example results of 2D semantic segmentation of gland in H&amp;E images." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> Example results of 2D semantic segmentation of gland in H&amp;E images.</figcaption>
+</figure>
+</div>
+<h3 id="instance-segmentation-in-microscopy-images">Instance segmentation in microscopy images</h3>
+<p>Instance segmentation is a type of segmentation problem that goes beyond semantic segmentation. The goal is to differentiate not only between different types of objects, but also different instances of the same type of objects. Currently, the <em>MMV_Im2Im</em> package supports <em>EmbedSeg</em>-type models. The major benefit of EmbedSeg-type models is their agnosticism to the morphology and dimensionality of the object instances, compared to other models such as StarDist <span class="citation" data-cites="tIIG2f8K 14h90Vfg0">[<a href="#ref-tIIG2f8K" role="doc-biblioref">32</a>,<a href="#ref-14h90Vfg0" role="doc-biblioref">33</a>]</span>, SplineDist <span class="citation" data-cites="17Yrl6WGQ">[<a href="#ref-17Yrl6WGQ" role="doc-biblioref">34</a>]</span> and CellPose <span class="citation" data-cites="TugPkOLy">[<a href="#ref-TugPkOLy" role="doc-biblioref">35</a>]</span>. For example, different from the others, <em>EmbedSeg</em>-type models are even able to generate instance segmentation where each instance contains multiple connected components. Additional frameworks such as OmniPose <span class="citation" data-cites="lXzmjM5n">[<a href="#ref-lXzmjM5n" role="doc-biblioref">36</a>]</span> will be supported in future versions. Another mainstream category of instance segmentation methods are detection-based models, such as Mask-RCNN <span class="citation" data-cites="xi8wnibR">[<a href="#ref-xi8wnibR" role="doc-biblioref">37</a>]</span>. However, these models are better suited to the detection framework rather than image-to-image transformation (see Discussion section for details).</p>
+<p>The <em>EmbedSeg</em>-type models were re-implemented according to the original paper <span class="citation" data-cites="K2ugNcVa QmYuUQ5K">[<a href="#ref-K2ugNcVa" role="doc-biblioref">10</a>,<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span> following the generic boilerplate in <em>MMV_Im2Im</em>, with significant improvment. First of all, following the modular design of <em>MMV_Im2Im</em>, it is flexible to use different neural network models as the backbone. For 3D anisotropic microscopy image, the original backbone ERFNet <span class="citation" data-cites="XAkgs3Nh">[<a href="#ref-XAkgs3Nh" role="doc-biblioref">38</a>]</span> doesn’t take the anisotropic dimensions into account and therefore may not perform well or even not applicable. In this scenario, it is straighforward to employ another anisotropic neural network bone, such as the anisotropic U-Net in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> or the anisotropic version of Dynamic U-Net in MONAI. Second, we significantly improve training strategy. The original version requires pre-cropping patches centered around each instance and pre-calculated the center images and class images. This may generate a massive amount of additional data on the disk. More importantly, such pre-cropping makes data augmentation nearly impossible, except the simple ones like flipping (otherwise, the pre-calculated centers might be wrong), and also greatly undersamples around negative cases (e.g., background). For example, we have observed that for an Embedseg model training only with patches centered around instances, the model may suffer from degraded performance during inference when there are a large amound of background areas without any instances. Again, following the modular design of <em>MMV_Im2Im</em>, it is now possible to do on-the-fly data augmentation and patch sampling, even weighted patch sampling. Third, our improved <em>Embedseg</em>-type models can accept an exclusion mask so that certain parts of the images can be ignored during training. This is especially useful for partially annotated ground truth. For large images, it could be extremely time-consuming to require every single instance to be annotated. The exclusion masks can effectively avoid this bottleneck. Another extension comparing to the original implementation was that the <em>MMV_Im2Im</em> package made sliding windowing inference straightforward, and therefore permitted easy handling of images of any size during inference in practice.</p>
+<p>In this work, we tested on both 2D and 3D instance segmentation problems. Going from 2D to 3D is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. <em>MMV_Im2Im</em> is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, one can greatly reduce GPU memory workload for each sample and therefore increase the batch size or the patch size. When multiple GPUs are available, it is also possible to easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. As a demonstration, we applied <em>EmbedSeg</em>-like models to a 2D problem of segmenting <em>C. elegans</em> from widefield images <span class="citation" data-cites="138foKNOh">[<a href="#ref-138foKNOh" role="doc-biblioref">39</a>]</span>, as well as a 3D problem of nuclear segmentation from fluorescent and brightfield images from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>.</p>
+<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper. Example results on a small holdout set are shown in Figure <a href="#fig:instance">4</a>-A (IoU = 0.86), which is comparable to the original published results <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>. For the 3D problem, the original backbone is not directly applicable, due to the aforementioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> is used here. The segmentation results obtained from the public dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> contain nuclear instance segmentation of all cells. But, the cells touch the image borders are ignored from downstream analysis <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> and therefore not curated. In other words, the segmentation from this public dataset can only be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. Therefore, the exclusion masking function in <em>MMV_Im2Im</em> is very helpful in this example.</p>
+<p>Example results were presented in <a href="#fig:instance">4</a>-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). Besides roughly separating the DNA signals from background, the model was also able to correctly identify the instance identity, which would be theoretically infeasible for other instance segmentation models like StarDist or CellPose. Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images. Arguably, this could be thought of as one single model doing two transformations: predicting the DNA signals from brightfield and running instance segmentation on predicted DNA signals. From Figure <a href="#fig:instance">4</a>-B, it was shown that the segmentation from brightfield images was comparable to the segmentation from fluorescent images, but with two caveats. First, the performance on mitotic cells was worse than the model using fluorescent images. We hypothesized this could be due to the limited information in brightfield images for mitotic cells, compounded with limited number of mitotic cells in the whole training set (less than 10%). Second, the performance along Z dimension was also worse than the fluorescent model, as explained by the side view in Figure <a href="#fig:instance">4</a>-B. This could be explained by the different properties of brightfield imaging and fluorescent imaging, but would need further comprehensive studies to investigate and confirm.</p>
+<div id="fig:instance" class="fignos">
+<figure>
+<img src="images/embedseg.png" style="width:85.0%" alt="Figure 4: (A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> (A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side.</figcaption>
+</figure>
+</div>
+<h3 id="comparing-semantic-segmentation-and-instance-segmentation-of-organelles-from-3d-confocal-microscopy-images">Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images</h3>
+<p>We did a special comparison in this subsection to further illustrate the difference between semantic and instance segmentations. We took the 3D fibrillarin dataset from <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. There are multiple channels in each 3D images, including DNA dye, membrane dye, and the structure channel (i.e., fibrillarin in this case). The original fibrillarin segmentation released with the dataset is a semantic segmentation (0=background, 1=fibrillarin). With the additional cell segmentation available in the dataset, we can know which groups of segmented fibrillarin belong to the same cell. Then, we can convert the original 3D fibrillarin segmentation segmentation ground truth into 3D instance segmentation ground truth (fibrillarin pixels belonging to the same cell are grouped as a unique instance). Sample images and results are shown in Figure <a href="#fig:3dseg">5</a>. We can observe that the semantic segmentation model is able to achieve good accuracy in determining pixels from the fibrillarin signals. Meanwhile, the instance segmentation can group them properly so that fibrillarin masks from the same cell are successfully identified as unique instances, even without referring to the cell membrane channel or cell segmentation results. This is not a simple grouping step based on distance, since the fibrillarin signals from tightly touching nuclei may exist very close to each other.</p>
+<div id="fig:3dseg" class="fignos">
+<figure>
+<img src="images/semantic_seg3d.png" style="width:75.0%" alt="Figure 5: Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). From left to right: raw fibrillarin image, semantic segmentation, instance segmentation, instance ground truth, a reference images with all the channels (DNA dye in cyan, membrane dye in magenta, and fibrillarin in white) to show all the neighering cells." />
+<figcaption aria-hidden="true"><span>Figure 5:</span> Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). From left to right: raw fibrillarin image, semantic segmentation, instance segmentation, instance ground truth, a reference images with all the channels (DNA dye in cyan, membrane dye in magenta, and fibrillarin in white) to show all the neighering cells.</figcaption>
+</figure>
+</div>
+<h3 id="unsupervised-semantic-segmentation-of-intracelluar-structures-from-2d3d-confocal-microscopy-images">Unsupervised semantic segmentation of intracelluar structures from 2D/3D confocal microscopy images</h3>
+<p>Large amounts of high-quality segmentation ground truth is not always available, or may require endless effort to collect for a segmentation task. CycleGAN-based methods have opened up a new avenue for segmentation without the need for pixel-wise ground truth <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>. In this subsection, we demonstrate an unsupervised learning-based segmentation method on four examples: 2D tight-junction (via ZO1) segmentation from 2D FP-tagged ZO1 images (max-projected from 3D stacks), and segmentation of nuclei, mitochondria, and golgi from 3D confocal microscopy images.</p>
+<p>To perform unsupervised learning, we used raw images from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>, as well as their corresponding segmentations (may not be absolute pixel-wise ground truth, but have gone through systematic evaluation to ensure the overall quality). We shuffled the raw images and their segmentations to generate a set of simulated segmentation masks. A demonstration of the concept is illustrated in Figure <a href="#fig:unsupervised">6</a>-A. Example results for all 3D models are shown in Figure <a href="#fig:unsupervised">6</a>-B, and the F1-scores on the test set are summarized in Table <a href="#tbl:unsuper">2</a>.</p>
+<p>Interestingly, on the 2D ZO1 example, we observed that the segmentation generated by the unsupervised learning method was actually slightly better than the original segmentation obtained from a classic image segmentation workflow as in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>. For the 3D examples, it has been suggested that the quality of unsupervised nuclei segmentation could be further improved with additional simulation strategies <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>. Overall, we believe that unsupervised learning offers an effective way to generate preliminary segmentation, which can be further refined through active learning such as the iterative DL workflow described in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span></p>
+<div id="tbl:unsuper" class="tablenos">
+<table id="tbl:unsuper" width="90%">
+<caption><span>Table 2:</span> F1 scores of the unsupervised semantic segmentation predictions. </caption>
+<thead>
+<tr class="header">
+<th>Dimensionality</th>
+<th>Dataset</th>
+<th>F1 Score</th>
+<th># of Test Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2D</td>
+<td>tight-junction</td>
+<td>0.888 ± 0.022</td>
+<td>29</td>
+</tr>
+<tr class="even">
+<td>3D</td>
+<td>nucleus</td>
+<td>0.811 ± 0.150</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>3D</td>
+<td>golgi</td>
+<td>0.705 ± 0.022</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>3D</td>
+<td>mitochondria</td>
+<td>0.783 ± 0.005</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fig:unsupervised" class="fignos">
+<figure>
+<img src="images/unsupervised.png" style="width:90.0%" alt="Figure 6: (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. The yellow arrows indicate a region where the unsupervised learning method actually predicted better than the original segmentation results by classic image processing methods. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning." />
+<figcaption aria-hidden="true"><span>Figure 6:</span> (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. The yellow arrows indicate a region where the unsupervised learning method actually predicted better than the original segmentation results by classic image processing methods. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning.</figcaption>
+</figure>
+</div>
+<h3 id="generating-synthetic-microscopy-images-from-binary-masks">Generating synthetic microscopy images from binary Masks</h3>
+<p>Generating a large amount of synthetic microscopy images can be an important step in developing image analysis methods. Synthetic images offer a way to train other DL models, such as self-supervised pre-training, using a diverse set of images without the need for large amounts of real-world data. As long as the synthetic images are generated with sufficient quality, it is possible to have an unlimited amount of training data for certain applications. Moreover, synthetic images can be used to evaluate other models when validation data is difficult to obtain. In this study, we demonstrate that <em>MMV_Im2Im</em> can generate 2D/3D synthetic microscopy images with high realism and validity, using a subset of data collected from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>, either in a supervised or unsupervised manner.</p>
+<p>For 2D demonstration, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary mask. With the paired “mask + microscopy image” data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data which can be trained in an unsupervised fashion. Example results can be found in Figure <a href="#fig:synthetic">7</a>-A. In general, the supervised synthesization can generate more realistic images than the unsupervised model.</p>
+<p>For 3D demonstration, we use 3D H2B images with two different types of input masks. First, we attempted to generate synthetic images from a coarse mask (i.e., only the overall shape of the nucleus, available as nuclear segmentation from the dataset) with both supervised training and unsupervised training. The unsupervised model in <em>MMV_Im2Im</em> uses the CycleGAN-based approaches. So, the unsupervised training is actually already done within the unsupervised segmentation experiments. In other words, the unsupervised model works in a bi-directional way, from real microscopy images to binary mask, and also from binary masks to simulated microscopy images. Here, we just do the inference in a different direction (from binary to simulated microscopy) using the model trained in unsupervised segmentation section. The results are shown in Figure <a href="#fig:synthetic">7</a>-B (row 1). Similar to the results in 2D demonstration, the unsupervised synthesization can mostly “paint” the mask with homogeneous grayscale intensity, while the supervised model can simulate the textures to some extent. For a relatively large mask, it could be chanllenging for a model to fill in sufficient details to simulate real microscopy images (might be improved with diffusion-based models, see Discussions).</p>
+<p>We made another attempt with 3D masks containing finer details beyond the overall shapes. So, we employed the H2B structure segmentation results from the dataset (capturing the detailed nuclear components marked by histon H2B) as the input for supervsied synthesization. The result is shown in Figure <a href="#fig:synthetic">7</a>-B (row 2). Comparing to the synthesization with coarse masks, the images simulated from fine masks exhibit much more realistic appearance. As we can see, it is important to design the solutions with proper data.</p>
+<div id="fig:synthetic" class="fignos">
+<figure>
+<img src="images/synthetic.png" style="width:60.0%" alt="Figure 7: Example results of (A) 2D synthetic fluorescent images of nucleoli (via NPM1) and (B) 3D synthetic fluorescent images of H2B (middle z-slices of a z-stack) with a coarse mask and a fine mask as the input." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> Example results of (A) 2D synthetic fluorescent images of nucleoli (via NPM1) and (B) 3D synthetic fluorescent images of H2B (middle z-slices of a z-stack) with a coarse mask and a fine mask as the input.</figcaption>
+</figure>
+</div>
+<h3 id="image-denoising-for-microscopy-images">Image denoising for microscopy images</h3>
+<p><em>MMV_Im2Im</em> can also be used to computationally reduce image noise or restore the data from various sources of imaging artifacts, so as to increase the feasibility and efficiency in downstream analysis. In the current version of <em>MMV_Im2Im</em>, the restoration model can only be trained in a fully supervised manner. Therefore, aligned low quality and high quality images are required for supervision, even though such pair data can be partially simulated <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>. Other methods, such as unsupervised learning based solutions <span class="citation" data-cites="JVOCBBq0">[<a href="#ref-4vnyY9J9" role="doc-biblioref">41</a>]</span>, will be made available within <em>MMV_Im2Im</em> in future versions.</p>
+<p>In this example, we presented an image denoising demonstration with sample data from <span class="citation" data-cites="12G712Zky">[<a href="#ref-12G712Zky" role="doc-biblioref">42</a>]</span>. The goal was to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models were trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 ± 0.029 and structural similarity of 0.627 ± 0.175. Based on the results in Figure <a href="#fig:denoising">8</a>, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations would be necessary to confirm the biological validity, but beyond the scope of this paper.</p>
+<div id="fig:denoising" class="fignos">
+<figure>
+<img src="images/denoising.png" style="width:75.0%" alt="Figure 8: (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction." />
+<figcaption aria-hidden="true"><span>Figure 8:</span> (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.</figcaption>
+</figure>
+</div>
+<h3 id="imaging-modality-transformation-from-3d-confocal-microscopy-images-to-stimulated-emission-depletion-sted-microscopy-images">Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images</h3>
+<p>Another important application of image-to-image transformation is imaging modality transformation <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>, usually from one “cheaper” modality with lower resolution (e.g., with larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of <em>MMV_Im2Im</em> in this scenario, we took an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures, microtubule and nuclear pore <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. Sample results were summarized in Figure <a href="#fig:modality">9</a>. For microtubule, the model achieved pearson correlation of 0.779 ± 0.019, while for nuclear pore complex, the pearson correlation was 0.784 ± 0.028. Also, visual inspection can confirm the effectiveness of the models. Again, it would be necessary to conduct further quantitative evaluation to ensure the validity in users’ specific problems.</p>
+<div id="fig:modality" class="fignos">
+<figure>
+<img src="images/modality.png" style="width:65.0%;height:70.0%" alt="Figure 9: Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images." />
+<figcaption aria-hidden="true"><span>Figure 9:</span> Example results of confocal-to-STED modality transformation of nuclear pore (A) and microtubule (B) in three consecutive z-slices. From left to right: raw confocal images, reference STED images, predicted images.</figcaption>
+</figure>
+</div>
+<h3 id="staining-transformation-in-multiplex-experiments">Staining transformation in multiplex experiments</h3>
+<p>DL has emerged as a powerful tool for multiplex imaging, a powerful technique that enables the simultaneous detection and visualization of multiple biomolecules within a single tissue sample. This technique is increasingly being used in biomedical expereiements but demands efficient image analysis solutions to accurately identify and quantify the different biomolecules of interest at scale. DL has demonstrated great potentials in analyzing muliplex datasets, as it can automatically learn the complex relationships between different biomolecules and their spatial distribution within tissues. Specially, in this study, we present the effectiveness of <em>MMV_Im2Im</em> in transforming tissue images from one staining to another, which will permit efficient co-registration, co-localization, and quantitative analysis of multiplex datasets. We used the sample dataset from <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. In this example, we trained three different models to transform IHC images to images of standard hematoxylin stain, mpIF nuclear (DAPI) and mpIF LAP2beta (a nuclear envelope stain). Example results can be observed in Figure <a href="#fig:multiplex">10</a> to verify the results qualitatively. These transformed images can provide valuable insights into the localization and expression patterns of specific biomolecules spatially.</p>
+<div id="fig:multiplex" class="fignos">
+<figure>
+<img src="images/multiplex.png" alt="Figure 10: Qualitative visualization of staining transformation results with the MMV_Im2Im package." />
+<figcaption aria-hidden="true"><span>Figure 10:</span> Qualitative visualization of staining transformation results with the <em>MMV_Im2Im</em> package.</figcaption>
+</figure>
+</div>
+<h2 id="methods">Methods</h2>
+<h3 id="overview-of-the-code-base">Overview of the code base</h3>
+<p>Overall, the package inherited the boilerplate concept from pytorch-lightning (<a href="https://www.pytorchlightning.ai/" class="uri">https://www.pytorchlightning.ai/</a>), and was made fully configurable via yaml files supported by pyrallis (<a href="https://github.com/eladrich/pyrallis" class="uri">https://github.com/eladrich/pyrallis</a>), as well as largely employed state-of-the-art DL components from MONAI (<a href="https://monai.io/" class="uri">https://monai.io/</a>). The three key parts in the package: mmv_im2im.models, mmv_im2im.data_modules, and Trainers, will be further described below.</p>
+<h3 id="main-frameworks-for-mmv_im2im.models">Main frameworks for mmv_im2im.models</h3>
+<p><em>mmv_im2im.models</em> is the core module defining the DL framework for your problem, where we can instantiate the neural network architecture and define what to do before training starts, what to do in each training and validation step, what to do at the end of each epoch, etc.. All implemented following the same lightning module from pytorch-lightning, which makes the code very easy to read, to understand, and even to extend.</p>
+<p>In general, there are mainly four major DL frameworks that could be applied to microscopy image-to-image transformation: supervised learning with a fully convolutional networks (FCN) type models, supervised learning with pix2pix type models, unsupervised learning to learn mapping between visual domains, and Self2Self-type self-supervised learning <span class="citation" data-cites="srrRoFXR">[<a href="#ref-srrRoFXR" role="doc-biblioref">43</a>]</span>. The major difference between FCN based supervised learning and pix2pix based supervised learning is that the pix2pix framework extends an FCN model with an adversarial head as a discriminator to further improves the realism of the prediction. The major difference between the unsupervised framework and the self-supervised framework is that the unsupervised methods still requires examples of the target images, even though the source images and target images do not need to be from the same sample or pixel-wise aligned. But, the self-supervised framework would only need the original images, which could be really helpful when it is impossible to acquire the target images (e.g., there is no truely noise-free or artifact-free image).</p>
+<p>Currently, for supervised frameworks, both the FCN-type and pix2pix-type are well supported in the <em>MMV_Im2Im</em> package. Since our package is designed in a very generic way, it is possible to continuously expand the functionalities when available (ideally with community contributions). For example, diffusion models <span class="citation" data-cites="1A3yurr7m">[<a href="#ref-1A3yurr7m" role="doc-biblioref">44</a>]</span> can be thought of a modern extension of the pix2pix-type framework and therefore are within our horizon to include into <em>MMV_Im2Im</em>. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire (<a href="https://github.com/NVlabs/imaginaire" class="uri">https://github.com/NVlabs/imaginaire</a>), which will greatly extend the applicability of <em>MMV_Im2Im</em> (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone.</p>
+<h3 id="customized-mmv_im2im.data_modules-for-bioimaging-applications">Customized mmv_im2im.data_modules for bioimaging applications</h3>
+<p>The <em>data_modules</em> implements a general module for data handling for all differnet frameworks mentioned above, from how to load the data to how to set up the dataloader for training and validation. Different people may prefer to organize their training data in different ways, such as using csv to organize input and the corresponding ground truth, or making different folders (e.g. “image” and “ground_truth”) with input and the corresponding ground truth sharing the same file name, etc.. Or some people may prefer to do a random train/validation split, while others like to pre-split train and validation into different folders, etc.. Currently, the <em>data_module</em> in <em>MMV_Im2Im</em> supports four different ways of data loading, where we try to cover as many common scenario as possible, so that everyone will feel comfortable using it.</p>
+<p>A big challenge in the dataloader in bioimaging applications is that there could be not only a large amount of files, but also files of very large sizes. To deal with each individual large image, we used the delayed loading from aicsimageio for efficient image reading. Besides, we adopted the PersistentDataloader from MONAI to further optimize the efficiency. In specific, after loading a large image and running through all the deterministic operations, like intensity normalization or spatial padding, the PersistentDataLoader will pickle and save the data in a temporary folder, to avoid repeating the heavy computation on large files in each training iteration. To handle the potentially large number of files, we implemented the data_module with capability of loading only a certain portion of the data into the memory in each epoch and reloading with a different portion every certain number of epochs. By doing this, we were able to efficiently train an instance segmentation model with more than 125K images, where each raw image is about 15MB.</p>
+<h3 id="state-of-the-art-training-with-the-pytorch-lightning-trainer">State-of-the-art training with the pytorch-lightning Trainer</h3>
+<p>We fully adopted the Trainer from pytorch-lightning, which has been widely used by the machine learning community, and wildly tested on both R&amp;D problems and industrial-scale applications. In a nutshell, simply by specifying the training parameters in the yaml file, users can setup multi-GPU training, half-precision training, automatic learning rate finder, automatic batch size finder, early stopping, stochastic weight averaging, etc.. This allows users to focus on the research problems without worrying about the ML engineering.</p>
+<h2 id="discussions">Discussions</h2>
+<p>In this work, we presented a new open source python package <em>MMV_Im2Im</em> package for image-to-image transformations in bioimaging applications. We demonstrated the applicability on more than ten different problems or datasets to give biomedical researchers a holistic view of the general image-to-image transformation concepts with diverse examples. This package was not a simple collection of existing methods. Instead, we distilled the knowledge from existing methods and created this generic version with state-of-the-art ML engineering techniques, which made the package easy to understand, easy to use, and easy to extend for future. We hope this package can serve the starting point for other researchers doing AI-based image-to-image transformation research, and eventually build a large shared community in the field of image-to-image transformation for bioimaging.</p>
+<p>One of main directions for extending <em>MMV_Im2Im</em> is to pre-pack common bioimaging datasets as a <em>Dataset</em> module, so that DL researchers can use for algorithm development and benchmarking, and new users can easily use for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models <span class="citation" data-cites="1A3yurr7m">[<a href="#ref-1A3yurr7m" role="doc-biblioref">44</a>]</span>, unsupervised denoising <span class="citation" data-cites="JVOCBBq0">[<a href="#ref-4vnyY9J9" role="doc-biblioref">41</a>]</span> or Imaginaire (<a href="https://github.com/NVlabs/imaginaire" class="uri">https://github.com/NVlabs/imaginaire</a>). Besides, we also plan to develop two auxillary packages <em>MMV_Im2Im_Auto</em> and <em>MMV_Im2Im_Active</em>. In specific, when you have a reasonable amount of training data, MMV_Im2Im_Auto will take advantage of the fact that <em>MMV_Im2Im</em> is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, <em>MMV_Im2Im_Active</em> will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>. All the packages will also be wrapped into Napari plugins <span class="citation" data-cites="YEMgt2T4">[<a href="#ref-YEMgt2T4" role="doc-biblioref">45</a>]</span> to allow no-code operation and therefore be more friendly to users without experience in programming.</p>
+<p>Finally, beyond <em>MMV_Im2Im</em>, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our <em>MMV_NDet</em> (NDet = N-dimensional detection) package, currently under development.</p>
+<h2 id="code-and-data-availability">Code and data availability</h2>
+<p>Project name: MMV_Im2Im (Microscopy Machine Vision, Image-to-Image transformation)</p>
+<p>Project home page: https://github.com/mmv-lab/mmv_im2im</p>
+<p>Operating system(s): Linux and Windows (when using GPU), also MacOS (when only using CPU)</p>
+<p>Programming language: Python</p>
+<p>Other requirements: PyTorch 1.11 or higher, all other dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py</p>
+<p>License: MIT license</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advices on how to integrate aicsimageio into the package. This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272.</p>
+<h2 class="page_break_before" id="references">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-1O0bopKD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Enhanced Deep Residual Networks for Single Image Super-Resolution</strong> <div class="csl-block">Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee</div> <em>2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</em> (2017-07) <a href="https://doi.org/gfxhp3">https://doi.org/gfxhp3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvprw.2017.151">10.1109/cvprw.2017.151</a></div></div>
+</div>
+<div id="ref-LxlUp436" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Image-to-Image Translation with Conditional Adversarial Networks</strong> <div class="csl-block">Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A Efros</div> <em>2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em> (2017-07) <a href="https://doi.org/gfrfv9">https://doi.org/gfrfv9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2017.632">10.1109/cvpr.2017.632</a></div></div>
+</div>
+<div id="ref-11chATuF4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Panoptic Segmentation</strong> <div class="csl-block">Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr Dollar</div> <em>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> (2019-06) <a href="https://doi.org/ggp9z4">https://doi.org/ggp9z4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2019.00963">10.1109/cvpr.2019.00963</a></div></div>
+</div>
+<div id="ref-Yq8wZ6hc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy</strong> <div class="csl-block">Chawin Ounkomol, Sharmishtaa Seshamani, Mary M Maleckar, Forrest Collman, Gregory R Johnson</div> <em>Nature Methods</em> (2018-09-17) <a href="https://doi.org/gd7d5f">https://doi.org/gd7d5f</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0111-2">10.1038/s41592-018-0111-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30224672">30224672</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6212323">PMC6212323</a></div></div>
+</div>
+<div id="ref-WwenuBHa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Deep learning-inferred multiplex immunofluorescence for immunohistochemical image quantification</strong> <div class="csl-block">Parmida Ghahremani, Yanyun Li, Arie Kaufman, Rami Vanguri, Noah Greenwald, Michael Angelo, Travis J Hollmann, Saad Nadeem</div> <em>Nature Machine Intelligence</em> (2022-04-07) <a href="https://doi.org/gqc7gd">https://doi.org/gqc7gd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-022-00471-x">10.1038/s42256-022-00471-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36118303">36118303</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9477216">PMC9477216</a></div></div>
+</div>
+<div id="ref-wcCVn8av" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Deep learning-based point-scanning super-resolution imaging</strong> <div class="csl-block">Linjing Fang, Fred Monroe, Sammy Weiser Novak, Lyndsey Kirk, Cara R Schiavon, Seungyoon B Yu, Tong Zhang, Melissa Wu, Kyle Kastner, Alaa Abdel Latif, … Uri Manor</div> <em>Nature Methods</em> (2021-03-08) <a href="https://doi.org/gjhgrw">https://doi.org/gjhgrw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01080-z">10.1038/s41592-021-01080-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33686300">33686300</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8035334">PMC8035334</a></div></div>
+</div>
+<div id="ref-xPgDok51" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>LIVECell—A large-scale dataset for label-free live cell segmentation</strong> <div class="csl-block">Christoffer Edlund, Timothy R Jackson, Nabeel Khalid, Nicola Bevan, Timothy Dale, Andreas Dengel, Sheraz Ahmed, Johan Trygg, Rickard Sjögren</div> <em>Nature Methods</em> (2021-08-30) <a href="https://doi.org/gmptqs">https://doi.org/gmptqs</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01249-6">10.1038/s41592-021-01249-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34462594">34462594</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8440198">PMC8440198</a></div></div>
+</div>
+<div id="ref-UEBDZ3tI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Three-dimensional residual channel attention networks denoise and sharpen fluorescence microscopy image volumes</strong> <div class="csl-block">Jiji Chen, Hideki Sasaki, Hoyin Lai, Yijun Su, Jiamin Liu, Yicong Wu, Alexander Zhovmer, Christian A Combs, Ivan Rey-Suarez, Hung-Yu Chang, … Hari Shroff</div> <em>Nature Methods</em> (2021-05-31) <a href="https://doi.org/gkbctn">https://doi.org/gkbctn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01155-x">10.1038/s41592-021-01155-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34059829">34059829</a></div></div>
+</div>
+<div id="ref-TutLhFSz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>U-Net: Convolutional Networks for Biomedical Image Segmentation</strong> <div class="csl-block">Olaf Ronneberger, Philipp Fischer, Thomas Brox</div> <em>Lecture Notes in Computer Science</em> (2015) <a href="https://doi.org/gcgk7j">https://doi.org/gcgk7j</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-24574-4_28">10.1007/978-3-319-24574-4_28</a></div></div>
+</div>
+<div id="ref-K2ugNcVa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>EmbedSeg: Embedding-based Instance Segmentation for Biomedical Microscopy Data</strong> <div class="csl-block">Manan Lalit, Pavel Tomancak, Florian Jug</div> <em>Medical Image Analysis</em> (2022-10) <a href="https://doi.org/grxbwr">https://doi.org/grxbwr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.media.2022.102523">10.1016/j.media.2022.102523</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35926335">35926335</a></div></div>
+</div>
+<div id="ref-QmYuUQ5K" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Embedding-based Instance Segmentation in Microscopy</strong> <div class="csl-block">Manan Lalit, Pavel Tomancak, Florian Jug</div> <em>Proceedings of the Fourth Conference on Medical Imaging with Deep Learning</em> <a href="https://proceedings.mlr.press/v143/lalit21a.html">https://proceedings.mlr.press/v143/lalit21a.html</a></div>
+</div>
+<div id="ref-RuFP3CS3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Unsupervised data to content transformation with histogram-matching cycle-consistent generative adversarial networks</strong> <div class="csl-block">Stephan J Ihle, Andreas M Reichmuth, Sophie Girardin, Hana Han, Flurin Stauffer, Anne Bonnin, Marco Stampanoni, Karthik Pattisapu, János Vörös, Csaba Forró</div> <em>Nature Machine Intelligence</em> (2019-09-16) <a href="https://doi.org/ggwbcv">https://doi.org/ggwbcv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-019-0096-2">10.1038/s42256-019-0096-2</a></div></div>
+</div>
+<div id="ref-6wtIu4QY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks</strong> <div class="csl-block">Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A Efros</div> <em>2017 IEEE International Conference on Computer Vision (ICCV)</em> (2017-10) <a href="https://doi.org/gfhw33">https://doi.org/gfhw33</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/iccv.2017.244">10.1109/iccv.2017.244</a></div></div>
+</div>
+<div id="ref-YbvSvdyB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>PyTorchLightning/pytorch-lightning: 0.7.6 release</strong> <div class="csl-block">William Falcon, Jirka Borovec, Adrian Wälchli, Nic Eggert, Justus Schock, Jeremy Jordan, Nicki Skafte, Ir1dXD, Vadim Bereznyuk, Ethan Harris, … Anton Bakhtin</div> <em>Zenodo</em> (2020-05-15) <a href="https://doi.org/gqc7f9">https://doi.org/gqc7f9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3828935">10.5281/zenodo.3828935</a></div></div>
+</div>
+<div id="ref-qzeQFRn9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Averaging Weights Leads to Wider Optima and Better Generalization</strong> <div class="csl-block">Pavel Izmailov, Dmitrii Podoprikhin, Timur Garipov, Dmitry Vetrov, Andrew Gordon Wilson</div> <em>34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018</em> <a href="http://auai.org/uai2018/proceedings/papers/313.pdf">http://auai.org/uai2018/proceedings/papers/313.pdf</a></div>
+</div>
+<div id="ref-lt4BNUoG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>ImageNet: A large-scale hierarchical image database</strong> <div class="csl-block">Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei</div> <em>2009 IEEE Conference on Computer Vision and Pattern Recognition</em> (2009-06) <a href="https://doi.org/cvc7xp">https://doi.org/cvc7xp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr.2009.5206848">10.1109/cvpr.2009.5206848</a></div></div>
+</div>
+<div id="ref-UU62HYC6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Project MONAI</strong> <div class="csl-block">The MONAI Consortium</div> <em>Zenodo</em> (2020-12-15) <a href="https://doi.org/gqc7gb">https://doi.org/gqc7gb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.4323059">10.5281/zenodo.4323059</a></div></div>
+</div>
+<div id="ref-ONdyoUIo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>AllenCellModeling/aicsimageio: Types, Filesystem Management, and BioformatsReader Fixes</strong> <div class="csl-block">Jackson Maxfield Brown, Jamie Sherman, Toloudis, Madison Swain-Bowden, Talley Lambert, Matte Bailey, Basu Chaudhuri, Gregory Johnson, Ian Hunt-Isaak, Nicholas-Schaub, … Peter Sobolewski</div> <em>Zenodo</em> (2022-05-27) <a href="https://doi.org/gqc7gc">https://doi.org/gqc7gc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.6585658">10.5281/zenodo.6585658</a></div></div>
+</div>
+<div id="ref-jM3v1UjQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>The Allen Cell and Structure Segmenter: a new open source toolkit for segmenting 3D intracellular structures in fluorescence microscopy images</strong> <div class="csl-block">Jianxu Chen, Liya Ding, Matheus P Viana, HyeonWoo Lee, MFilip Sluezwski, Benjamin Morris, Melissa C Hendershott, Ruian Yang, Irina A Mueller, Susanne M Rafelski</div> <em>Cold Spring Harbor Laboratory</em> (2018-12-08) <a href="https://doi.org/gkspnm">https://doi.org/gkspnm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/491035">10.1101/491035</a></div></div>
+</div>
+<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+</div>
+<div id="ref-gPpwGUco" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Practical fluorescence reconstruction microscopy for large samples and low-magnification imaging</strong> <div class="csl-block">Julienne LaChance, Daniel J Cohen</div> <em>PLOS Computational Biology</em> (2020-12-23) <a href="https://doi.org/grxbww">https://doi.org/grxbww</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1008443">10.1371/journal.pcbi.1008443</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33362219">33362219</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802935">PMC7802935</a></div></div>
+</div>
+<div id="ref-EOO2mf0p" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Understanding metric-related pitfalls in image analysis validation</strong> <div class="csl-block">Annika Reinke, Minu D Tizabi, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, AEmre Kavur, Tim Rädsch, Carole H Sudre, Laura Acion, Michela Antonelli, … Lena Maier-Hein</div> <em>arXiv</em> (2023) <a href="https://doi.org/grxbwx">https://doi.org/grxbwx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2302.01790">10.48550/arxiv.2302.01790</a></div></div>
+</div>
+<div id="ref-xv2VIyRP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>HeLa "Kyoto" cells under the scope</strong> <div class="csl-block">Romain Guiet</div> <em>Zenodo</em> (2022-02-25) <a href="https://doi.org/gqdkdm">https://doi.org/gqdkdm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.6139958">10.5281/zenodo.6139958</a></div></div>
+</div>
+<div id="ref-5sGcmDuy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Integrated intracellular organization and its variations in human iPS cells</strong> <div class="csl-block">Matheus P Viana, Jianxu Chen, Theo A Knijnenburg, Ritvik Vasan, Calysta Yan, Joy E Arakaki, Matte Bailey, Ben Berry, Antoine Borensztejn, Eva M Brown, … Susanne M Rafelski</div> <em>Nature</em> (2023-01-04) <a href="https://doi.org/grkztd">https://doi.org/grkztd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-022-05563-7">10.1038/s41586-022-05563-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36599983">36599983</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9834050">PMC9834050</a></div></div>
+</div>
+<div id="ref-M7480NLD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Left-Ventricle Quantification Using Residual U-Net</strong> <div class="csl-block">Eric Kerfoot, James Clough, Ilkay Oksuz, Jack Lee, Andrew P King, Julia A Schnabel</div> <em>Statistical Atlases and Computational Models of the Heart. Atrial Segmentation and LV Quantification Challenges</em> (2019) <a href="https://doi.org/gqdkdp">https://doi.org/gqdkdp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-030-12029-0_40">10.1007/978-3-030-12029-0_40</a></div></div>
+</div>
+<div id="ref-OCow1hly" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Attention U-Net: Learning Where to Look for the Pancreas</strong> <div class="csl-block">Ozan Oktay, Jo Schlemper, Loic Le Folgoc, Matthew Lee, Matthias Heinrich, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Y Hammerla, Bernhard Kainz, … Daniel Rueckert</div> <em>Proceedings of Medical Imaging with Deep Learning 2018</em> <a href="https://openreview.net/forum?id=Skft7cijM">https://openreview.net/forum?id=Skft7cijM</a></div>
+</div>
+<div id="ref-ZWL3IrVc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images</strong> <div class="csl-block">Ali Hatamizadeh, Vishwesh Nath, Yucheng Tang, Dong Yang, Holger R Roth, Daguang Xu</div> <em>Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries</em> (2022) <a href="https://doi.org/gqrg93">https://doi.org/gqrg93</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-031-08999-2_22">10.1007/978-3-031-08999-2_22</a></div></div>
+</div>
+<div id="ref-XCKUntOB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>UNETR: Transformers for 3D Medical Image Segmentation</strong> <div class="csl-block">Ali Hatamizadeh, Yucheng Tang, Vishwesh Nath, Dong Yang, Andriy Myronenko, Bennett Landman, Holger R Roth, Daguang Xu</div> <em>2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em> (2022-01) <a href="https://doi.org/gqrg96">https://doi.org/gqrg96</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/wacv51458.2022.00181">10.1109/wacv51458.2022.00181</a></div></div>
+</div>
+<div id="ref-45Sirz1X" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>A Stochastic Polygons Model for Glandular Structures in Colon Histology Images</strong> <div class="csl-block">Korsuk Sirinukunwattana, David RJ Snead, Nasir M Rajpoot</div> <em>IEEE Transactions on Medical Imaging</em> (2015-11) <a href="https://doi.org/gqrg95">https://doi.org/gqrg95</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tmi.2015.2433900">10.1109/tmi.2015.2433900</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25993703">25993703</a></div></div>
+</div>
+<div id="ref-XAffSYIR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Gland segmentation in colon histology images: The glas challenge contest</strong> <div class="csl-block">Korsuk Sirinukunwattana, Josien PW Pluim, Hao Chen, Xiaojuan Qi, Pheng-Ann Heng, Yun Bo Guo, Li Yang Wang, Bogdan J Matuszewski, Elia Bruni, Urko Sanchez, … Nasir M Rajpoot</div> <em>Medical Image Analysis</em> (2017-01) <a href="https://doi.org/c5t7">https://doi.org/c5t7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.media.2016.08.008">10.1016/j.media.2016.08.008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27614792">27614792</a></div></div>
+</div>
+<div id="ref-tQhnZyjK" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>A method for normalizing histology slides for quantitative analysis</strong> <div class="csl-block">Marc Macenko, Marc Niethammer, JS Marron, David Borland, John T Woosley, Xiaojun Guan, Charles Schmitt, Nancy E Thomas</div> <em>2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro</em> (2009-06) <a href="https://doi.org/bmbj4h">https://doi.org/bmbj4h</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi.2009.5193250">10.1109/isbi.2009.5193250</a></div></div>
+</div>
+<div id="ref-tIIG2f8K" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Cell Detection with Star-Convex Polygons</strong> <div class="csl-block">Uwe Schmidt, Martin Weigert, Coleman Broaddus, Gene Myers</div> <em>Medical Image Computing and Computer Assisted Intervention – MICCAI 2018</em> (2018) <a href="https://doi.org/ggnzqb">https://doi.org/ggnzqb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-030-00934-2_30">10.1007/978-3-030-00934-2_30</a></div></div>
+</div>
+<div id="ref-14h90Vfg0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy</strong> <div class="csl-block">Martin Weigert, Uwe Schmidt, Robert Haase, Ko Sugawara, Gene Myers</div> <em>2020 IEEE Winter Conference on Applications of Computer Vision (WACV)</em> (2020-03) <a href="https://doi.org/gjp4g9">https://doi.org/gjp4g9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/wacv45572.2020.9093435">10.1109/wacv45572.2020.9093435</a></div></div>
+</div>
+<div id="ref-17Yrl6WGQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Splinedist: Automated Cell Segmentation With Spline Curves</strong> <div class="csl-block">Soham Mandal, Virginie Uhlmann</div> <em>2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)</em> (2021-04-13) <a href="https://doi.org/gqrg94">https://doi.org/gqrg94</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi48211.2021.9433928">10.1109/isbi48211.2021.9433928</a></div></div>
+</div>
+<div id="ref-TugPkOLy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Cellpose: a generalist algorithm for cellular segmentation</strong> <div class="csl-block">Carsen Stringer, Tim Wang, Michalis Michaelos, Marius Pachitariu</div> <em>Nature Methods</em> (2020-12-14) <a href="https://doi.org/ghrgms">https://doi.org/ghrgms</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-020-01018-x">10.1038/s41592-020-01018-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33318659">33318659</a></div></div>
+</div>
+<div id="ref-lXzmjM5n" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Omnipose: a high-precision morphology-independent solution for bacterial cell segmentation</strong> <div class="csl-block">Kevin J Cutler, Carsen Stringer, Teresa W Lo, Luca Rappez, Nicholas Stroustrup, S Brook Peterson, Paul A Wiggins, Joseph D Mougous</div> <em>Nature Methods</em> (2022-10-17) <a href="https://doi.org/grnd95">https://doi.org/grnd95</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-022-01639-4">10.1038/s41592-022-01639-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36253643">36253643</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9636021">PMC9636021</a></div></div>
+</div>
+<div id="ref-xi8wnibR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Mask R-CNN</strong> <div class="csl-block">Kaiming He, Georgia Gkioxari, Piotr Dollar, Ross Girshick</div> <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (2020-02-01) <a href="https://doi.org/gfxfwn">https://doi.org/gfxfwn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tpami.2018.2844175">10.1109/tpami.2018.2844175</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29994331">29994331</a></div></div>
+</div>
+<div id="ref-XAkgs3Nh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>ERFNet: Efficient Residual Factorized ConvNet for Real-Time Semantic Segmentation</strong> <div class="csl-block">Eduardo Romera, Jose M Alvarez, Luis M Bergasa, Roberto Arroyo</div> <em>IEEE Transactions on Intelligent Transportation Systems</em> (2018-01) <a href="https://doi.org/gcs5h7">https://doi.org/gcs5h7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tits.2017.2750080">10.1109/tits.2017.2750080</a></div></div>
+</div>
+<div id="ref-138foKNOh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>High-Throughput Screen for Novel Antimicrobials using a Whole Animal Infection Model</strong> <div class="csl-block">Terence I Moy, Annie L Conery, Jonah Larkins-Ford, Gang Wu, Ralph Mazitschek, Gabriele Casadei, Kim Lewis, Anne E Carpenter, Frederick M Ausubel</div> <em>ACS Chemical Biology</em> (2009-06-29) <a href="https://doi.org/bdwdfc">https://doi.org/bdwdfc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1021/cb900084v">10.1021/cb900084v</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19572548">19572548</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2745594">PMC2745594</a></div></div>
+</div>
+<div id="ref-JVOCBBq0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Fully Unsupervised Probabilistic Noise2Void</strong> <div class="csl-block">Mangal Prakash, Manan Lalit, Pavel Tomancak, Alexander Krul, Florian Jug</div> <em>2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)</em> (2020-04) <a href="https://doi.org/gjnw2v">https://doi.org/gjnw2v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/isbi45749.2020.9098612">10.1109/isbi45749.2020.9098612</a></div></div>
+</div>
+<div id="ref-4vnyY9J9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Interpretable Unsupervised Diversity Denoising and Artefact Removal</strong> <div class="csl-block">Mangal Prakash, Mauricio Delbracio, Peyman Milanfar, Florian Jug</div> <em>Proceedings of the Tenth International Conference on Learning Representations</em> <a href="https://proceedings.mlr.press/v143/lalit21a.html">https://proceedings.mlr.press/v143/lalit21a.html</a></div>
+</div>
+<div id="ref-12G712Zky" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Content-aware image restoration: pushing the limits of fluorescence microscopy</strong> <div class="csl-block">Martin Weigert, Uwe Schmidt, Tobias Boothe, Andreas Müller, Alexandr Dibrov, Akanksha Jain, Benjamin Wilhelm, Deborah Schmidt, Coleman Broaddus, Siân Culley, … Eugene W Myers</div> <em>Nature Methods</em> (2018-11-26) <a href="https://doi.org/gfkkfd">https://doi.org/gfkkfd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0216-7">10.1038/s41592-018-0216-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30478326">30478326</a></div></div>
+</div>
+<div id="ref-srrRoFXR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>DeStripe: A Self2Self Spatio-Spectral Graph Neural Network with Unfolded Hessian for Stripe Artifact Removal in Light-sheet Microscopy</strong> <div class="csl-block">Yu Liu, Kurt Weiss, Nassir Navab, Carsten Marr, Jan Huisken, Tingying Peng</div> <em>arXiv</em> (2022) <a href="https://doi.org/gqrnwr">https://doi.org/gqrnwr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.13419">10.48550/arxiv.2206.13419</a></div></div>
+</div>
+<div id="ref-1A3yurr7m" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>A Diffusion Model Predicts 3D Shapes from 2D Microscopy Images</strong> <div class="csl-block">Dominik JE Waibel, Ernst Röell, Bastian Rieck, Raja Giryes, Carsten Marr</div> <em>arXiv</em> (2022) <a href="https://doi.org/gqrthn">https://doi.org/gqrthn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2208.14125">10.48550/arxiv.2208.14125</a></div></div>
+</div>
+<div id="ref-YEMgt2T4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>napari: a multi-dimensional image viewer for Python</strong> <div class="csl-block">Nicholas Sofroniew, Talley Lambert, Kira Evans, Juan Nunez-Iglesias, Grzegorz Bokota, Philip Winston, Gonzalo Peña-Castellanos, Kevin Yamauchi, Matthias Bussonnier, Draga Doncila Pop, … Abigail McGovern</div> <em>Zenodo</em> (2022-11-03) <a href="https://doi.org/gjpsxz">https://doi.org/gjpsxz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3555620">10.5281/zenodo.3555620</a></div></div>
+</div>
+</div>
+<!-- default theme -->
+
+<style>
+  /* import google fonts */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+  /* -------------------------------------------------- */
+  /* global */
+  /* -------------------------------------------------- */
+
+  /* all elements */
+  * {
+    /* force sans-serif font unless specified otherwise */
+    font-family: "Open Sans", "Helvetica", sans-serif;
+
+    /* prevent text inflation on some mobile browsers */
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+  }
+
+  @media only screen {
+    /* "page" element */
+    body {
+      position: relative;
+      box-sizing: border-box;
+      font-size: 12pt;
+      line-height: 1.5;
+      max-width: 8.5in;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* "page" element */
+    body {
+      padding: 20px;
+      margin: 0;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+      background: none;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* headings */
+  /* -------------------------------------------------- */
+
+  /* all headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  /* biggest heading */
+  h1 {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  /* second biggest heading */
+  h2 {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #bdbdbd;
+  }
+
+  /* heading font sizes */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.15em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+
+  /* -------------------------------------------------- */
+  /* manuscript header */
+  /* -------------------------------------------------- */
+
+  /* manuscript title */
+  header > h1 {
+    margin: 0;
+  }
+
+  /* manuscript title caption text (ie "automatically generated on") */
+  header + p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* -------------------------------------------------- */
+  /* text elements */
+  /* -------------------------------------------------- */
+
+  /* links */
+  a {
+    color: #2196f3;
+    overflow-wrap: break-word;
+  }
+
+  /* superscripts and subscripts */
+  sub,
+  sup {
+    /* prevent from affecting line height */
+    line-height: 0;
+  }
+
+  /* unordered and ordered lists*/
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  /* class for styling text semibold */
+  .semibold {
+    font-weight: 600;
+  }
+
+  /* class for styling elements horizontally left aligned */
+  .left {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: left;
+  }
+
+  /* class for styling elements horizontally centered */
+  .center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* class for styling elements horizontally right aligned */
+  .right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: right;
+  }
+
+  /* -------------------------------------------------- */
+  /* section elements */
+  /* -------------------------------------------------- */
+
+  /* horizontal divider line */
+  hr {
+    border: none;
+    height: 1px;
+    background: #bdbdbd;
+  }
+
+  /* paragraphs, horizontal dividers, figures, tables, code */
+  p,
+  hr,
+  figure,
+  table,
+  pre {
+    /* treat all as "paragraphs", with consistent vertical margins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* figures */
+  /* -------------------------------------------------- */
+
+  /* figure */
+  figure {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure caption */
+  figcaption {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  /* figure image element */
+  figure > img,
+  figure > svg {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure auto-number */
+  img + figcaption > span:first-of-type,
+  svg + figcaption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tables */
+  /* -------------------------------------------------- */
+
+  /* table */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* table cells */
+  th,
+  td {
+    border: solid 1px #bdbdbd;
+    padding: 10px;
+    /* squash table if too wide for page by forcing line breaks */
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* header row and even rows */
+  th,
+  tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+
+  /* odd rows */
+  tr:nth-child(2n + 1) {
+    background-color: #ffffff;
+  }
+
+  /* table caption */
+  caption {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  /* table auto-number */
+  table > caption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* code */
+  /* -------------------------------------------------- */
+
+  /* multi-line code block */
+  pre {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+    break-inside: avoid;
+    text-align: left;
+  }
+
+  /* inline code, ie code within normal text */
+  :not(pre) > code {
+    padding: 0 4px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+  }
+
+  /* code text */
+  /* apply all children, to reach syntax highlighting sub-elements */
+  code,
+  code * {
+    /* force monospace font */
+    font-family: "Source Code Pro", "Courier New", monospace;
+  }
+
+  /* -------------------------------------------------- */
+  /* quotes */
+  /* -------------------------------------------------- */
+
+  /* quoted text */
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 4px solid #bdbdbd;
+    padding-left: 16px;
+    break-inside: avoid;
+  }
+
+  /* -------------------------------------------------- */
+  /* banners */
+  /* -------------------------------------------------- */
+
+  /* info banners */
+  .banner {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* paragraph in banner */
+  .banner > p {
+    margin: 0;
+  }
+
+  /* -------------------------------------------------- */
+  /* highlight colors */
+  /* -------------------------------------------------- */
+
+  .white {
+    background: #ffffff;
+  }
+  .lightgrey {
+    background: #eeeeee;
+  }
+  .grey {
+    background: #757575;
+  }
+  .darkgrey {
+    background: #424242;
+  }
+  .black {
+    background: #000000;
+  }
+  .lightred {
+    background: #ffcdd2;
+  }
+  .lightyellow {
+    background: #ffecb3;
+  }
+  .lightgreen {
+    background: #dcedc8;
+  }
+  .lightblue {
+    background: #e3f2fd;
+  }
+  .lightpurple {
+    background: #f3e5f5;
+  }
+  .red {
+    background: #f44336;
+  }
+  .orange {
+    background: #ff9800;
+  }
+  .yellow {
+    background: #ffeb3b;
+  }
+  .green {
+    background: #4caf50;
+  }
+  .blue {
+    background: #2196f3;
+  }
+  .purple {
+    background: #9c27b0;
+  }
+  .white,
+  .lightgrey,
+  .lightred,
+  .lightyellow,
+  .lightgreen,
+  .lightblue,
+  .lightpurple,
+  .orange,
+  .yellow,
+  .white a,
+  .lightgrey a,
+  .lightred a,
+  .lightyellow a,
+  .lightgreen a,
+  .lightblue a,
+  .lightpurple a,
+  .orange a,
+  .yellow a {
+    color: #000000;
+  }
+  .grey,
+  .darkgrey,
+  .black,
+  .red,
+  .green,
+  .blue,
+  .purple,
+  .grey a,
+  .darkgrey a,
+  .black a,
+  .red a,
+  .green a,
+  .blue a,
+  .purple a {
+    color: #ffffff;
+  }
+
+  /* -------------------------------------------------- */
+  /* buttons */
+  /* -------------------------------------------------- */
+
+  /* class for styling links like buttons */
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: none;
+    color: #2196f3;
+    border: solid 1px #bdbdbd;
+    border-radius: 5px;
+  }
+
+  /* buttons when hovered */
+  .button:hover:not([disabled]),
+  .icon_button:hover:not([disabled]) {
+    cursor: pointer;
+    background: #f5f5f5;
+  }
+
+  /* buttons when disabled */
+  .button[disabled],
+  .icon_button[disabled] {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* class for styling buttons containg only single icon */
+  .icon_button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  /* icon button inner svg image */
+  .icon_button > svg {
+    height: 16px;
+  }
+
+  /* -------------------------------------------------- */
+  /* icons */
+  /* -------------------------------------------------- */
+
+  /* class for styling icons inline with text */
+  .inline_icon {
+    height: 1em;
+    position: relative;
+    top: 0.125em;
+  }
+
+  /* -------------------------------------------------- */
+  /* references */
+  /* -------------------------------------------------- */
+
+  .csl-entry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* -------------------------------------------------- */
+  /* print control */
+  /* -------------------------------------------------- */
+
+  @media print {
+    @page {
+      /* suggested printing margin */
+      margin: 0.5in;
+    }
+
+    /* document and "page" elements */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* "page" element */
+    body {
+      font-size: 11pt !important;
+      line-height: 1.35;
+    }
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 15px 0;
+    }
+
+    /* figures and tables */
+    figure,
+    table {
+      font-size: 0.85em;
+    }
+
+    /* table cells */
+    th,
+    td {
+      padding: 5px;
+    }
+
+    /* shrink font awesome icons */
+    i.fas,
+    i.fab,
+    i.far,
+    i.fal {
+      transform: scale(0.85);
+    }
+
+    /* decrease banner margins */
+    .banner {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    /* class for centering an element vertically on its own page */
+    .page_center {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      break-before: page;
+      break-after: page;
+    }
+
+    /* always insert a page break before the element */
+    .page_break_before {
+      break-before: page;
+    }
+
+    /* always insert a page break after the element */
+    .page_break_after {
+      break-after: page;
+    }
+
+    /* avoid page break before the element */
+    .page_break_before_avoid {
+      break-before: avoid;
+    }
+
+    /* avoid page break after the element */
+    .page_break_after_avoid {
+      break-after: avoid;
+    }
+
+    /* avoid page break inside the element */
+    .page_break_inside_avoid {
+      break-inside: avoid;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* override pandoc css quirks */
+  /* -------------------------------------------------- */
+
+  .sourceCode {
+    /* prevent unsightly overflow in wide code blocks */
+    overflow: auto !important;
+  }
+
+  div.sourceCode {
+    /* prevent background fill on top-most code block  container */
+    background: none !important;
+  }
+
+  .sourceCode * {
+    /* force consistent line spacing */
+    line-height: 1.5 !important;
+  }
+
+  div.sourceCode {
+    /* style code block margins same as <pre> element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tablenos */
+  /* -------------------------------------------------- */
+
+  /* tablenos wrapper */
+  .tablenos {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .tablenos > table {
+    /* move margins from table to table_wrapper to allow margin collapsing */
+    margin: 0;
+  }
+
+  @media only screen {
+    /* tablenos wrapper */
+    .tablenos {
+      /* show scrollbar on tables if necessary to prevent overflow */
+      overflow-x: auto !important;
+    }
+
+    .tablenos th,
+    .tablenos td {
+      overflow-wrap: unset !important;
+      word-break: unset !important;
+    }
+
+    /* table in wrapper */
+    .tablenos table,
+    .tablenos table * {
+      /* don't break table words */
+      overflow-wrap: normal !important;
+    }
+  }
+</style>
+<!-- 
+    Plugin Core
+
+    Functions needed for and shared across all first-party plugins.
+-->
+
+<script>
+  // get element that is target of hash (from link element or url)
+  function getHashTarget(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector(`[id="${id}"]`);
+    if (!target) return;
+
+    // if figure or table, modify target to get expected element
+    if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+    if (id.indexOf("tbl:") === 0) target = target.querySelector("table");
+
+    return target;
+  }
+
+  // get position/dimensions of element or viewport
+  function getRectInView(element) {
+    let rect = {};
+    rect.left = 0;
+    rect.top = 0;
+    rect.right = document.documentElement.clientWidth;
+    rect.bottom = document.documentElement.clientHeight;
+    let style = {};
+
+    if (element instanceof HTMLElement) {
+      rect = element.getBoundingClientRect();
+      style = window.getComputedStyle(element);
+    }
+
+    const margin = {};
+    margin.left = parseFloat(style.marginLeftWidth) || 0;
+    margin.top = parseFloat(style.marginTopWidth) || 0;
+    margin.right = parseFloat(style.marginRightWidth) || 0;
+    margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+    const border = {};
+    border.left = parseFloat(style.borderLeftWidth) || 0;
+    border.top = parseFloat(style.borderTopWidth) || 0;
+    border.right = parseFloat(style.borderRightWidth) || 0;
+    border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+    const newRect = {};
+    newRect.left = rect.left + margin.left + border.left;
+    newRect.top = rect.top + margin.top + border.top;
+    newRect.right = rect.right + margin.right + border.right;
+    newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+    newRect.width = newRect.right - newRect.left;
+    newRect.height = newRect.bottom - newRect.top;
+
+    return newRect;
+  }
+
+  // get position of element relative to page
+  function getRectInPage(element) {
+    const rect = getRectInView(element);
+    const body = getRectInView(document.body);
+
+    const newRect = {};
+    newRect.left = rect.left - body.left;
+    newRect.top = rect.top - body.top;
+    newRect.right = rect.right - body.left;
+    newRect.bottom = rect.bottom - body.top;
+    newRect.width = rect.width;
+    newRect.height = rect.height;
+
+    return newRect;
+  }
+
+  // get closest element before specified element that matches query
+  function firstBefore(element, query) {
+    while (element && element !== document.body && !element.matches(query))
+      element = element.previousElementSibling || element.parentNode;
+
+    return element;
+  }
+
+  // check if element is part of collapsed heading
+  function isCollapsed(element) {
+    while (element && element !== document.body) {
+      if (element.dataset.collapsed === "true") return true;
+      element = element.parentNode;
+    }
+    return false;
+  }
+
+  // expand any collapsed parent containers of element if necessary
+  function expandElement(element) {
+    if (isCollapsed(element)) {
+      // accordion plugin
+      const heading = firstBefore(element, "h2");
+      if (heading) heading.click();
+      // details/summary HTML element
+      const summary = firstBefore(element, "summary");
+      if (summary) summary.click();
+    }
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // get list of elements after a start element up to element matching query
+  function nextUntil(element, query, exclude) {
+    const elements = [];
+    while (((element = element.nextElementSibling), element)) {
+      if (element.matches(query)) break;
+      if (!element.matches(exclude)) elements.push(element);
+    }
+    return elements;
+  }
+</script>
+<!--
+  Accordion Plugin
+
+  Allows sections of content under h2 headings to be collapsible.
+-->
+
+<script type="module">
+  // whether to always start expanded ('false'), always start collapsed
+  // ('true'), or start collapsed when screen small ('auto')
+  const startCollapsed = "auto";
+
+  // start script
+  function start() {
+    // run through each <h2> heading
+    const headings = document.querySelectorAll("h2");
+    for (const heading of headings) {
+      addArrow(heading);
+
+      // start expanded/collapsed based on option
+      if (
+        startCollapsed === "true" ||
+        (startCollapsed === "auto" && isSmallScreen()) ||
+        heading.dataset.collapsed === "true"
+      )
+        collapseHeading(heading);
+      else expandElement(heading);
+    }
+
+    // attach hash change listener to window
+    window.addEventListener("hashchange", onHashChange);
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) goToElement(target);
+  }
+
+  // add arrow to heading
+  function addArrow(heading) {
+    // add arrow button
+    const arrow = document.createElement("button");
+    arrow.innerHTML = document.querySelector(".icon_angle_down").innerHTML;
+    arrow.classList.add("icon_button", "accordion_arrow");
+    heading.insertBefore(arrow, heading.firstChild);
+
+    // attach click listener to heading and button
+    heading.addEventListener("click", onHeadingClick);
+    arrow.addEventListener("click", onArrowClick);
+  }
+
+  // determine if on mobile-like device with small screen
+  function isSmallScreen() {
+    return Math.min(window.innerWidth, window.innerHeight) < 480;
+  }
+
+  // when <h2> heading is clicked
+  function onHeadingClick(event) {
+    // only collapse if <h2> itself is target of click (eg, user did
+    // not click on anchor within <h2>)
+    if (event.target === this) toggleCollapse(this);
+  }
+
+  // when arrow button is clicked
+  function onArrowClick() {
+    toggleCollapse(this.parentNode);
+  }
+
+  // collapse section if expanded, expand if collapsed
+  function toggleCollapse(heading) {
+    if (heading.dataset.collapsed === "false") collapseHeading(heading);
+    else expandElement(heading);
+  }
+
+  // elements to exclude from collapse, such as table of contents panel,
+  // hypothesis panel, etc
+  const exclude = "#toc_panel, div.annotator-frame, #lightbox_overlay";
+
+  // collapse section
+  function collapseHeading(heading) {
+    heading.setAttribute("data-collapsed", "true");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "true");
+  }
+
+  // expand section
+  function expandElement(heading) {
+    heading.setAttribute("data-collapsed", "false");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "false");
+  }
+
+  // get list of elements between this <h2> and next <h2> or <h1>
+  // ("children" of the <h2> section)
+  function getChildren(heading) {
+    return nextUntil(heading, "h2, h1", exclude);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+  <!-- modified from: https://fontawesome.com/icons/angle-down -->
+  <svg width="16" height="16" viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* accordion arrow button */
+    .accordion_arrow {
+      margin-right: 10px;
+    }
+
+    /* arrow icon when <h2> data-collapsed attribute true */
+    h2[data-collapsed="true"] > .accordion_arrow > svg {
+      transform: rotate(-90deg);
+    }
+
+    /* all elements (except <h2>'s) when data-collapsed attribute true */
+    *:not(h2)[data-collapsed="true"] {
+      display: none;
+    }
+
+    /* accordion arrow button when hovered and <h2>'s when hovered */
+    .accordion_arrow:hover,
+    h2[data-collapsed="true"]:hover,
+    h2[data-collapsed="false"]:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always hide accordion arrow button on print */
+  @media only print {
+    .accordion_arrow {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Anchors Plugin
+
+  Adds an anchor next to each of a certain type of element that provides a
+  human-readable url to that specific item/position in the document (e.g.
+  "manuscript.html#abstract"). It also makes it such that scrolling out of view
+  of a target removes its identifier from the url.
+-->
+
+<script type="module">
+  // which types of elements to add anchors next to, in "document.querySelector"
+  // format
+  const typesQuery =
+    'h1, h2, h3, div[id^="fig:"], div[id^="tbl:"], span[id^="eq:"]';
+
+  // start script
+  function start() {
+    // add anchor to each element of specified types
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) addAnchor(element);
+
+    // attach scroll listener to window
+    window.addEventListener("scroll", onScroll);
+  }
+
+  // when window is scrolled
+  function onScroll() {
+    // if url has hash and user has scrolled out of view of hash
+    // target, remove hash from url
+    const tolerance = 100;
+    const target = getHashTarget();
+    if (target) {
+      if (
+        target.getBoundingClientRect().top > window.innerHeight + tolerance ||
+        target.getBoundingClientRect().bottom < 0 - tolerance
+      )
+        history.pushState(null, null, " ");
+    }
+  }
+
+  // add anchor to element
+  function addAnchor(element) {
+    let addTo; // element to add anchor button to
+
+    // if figure or table, modify withId and addTo to get expected
+    // elements
+    if (element.id.indexOf("fig:") === 0) {
+      addTo = element.querySelector("figcaption");
+    } else if (element.id.indexOf("tbl:") === 0) {
+      addTo = element.querySelector("caption");
+    } else if (element.id.indexOf("eq:") === 0) {
+      addTo = element.querySelector(".eqnos-number");
+    }
+
+    addTo = addTo || element;
+    const id = element.id || null;
+
+    // do not add anchor if element doesn't have assigned id.
+    // id is generated by pandoc and is assumed to be unique and
+    // human-readable
+    if (!id) return;
+
+    // create anchor button
+    const anchor = document.createElement("a");
+    anchor.innerHTML = document.querySelector(".icon_link").innerHTML;
+    anchor.title = "Link to this part of the document";
+    anchor.classList.add("icon_button", "anchor");
+    anchor.dataset.ignore = "true";
+    anchor.href = "#" + id;
+    addTo.appendChild(anchor);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- link icon -->
+
+<template class="icon_link">
+  <!-- modified from: https://fontawesome.com/icons/link -->
+  <svg width="16" height="16" viewBox="0 0 512 512">
+    <path
+      fill="currentColor"
+      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* anchor button */
+    .anchor {
+      opacity: 0;
+      margin-left: 5px;
+    }
+
+    /* anchor buttons within <h2>'s */
+    h2 .anchor {
+      margin-left: 10px;
+    }
+
+    /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+    *:hover > .anchor,
+    .anchor:hover,
+    .anchor:focus {
+      opacity: 1;
+    }
+
+    /* anchor button when hovered */
+    .anchor:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always show anchor button on devices with no mouse/hover ability */
+  @media (hover: none) {
+    .anchor {
+      opacity: 1;
+    }
+  }
+
+  /* always hide anchor button on print */
+  @media only print {
+    .anchor {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Attributes Plugin
+
+    Allows arbitrary HTML attributes to be attached to (almost) any element.
+    Place an HTML comment inside or next to the desired element with the content:
+    $attribute="value"
+-->
+
+<script type="module">
+  // start script
+  function start() {
+    // get list of comments in document
+    const comments = findComments();
+
+    for (const comment of comments)
+      if (comment.parentElement)
+        addAttributes(comment.parentElement, comment.nodeValue.trim());
+  }
+
+  // add html attributes to specified element based on string of
+  // html attributes and values
+  function addAttributes(element, text) {
+    // regex's for finding attribute/value pairs in the format of
+    // attribute="value" or attribute='value
+    const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+    const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+    // loop through attribute/value pairs
+    let match;
+    while ((match = text.match(regex2) || text.match(regex1))) {
+      // get attribute and value from regex capture groups
+      let attribute = match[1];
+      let value = match[2];
+
+      // remove from string
+      text = text.substring(match.index + match[0].length);
+
+      if (!attribute || !value) break;
+
+      // set attribute of parent element
+      try {
+        element.setAttribute(attribute, value);
+      } catch (error) {
+        console.log(error);
+      }
+
+      // special case for colspan
+      if (attribute === "colspan") removeTableCells(element, value);
+    }
+  }
+
+  // get list of comment elements in document
+  function findComments() {
+    const comments = [];
+
+    // iterate over comment nodes in document
+    function acceptNode(node) {
+      return NodeFilter.FILTER_ACCEPT;
+    }
+    const iterator = document.createNodeIterator(
+      document.body,
+      NodeFilter.SHOW_COMMENT,
+      acceptNode
+    );
+    let node;
+    while ((node = iterator.nextNode())) comments.push(node);
+
+    return comments;
+  }
+
+  // remove certain number of cells after specified cell
+  function removeTableCells(cell, number) {
+    number = parseInt(number);
+    if (!number) return;
+
+    // remove elements
+    for (; number > 1; number--) {
+      if (cell.nextElementSibling) cell.nextElementSibling.remove();
+    }
+  }
+
+  // start script on DOMContentLoaded instead of load to ensure this plugins
+  // runs before other plugins
+  window.addEventListener("DOMContentLoaded", start);
+</script>
+<!--
+  Jump to First Plugin
+
+  Adds a button next to each reference entry, figure, and table that jumps the
+  page to the first occurrence of a link to that item in the manuscript.
+-->
+
+<script type="module">
+  // whether to add buttons next to reference entries
+  const references = "true";
+  // whether to add buttons next to figures
+  const figures = "true";
+  // whether to add buttons next to tables
+  const tables = "true";
+
+  // start script
+  function start() {
+    if (references !== "false")
+      makeButtons(`div[id^="ref-"]`, ".csl-left-margin", "reference");
+    if (figures !== "false")
+      makeButtons(`div[id^="fig:"]`, "figcaption", "figure");
+    if (tables !== "false") makeButtons(`div[id^="tbl:"]`, "caption", "table");
+  }
+
+  // when jump button clicked
+  function onButtonClick() {
+    const first = getFirstOccurrence(this.dataset.id);
+    if (!first) return;
+
+    // update url hash so navigating "back" in history will return user to button
+    window.location.hash = this.dataset.id;
+    // scroll to link
+    const timeout = function () {
+      goToElement(first, window.innerHeight * 0.5);
+    };
+    window.setTimeout(timeout, 0);
+  }
+
+  // get first occurrence of link to item in document
+  function getFirstOccurrence(id) {
+    let query = "a";
+    query += '[href="#' + id + '"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelector(query);
+  }
+
+  // add button next to each reference entry, figure, or table
+  function makeButtons(query, containerQuery, subject) {
+    const elements = document.querySelectorAll(query);
+    for (const element of elements) {
+      const id = element.id;
+      const buttonContainer = element.querySelector(containerQuery);
+      const first = getFirstOccurrence(id);
+
+      // if can't find link to reference or place to put button, ignore
+      if (!first || !buttonContainer) continue;
+
+      // make jump button
+      let button = document.createElement("button");
+      button.classList.add("icon_button", "jump_arrow");
+      button.title = `Jump to the first occurrence of this ${subject} in the document`;
+      const icon = document.querySelector(".icon_angle_double_up");
+      button.innerHTML = icon.innerHTML;
+      button.dataset.id = id;
+      button.dataset.ignore = "true";
+      button.addEventListener("click", onButtonClick);
+      buttonContainer.prepend(button);
+    }
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+  <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+  <svg width="16" height="16" viewBox="0 0 320 512">
+    <path
+      fill="currentColor"
+      d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* jump button */
+    .jump_arrow {
+      position: relative;
+      top: 0.125em;
+      margin-right: 5px;
+    }
+  }
+
+  /* always hide jump button on print */
+  @media only print {
+    .jump_arrow {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Lightbox Plugin
+
+    Makes it such that when a user clicks on an image, the image fills the
+    screen and the user can pan/drag/zoom the image and navigate between other
+    images in the document.
+-->
+
+<script type="module">
+  // list of possible zoom/scale factors
+  const zooms =
+    "0.1, 0.25, 0.333333, 0.5, 0.666666, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8";
+  // whether to fit image to view ('fit'), display at 100% and shrink if
+  // necessary ('shrink'), or always display at 100% ('100')
+  const defaultZoom = "fit";
+  // whether to zoom in/out toward center of view ('true') or mouse ('false')
+  const centerZoom = "false";
+
+  // start script
+  function start() {
+    // run through each <img> element
+    const imgs = document.querySelectorAll("figure > img");
+    let count = 1;
+    for (const img of imgs) {
+      img.classList.add("lightbox_document_img");
+      img.dataset.number = count;
+      img.dataset.total = imgs.length;
+      img.addEventListener("click", openLightbox);
+      count++;
+    }
+
+    // attach mouse and key listeners to window
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("keyup", onKeyUp);
+  }
+
+  // when mouse is moved anywhere in window
+  function onWindowMouseMove(event) {
+    window.mouseX = event.clientX;
+    window.mouseY = event.clientY;
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("lightbox_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("lightbox_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeLightbox();
+        break;
+    }
+  }
+
+  // open lightbox
+  function openLightbox() {
+    const lightbox = makeLightbox(this);
+    if (!lightbox) return;
+
+    blurBody(lightbox);
+    document.body.appendChild(lightbox);
+  }
+
+  // make lightbox
+  function makeLightbox(img) {
+    // delete lightbox if it exists, start fresh
+    closeLightbox();
+
+    // create screen overlay containing lightbox
+    const overlay = document.createElement("div");
+    overlay.id = "lightbox_overlay";
+
+    // create image info boxes
+    const numberInfo = document.createElement("div");
+    const zoomInfo = document.createElement("div");
+    numberInfo.id = "lightbox_number_info";
+    zoomInfo.id = "lightbox_zoom_info";
+
+    // create container for image
+    const imageContainer = document.createElement("div");
+    imageContainer.id = "lightbox_image_container";
+    const lightboxImg = makeLightboxImg(
+      img,
+      imageContainer,
+      numberInfo,
+      zoomInfo
+    );
+    imageContainer.appendChild(lightboxImg);
+
+    // create bottom container for caption and navigation buttons
+    const bottomContainer = document.createElement("div");
+    bottomContainer.id = "lightbox_bottom_container";
+    const caption = makeCaption(img);
+    const prevButton = makePrevButton(img);
+    const nextButton = makeNextButton(img);
+    bottomContainer.appendChild(prevButton);
+    bottomContainer.appendChild(caption);
+    bottomContainer.appendChild(nextButton);
+
+    // attach top middle and bottom to overlay
+    overlay.appendChild(numberInfo);
+    overlay.appendChild(zoomInfo);
+    overlay.appendChild(imageContainer);
+    overlay.appendChild(bottomContainer);
+
+    return overlay;
+  }
+
+  // make <img> object that is intuitively draggable and zoomable
+  function makeLightboxImg(sourceImg, container, numberInfoBox, zoomInfoBox) {
+    // create copy of source <img>
+    const img = sourceImg.cloneNode(true);
+    img.classList.remove("lightbox_document_img");
+    img.removeAttribute("id");
+    img.removeAttribute("width");
+    img.removeAttribute("height");
+    img.style.position = "unset";
+    img.style.margin = "0";
+    img.style.padding = "0";
+    img.style.width = "";
+    img.style.height = "";
+    img.style.minWidth = "";
+    img.style.minHeight = "";
+    img.style.maxWidth = "";
+    img.style.maxHeight = "";
+    img.id = "lightbox_img";
+
+    // build sorted list of zoomSteps
+    const zoomSteps = zooms.split(/[^0-9.]/).map((step) => parseFloat(step));
+    zoomSteps.sort((a, b) => a - b);
+
+    // <img> object property variables
+    let zoom = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let clickMouseX = undefined;
+    let clickMouseY = undefined;
+    let clickTranslateX = undefined;
+    let clickTranslateY = undefined;
+
+    updateNumberInfo();
+
+    // update image numbers displayed in info box
+    function updateNumberInfo() {
+      numberInfoBox.innerHTML =
+        sourceImg.dataset.number + " of " + sourceImg.dataset.total;
+    }
+
+    // update zoom displayed in info box
+    function updateZoomInfo() {
+      let zoomInfo = zoom * 100;
+      if (!Number.isInteger(zoomInfo)) zoomInfo = zoomInfo.toFixed(2);
+      zoomInfoBox.innerHTML = zoomInfo + "%";
+    }
+
+    // move to closest zoom step above current zoom
+    const zoomIn = function () {
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep > zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      updateTransform();
+    };
+
+    // move to closest zoom step above current zoom
+    const zoomOut = function () {
+      zoomSteps.reverse();
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep < zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      zoomSteps.reverse();
+
+      updateTransform();
+    };
+
+    // update display of <img> based on scale/translate properties
+    const updateTransform = function () {
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      // get new width/height after scale
+      const rect = img.getBoundingClientRect();
+      // limit translate
+      translateX = Math.max(translateX, -rect.width / 2);
+      translateX = Math.min(translateX, rect.width / 2);
+      translateY = Math.max(translateY, -rect.height / 2);
+      translateY = Math.min(translateY, rect.height / 2);
+
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      updateZoomInfo();
+    };
+
+    // fit <img> to container
+    const fit = function () {
+      // no x/y offset, 100% zoom by default
+      translateX = 0;
+      translateY = 0;
+      zoom = 1;
+
+      // widths of <img> and container
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      const containerWidth = parseFloat(
+        window.getComputedStyle(container).width
+      );
+      const containerHeight = parseFloat(
+        window.getComputedStyle(container).height
+      );
+
+      // how much zooming is needed to fit <img> to container
+      const xRatio = imgWidth / containerWidth;
+      const yRatio = imgHeight / containerHeight;
+      const maxRatio = Math.max(xRatio, yRatio);
+      const newZoom = 1 / maxRatio;
+
+      // fit <img> to container according to option
+      if (defaultZoom === "shrink") {
+        if (maxRatio > 1) zoom = newZoom;
+      } else if (defaultZoom === "fit") zoom = newZoom;
+
+      updateTransform();
+    };
+
+    // when mouse wheel is rolled anywhere in container
+    const onContainerWheel = function (event) {
+      if (!event) return;
+
+      // let ctrl + mouse wheel to zoom behave as normal
+      if (event.ctrlKey) return;
+
+      // prevent normal scroll behavior
+      event.preventDefault();
+      event.stopPropagation();
+
+      // point around which to scale img
+      const viewRect = container.getBoundingClientRect();
+      const viewX = (viewRect.left + viewRect.right) / 2;
+      const viewY = (viewRect.top + viewRect.bottom) / 2;
+      const originX = centerZoom === "true" ? viewX : mouseX;
+      const originY = centerZoom === "true" ? viewY : mouseY;
+
+      // get point on image under origin
+      const oldRect = img.getBoundingClientRect();
+      const oldPercentX = (originX - oldRect.left) / oldRect.width;
+      const oldPercentY = (originY - oldRect.top) / oldRect.height;
+
+      // increment/decrement zoom
+      if (event.deltaY < 0) zoomIn();
+      if (event.deltaY > 0) zoomOut();
+
+      // get offset between previous image point and origin
+      const newRect = img.getBoundingClientRect();
+      const offsetX = originX - (newRect.left + newRect.width * oldPercentX);
+      const offsetY = originY - (newRect.top + newRect.height * oldPercentY);
+
+      // translate image to keep image point under origin
+      translateX += offsetX;
+      translateY += offsetY;
+
+      // perform translate
+      updateTransform();
+    };
+
+    // when container is clicked
+    function onContainerClick(event) {
+      // if container itself is target of click, and not other
+      // element above it
+      if (event.target === this) closeLightbox();
+    }
+
+    // when mouse button is pressed on image
+    const onImageMouseDown = function (event) {
+      // store original mouse position relative to image
+      clickMouseX = window.mouseX;
+      clickMouseY = window.mouseY;
+      clickTranslateX = translateX;
+      clickTranslateY = translateY;
+      event.stopPropagation();
+      event.preventDefault();
+    };
+
+    // when mouse button is released anywhere in window
+    const onWindowMouseUp = function (event) {
+      // reset original mouse position
+      clickMouseX = undefined;
+      clickMouseY = undefined;
+      clickTranslateX = undefined;
+      clickTranslateY = undefined;
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mouseup", onWindowMouseUp);
+    };
+
+    // when mouse is moved anywhere in window
+    const onWindowMouseMove = function (event) {
+      if (
+        clickMouseX === undefined ||
+        clickMouseY === undefined ||
+        clickTranslateX === undefined ||
+        clickTranslateY === undefined
+      )
+        return;
+
+      // offset image based on original and current mouse position
+      translateX = clickTranslateX + window.mouseX - clickMouseX;
+      translateY = clickTranslateY + window.mouseY - clickMouseY;
+      updateTransform();
+      event.preventDefault();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mousemove", onWindowMouseMove);
+    };
+
+    // when window is resized
+    const onWindowResize = function (event) {
+      fit();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("resize", onWindowResize);
+    };
+
+    // attach the necessary event listeners
+    img.addEventListener("dblclick", fit);
+    img.addEventListener("mousedown", onImageMouseDown);
+    container.addEventListener("wheel", onContainerWheel);
+    container.addEventListener("mousedown", onContainerClick);
+    container.addEventListener("touchstart", onContainerClick);
+    window.addEventListener("mouseup", onWindowMouseUp);
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("resize", onWindowResize);
+
+    // run fit() after lightbox atttached to document and <img> Loaded
+    // so needed container and img dimensions available
+    img.addEventListener("load", fit);
+
+    return img;
+  }
+
+  // make caption
+  function makeCaption(img) {
+    const caption = document.createElement("div");
+    caption.id = "lightbox_caption";
+    const captionSource = img.nextElementSibling;
+    if (captionSource.tagName.toLowerCase() === "figcaption") {
+      const captionCopy = makeCopy(captionSource);
+      caption.innerHTML = captionCopy.innerHTML;
+    }
+
+    caption.addEventListener("touchstart", function (event) {
+      event.stopPropagation();
+    });
+
+    return caption;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // make button to jump to previous image in document
+  function makePrevButton(img) {
+    const prevButton = document.createElement("button");
+    prevButton.id = "lightbox_prev_button";
+    prevButton.title = "Jump to the previous image in the document [←]";
+    prevButton.classList.add("icon_button", "lightbox_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+
+    // attach click listeners to button
+    prevButton.addEventListener("click", function () {
+      getPrevImg(img).click();
+    });
+
+    return prevButton;
+  }
+
+  // make button to jump to next image in document
+  function makeNextButton(img) {
+    const nextButton = document.createElement("button");
+    nextButton.id = "lightbox_next_button";
+    nextButton.title = "Jump to the next image in the document [→]";
+    nextButton.classList.add("icon_button", "lightbox_button");
+    nextButton.innerHTML = document.querySelector(
+      ".icon_caret_right"
+    ).innerHTML;
+
+    // attach click listeners to button
+    nextButton.addEventListener("click", function () {
+      getNextImg(img).click();
+    });
+
+    return nextButton;
+  }
+
+  // get previous image in document
+  function getPrevImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if < 1
+    if (index - 1 >= 0) index--;
+    else index = imgs.length - 1;
+    return imgs[index];
+  }
+
+  // get next image in document
+  function getNextImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if > total
+    if (index + 1 <= imgs.length - 1) index++;
+    else index = 0;
+    return imgs[index];
+  }
+
+  // close lightbox
+  function closeLightbox() {
+    focusBody();
+
+    const lightbox = document.getElementById("lightbox_overlay");
+    if (lightbox) lightbox.remove();
+  }
+
+  // make all elements behind lightbox non-focusable
+  function blurBody(overlay) {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.tabIndex = -1;
+    document.body.classList.add("body_no_scroll");
+  }
+
+  // make all elements focusable again
+  function focusBody() {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.removeAttribute("tabIndex");
+    document.body.classList.remove("body_no_scroll");
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* regular <img> in document when hovered */
+    img.lightbox_document_img:hover {
+      cursor: pointer;
+    }
+
+    .body_no_scroll {
+      overflow: hidden !important;
+    }
+
+    /* screen overlay */
+    #lightbox_overlay {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 3;
+    }
+
+    /* middle area containing lightbox image */
+    #lightbox_image_container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* bottom area containing caption */
+    #lightbox_bottom_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* image number info text box */
+    #lightbox_number_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      left: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* zoom info text box */
+    #lightbox_zoom_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      right: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* copy of image caption */
+    #lightbox_caption {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      max-height: 100%;
+      padding: 10px 0;
+      text-align: center;
+      overflow-y: auto;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button */
+    .lightbox_button {
+      width: 100px;
+      height: 100%;
+      min-width: 100px;
+      min-height: 100%;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button when hovered */
+    .lightbox_button:hover {
+      background: none !important;
+    }
+
+    /* navigation button icon */
+    .lightbox_button > svg {
+      height: 25px;
+    }
+
+    /* figure auto-number */
+    #lightbox_caption > span:first-of-type {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    /* lightbox image when hovered */
+    #lightbox_img:hover {
+      cursor: grab;
+    }
+
+    /* lightbox image when grabbed */
+    #lightbox_img:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* when on screen < 480px wide */
+  @media only screen and (max-width: 480px) {
+    /* make navigation buttons skinnier on small screens to make more room for caption text */
+    .lightbox_button {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  /* always hide lightbox on print */
+  @media only print {
+    #lightbox_overlay {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Link Highlight Plugin
+
+  Makes it such that when a user hovers or focuses a link, other links that have
+  the same target will be highlighted. It also makes it such that when clicking
+  a link, the target of the link (eg reference, figure, table) is briefly
+  highlighted.
+-->
+
+<script type="module">
+  // whether to also highlight links that go to external urls
+  const externalLinks = "false";
+  // whether user must click off to unhighlight instead of just
+  // un-hovering
+  const clickUnhighlight = "false";
+  // whether to also highlight links that are unique
+  const highlightUnique = "true";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach mouse and focus listeners to link
+      link.addEventListener("mouseenter", onLinkFocus);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("mouseleave", onLinkUnhover);
+    }
+
+    // attach click and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("hashchange", onHashChange);
+
+    // run hash change on window load in case user has navigated
+    // directly to hash
+    onHashChange();
+  }
+
+  // when link is focused (tabbed to) or hovered
+  function onLinkFocus() {
+    highlight(this);
+  }
+
+  // when link is unhovered
+  function onLinkUnhover() {
+    if (clickUnhighlight !== "true") unhighlightAll();
+  }
+
+  // when the mouse is clicked anywhere in window
+  function onClick(event) {
+    unhighlightAll();
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) glowElement(target);
+  }
+
+  // start glow sequence on an element
+  function glowElement(element) {
+    const startGlow = function () {
+      onGlowEnd();
+      element.dataset.glow = "true";
+      element.addEventListener("animationend", onGlowEnd);
+    };
+    const onGlowEnd = function () {
+      element.removeAttribute("data-glow");
+      element.removeEventListener("animationend", onGlowEnd);
+    };
+    startGlow();
+  }
+
+  // highlight link and all others with same target
+  function highlight(link) {
+    // force unhighlight all to start fresh
+    unhighlightAll();
+
+    // get links with same target
+    if (!link) return;
+    const sameLinks = getSameLinks(link);
+
+    // if link unique and option is off, exit and don't highlight
+    if (sameLinks.length <= 1 && highlightUnique !== "true") return;
+
+    // highlight all same links, and "select" (special highlight) this
+    // one
+    for (const sameLink of sameLinks) {
+      if (sameLink === link) sameLink.setAttribute("data-selected", "true");
+      else sameLink.setAttribute("data-highlighted", "true");
+    }
+  }
+
+  // unhighlight all links
+  function unhighlightAll() {
+    const links = getLinks();
+    for (const link of links) {
+      link.setAttribute("data-selected", "false");
+      link.setAttribute("data-highlighted", "false");
+    }
+  }
+
+  // get links with same target
+  function getSameLinks(link) {
+    const results = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        results.push(otherLink);
+    }
+    return results;
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    let query = "a";
+    if (externalLinks !== "true") query += '[href^="#"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelectorAll(query);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<style>
+  @media only screen {
+    /* anything with data-highlighted attribute true */
+    [data-highlighted="true"] {
+      background: #ffeb3b;
+    }
+
+    /* anything with data-selected attribute true */
+    [data-selected="true"] {
+      background: #ff8a65 !important;
+    }
+
+    /* animation definition for glow */
+    @keyframes highlight_glow {
+      0% {
+        background: none;
+      }
+      10% {
+        background: #bbdefb;
+      }
+      100% {
+        background: none;
+      }
+    }
+
+    /* anything with data-glow attribute true */
+    [data-glow="true"] {
+      animation: highlight_glow 2s;
+    }
+  }
+</style>
+<!--
+  Table of Contents Plugin
+
+  Provides a "table of contents" (toc) panel on the side of the document that
+  allows the user to conveniently navigate between sections of the document.
+-->
+
+<script type="module">
+  // which types of elements to add links for, in "document.querySelector" format
+  const typesQuery = "h1, h2, h3";
+  // whether toc starts open. use 'true' or 'false', or 'auto' to
+  // use 'true' behavior when screen wide enough and 'false' when not
+  const startOpen = "false";
+  // whether toc closes when clicking on toc link. use 'true' or
+  // 'false', or 'auto' to use 'false' behavior when screen wide
+  // enough and 'true' when not
+  const clickClose = "auto";
+  // if list item is more than this many characters, text will be
+  // truncated
+  const charLimit = "50";
+  // whether or not to show bullets next to each toc item
+  const bullets = "false";
+
+  // start script
+  function start() {
+    // make toc panel and populate with entries (links to document
+    // sections)
+    const panel = makePanel();
+    if (!panel) return;
+    makeEntries(panel);
+    // attach panel to document after making entries, so 'toc' heading
+    // in panel isn't included in toc
+    document.body.insertBefore(panel, document.body.firstChild);
+
+    // initial panel state
+    if (startOpen === "true" || (startOpen === "auto" && !isSmallScreen()))
+      openPanel();
+    else closePanel();
+
+    // attach click, scroll, and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("hashchange", onScroll);
+    window.addEventListener("keyup", onKeyUp);
+    onScroll();
+
+    // add class to push document body down out of way of toc button
+    document.body.classList.add("toc_body_nudge");
+  }
+
+  // determine if screen wide enough to fit toc panel
+  function isSmallScreen() {
+    // in default theme:
+    // 816px = 8.5in = width of "page" (<body>) element
+    // 260px = min width of toc panel (*2 for both sides of <body>)
+    return window.innerWidth < 816 + 260 * 2;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick() {
+    if (isSmallScreen()) closePanel();
+  }
+
+  // when window is scrolled or hash changed
+  function onScroll() {
+    highlightViewed();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    // close on esc
+    if (event.key === "Escape") closePanel();
+  }
+
+  // find entry of currently viewed document section in toc and highlight
+  function highlightViewed() {
+    const firstId = getFirstInView(typesQuery);
+
+    // get toc entries (links), unhighlight all, then highlight viewed
+    const list = document.getElementById("toc_list");
+    if (!firstId || !list) return;
+    const links = list.querySelectorAll("a");
+    for (const link of links) link.dataset.viewing = "false";
+    const link = list.querySelector('a[href="#' + firstId + '"]');
+    if (!link) return;
+    link.dataset.viewing = "true";
+  }
+
+  // get first or previous toc listed element in top half of view
+  function getFirstInView(query) {
+    // get all elements matching query and with id
+    const elements = document.querySelectorAll(query);
+    const elementsWithIds = [];
+    for (const element of elements) {
+      if (element.id) elementsWithIds.push(element);
+    }
+
+    // get first or previous element in top half of view
+    for (let i = 0; i < elementsWithIds.length; i++) {
+      const element = elementsWithIds[i];
+      const prevElement = elementsWithIds[Math.max(0, i - 1)];
+      if (element.getBoundingClientRect().top >= 0) {
+        if (element.getBoundingClientRect().top < window.innerHeight / 2)
+          return element.id;
+        else return prevElement.id;
+      }
+    }
+  }
+
+  // make panel
+  function makePanel() {
+    // create panel
+    const panel = document.createElement("div");
+    panel.id = "toc_panel";
+    if (bullets === "true") panel.dataset.bullets = "true";
+
+    // create header
+    const header = document.createElement("div");
+    header.id = "toc_header";
+
+    // create toc button
+    const button = document.createElement("button");
+    button.id = "toc_button";
+    button.innerHTML = document.querySelector(".icon_th_list").innerHTML;
+    button.title = "Table of Contents";
+    button.classList.add("icon_button");
+
+    // create header text
+    const text = document.createElement("h4");
+    text.innerHTML = "Table of Contents";
+
+    // create container for toc list
+    const list = document.createElement("div");
+    list.id = "toc_list";
+
+    // attach click listeners
+    panel.addEventListener("click", onPanelClick);
+    header.addEventListener("click", onHeaderClick);
+    button.addEventListener("click", onButtonClick);
+
+    // attach elements
+    header.appendChild(button);
+    header.appendChild(text);
+    panel.appendChild(header);
+    panel.appendChild(list);
+
+    return panel;
+  }
+
+  // create toc entries (links) to each element of the specified types
+  function makeEntries(panel) {
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) {
+      // do not add link if element doesn't have assigned id
+      if (!element.id) continue;
+
+      // create link/list item
+      const link = document.createElement("a");
+      link.classList.add("toc_link");
+      switch (element.tagName.toLowerCase()) {
+        case "h1":
+          link.dataset.level = "1";
+          break;
+        case "h2":
+          link.dataset.level = "2";
+          break;
+        case "h3":
+          link.dataset.level = "3";
+          break;
+        case "h4":
+          link.dataset.level = "4";
+          break;
+      }
+      link.title = element.innerText;
+      let text = element.innerText;
+      if (text.length > charLimit) text = text.slice(0, charLimit) + "...";
+      link.innerHTML = text;
+      link.href = "#" + element.id;
+      link.addEventListener("click", onLinkClick);
+
+      // attach link
+      panel.querySelector("#toc_list").appendChild(link);
+    }
+  }
+
+  // when panel is clicked
+  function onPanelClick(event) {
+    // stop click from propagating to window/document and closing panel
+    event.stopPropagation();
+  }
+
+  // when header itself is clicked
+  function onHeaderClick(event) {
+    togglePanel();
+  }
+
+  // when button is clicked
+  function onButtonClick(event) {
+    togglePanel();
+    // stop header underneath button from also being clicked
+    event.stopPropagation();
+  }
+
+  // when link is clicked
+  function onLinkClick(event) {
+    if (clickClose === "true" || (clickClose === "auto" && isSmallScreen()))
+      closePanel();
+    else openPanel();
+  }
+
+  // open panel if closed, close if opened
+  function togglePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (!panel) return;
+
+    if (panel.dataset.open === "true") closePanel();
+    else openPanel();
+  }
+
+  // open panel
+  function openPanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "true";
+  }
+
+  // close panel
+  function closePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "false";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+  <!-- modified from: https://fontawesome.com/icons/th-list -->
+  <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* toc panel */
+    #toc_panel {
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      z-index: 2;
+    }
+
+    /* toc panel when closed */
+    #toc_panel[data-open="false"] {
+      min-width: 60px;
+      width: 60px;
+      height: 60px;
+      border-right: solid 1px #bdbdbd;
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc panel when open */
+    #toc_panel[data-open="true"] {
+      min-width: 260px;
+      max-width: 480px;
+      /* keep panel edge consistent distance away from "page" edge */
+      width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+      bottom: 0;
+      border-right: solid 1px #bdbdbd;
+    }
+
+    /* toc panel header */
+    #toc_header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* toc panel header when hovered */
+    #toc_header:hover {
+      cursor: pointer;
+    }
+
+    /* toc panel header when panel open */
+    #toc_panel[data-open="true"] > #toc_header {
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc open/close header button */
+    #toc_button {
+      margin-right: 20px;
+    }
+
+    /* hide toc list and header text when closed */
+    #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
+    #toc_panel[data-open="false"] > #toc_list {
+      display: none;
+    }
+
+    /* toc list of entries */
+    #toc_list {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: calc(60px + 1px);
+      bottom: 0;
+      overflow: auto;
+    }
+
+    /* toc entry, link to section in document */
+    .toc_link {
+      display: block;
+      padding: 5px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* toc entry when hovered or when "viewed" */
+    .toc_link:hover,
+    .toc_link[data-viewing="true"] {
+      background: #f5f5f5;
+    }
+
+    /* toc entry, level 1 indentation */
+    .toc_link[data-level="1"] {
+      margin-left: 0;
+    }
+
+    /* toc entry, level 2 indentation */
+    .toc_link[data-level="2"] {
+      margin-left: 20px;
+    }
+
+    /* toc entry, level 3 indentation */
+    .toc_link[data-level="3"] {
+      margin-left: 40px;
+    }
+
+    /* toc entry, level 4 indentation */
+    .toc_link[data-level="4"] {
+      margin-left: 60px;
+    }
+
+    /* toc entry bullets */
+    #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+      position: absolute;
+      left: -15px;
+      top: -1px;
+      font-size: 1.5em;
+    }
+
+    /* toc entry, level 2 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+      content: "\2022";
+    }
+
+    /* toc entry, level 3 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+      content: "\25AB";
+    }
+
+    /* toc entry, level 4 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+      content: "-";
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* push <body> ("page") element down to make room for toc icon */
+    .toc_body_nudge {
+      padding-top: 60px;
+    }
+
+    /* toc icon when panel closed and not hovered */
+    #toc_panel[data-open="false"]:not(:hover) {
+      background: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  /* always hide toc panel on print */
+  @media only print {
+    #toc_panel {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Tooltips Plugin
+
+  Makes it such that when the user hovers or focuses a link to a citation or
+  figure, a tooltip appears with a preview of the reference content, along with
+  arrows to navigate between instances of the same reference in the document.
+-->
+
+<script type="module">
+  // whether user must click off to close tooltip instead of just un-hovering
+  const clickClose = "false";
+  // delay (in ms) between opening and closing tooltip
+  const delay = "100";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach hover and focus listeners to link
+      link.addEventListener("mouseover", onLinkHover);
+      link.addEventListener("mouseleave", onLinkUnhover);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("touchend", onLinkTouch);
+    }
+
+    // attach mouse, key, and resize listeners to window
+    window.addEventListener("mousedown", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("keyup", onKeyUp);
+    window.addEventListener("resize", onResize);
+  }
+
+  // when link is hovered
+  function onLinkHover() {
+    // function to open tooltip
+    const delayOpenTooltip = function () {
+      openTooltip(this);
+    }.bind(this);
+
+    // run open function after delay
+    this.openTooltipTimer = window.setTimeout(delayOpenTooltip, delay);
+  }
+
+  // when mouse leaves link
+  function onLinkUnhover() {
+    // cancel opening tooltip
+    window.clearTimeout(this.openTooltipTimer);
+
+    // don't close on unhover if option specifies
+    if (clickClose === "true") return;
+
+    // function to close tooltip
+    const delayCloseTooltip = function () {
+      // if tooltip open and if mouse isn't over tooltip, close
+      const tooltip = document.getElementById("tooltip");
+      if (tooltip && !tooltip.matches(":hover")) closeTooltip();
+    };
+
+    // run close function after delay
+    this.closeTooltipTimer = window.setTimeout(delayCloseTooltip, delay);
+  }
+
+  // when link is focused (tabbed to)
+  function onLinkFocus(event) {
+    openTooltip(this);
+  }
+
+  // when link is touched on touch screen
+  function onLinkTouch(event) {
+    // attempt to force hover state on first tap always, and trigger
+    // regular link click (and navigation) on second tap
+    if (event.target === document.activeElement) event.target.click();
+    else {
+      document.activeElement.blur();
+      event.target.focus();
+    }
+    if (event.cancelable) event.preventDefault();
+    event.stopPropagation();
+    return false;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick(event) {
+    closeTooltip();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("tooltip_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("tooltip_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeTooltip();
+        break;
+    }
+  }
+
+  // when window is resized or zoomed
+  function onResize() {
+    closeTooltip();
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    const queries = [];
+    // exclude buttons, anchor links, toc links, etc
+    const exclude =
+      ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    queries.push('a[href^="#ref-"]' + exclude); // citation links
+    queries.push('a[href^="#fig:"]' + exclude); // figure links
+    const query = queries.join(", ");
+    return document.querySelectorAll(query);
+  }
+
+  // get links with same target, get index of link in set, get total
+  // same links
+  function getSameLinks(link) {
+    const sameLinks = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        sameLinks.push(otherLink);
+    }
+
+    return {
+      elements: sameLinks,
+      index: sameLinks.indexOf(link),
+      total: sameLinks.length,
+    };
+  }
+
+  // open tooltip
+  function openTooltip(link) {
+    // delete tooltip if it exists, start fresh
+    closeTooltip();
+
+    // make tooltip element
+    const tooltip = makeTooltip(link);
+
+    // if source couldn't be found and tooltip not made, exit
+    if (!tooltip) return;
+
+    // make navbar elements
+    const navBar = makeNavBar(link);
+    if (navBar) tooltip.firstElementChild.appendChild(navBar);
+
+    // attach tooltip to page
+    document.body.appendChild(tooltip);
+
+    // position tooltip
+    const position = function () {
+      positionTooltip(link);
+    };
+    position();
+
+    // if tooltip contains images, position again after they've loaded
+    const imgs = tooltip.querySelectorAll("img");
+    for (const img of imgs) img.addEventListener("load", position);
+  }
+
+  // close (delete) tooltip
+  function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) tooltip.remove();
+  }
+
+  // make tooltip
+  function makeTooltip(link) {
+    // get target element that link points to
+    const source = getSource(link);
+
+    // if source can't be found, exit
+    if (!source) return;
+
+    // create new tooltip
+    const tooltip = document.createElement("div");
+    tooltip.id = "tooltip";
+    const tooltipContent = document.createElement("div");
+    tooltipContent.id = "tooltip_content";
+    tooltip.appendChild(tooltipContent);
+
+    // make copy of source node and put in tooltip
+    const sourceCopy = makeCopy(source);
+    tooltipContent.appendChild(sourceCopy);
+
+    // attach mouse event listeners
+    tooltip.addEventListener("click", onTooltipClick);
+    tooltip.addEventListener("mousedown", onTooltipClick);
+    tooltip.addEventListener("touchstart", onTooltipClick);
+    tooltip.addEventListener("mouseleave", onTooltipUnhover);
+
+    // (for interaction with lightbox plugin)
+    // transfer click on tooltip copied img to original img
+    const sourceImg = source.querySelector("img");
+    const sourceCopyImg = sourceCopy.querySelector("img");
+    if (sourceImg && sourceCopyImg) {
+      const clickImg = function () {
+        sourceImg.click();
+        closeTooltip();
+      };
+      sourceCopyImg.addEventListener("click", clickImg);
+    }
+
+    return tooltip;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+      "class",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // when tooltip is clicked
+  function onTooltipClick(event) {
+    // when user clicks on tooltip, stop click from transferring
+    // outside of tooltip (eg, click off to close tooltip, or eg click
+    // off to unhighlight same refs)
+    event.stopPropagation();
+  }
+
+  // when tooltip is unhovered
+  function onTooltipUnhover(event) {
+    if (clickClose === "true") return;
+
+    // make sure new mouse/touch/focus no longer over tooltip or any
+    // element within it
+    const tooltip = document.getElementById("tooltip");
+    if (!tooltip) return;
+    if (this.contains(event.relatedTarget)) return;
+
+    closeTooltip();
+  }
+
+  // make nav bar to go betwen prev/next instances of same reference
+  function makeNavBar(link) {
+    // find other links to the same source
+    const sameLinks = getSameLinks(link);
+
+    // don't show nav bar when singular reference
+    if (sameLinks.total <= 1) return;
+
+    // find prev/next links with same target
+    const prevLink = getPrevLink(link, sameLinks);
+    const nextLink = getNextLink(link, sameLinks);
+
+    // create nav bar
+    const navBar = document.createElement("div");
+    navBar.id = "tooltip_nav_bar";
+    const text = sameLinks.index + 1 + " of " + sameLinks.total;
+
+    // create nav bar prev/next buttons
+    const prevButton = document.createElement("button");
+    const nextButton = document.createElement("button");
+    prevButton.id = "tooltip_prev_button";
+    nextButton.id = "tooltip_next_button";
+    prevButton.title =
+      "Jump to the previous occurence of this item in the document [←]";
+    nextButton.title =
+      "Jump to the next occurence of this item in the document [→]";
+    prevButton.classList.add("icon_button");
+    nextButton.classList.add("icon_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+    nextButton.innerHTML =
+      document.querySelector(".icon_caret_right").innerHTML;
+    navBar.appendChild(prevButton);
+    navBar.appendChild(document.createTextNode(text));
+    navBar.appendChild(nextButton);
+
+    // attach click listeners to buttons
+    prevButton.addEventListener("click", function () {
+      onPrevNextClick(link, prevLink);
+    });
+    nextButton.addEventListener("click", function () {
+      onPrevNextClick(link, nextLink);
+    });
+
+    return navBar;
+  }
+
+  // get previous link with same target
+  function getPrevLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if < 1
+    let index;
+    if (sameLinks.index - 1 >= 0) index = sameLinks.index - 1;
+    else index = sameLinks.total - 1;
+    return sameLinks.elements[index];
+  }
+
+  // get next link with same target
+  function getNextLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if > total
+    let index;
+    if (sameLinks.index + 1 <= sameLinks.total - 1) index = sameLinks.index + 1;
+    else index = 0;
+    return sameLinks.elements[index];
+  }
+
+  // get element that is target of link or url hash
+  function getSource(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector('[id="' + id + '"]');
+    if (!target) return;
+
+    // if ref or figure, modify target to get expected element
+    if (id.indexOf("ref-") === 0) target = target.querySelector(":nth-child(2)");
+    else if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+
+    return target;
+  }
+
+  // when prev/next arrow button is clicked
+  function onPrevNextClick(link, prevNextLink) {
+    if (link && prevNextLink)
+      goToElement(prevNextLink, window.innerHeight * 0.5);
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // determine position to place tooltip based on link position in
+  // viewport and tooltip size
+  function positionTooltip(link, left, top) {
+    const tooltipElement = document.getElementById("tooltip");
+    if (!tooltipElement) return;
+
+    // get convenient vars for position/dimensions of
+    // link/tooltip/page/view
+    link = getRectInPage(link);
+    const tooltip = getRectInPage(tooltipElement);
+    const view = getRectInPage();
+
+    // horizontal positioning
+    if (left)
+      // use explicit value
+      left = left;
+    else if (link.left + tooltip.width < view.right)
+      // fit tooltip to right of link
+      left = link.left;
+    else if (link.right - tooltip.width > view.left)
+      // fit tooltip to left of link
+      left = link.right - tooltip.width;
+    // center tooltip in view
+    else left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+    // vertical positioning
+    if (top)
+      // use explicit value
+      top = top;
+    else if (link.top - tooltip.height > view.top)
+      // fit tooltip above link
+      top = link.top - tooltip.height;
+    else if (link.bottom + tooltip.height < view.bottom)
+      // fit tooltip below link
+      top = link.bottom;
+    else {
+      // center tooltip in view
+      top = view.top + view.height / 2 - tooltip.height / 2;
+      // nudge off of link to left/right if possible
+      if (link.right + tooltip.width < view.right) left = link.right;
+      else if (link.left - tooltip.width > view.left)
+        left = link.left - tooltip.width;
+    }
+
+    tooltipElement.style.left = left + "px";
+    tooltipElement.style.top = top + "px";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* tooltip container */
+    #tooltip {
+      position: absolute;
+      width: 50%;
+      min-width: 240px;
+      max-width: 75%;
+      z-index: 1;
+    }
+
+    /* tooltip content */
+    #tooltip_content {
+      margin-bottom: 5px;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+      overflow-wrap: break-word;
+    }
+
+    /* tooltip copy of paragraphs and figures */
+    #tooltip_content > p,
+    #tooltip_content > figure {
+      margin: 0;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    /* tooltip copy of <img> */
+    #tooltip_content > figure > img,
+    #tooltip_content > figure > svg {
+      max-height: 260px;
+    }
+
+    /* navigation bar */
+    #tooltip_nav_bar {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* navigation bar previous/next buton */
+    #tooltip_nav_bar > .icon_button {
+      position: relative;
+      top: 3px;
+    }
+
+    /* navigation bar previous button */
+    #tooltip_nav_bar > .icon_button:first-of-type {
+      margin-right: 5px;
+    }
+
+    /* navigation bar next button */
+    #tooltip_nav_bar > .icon_button:last-of-type {
+      margin-left: 5px;
+    }
+  }
+
+  /* always hide tooltip on print */
+  @media only print {
+    #tooltip {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Analytics Plugin (third-party) 
+  
+  Copy and paste code from Google Analytics or similar service here.
+-->
+<!-- 
+  Annotations Plugin
+
+  Allows public annotation of the  manuscript. See https://web.hypothes.is/.
+-->
+
+<script type="module">
+  // configuration
+  window.hypothesisConfig = function () {
+    return {
+      branding: {
+        accentColor: "#2196f3",
+        appBackgroundColor: "#f8f8f8",
+        ctaBackgroundColor: "#f8f8f8",
+        ctaTextColor: "#000000",
+        selectionFontFamily: "Open Sans, Helvetica, sans serif",
+        annotationFontFamily: "Open Sans, Helvetica, sans serif",
+      },
+    };
+  };
+
+  // hypothesis client script
+  const embed = "https://hypothes.is/embed.js";
+  // hypothesis annotation count query url
+  const query = "https://api.hypothes.is/api/search?limit=0&url=";
+
+  // start script
+  function start() {
+    const button = makeButton();
+    document.body.insertBefore(button, document.body.firstChild);
+    insertCount(button);
+  }
+
+  // make button
+  function makeButton() {
+    // create button
+    const button = document.createElement("button");
+    button.id = "hypothesis_button";
+    button.innerHTML = document.querySelector(".icon_hypothesis").innerHTML;
+    button.title = "Hypothesis annotations";
+    button.classList.add("icon_button");
+
+    function onClick(event) {
+      onButtonClick(event, button);
+    }
+
+    // attach click listeners
+    button.addEventListener("click", onClick);
+
+    return button;
+  }
+
+  // insert annotations count
+  async function insertCount(button) {
+    // get annotation count from Hypothesis based on url
+    let count = "-";
+    try {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const location = window.location;
+      const url = encodeURIComponent((canonical || location).href);
+      const response = await fetch(query + url);
+      const json = await response.json();
+      count = json.total || "-";
+    } catch (error) {
+      console.log(error);
+    }
+
+    // put count into button
+    const counter = document.createElement("span");
+    counter.id = "hypothesis_count";
+    counter.innerHTML = count;
+    button.title = "View " + count + " Hypothesis annotations";
+    button.append(counter);
+  }
+
+  // when button is clicked
+  function onButtonClick(event, button) {
+    const script = document.createElement("script");
+    script.src = embed;
+    document.body.append(script);
+    button.remove();
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- hypothesis icon -->
+
+<template class="icon_hypothesis">
+  <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+  <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  /* hypothesis activation button */
+  #hypothesis_button {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 0;
+    border-left: solid 1px #bdbdbd;
+    border-bottom: solid 1px #bdbdbd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  /* hypothesis button svg */
+  #hypothesis_button > svg {
+    position: relative;
+    top: -4px;
+  }
+
+  /* hypothesis annotation count */
+  #hypothesis_count {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+  }
+
+  /* side panel */
+  .annotator-frame {
+    width: 280px !important;
+  }
+
+  /* match highlight color to rest of theme */
+  .annotator-highlights-always-on .annotator-hl {
+    background-color: #ffeb3b !important;
+  }
+
+  /* match focused color to rest of theme */
+  .annotator-hl.annotator-hl-focused {
+    background-color: #ff8a65 !important;
+  }
+
+  /* match bucket bar color to rest of theme */
+  .annotator-bucket-bar {
+    background: #f5f5f5 !important;
+  }
+
+  /* always hide button, toolbar, and tooltip on print */
+  @media only print {
+    #hypothesis_button {
+      display: none;
+    }
+
+    .annotator-frame {
+      display: none !important;
+    }
+
+    hypothesis-adder {
+      display: none !important;
+    }
+  }
+</style>
+<!-- 
+  Mathjax Plugin (third-party) 
+
+  Allows the proper rendering of math/equations written in LaTeX.
+  See https://www.mathjax.org/.
+-->
+
+<script type="text/x-mathjax-config">
+  // configuration
+  MathJax.Hub.Config({
+    "CommonHTML": { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    "fast-preview": { disabled: true }
+  });
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+  crossorigin="anonymous"
+></script>
+
+<style>
+  /* mathjax containers */
+  .math.display > span:not(.MathJax_Preview) {
+    /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  /* right click menu */
+  .MathJax_Menu {
+    border-radius: 5px !important;
+    border: solid 1px #bdbdbd !important;
+    box-shadow: none !important;
+  }
+
+  /* equation auto-number */
+  span[id^="eq:"] > span.math.display + span {
+    font-weight: 600;
+  }
+
+  /* equation */
+  span[id^="eq:"] > span.math.display > span {
+    /* nudge to make room for equation auto-number and anchor */
+    margin-right: 60px !important;
+  }
+</style>
+</body>
+</html>
