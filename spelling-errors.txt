@@ -27,7 +27,7 @@ configurability
 confocal
 convolutional
 csv
-cycleGAN
+CycleGAN
 DAPI
 dataloader
 dataset
@@ -40,7 +40,7 @@ DL
 downscaled
 dseg
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 essentally
@@ -86,7 +86,7 @@ mCherry
 mediterranea
 microtubule
 MMSegmentation
-mmv
+MMV
 modularization
 modularized
 MONAI
@@ -100,7 +100,7 @@ nucleophosmin
 OmniPose
 OpenMMLab
 optimizers
-PersistentDataloader
+PersistentDataLoader
 PersistentDataset
 phototoxicity
 pre

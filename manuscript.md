@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-03-17" />
   <meta name="citation_publication_date" content="2023-03-17" />
   <meta property="article:published_time" content="2023-03-17" />
-  <meta name="dc.modified" content="2023-03-17T05:32:32+00:00" />
-  <meta property="article:modified_time" content="2023-03-17T05:32:32+00:00" />
+  <meta name="dc.modified" content="2023-03-17T16:10:02+00:00" />
+  <meta property="article:modified_time" content="2023-03-17T16:10:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/d3c54909ec4078326089a0e58e4543abde78ce90/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d3c54909ec4078326089a0e58e4543abde78ce90/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/d3c54909ec4078326089a0e58e4543abde78ce90/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/d3c54909ec4078326089a0e58e4543abde78ce90/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/))
 was automatically generated
-from [MMV-Lab/im2im-paper@d3c5490](https://github.com/MMV-Lab/im2im-paper/tree/d3c54909ec4078326089a0e58e4543abde78ce90)
+from [MMV-Lab/im2im-paper@92e94ee](https://github.com/MMV-Lab/im2im-paper/tree/92e94ee4307718776393434199be15f82a344012)
 on March 17, 2023.
 </em></small>
 
@@ -343,6 +343,10 @@ Programming language: Python
 Other requirements: PyTorch 1.11 or higher, all other dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py 
 
 License: MIT license
+
+## Conflict of interest
+
+The authors report no conflict of interest.
 
 
 ## Acknowledgments
