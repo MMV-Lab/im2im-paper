@@ -27,12 +27,12 @@ configurability
 confocal
 convolutional
 csv
-CycleGAN
+cycleGAN
 DAPI
 dataloader
 dataset
 datasets
-Denoising
+denoising
 differnet
 dimensionalities
 Dimensionality
@@ -40,7 +40,7 @@ DL
 downscaled
 dseg
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 essentally
