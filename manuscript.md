@@ -5,7 +5,7 @@ keywords:
 - microscopy image analysis
 - open source
 lang: en-US
-date-meta: '2023-03-17'
+date-meta: '2023-03-30'
 author-meta:
 - Justin Sonneck
 - Jianxu Chen
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-03-17" />
-  <meta name="citation_publication_date" content="2023-03-17" />
-  <meta property="article:published_time" content="2023-03-17" />
-  <meta name="dc.modified" content="2023-03-17T16:10:02+00:00" />
-  <meta property="article:modified_time" content="2023-03-17T16:10:02+00:00" />
+  <meta name="dc.date" content="2023-03-30" />
+  <meta name="citation_publication_date" content="2023-03-30" />
+  <meta property="article:published_time" content="2023-03-30" />
+  <meta name="dc.modified" content="2023-03-30T13:42:26+00:00" />
+  <meta property="article:modified_time" content="2023-03-30T13:42:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/92e94ee4307718776393434199be15f82a344012/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/))
 was automatically generated
-from [MMV-Lab/im2im-paper@92e94ee](https://github.com/MMV-Lab/im2im-paper/tree/92e94ee4307718776393434199be15f82a344012)
-on March 17, 2023.
+from [MMV-Lab/im2im-paper@ed68e62](https://github.com/MMV-Lab/im2im-paper/tree/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8)
+on March 30, 2023.
 </em></small>
 
 
@@ -330,7 +330,7 @@ One of main directions for extending *MMV_Im2Im* is to pre-pack common bioimagin
 
 Finally, beyond *MMV_Im2Im*, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our *MMV_NDet* (NDet = N-dimensional detection) package, currently under development. 
 
-## Code and data availability
+## Code availability and requirements
 
 Project name: MMV_Im2Im (Microscopy Machine Vision, Image-to-Image transformation)
 
@@ -343,6 +343,11 @@ Programming language: Python
 Other requirements: PyTorch 1.11 or higher, all other dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py 
 
 License: MIT license
+
+## Data availability
+
+All data used in this work were from public repositories, released with other publications. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data
+ 
 
 ## Conflict of interest
 

@@ -30,7 +30,7 @@ csv
 CycleGAN
 DAPI
 dataloader
-dataset
+Dataset
 datasets
 denoising
 differnet
@@ -40,7 +40,7 @@ DL
 downscaled
 dseg
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 essentally
@@ -92,7 +92,7 @@ modularized
 MONAI
 mpIF
 muliplex
-napari
+Napari
 NDet
 neighering
 NPM
