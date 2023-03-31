@@ -5,7 +5,7 @@ keywords:
 - microscopy image analysis
 - open source
 lang: en-US
-date-meta: '2023-03-30'
+date-meta: '2023-03-31'
 author-meta:
 - Justin Sonneck
 - Jianxu Chen
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-03-30" />
-  <meta name="citation_publication_date" content="2023-03-30" />
-  <meta property="article:published_time" content="2023-03-30" />
-  <meta name="dc.modified" content="2023-03-30T13:42:26+00:00" />
-  <meta property="article:modified_time" content="2023-03-30T13:42:26+00:00" />
+  <meta name="dc.date" content="2023-03-31" />
+  <meta name="citation_publication_date" content="2023-03-31" />
+  <meta property="article:published_time" content="2023-03-31" />
+  <meta name="dc.modified" content="2023-03-31T03:18:48+00:00" />
+  <meta property="article:modified_time" content="2023-03-31T03:18:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/7aec32e213021f4411b07c4ae3ddb6abc7fba11c/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/7aec32e213021f4411b07c4ae3ddb6abc7fba11c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/7aec32e213021f4411b07c4ae3ddb6abc7fba11c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/7aec32e213021f4411b07c4ae3ddb6abc7fba11c/))
 was automatically generated
-from [MMV-Lab/im2im-paper@ed68e62](https://github.com/MMV-Lab/im2im-paper/tree/ed68e62ce4e8fd69a528319870ab7e5ce2c2abc8)
-on March 30, 2023.
+from [MMV-Lab/im2im-paper@7aec32e](https://github.com/MMV-Lab/im2im-paper/tree/7aec32e213021f4411b07c4ae3ddb6abc7fba11c)
+on March 31, 2023.
 </em></small>
 
 
@@ -346,7 +346,7 @@ License: MIT license
 
 ## Data availability
 
-All data used in this work were from public repositories, released with other publications. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data
+All data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data
  
 
 ## Conflict of interest

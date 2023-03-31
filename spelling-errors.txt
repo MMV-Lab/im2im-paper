@@ -67,7 +67,7 @@ histon
 histones
 hoc
 IHC
-im
+Im
 ImageNet
 Imaginaire
 improvment
@@ -92,7 +92,7 @@ modularized
 MONAI
 mpIF
 muliplex
-Napari
+napari
 NDet
 neighering
 NPM
@@ -100,7 +100,7 @@ nucleophosmin
 OmniPose
 OpenMMLab
 optimizers
-PersistentDataLoader
+PersistentDataloader
 PersistentDataset
 phototoxicity
 pre
