@@ -207,6 +207,49 @@
     }
   },
   {
+    "id": "aicsimageio",
+    "type": "webpage",
+    "title": "AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python",
+    "URL": "https://github.com/AllenCellModeling/aicsimageio",
+    "publisher": "Github",
+
+    "author": [
+      {
+        "family": "Brown",
+        "given": "Eva Maxfield"
+      },
+      {
+        "family": "Toloudis",
+        "given": "Dan"
+      },
+      {
+        "family": "Sherman",
+        "given": "Jamie"
+      },
+      {
+        "family": "Swain-Bowden",
+        "given": "Madison"
+      },
+      {
+        "family": "Lambert",
+        "given": "Talley"
+      },
+      {
+        "family": "AICSImageIO Contributors",
+        "given": " "
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          4,
+          1
+        ]
+      ]
+    }
+  },
+  {
     "id": "HDN",
     "type": "paper-conference",
     "title": "Interpretable Unsupervised Diversity Denoising and Artefact Removal",
