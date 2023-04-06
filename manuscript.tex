@@ -1,8 +1,8 @@
 This manuscript
-(\href{https://MMV-Lab.github.io/im2im-paper/v/7aec32e213021f4411b07c4ae3ddb6abc7fba11c/}{permalink})
+(\href{https://MMV-Lab.github.io/im2im-paper/v/c4160bdfd13a7551c2f1a93a42945fb0618132d6/}{permalink})
 was automatically generated
-from \href{https://github.com/MMV-Lab/im2im-paper/tree/7aec32e213021f4411b07c4ae3ddb6abc7fba11c}{MMV-Lab/im2im-paper@7aec32e}
-on March 31, 2023.
+from \href{https://github.com/MMV-Lab/im2im-paper/tree/c4160bdfd13a7551c2f1a93a42945fb0618132d6}{MMV-Lab/im2im-paper@c4160bd}
+on April 6, 2023.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -83,14 +83,14 @@ The original idea of a general toolbox actually stememd from the OpenMMLab proje
 It has become one of most widely used codebase for research in semantic segmentation (2K forks and 5.4K stars on Github as of March 12, 2023).
 This inspires us to develop \emph{MMV\_Im2Im} to facillitate research in image-to-image transformation with special focus on biomedical applications.
 
-First of all, different from general computer vision datasets, such as ImageNet {[}\protect\hyperlink{ref-lt4BNUoG}{16}{]}, where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), biomedical applications usually involves large-scale high dimensional data (e.g., 500 images of 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI {[}\protect\hyperlink{ref-UU62HYC6}{17}{]} with partial loading and sampling support, as well as delayed image reading powered by aicsimageio {[}\protect\hyperlink{ref-ONdyoUIo}{18}{]} as default (configurable if another dataloader is preferred).
+First of all, different from general computer vision datasets, such as ImageNet {[}\protect\hyperlink{ref-lt4BNUoG}{16}{]}, where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), biomedical applications usually involves large-scale high dimensional data (e.g., 500 images of 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI {[}\protect\hyperlink{ref-UU62HYC6}{17}{]} with partial loading and sampling support, as well as delayed image reading powered by aicsimageio {[}\protect\hyperlink{ref-gsfWGJKf}{18}{]} as default (configurable if another dataloader is preferred).
 As a result, in our stress test, training a 3D nuclei instance segmentation model with more than 125,000 3D images can be conducted efficiently in a day, even with limited resource.
 
 Second, because microscopy data is not restricted to 2D, we re-implement common frameworks, such as fully convolutional networks (FCN), conditional generative models, cycle-consistent generative models, etc., in a generic way to easily switch between different dimensionalities for training. During inference, up to 5D images (channel x time x Z x Y x X) can be directly loaded as the input without pre-splitting into smaller 2D/3D chunks.
 
 Third, the toolbox pre-packs common functionalities specific to microscopy images. For example, we incorporate the special image normalization method introduced in {[}\protect\hyperlink{ref-Yq8wZ6hc}{4}{]}, where only the middle chunk along Z dimension of 3D microscopy images will be used for calculating the mean and standard deviation of image intensity for standard normalization. Also, 3D light microscopy images are usually anisotropic, i.e., much lower resolution along Z than XY dimension. So, we adopt the anisotropic variation of UNet as proposed in {[}\protect\hyperlink{ref-jM3v1UjQ}{19}{]}.
 
-Finally, to deploy the model in production, a model trained on small 3D patches sometimes need to be applied not only on much large images. Combining the efficient data handling of aicsimageio {[}\protect\hyperlink{ref-ONdyoUIo}{18}{]} and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production.
+Finally, to deploy the model in production, a model trained on small 3D patches sometimes need to be applied not only on much large images. Combining the efficient data handling of aicsimageio {[}\protect\hyperlink{ref-gsfWGJKf}{18}{]} and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production.
 
 All in all, the \emph{MMV\_Im2Im} toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R\&D for biomedical applications. The source code of \emph{MMV\_Im2Im} is available at \url{https://github.com/MMV-Lab/mmv_im2im}. This manuscript is generated with open-source package Manubot {[}\protect\hyperlink{ref-YuJbg3zO}{20}{]}. The manuscript source code is available at \url{https://github.com/MMV-Lab/im2im-paper}.
 
@@ -218,8 +218,8 @@ We did a special comparison in this subsection to further illustrate the differe
 }
 \end{figure}
 
-\hypertarget{unsupervised-semantic-segmentation-of-intracelluar-structures-from-2d3d-confocal-microscopy-images}{%
-\subsubsection{Unsupervised semantic segmentation of intracelluar structures from 2D/3D confocal microscopy images}\label{unsupervised-semantic-segmentation-of-intracelluar-structures-from-2d3d-confocal-microscopy-images}}
+\hypertarget{unsupervised-semantic-segmentation-of-intracellular-structures-from-2d3d-confocal-microscopy-images}{%
+\subsubsection{Unsupervised semantic segmentation of intracellular structures from 2D/3D confocal microscopy images}\label{unsupervised-semantic-segmentation-of-intracellular-structures-from-2d3d-confocal-microscopy-images}}
 
 Large amounts of high-quality segmentation ground truth is not always available, or may require endless effort to collect for a segmentation task. CycleGAN-based methods have opened up a new avenue for segmentation without the need for pixel-wise ground truth {[}\protect\hyperlink{ref-RuFP3CS3}{12}{]}. In this subsection, we demonstrate an unsupervised learning-based segmentation method on four examples: 2D tight-junction (via ZO1) segmentation from 2D FP-tagged ZO1 images (max-projected from 3D stacks), and segmentation of nuclei, mitochondria, and golgi from 3D confocal microscopy images.
 
@@ -368,7 +368,83 @@ License: MIT license
 \hypertarget{data-availability}{%
 \subsection{Data availability}\label{data-availability}}
 
-All data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv\_im2im/tree/main/paper\_configs/prepare\_data
+In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv\_im2im/tree/main/paper\_configs/prepare\_data. Detailed information about each dataset is listed below, in the same order as the Results section.
+
+\textbf{1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:}
+
+\textbf{2D:} The data were downloaded from https://zenodo.org/record/6139958\#.Y78QJKrMLtU and https://zenodo.org/record/6140064\#.Y78YeqrMLtU. We used all the data from the two sources, while 15\% of the data were held-out for testing. In specific, for data source 1 (https://zenodo.org/record/6139958\#.Y78QJKrMLtU), it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).
+
+\begin{itemize}
+\tightlist
+\item
+  Channel 1 : Low Contrast Digital Phase Contrast (DPC)
+\item
+  Channel 2 : High Contrast DPC
+\item
+  Channel 3 : Brightfield (the input in our study)
+\item
+  Channel 4 : EGFP-α-tubulin
+\item
+  Channel 5 : mCherry-H2B (the ground truth in our study)
+\end{itemize}
+
+For data source 2 (https://zenodo.org/record/6140064\#.Y78YeqrMLtU), it contains two sub-folders (train and test), each with snapshots sliced from different timelapse data. Each snapshot is saved as six different tiff files (only the \_bf and the second channel of \_fluo were used in this work):
+
+\begin{itemize}
+\tightlist
+\item
+  \_bf: bright field (the input in our study),
+\item
+  \_cyto: cytoplasm segmentation mask
+\item
+  \_dpc: phase contrast
+\item
+  \_fluo: two channel, first cytoplasm, second H2B (the H2B channel is the ground truth in our study)
+\item
+  \_nuclei: nuclei segmentation mask
+\item
+  \_sqrdpc: square-root phase contrast
+\end{itemize}
+
+\textbf{3D:} The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset, which was released with the publication {[}\protect\hyperlink{ref-5sGcmDuy}{24}{]}. Each field-of-view (FOV) is a multi-channel 3D image, of which the brightfield and the corresponding structure channels were used as input and ground truth, respectively. Experiments were done on four different cell lines: fibrillarin (structure\_name = ``FBL''), nucleophosmin (structure\_name = ``NPM1''), lamin b1 (structure\_name = ``LMNB1''), and histone H2B (structure\_name = ``HIST1H2BJ''), with 20\% of the data were held-out for testing.
+
+\textbf{2. 2D semantic segmentation of tissues from H\&E images}
+
+The data was downloaded from https://warwick.ac.uk/fac/cross\_fac/tia/data/glascontest/, which was originally used for MICCAI Glas challenge {[}\protect\hyperlink{ref-45Sirz1X}{29},\protect\hyperlink{ref-XAffSYIR}{30}{]}. There were one training set (85 images) and two test sets (60 and 20 images). We kept the same train/test split as in the challenge.
+
+\textbf{3. Instance segmentation in microscopy images}
+
+\textbf{2D:} The data were downloaded from https://bbbc.broadinstitute.org/BBBC010 for segmenting \emph{C. elegans} from widefield images {[}\protect\hyperlink{ref-138foKNOh}{39}{]}. We used all images from the dataset, while 5\% of the data were held-out for testing.
+
+\textbf{3D:} The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used the lamin b1 cell line (structure\_name = ``LMNB1'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20\% of the data were held-out for testing.
+
+\textbf{4. Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images}
+
+The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used the fibrillarin cell line (structure\_name = ``FBL'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel). The input is always the structure channel. Then, we used the FBL\_fine workflow in the Allen Cell and Structure Segmenter {[}\protect\hyperlink{ref-jM3v1UjQ}{19}{]} to generate the semantic segmentation ground truth, and we used the cell instance segmentation to group fibrillarin segmentations belonging to the same cell as unique instances (see more details in Results section), which will be used as the instance segmentation ground truth. The FBL\_fine segmentation workflow was optimized for this cell line, which can be considered as a good approximation of the real truth. To be conservative, we excluded images where the mean intensity of the structure channel is outside the range of {[}450, 500{]}, so that the results from the FBL\_fine workflow can be a better approximation of the real truth. After removing the ``outlier'' images, we held-out 20\% of the data for testing.
+
+\textbf{5. Unsupervised semantic segmentation of intracellular structures from 2D/3D confocal microscopy images}
+
+\textbf{2D:} The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used the tight junction cell line (structure\_name = ``TJP1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for experimenting unsupervised 2D segmentation. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
+
+\textbf{3D:} The data was also downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used three different cell lines for these experiments: Golgi (structure\_name = ``ST6GAL1''), mitochondria (structure\_name = ``TOMM20''), and histone H2B (structure\_name = ``HIST12BJ''). For Golgi and mitochondria, we simply used the corresponding structure segmentation from the dataset. For histone H2B, we took the released nuclear instance segmentation and converted it to binary as semantic segmentation results. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
+
+\textbf{6. Generating synthetic microscopy images from binary Masks}
+
+\textbf{2D:} The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used the nucleophosmin cell line (structure\_name = ``NPM1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for this experiment. The input is binary segmentation, while the ground truth is the raw image.
+
+\textbf{3D:} The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc\_single\_cell\_image\_dataset. We used the histone H2B cell line (structure\_name = ``HIST1H2BJ'') for these experiments. For the experiment with coarse masks, we used the binarized nuclear segmentation as the input, while for the experiment with detailed masks, we used the structure segmentation of H2B as the input. The ground truth is always the raw 3D structure image.
+
+\textbf{7. Image denoising for microscopy images}
+
+The data were downloaded from https://publications.mpi-cbg.de/publications-sites/7207/, which was released with the publication {[}\protect\hyperlink{ref-12G712Zky}{42}{]}. We used two datasets ``Denoising\_Planaria.tar.gz'' and ``Denoising\_Tribolium.tar.gz''. We kept the original train/test splitting in the datasets.
+
+\textbf{8. Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images}
+
+The data were downloaded from https://zenodo.org/record/4624364\#.Y9bWOoHMIqJ, which was released with the publication {[}\protect\hyperlink{ref-UEBDZ3tI}{8}{]}. We used two datasets \emph{Microtubule} and \emph{Nuclear\_Pore\_complex} from ``Confocal\_2\_STED.zip''. We kept the original train/test splitting in the datasets.
+
+\textbf{9. Staining transformation in multiplex experiments}
+
+This dataset was downloaded from https://zenodo.org/record/4751737\#.Y9gbv4HMLVZ, which was released with the publication {[}\protect\hyperlink{ref-WwenuBHa}{5}{]}. We used the dataset ``BC-DeepLIIF\_Training\_Set.zip'' and ``BC-DeepLIIF\_Validation\_Set.zip''. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
 
 \hypertarget{conflict-of-interest}{%
 \subsection{Conflict of interest}\label{conflict-of-interest}}
@@ -378,7 +454,7 @@ The authors report no conflict of interest.
 \hypertarget{acknowledgments}{%
 \subsection{Acknowledgments}\label{acknowledgments}}
 
-We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advices on how to integrate aicsimageio into the package. This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272.
+We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advice on how to integrate aicsimageio into the package. This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272.
 
 \hypertarget{references}{%
 \subsection{References}\label{references}}
@@ -485,11 +561,10 @@ We would like to thank the MONAI team for their support in our process of develo
 \CSLBlock{The MONAI Consortium} \emph{Zenodo} (2020-12-15) \url{https://doi.org/gqc7gb}
 \CSLBlock{DOI: \href{https://doi.org/10.5281/zenodo.4323059}{10.5281/zenodo.4323059}}}
 
-\leavevmode\vadjust pre{\hypertarget{ref-ONdyoUIo}{}}%
+\leavevmode\vadjust pre{\hypertarget{ref-gsfWGJKf}{}}%
 \CSLLeftMargin{18. }%
-\CSLRightInline{\textbf{AllenCellModeling/aicsimageio: Types, Filesystem Management, and BioformatsReader Fixes}
-\CSLBlock{Jackson Maxfield Brown, Jamie Sherman, Toloudis, Madison Swain-Bowden, Talley Lambert, Matte Bailey, Basu Chaudhuri, Gregory Johnson, Ian Hunt-Isaak, Nicholas-Schaub, \ldots{} Peter Sobolewski} \emph{Zenodo} (2022-05-27) \url{https://doi.org/gqc7gc}
-\CSLBlock{DOI: \href{https://doi.org/10.5281/zenodo.6585658}{10.5281/zenodo.6585658}}}
+\CSLRightInline{\textbf{AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python}
+\CSLBlock{Eva Maxfield Brown, Dan Toloudis, Jamie Sherman, Madison Swain-Bowden, Talley Lambert, AICSImageIO Contributors} \emph{Github} \url{https://github.com/AllenCellModeling/aicsimageio}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-jM3v1UjQ}{}}%
 \CSLLeftMargin{19. }%
