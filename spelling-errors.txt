@@ -14,7 +14,7 @@ bioimaging
 biomolecules
 BJ
 BMBF
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 CellPose
@@ -34,7 +34,7 @@ dataloader
 dataset
 datasets
 DeepLIIF
-Denoising
+denoising
 differnet
 dimensionalities
 Dimensionality
@@ -86,7 +86,7 @@ Jianxu
 JianxuChen
 JustinSonneck
 jxchen
-labelfree
+Labelfree
 lamin
 lightsheet
 LMNB
@@ -102,7 +102,7 @@ modularized
 MONAI
 mpIF
 muliplex
-napari
+Napari
 NDet
 neighering
 NPM

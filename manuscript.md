@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-06" />
   <meta name="citation_publication_date" content="2023-04-06" />
   <meta property="article:published_time" content="2023-04-06" />
-  <meta name="dc.modified" content="2023-04-06T18:38:26+00:00" />
-  <meta property="article:modified_time" content="2023-04-06T18:38:26+00:00" />
+  <meta name="dc.modified" content="2023-04-06T19:07:43+00:00" />
+  <meta property="article:modified_time" content="2023-04-06T19:07:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/))
 was automatically generated
-from [MMV-Lab/im2im-paper@12227c9](https://github.com/MMV-Lab/im2im-paper/tree/12227c9d6a0137ad76ddd09b3edff0658db324f6)
+from [MMV-Lab/im2im-paper@5cb2675](https://github.com/MMV-Lab/im2im-paper/tree/5cb2675bca1cf03fae1df60e046267940cfb6684)
 on April 6, 2023.
 </em></small>
 
@@ -367,34 +367,34 @@ For data source 2 (https://zenodo.org/record/6140064#.Y78YeqrMLtU), it contains 
 * _nuclei: nuclei segmentation mask
 * _sqrdpc: square-root phase contrast
 
-**3D:** The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset, which was released with the publication [@doi:10.1038/s41586-022-05563-7]. Each field-of-view (FOV) is a multi-channel 3D image, of which the brightfield and the corresponding structure channels were used as input and ground truth, respectively. Experiments were done on four different cell lines: fibrillarin (structure_name = "FBL"), nucleophosmin (structure_name = "NPM1"), lamin b1 (structure_name = "LMNB1"), and histone H2B (structure_name = "HIST1H2BJ"), with 20% of the data were held-out for testing.
+**3D:** The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset, which was released with the publication [@doi:10.1038/s41586-022-05563-7]. Each field-of-view (FOV) is a multi-channel 3D image, of which the brightfield and the corresponding structure channels were used as input and ground truth, respectively. Experiments were done on four different cell lines: fibrillarin (structure_name = "FBL"), nucleophosmin (structure_name = "NPM1"), lamin b1 (structure_name = "LMNB1"), and histone H2B (structure_name = "HIST1H2BJ"), with 20% of the data were held-out for testing.
 
  
  **2. 2D semantic segmentation of tissues from H&E images**
 
- The data was downloaded from https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/, which was originally used for MICCAI Glas challenge [@doi:10.1109/TMI.2015.2433900;@doi:10.1016/j.media.2016.08.008]. There were one training set (85 images) and two test sets (60 and 20 images). We kept the same train/test split as in the challenge. 
+ The data were downloaded from https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/, which was originally used for MICCAI Glas challenge [@doi:10.1109/TMI.2015.2433900;@doi:10.1016/j.media.2016.08.008]. There were one training set (85 images) and two test sets (60 and 20 images). We kept the same train/test split as in the challenge. 
 
  **3. Instance segmentation in microscopy images**
 
  **2D:** The data were downloaded from https://bbbc.broadinstitute.org/BBBC010 for segmenting *C. elegans* from widefield images [@doi:10.1021/cb900084v]. We used all images from the dataset, while 5% of the data were held-out for testing.
 
- **3D:** The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the lamin b1 cell line (structure_name = "LMNB1") for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20% of the data were held-out for testing.
+ **3D:** The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the lamin b1 cell line (structure_name = "LMNB1") for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20% of the data were held-out for testing.
 
  **4. Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images**
 
-The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the fibrillarin cell line (structure_name = "FBL") for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel). The input is always the structure channel. Then, we used the FBL_fine workflow in the Allen Cell and Structure Segmenter [@doi:10.1101/491035] to generate the semantic segmentation ground truth, and we used the cell instance segmentation to group fibrillarin segmentations belonging to the same cell as unique instances (see more details in Results section), which will be used as the instance segmentation ground truth. The FBL_fine segmentation workflow was optimized for this cell line, which can be considered as a good approximation of the real truth. To be conservative, we excluded images where the mean intensity of the structure channel is outside the range of [450, 500], so that the results from the FBL_fine workflow can be a better approximation of the real truth. After removing the "outlier" images, we held-out 20% of the data for testing.
+The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the fibrillarin cell line (structure_name = "FBL") for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel). The input is always the structure channel. Then, we used the FBL_fine workflow in the Allen Cell and Structure Segmenter [@doi:10.1101/491035] to generate the semantic segmentation ground truth, and we used the cell instance segmentation to group fibrillarin segmentations belonging to the same cell as unique instances (see more details in Results section), which will be used as the instance segmentation ground truth. The FBL_fine segmentation workflow was optimized for this cell line, which can be considered as a good approximation of the real truth. To be conservative, we excluded images where the mean intensity of the structure channel is outside the range of [450, 500], so that the results from the FBL_fine workflow can be a better approximation of the real truth. After removing the "outlier" images, we held-out 20% of the data for testing.
 
 **5. Unsupervised semantic segmentation of intracellular structures from 2D/3D confocal microscopy images**
 
-**2D:** The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the tight junction cell line (structure_name = "TJP1") for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for experimenting unsupervised 2D segmentation. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20% of the data were held-out for testing.
+**2D:** The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the tight junction cell line (structure_name = "TJP1") for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for experimenting unsupervised 2D segmentation. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20% of the data were held-out for testing.
 
-**3D:** The data was also downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used three different cell lines for these experiments: Golgi (structure_name = "ST6GAL1"), mitochondria (structure_name = "TOMM20"), and histone H2B (structure_name = "HIST12BJ"). For Golgi and mitochondria, we simply used the corresponding structure segmentation from the dataset. For histone H2B, we took the released nuclear instance segmentation and converted it to binary as semantic segmentation results. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20% of the data were held-out for testing.
+**3D:** The data were also downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used three different cell lines for these experiments: Golgi (structure_name = "ST6GAL1"), mitochondria (structure_name = "TOMM20"), and histone H2B (structure_name = "HIST12BJ"). For Golgi and mitochondria, we simply used the corresponding structure segmentation from the dataset. For histone H2B, we took the released nuclear instance segmentation and converted it to binary as semantic segmentation results. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20% of the data were held-out for testing.
 
 **6. Generating synthetic microscopy images from binary Masks**
 
-**2D:**  The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the nucleophosmin cell line (structure_name = "NPM1") for this experiment.  The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for this experiment. The input is binary segmentation, while the ground truth is the raw image.
+**2D:**  The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the nucleophosmin cell line (structure_name = "NPM1") for this experiment.  The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for this experiment. The input is binary segmentation, while the ground truth is the raw image.
 
-**3D:**  The data was downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the histone H2B cell line (structure_name = "HIST1H2BJ") for these experiments. For the experiment with coarse masks, we used the binarized nuclear segmentation as the input, while for the experiment with detailed masks, we used the structure segmentation of H2B as the input. The ground truth is always the raw 3D structure image.
+**3D:**  The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset. We used the histone H2B cell line (structure_name = "HIST1H2BJ") for these experiments. For the experiment with coarse masks, we used the binarized nuclear segmentation as the input, while for the experiment with detailed masks, we used the structure segmentation of H2B as the input. The ground truth is always the raw 3D structure image.
 
 **7. Image denoising for microscopy images**
 
@@ -406,7 +406,7 @@ The data were downloaded from https://zenodo.org/record/4624364#.Y9bWOoHMIqJ, wh
 
 **9. Staining transformation in multiplex experiments**
 
-This dataset was downloaded from https://zenodo.org/record/4751737#.Y9gbv4HMLVZ, which was released with the publication [@doi:10.1038/s42256-022-00471-x]. We used the dataset "BC-DeepLIIF_Training_Set.zip" and "BC-DeepLIIF_Validation_Set.zip". In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
+This dataset were downloaded from https://zenodo.org/record/4751737#.Y9gbv4HMLVZ, which was released with the publication [@doi:10.1038/s42256-022-00471-x]. We used the dataset "BC-DeepLIIF_Training_Set.zip" and "BC-DeepLIIF_Validation_Set.zip". In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
 
 
 ## Conflict of interest
