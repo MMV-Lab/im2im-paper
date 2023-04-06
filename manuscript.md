@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-06" />
   <meta name="citation_publication_date" content="2023-04-06" />
   <meta property="article:published_time" content="2023-04-06" />
-  <meta name="dc.modified" content="2023-04-06T18:07:18+00:00" />
-  <meta property="article:modified_time" content="2023-04-06T18:07:18+00:00" />
+  <meta name="dc.modified" content="2023-04-06T18:38:26+00:00" />
+  <meta property="article:modified_time" content="2023-04-06T18:38:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/c4160bdfd13a7551c2f1a93a42945fb0618132d6/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/c4160bdfd13a7551c2f1a93a42945fb0618132d6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/c4160bdfd13a7551c2f1a93a42945fb0618132d6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/c4160bdfd13a7551c2f1a93a42945fb0618132d6/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/12227c9d6a0137ad76ddd09b3edff0658db324f6/))
 was automatically generated
-from [MMV-Lab/im2im-paper@c4160bd](https://github.com/MMV-Lab/im2im-paper/tree/c4160bdfd13a7551c2f1a93a42945fb0618132d6)
+from [MMV-Lab/im2im-paper@12227c9](https://github.com/MMV-Lab/im2im-paper/tree/12227c9d6a0137ad76ddd09b3edff0658db324f6)
 on April 6, 2023.
 </em></small>
 
@@ -346,7 +346,7 @@ License: MIT license
 
 ## Data availability
 
-In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section.
+In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purpose, and we confirm that we didn't use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section.
 
 **1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:**
 

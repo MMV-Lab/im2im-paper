@@ -14,7 +14,7 @@ bioimaging
 biomolecules
 BJ
 BMBF
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 CellPose
@@ -34,13 +34,13 @@ dataloader
 dataset
 datasets
 DeepLIIF
-denoising
+Denoising
 differnet
 dimensionalities
 Dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 EGFP
 elegans
@@ -75,7 +75,7 @@ histone
 histones
 hoc
 IHC
-Im
+im
 ImageNet
 Imaginaire
 improvment
@@ -96,7 +96,7 @@ mediterranea
 MICCAI
 microtubule
 MMSegmentation
-MMV
+mmv
 modularization
 modularized
 MONAI
