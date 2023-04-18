@@ -1,8 +1,8 @@
 This manuscript
-(\href{https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/}{permalink})
+(\href{https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/}{permalink})
 was automatically generated
-from \href{https://github.com/MMV-Lab/im2im-paper/tree/5cb2675bca1cf03fae1df60e046267940cfb6684}{MMV-Lab/im2im-paper@5cb2675}
-on April 6, 2023.
+from \href{https://github.com/MMV-Lab/im2im-paper/tree/b6e8bff54a82660f8e7c4a55245cf69efa6f4599}{MMV-Lab/im2im-paper@b6e8bff}
+on April 18, 2023.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -174,7 +174,7 @@ NPM1 & 0.912 ± 0.015 & 0.795 ± 0.039 & 55 \\
 \hypertarget{d-semantic-segmentation-of-tissues-from-he-images}{%
 \subsubsection{2D semantic segmentation of tissues from H\&E images}\label{d-semantic-segmentation-of-tissues-from-he-images}}
 
-Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrated \emph{MMV\_Im2Im} on a pathology application to segment glands from hematoxylin and eosin (H\&E) stained tissue images from the 2015 Gland Segmentation challenge {[}\protect\hyperlink{ref-45Sirz1X}{29},\protect\hyperlink{ref-XAffSYIR}{30}{]}. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. \emph{MMV\_Im2Im} included a classic stain normalization method {[}\protect\hyperlink{ref-tQhnZyjK}{31}{]} as a pre-processing step. The effect of stain normalization can be observed in Figure \ref{fig:2d_gland}-A and B. We trained a simple attention UNet model {[}\protect\hyperlink{ref-OCow1hly}{26}{]}. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.883 and 0.888 on test set A and test set B, respectively. The performance was competitive comparing to the methods reported in the challenge report {[}\protect\hyperlink{ref-XAffSYIR}{30}{]}, especially with much more consistent performance across the two different test sets. Example results can be found in Figure \ref{fig:2d_gland}-C.
+Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrated \emph{MMV\_Im2Im} on a pathology application to segment glands from hematoxylin and eosin (H\&E) stained tissue images from the 2015 Gland Segmentation challenge {[}\protect\hyperlink{ref-45Sirz1X}{29},\protect\hyperlink{ref-XAffSYIR}{30}{]}. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. \emph{MMV\_Im2Im} included a classic stain normalization method {[}\protect\hyperlink{ref-tQhnZyjK}{31}{]} as a pre-processing step. The effect of stain normalization can be observed in Figure \ref{fig:2d_gland}-A and B. We trained a simple attention UNet model {[}\protect\hyperlink{ref-OCow1hly}{26}{]}. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.90 and 0.86 on test set A and test set B, respectively. The performance was competitive comparing to the methods reported in the challenge report {[}\protect\hyperlink{ref-XAffSYIR}{30}{]}, especially with much more consistent performance across the two different test sets. Example results can be found in Figure \ref{fig:2d_gland}-C.
 
 \begin{figure}
 \hypertarget{fig:2d_gland}{%

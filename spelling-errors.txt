@@ -14,7 +14,7 @@ bioimaging
 biomolecules
 BJ
 BMBF
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 CellPose
@@ -37,14 +37,14 @@ DeepLIIF
 denoising
 differnet
 dimensionalities
-Dimensionality
+dimensionality
 DL
 downscaled
-DPC
+dpc
 dseg
 EGFP
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 essentally
@@ -110,7 +110,7 @@ nucleophosmin
 OmniPose
 OpenMMLab
 optimizers
-PersistentDataloader
+PersistentDataLoader
 PersistentDataset
 phototoxicity
 pre

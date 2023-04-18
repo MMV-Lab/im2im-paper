@@ -5,7 +5,7 @@ keywords:
 - microscopy image analysis
 - open source
 lang: en-US
-date-meta: '2023-04-06'
+date-meta: '2023-04-18'
 author-meta:
 - Justin Sonneck
 - Jianxu Chen
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-04-06" />
-  <meta name="citation_publication_date" content="2023-04-06" />
-  <meta property="article:published_time" content="2023-04-06" />
-  <meta name="dc.modified" content="2023-04-06T19:07:43+00:00" />
-  <meta property="article:modified_time" content="2023-04-06T19:07:43+00:00" />
+  <meta name="dc.date" content="2023-04-18" />
+  <meta name="citation_publication_date" content="2023-04-18" />
+  <meta property="article:published_time" content="2023-04-18" />
+  <meta name="dc.modified" content="2023-04-18T21:41:27+00:00" />
+  <meta property="article:modified_time" content="2023-04-18T21:41:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/5cb2675bca1cf03fae1df60e046267940cfb6684/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/))
 was automatically generated
-from [MMV-Lab/im2im-paper@5cb2675](https://github.com/MMV-Lab/im2im-paper/tree/5cb2675bca1cf03fae1df60e046267940cfb6684)
-on April 6, 2023.
+from [MMV-Lab/im2im-paper@b6e8bff](https://github.com/MMV-Lab/im2im-paper/tree/b6e8bff54a82660f8e7c4a55245cf69efa6f4599)
+on April 18, 2023.
 </em></small>
 
 
@@ -211,7 +211,7 @@ Table: Evaluation of the final 3D label-free models for four different nuclear s
 
 ### 2D semantic segmentation of tissues from H&E images
 
-Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrated *MMV_Im2Im* on a pathology application to segment glands from hematoxylin and eosin (H&E) stained tissue images from the 2015 Gland Segmentation challenge [@doi:10.1109/TMI.2015.2433900;@doi:10.1016/j.media.2016.08.008]. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. *MMV_Im2Im* included a classic stain normalization method [@doi:10.1109/ISBI.2009.5193250] as a pre-processing step. The effect of stain normalization can be observed in Figure {@fig:2d_gland}-A and B. We trained a simple attention UNet model [@attentionUnet]. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.883 and 0.888 on test set A and test set B, respectively. The performance was competitive comparing to the methods reported in the challenge report [@doi:10.1016/j.media.2016.08.008], especially with much more consistent performance across the two different test sets. Example results can be found in Figure {@fig:2d_gland}-C.
+Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL based methods have achieved huge success in 2D semantic segmentation in biomedical images. In this example, we demonstrated *MMV_Im2Im* on a pathology application to segment glands from hematoxylin and eosin (H&E) stained tissue images from the 2015 Gland Segmentation challenge [@doi:10.1109/TMI.2015.2433900;@doi:10.1016/j.media.2016.08.008]. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. *MMV_Im2Im* included a classic stain normalization method [@doi:10.1109/ISBI.2009.5193250] as a pre-processing step. The effect of stain normalization can be observed in Figure {@fig:2d_gland}-A and B. We trained a simple attention UNet model [@attentionUnet]. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.90 and 0.86 on test set A and test set B, respectively. The performance was competitive comparing to the methods reported in the challenge report [@doi:10.1016/j.media.2016.08.008], especially with much more consistent performance across the two different test sets. Example results can be found in Figure {@fig:2d_gland}-C.
 
 ![Example results of 2D semantic segmentation of gland in H&E images.](images/gland.png){#fig:2d_gland width="75%"} 
 
