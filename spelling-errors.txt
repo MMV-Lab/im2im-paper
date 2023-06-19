@@ -14,7 +14,7 @@ bioimaging
 biomolecules
 BJ
 BMBF
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 CellPose
@@ -27,7 +27,7 @@ configurability
 confocal
 convolutional
 csv
-CycleGAN
+cycleGAN
 cyto
 DAPI
 dataloader
@@ -40,11 +40,12 @@ dimensionalities
 dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 EGFP
+Elastix
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 essentally
@@ -75,7 +76,7 @@ histone
 histones
 hoc
 IHC
-im
+Im
 ImageNet
 Imaginaire
 improvment
@@ -86,7 +87,7 @@ Jianxu
 JianxuChen
 JustinSonneck
 jxchen
-Labelfree
+labelfree
 lamin
 lightsheet
 LMNB
@@ -96,7 +97,7 @@ mediterranea
 MICCAI
 microtubule
 MMSegmentation
-mmv
+MMV
 modularization
 modularized
 MONAI
@@ -113,9 +114,11 @@ optimizers
 PersistentDataLoader
 PersistentDataset
 phototoxicity
+physcially
 pre
 pyrallis
 RCNN
+refernece
 rescale
 rescaling
 reusability

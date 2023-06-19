@@ -5,7 +5,7 @@ keywords:
 - microscopy image analysis
 - open source
 lang: en-US
-date-meta: '2023-04-18'
+date-meta: '2023-06-19'
 author-meta:
 - Justin Sonneck
 - Jianxu Chen
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-04-18" />
-  <meta name="citation_publication_date" content="2023-04-18" />
-  <meta property="article:published_time" content="2023-04-18" />
-  <meta name="dc.modified" content="2023-04-18T21:41:27+00:00" />
-  <meta property="article:modified_time" content="2023-04-18T21:41:27+00:00" />
+  <meta name="dc.date" content="2023-06-19" />
+  <meta name="citation_publication_date" content="2023-06-19" />
+  <meta property="article:published_time" content="2023-06-19" />
+  <meta name="dc.modified" content="2023-06-19T18:06:59+00:00" />
+  <meta property="article:modified_time" content="2023-06-19T18:06:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/e52fbde2994a307c76a8d2ec15346bfec89f46a9/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e52fbde2994a307c76a8d2ec15346bfec89f46a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e52fbde2994a307c76a8d2ec15346bfec89f46a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/e52fbde2994a307c76a8d2ec15346bfec89f46a9/))
 was automatically generated
-from [MMV-Lab/im2im-paper@b6e8bff](https://github.com/MMV-Lab/im2im-paper/tree/b6e8bff54a82660f8e7c4a55245cf69efa6f4599)
-on April 18, 2023.
+from [MMV-Lab/im2im-paper@e52fbde](https://github.com/MMV-Lab/im2im-paper/tree/e52fbde2994a307c76a8d2ec15346bfec89f46a9)
+on June 19, 2023.
 </em></small>
 
 
@@ -326,9 +326,17 @@ We fully adopted the Trainer from pytorch-lightning, which has been widely used 
 
 In this work, we presented a new open source python package *MMV_Im2Im* package for image-to-image transformations in bioimaging applications. We demonstrated the applicability on more than ten different problems or datasets to give biomedical researchers a holistic view of the general image-to-image transformation concepts with diverse examples. This package was not a simple collection of existing methods. Instead, we distilled the knowledge from existing methods and created this generic version with state-of-the-art ML engineering techniques, which made the package easy to understand, easy to use, and easy to extend for future. We hope this package can serve the starting point for other researchers doing AI-based image-to-image transformation research, and eventually build a large shared community in the field of image-to-image transformation for bioimaging. 
 
+### Microscopy images with temporal information
+
+
+
+### Further works
+
 One of main directions for extending *MMV_Im2Im* is to pre-pack common bioimaging datasets as a *Dataset* module, so that DL researchers can use for algorithm development and benchmarking, and new users can easily use for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models [@doi:10.48550/arXiv.2208.14125], unsupervised denoising [@doi:10.1109/ISBI45749.2020.9098612,@HDN] or Imaginaire (<https://github.com/NVlabs/imaginaire>). Besides, we also plan to develop two auxillary packages *MMV_Im2Im_Auto* and *MMV_Im2Im_Active*. In specific, when you have a reasonable amount of training data, MMV_Im2Im_Auto will take advantage of the fact that *MMV_Im2Im* is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, *MMV_Im2Im_Active* will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning [@doi:10.1101/491035]. All the packages will also be wrapped into Napari plugins [@doi:10.5281/zenodo.3555620] to allow no-code operation and therefore be more friendly to users without experience in programming. 
 
-Finally, beyond *MMV_Im2Im*, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our *MMV_NDet* (NDet = N-dimensional detection) package, currently under development. 
+Another type of microscopy image analysis problem related to image to image transformation is image registration, where we learn how to transform the "floating" image spatially so that it is optimally aligned with the refernece image in the physcially space. Elastix ... image-to-image transformation without well aligned training data.  
+
+Beyond *MMV_Im2Im*, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our *MMV_NDet* (NDet = N-dimensional detection) package, currently under development. 
 
 ## Code availability and requirements
 

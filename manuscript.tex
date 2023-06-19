@@ -1,8 +1,8 @@
 This manuscript
-(\href{https://MMV-Lab.github.io/im2im-paper/v/b6e8bff54a82660f8e7c4a55245cf69efa6f4599/}{permalink})
+(\href{https://MMV-Lab.github.io/im2im-paper/v/e52fbde2994a307c76a8d2ec15346bfec89f46a9/}{permalink})
 was automatically generated
-from \href{https://github.com/MMV-Lab/im2im-paper/tree/b6e8bff54a82660f8e7c4a55245cf69efa6f4599}{MMV-Lab/im2im-paper@b6e8bff}
-on April 18, 2023.
+from \href{https://github.com/MMV-Lab/im2im-paper/tree/e52fbde2994a307c76a8d2ec15346bfec89f46a9}{MMV-Lab/im2im-paper@e52fbde}
+on June 19, 2023.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -346,9 +346,17 @@ We fully adopted the Trainer from pytorch-lightning, which has been widely used 
 
 In this work, we presented a new open source python package \emph{MMV\_Im2Im} package for image-to-image transformations in bioimaging applications. We demonstrated the applicability on more than ten different problems or datasets to give biomedical researchers a holistic view of the general image-to-image transformation concepts with diverse examples. This package was not a simple collection of existing methods. Instead, we distilled the knowledge from existing methods and created this generic version with state-of-the-art ML engineering techniques, which made the package easy to understand, easy to use, and easy to extend for future. We hope this package can serve the starting point for other researchers doing AI-based image-to-image transformation research, and eventually build a large shared community in the field of image-to-image transformation for bioimaging.
 
+\hypertarget{microscopy-images-with-temporal-information}{%
+\subsubsection{Microscopy images with temporal information}\label{microscopy-images-with-temporal-information}}
+
+\hypertarget{further-works}{%
+\subsubsection{Further works}\label{further-works}}
+
 One of main directions for extending \emph{MMV\_Im2Im} is to pre-pack common bioimaging datasets as a \emph{Dataset} module, so that DL researchers can use for algorithm development and benchmarking, and new users can easily use for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models {[}\protect\hyperlink{ref-1A3yurr7m}{44}{]}, unsupervised denoising {[}\protect\hyperlink{ref-4vnyY9J9}{41}{]} or Imaginaire (\url{https://github.com/NVlabs/imaginaire}). Besides, we also plan to develop two auxillary packages \emph{MMV\_Im2Im\_Auto} and \emph{MMV\_Im2Im\_Active}. In specific, when you have a reasonable amount of training data, MMV\_Im2Im\_Auto will take advantage of the fact that \emph{MMV\_Im2Im} is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, \emph{MMV\_Im2Im\_Active} will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning {[}\protect\hyperlink{ref-jM3v1UjQ}{19}{]}. All the packages will also be wrapped into Napari plugins {[}\protect\hyperlink{ref-YEMgt2T4}{45}{]} to allow no-code operation and therefore be more friendly to users without experience in programming.
 
-Finally, beyond \emph{MMV\_Im2Im}, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our \emph{MMV\_NDet} (NDet = N-dimensional detection) package, currently under development.
+Another type of microscopy image analysis problem related to image to image transformation is image registration, where we learn how to transform the ``floating'' image spatially so that it is optimally aligned with the refernece image in the physcially space. Elastix \ldots{} image-to-image transformation without well aligned training data.
+
+Beyond \emph{MMV\_Im2Im}, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our \emph{MMV\_NDet} (NDet = N-dimensional detection) package, currently under development.
 
 \hypertarget{code-availability-and-requirements}{%
 \subsection{Code availability and requirements}\label{code-availability-and-requirements}}
