@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Justin Sonneck" />
   <meta name="author" content="Jianxu Chen" />
-  <meta name="dcterms.date" content="2023-09-26" />
+  <meta name="dcterms.date" content="2023-09-28" />
   <meta name="keywords" content="deep learning, microscopy image analysis, open source" />
   <title>MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-09-26" />
-  <meta name="citation_publication_date" content="2023-09-26" />
-  <meta property="article:published_time" content="2023-09-26" />
-  <meta name="dc.modified" content="2023-09-26T14:12:52+00:00" />
-  <meta property="article:modified_time" content="2023-09-26T14:12:52+00:00" />
+  <meta name="dc.date" content="2023-09-28" />
+  <meta name="citation_publication_date" content="2023-09-28" />
+  <meta property="article:published_time" content="2023-09-28" />
+  <meta name="dc.modified" content="2023-09-28T16:22:53+00:00" />
+  <meta property="article:modified_time" content="2023-09-28T16:22:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/95b4e4177071248e2ce1c3ffec17cc0c9df52191/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/95b4e4177071248e2ce1c3ffec17cc0c9df52191/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/95b4e4177071248e2ce1c3ffec17cc0c9df52191/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/70ca43307d46352195ff4a7e7a8292144b340afb/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/70ca43307d46352195ff4a7e7a8292144b340afb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/70ca43307d46352195ff4a7e7a8292144b340afb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://MMV-Lab.github.io/im2im-paper/v/95b4e4177071248e2ce1c3ffec17cc0c9df52191/">permalink</a>)
+(<a href="https://MMV-Lab.github.io/im2im-paper/v/70ca43307d46352195ff4a7e7a8292144b340afb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/MMV-Lab/im2im-paper/tree/95b4e4177071248e2ce1c3ffec17cc0c9df52191">MMV-Lab/im2im-paper@95b4e41</a>
-on September 26, 2023.
+from <a href="https://github.com/MMV-Lab/im2im-paper/tree/70ca43307d46352195ff4a7e7a8292144b340afb">MMV-Lab/im2im-paper@70ca433</a>
+on September 28, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -137,13 +137,13 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, 
 These techniques have recently been adapted for bioimaging applications and have revolutionized image-based biomedical research <span class="citation" data-cites="Yq8wZ6hc WwenuBHa wcCVn8av xPgDok51">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>,<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>,<a href="#ref-xPgDok51" role="doc-biblioref">7</a>]</span>. In principal, these techniques and applications can be formulated as a general image-to-image transformation problem, as depicted in the central panel in Figure <a href="#fig:overview">1</a>. Deep neural networks are trained to perceive the information from the source image(s) and reconstruct the learned knowledge from source images(s) in the form of a new image(s) of the target type.
 The source and target images can be real or simulated microscopy images, segmentation masks, or their combinations, as exemplified in Figure <a href="#fig:overview">1</a>.
 Since these underlying methods share the same essential spirit, a natural question arises: is it possible to develop a single generic codebase for deep learning (DL) based image-to-image transformation applicable to various biomedical studies?</p>
-<p>In this paper, we introduce <em>MMV_Im2Im</em> an open-source microscopy machine vision (MMV) toolbox for image-to-image transformation and demonstrate its applications in over 10 biomedical applications of various types.
+<p>In this paper, we introduce <em>MMV_Im2Im</em> an open-source microscopy machine vision (MMV) toolbox for image-to-image transformation and demonstrate its applications in over 10 biomedical tasks of various types by performing more than 30 experiments.
 Currently, <em>MMV_Im2Im</em> supports 2D~5D microscopy images for supervised image-to-image translation (e.g., labelfree determination <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, imaging modality transformation <span class="citation" data-cites="UEBDZ3tI WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>,<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>), supervised image restoration <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>, supervised semantic segmentation <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span>, supervised instance segmentation <span class="citation" data-cites="K2ugNcVa QmYuUQ5K">[<a href="#ref-K2ugNcVa" role="doc-biblioref">10</a>,<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>, unsupervised semantic segmentation <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>, unsupervised image to image translation and synthetization <span class="citation" data-cites="6wtIu4QY">[<a href="#ref-6wtIu4QY" role="doc-biblioref">13</a>]</span>. The toolbox will continuously grow with more and more methods, such as self-supervised learning based methods, ideally also with contributions from the open-source community.</p>
 <p>Why do we need such a single generic codebase for all deep-learning based microscopy image-to-image transformation? <em>MMV_Im2Im</em> is not simply a collection of many existing methods, but with rather systematic design for generality, flexibility, simplicity and reusability, attempting to address several fundamental bottlenecks for image-to-image transformation in biomedical applications, as highlighted below.</p>
 <h3 id="feature-1-universal-boilerplate-with-state-of-the-art-ml-engineering">Feature 1: universal boilerplate with state-of-the-art ML engineering:</h3>
 <p><em>Bottleneck: existing code not easy to understand or to extend or re-use</em>.</p>
 <p>Our package <em>MMV_Im2Im</em> employs pytorch-lightning <span class="citation" data-cites="YbvSvdyB">[<a href="#ref-YbvSvdyB" role="doc-biblioref">14</a>]</span> as the core in the backend, which offers numerous benefits, such as readability, flexibility, simplicity and reusability. First of all, have you ever had the moment when you wanted to extend someone’s open-source code to suit your special ML needs, but found it so difficult to figure out where and how to extend, especially for complex methods? Or, have you ever encountered the situation where you want to compare the methods and code from two different papers, even solving the same problem, e.g. semantic segmentation, but not quite easy to grasp quickly since the two repositories are implemented in very different ways? It is not rare that even different researchers from the same group may implement similar methods in very different manners. This is not only a barrier for other people to learn and re-use the open-source code, but also poses challenges for developers in maintenance, further development, and interoperability among different packages.
-We follow the pytorch-lightning framework and carefully design a universal boilerplate for image-to-image transformation for biomedical applications, where the implementation of all the methods share the same modularized code structure. This greatly lowers the learning curve for people to read and understand the code, and makes implementing new methods or extending existing methods simple and fast, at least from an engineering perspective.</p>
+We follow the pytorch-lightning framework and carefully design a universal boilerplate for image-to-image transformation for biomedical applications, where the implementation of all the methods share the same modularized code structure. For all PyTorch users, this greatly lowers the learning curve for people to read and understand the code, and makes implementing new methods or extending existing methods simple and fast, at least from an engineering perspective.</p>
 <p>Moreover, as ML scientists, have you ever overwhelmed by different training tricks for different methods or been curious about if certain state-of-the-art training methods can boost the performance of existing models? With the pytorch-lightning backend, <em>MMV_Im2Im</em> allows you to enjoy different state-of-the-art ML training engineering techniques without changing the code, e.g., stochastic weight averaging <span class="citation" data-cites="qzeQFRn9">[<a href="#ref-qzeQFRn9" role="doc-biblioref">15</a>]</span>, single precision training, automatic batch size determination, different optimizers, different learning rate schedulers, easy deployment on different devices, distributed training on multi-GPU (even multi-node), logging with common loggers such as Tensorboard, etc.. In short, with the pytorch-lightning based universal boilerplate, bioimaging researchers can really focus on research and develop novel methods for their biomedical applications, without worrying about the ML engineering works (which are usually lack in non-computer-science labs).</p>
 <h3 id="feature-2-modularization-and-human-readable-configuration-system">Feature 2: modularization and human-readable configuration system:</h3>
 <p><em>Bottleneck: Dilemma between simplicity and flexibility</em></p>
@@ -169,18 +169,24 @@ As a result, in our stress test, training a 3D nuclei instance segmentation mode
 </div>
 <h2 id="results">Results</h2>
 <p>In this section, we showcase the versatility of the <em>MMV_Im2Im</em> toolbox by presenting over ten different biomedical applications across various R&amp;D use cases and scales. All experiments and results in this section were conducted on publicly available datasets released with other publications and our scripts (for pulling the public dataset online and data wrangling) and configuration files (for setting up training and inference details), both included in the MMV_Im2Im package. Our aim is to make it easy to reproduce all of the results in this paper, and more importantly use these data and scripts to get familar with the package and adapt to new problems of users’ interest. It is important to note that the aim of these experiments was not to achieve the best performance on each individual task, as this may require further hyper-parameter tuning (see Discussion section for more details). Rather, the experiments were intended to demonstrate the package’s different features and general applicability, providing a holistic view of image-to-image transformation concepts to biomedical researchers. We hope that these concepts will help researchers integrate AI into traditional assay development strategies and inspire computational and experimental co-design methods, enabling new biomedical studies that were previously unfeasible.</p>
-<h3 id="labelfree-prediction-of-nuclear-structure-from-2d3d-brightfield-images">Labelfree prediction of nuclear structure from 2D/3D brightfield images</h3>
+<h3 id="labelfree-prediction-of-nuclear-structure-from-2d3d-brightfield-imagestodo-rename-unet-to-unet-in-fig-a">Labelfree prediction of nuclear structure from 2D/3D brightfield images(TODO: rename UNET to UNet in Fig A)</h3>
 <p>The labelfree method refers a DL method that can predict fluorescent images directly from transmitted light brightfield images <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Comparing to brightfield images, fluorescent images can resolve subcellular structures in living cells at high resolution but with the cost of expensive and slow procedures and high phototoxicity. The labelfree method provides a new perspective in assay development to conduct integrated computational analysis of multiple organelles only with a single brightfield image acquisition. In our first demonstration, we applied <em>MMV_Im2Im</em> to build 2D/3D models that can predict fluorescent images of nuclear structures from brightfield images. For 3D models, we also compared (1) different image normalization methods, (2) different network backbones, and (3) different types of models.</p>
 <p>It should be noted that while we recognize the importance of systematically evaluating the predictions, such an analysis falls outside the scope of this paper. We argue that an appropriate evaluation methodology should depend on specific downstream quantitative analysis goals (e.g., <span class="citation" data-cites="gPpwGUco EOO2mf0p">[<a href="#ref-gPpwGUco" role="doc-biblioref">21</a>,<a href="#ref-EOO2mf0p" role="doc-biblioref">22</a>]</span>). For example, if our aim is to quantify the size of nucleoli, we must compare the segmentation derived from real nucleoli signals to that of the predicted nucleoli segmentation, ensuring that measurements from both are consistent. Alternatively, if the goal is to localize the nucleoli roughly within the cell, Pearson correlation may be a more appropriate metric. In this work, we concentrate on visual inspection, using Pearson correlation and structural similarity as a rough quantitative reference. Our intent is to demonstrate the utility of our <em>MMV_Im2Im</em> package, and leave appropriate evaluations to users in their specific problems in real studies.</p>
-<p><em>2D Labelfree:</em> We started with a simple problem using 2D images from the HeLa “Kyoto” cells dataset <span class="citation" data-cites="xv2VIyRP">[<a href="#ref-xv2VIyRP" role="doc-biblioref">23</a>]</span>. For all images, we took the brightfield channel and the mCherry-H2B channel out of the multi-channel timelapse movies. 2D images were acquired at 20x with 0.8 N.A. and then downscaled by 4 (pixel size: 0.299 nm x 0.299 nm). Example predictions can be found in Figure ??-A. We compared a basic UNet model <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span> and a 2D version of the fnet model in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. The fnet model achieved slightly more accurate predictions than the basic UNet.</p>
+<p><em>2D Labelfree:</em> We started with a simple problem using 2D images from the HeLa “Kyoto” cells dataset <span class="citation" data-cites="xv2VIyRP">[<a href="#ref-xv2VIyRP" role="doc-biblioref">23</a>]</span>. For all images, we took the brightfield channel and the mCherry-H2B channel out of the multi-channel timelapse movies. 2D images were acquired at 20x with 0.8 N.A. and then downscaled by 4 (pixel size: 0.299 nm x 0.299 nm). Example predictions can be found in Figure ??-A. We compared a basic UNet model <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">9</a>]</span> and a 2D version of the fnet model in <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. The fnet model achieved slightly more accurate predictions than the basic UNet, this can be seen in Figure <a href="#fig:labelfree_comparison">2</a>-A.</p>
 <p><em>3D Labelfree:</em> We tested with 3D images from the hiPS single cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. Specifically, we extracted the brightfield channel and the structure channel from the full field-of-view (FOV) multi-channel images, from the HIST1H2BJ, FBL, NPM1, LMNB1 cell lines, so as to predict from one brightfield image various nuclear structures, histones, nucleoli (dense fibrillar component via fibrillarin), nucleoli (granular component via nucleophosmin), and nuclear envelope, respectively. Images were acquired at 100x with 1.25 NA (voxel size: 0.108 micron x 0.108 micron x 0.29 micron).</p>
-<p>We conducted three groups of comparisons (see results in Figure ??-B). First, we compared three different image normalization methods for 3D images: percentile normalization, standard normalization, center normalization <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Percentile normalization refers to cutting the intensity out of the range of [0.5, 99.5] percentile of the image intensity and then rescale the values to the range of [-1, 1], while the standard normalization is simply subtracting mean intensity and then divided by the standard deviation of all pixel intensities. Center normalization is similar to standard normalization, but the statistics are calculated only around center along the Z-axis <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. One could easily test different percentile or rescaling to [0, 1] instead of [-1, 1]. Qualitatively, we found center normalization slightly more accurate and more robust than the other two (ref. the first row in Figure ??-B).</p>
-<p>Second, we compared different network backbone architectures, including the original fnet model <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, an enhanced UNet <span class="citation" data-cites="M7480NLD">[<a href="#ref-M7480NLD" role="doc-biblioref">25</a>]</span>, the attention UNet <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">26</a>]</span>, two transformer-based models, SwinUNETR <span class="citation" data-cites="ZWL3IrVc">[<a href="#ref-ZWL3IrVc" role="doc-biblioref">27</a>]</span> and UNETR<span class="citation" data-cites="XCKUntOB">[<a href="#ref-XCKUntOB" role="doc-biblioref">28</a>]</span> (all with center normalization). Inspecting the predictions on a holdout validation set suggested that fnet achieved the best performance, and the transformer-based models did not work well in labelfree problems (ref. the second row and the “c + fnet” from the first row in Figure ??-B).</p>
+<div id="fig:labelfree_comparison" class="fignos">
+<figure>
+<img src="images/labelfree_comparison_justin.png" style="width:76.0%;height:90.0%" alt="Figure 2: A. Example of 2D labelfree results. B. Overview of various 3D labelfree results obtained by different training strategies. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details)." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> A. Example of 2D labelfree results. B. Overview of various 3D labelfree results obtained by different training strategies. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details).</figcaption>
+</figure>
+</div>
+<p>We conducted three groups of comparisons (see results in Figure <a href="#fig:labelfree_comparison">2</a>-B). First, we compared three different image normalization methods for 3D images: percentile normalization, standard normalization, center normalization <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. Percentile normalization refers to cutting the intensity out of the range of [0.5, 99.5] percentile of the image intensity and then rescale the values to the range of [-1, 1], while the standard normalization is simply subtracting mean intensity and then divided by the standard deviation of all pixel intensities. Center normalization is similar to standard normalization, but the statistics are calculated only around center along the Z-axis <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>. One could easily test different percentile or rescaling to [0, 1] instead of [-1, 1]. Qualitatively, we found center normalization slightly more accurate and more robust than the other two (ref. the first row in Figure ??-B).</p>
+<p>Second, we compared different network backbone architectures, including the original fnet model <span class="citation" data-cites="Yq8wZ6hc">[<a href="#ref-Yq8wZ6hc" role="doc-biblioref">4</a>]</span>, an enhanced UNet <span class="citation" data-cites="M7480NLD">[<a href="#ref-M7480NLD" role="doc-biblioref">25</a>]</span>, the attention UNet <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">26</a>]</span>, two transformer-based models, SwinUNETR <span class="citation" data-cites="ZWL3IrVc">[<a href="#ref-ZWL3IrVc" role="doc-biblioref">27</a>]</span> and UNETR<span class="citation" data-cites="XCKUntOB">[<a href="#ref-XCKUntOB" role="doc-biblioref">28</a>]</span> (all with center normalization). Inspecting the predictions on a holdout validation set suggested that fnet achieved the best performance #, and the transformer-based models did not work well in labelfree problems (ref. the second row and the “c + fnet” from the first row in Figure ??-B).</p>
 <p>Finally, we showed the comparison between three different types of models, an FCN-type model (i.e., fnet), a pix2pix-type model, and a cycleGAN-type model. For fair comparison, we used fnet as the same backbone for all three types of models. In theory, the pix2pix-type model can be trained in two different ways: from scratch or initializing the generator with a pre-trained fnet (trained as FCN). Examples of the comparison results were shown in the last two rows in Figure ??-B. Visually, it is evident that the additional adversarial components (i.e., the discriminator) could generate images with more realistic appearance than a typical FCN-type model alone, but again, we leave the appropriate quantitative evaluations to users’ specfic biomedical studies.</p>
-<p>From the experiments above, we found that center normalization + pix2pix with fnet as the generator achieved the best overall performance qualitatively. So, we employed the same strategy on all other nuclear structures. At the end, we had four different labelfree models, each predicting one different nuclear structure from 3D brightfield images. As an example of evaluation, we calculated the pearson correlation and structural similarity on hold-out validation sets. The results were summarized in Table <a href="#tbl:labelfree_table">1</a>. Again, these numbers were merely examples of evaluation, systematic evaluation based on each specific biological problem would be necessary before deployment. Figure ??-C showed one example of all four different structures predicted from a single unseen brightfield image. This would permit an integrated analysis of four different nuclear components that could hardly be acquired simultaneously in real experiments and real images.</p>
+<p>From the experiments above, we found that center normalization + pix2pix with fnet as the generator achieved the best overall performance qualitatively. So, we employed the same strategy on all other nuclear structures. At the end, we had four different labelfree models, each predicting one different nuclear structure from 3D brightfield images. As an example of evaluation, we calculated the pearson correlation, the structural similarity and the peak signal to noise ratio on hold-out validation sets. The results were summarized in Table <a href="#tbl:labelfree_table">1</a>. Again, these numbers were merely examples of evaluation, systematic evaluation based on each specific biological problem would be necessary before deployment. Figure <a href="#fig:labelfree_all_structures">3</a>-A shows the comparison of each predicted structure and its ground truth, while Figure <a href="#fig:labelfree_all_structures">3</a>-B shows one example of all four different structures predicted from a single unseen brightfield image. This would permit an integrated analysis of four different nuclear components that could hardly be acquired simultaneously in real experiments and real images.</p>
 <div id="tbl:labelfree_table" class="tablenos">
 <table id="tbl:labelfree_table">
-<caption><span>Table 1:</span> Evaluation of the final 3D label-free models for four different nuclear structures. </caption>
+<caption><span>Table 1:</span> Evaluation of the final 3D labelfree models for four different nuclear structures. </caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -192,63 +198,59 @@ As a result, in our stress test, training a 3D nuclei instance segmentation mode
 <th>Dataset</th>
 <th>Pearson Correlation</th>
 <th>Structural Similarity</th>
-<th># of Test Data</th>
+<th>Peak Signal to Noise Ration</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>FBL</td>
-<td>0.900 ± 0.013</td>
-<td>0.858 ± 0.029</td>
-<td>50</td>
+<td>0.902 ± 0.014</td>
+<td>0.864 ± 0.029</td>
+<td>33.559 ± 1.182</td>
 </tr>
 <tr class="even">
 <td>HIST1H2BJ</td>
-<td>0.886 ± 0.023</td>
-<td>0.758 ± 0.069</td>
-<td>55</td>
+<td>0.880 ± 0.022</td>
+<td>0.735 ± 0.070</td>
+<td>27.307 ± 2.832</td>
 </tr>
 <tr class="odd">
 <td>LMNB1</td>
-<td>0.884 ± 0.020</td>
-<td>0.701 ± 0.061</td>
-<td>50</td>
+<td>0.883 ± 0.020</td>
+<td>0.703 ± 0.060</td>
+<td>29.582 ± 1.793</td>
 </tr>
 <tr class="even">
 <td>NPM1</td>
-<td>0.937 ± 0.008</td>
-<td>0.834 ± 0.025</td>
-<td>55</td>
+<td>0.939 ± 0.009</td>
+<td>0.846 ± 0.027</td>
+<td>32.636 ± 1.040</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="fig:labelfree_comparison" class="fignos">
+<div id="fig:labelfree_all_structures" class="fignos">
 <figure>
-<img src="images/labelfree_comparison_justin.png" style="width:76.0%;height:90.0%" alt="Figure 2: Examples of labelfree results. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details)." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> Examples of labelfree results. p/c/s refers percentile normalization, center normalization, and standard normalization, respectively (see main text for details).</figcaption>
+<img src="images/labelfree_all_justin.png" style="width:76.0%;height:90.0%" alt="Figure 3: A. Comparison of predictions of different 3d labelfree models and each ground truth. B. Predictions of the different labelfree models using the same brightfield image as input, which provides a deep insight into the nuclear structure." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> A. Comparison of predictions of different 3d labelfree models and each ground truth. B. Predictions of the different labelfree models using the same brightfield image as input, which provides a deep insight into the nuclear structure.</figcaption>
 </figure>
 </div>
-<div id="fig:labelfree_comparison" class="fignos">
-<figure>
-<img src="images/labelfree_all_justin.png" style="width:76.0%;height:90.0%" alt="Figure 3: TODO." />
-<figcaption aria-hidden="true"><span>Figure 3:</span> TODO.</figcaption>
-</figure>
-</div>
-<h3 id="d-semantic-segmentation-of-tissues-from-he-images-todo-update-figure-add-stds">2D semantic segmentation of tissues from H&amp;E images (TODO: Update figure, add stds)</h3>
+<h3 id="d-semantic-segmentation-of-tissues-from-he-images">2D semantic segmentation of tissues from H&amp;E images</h3>
 <p>Segmentation is a common image processing task, and can be considered as a special type of image-to-image transformation, where the generated images are segmentation masks. DL-based methods have achieved huge success in semantic segmentation in biomedical images. In this example, we demonstrated <em>MMV_Im2Im</em> on a pathology application to segment glands from hematoxylin and eosin (H&amp;E) stained tissue images from the 2015 Gland Segmentation challenge <span class="citation" data-cites="45Sirz1X XAffSYIR">[<a href="#ref-45Sirz1X" role="doc-biblioref">29</a>,<a href="#ref-XAffSYIR" role="doc-biblioref">30</a>]</span>. Stain normalization is an important pre-processing step in order to develop models robust to stain variation and tissue variations. <em>MMV_Im2Im</em> included a classic stain normalization method <span class="citation" data-cites="tQhnZyjK">[<a href="#ref-tQhnZyjK" role="doc-biblioref">31</a>]</span> as a pre-processing step. The effect of stain normalization can be observed in Figure <a href="#fig:2d_gland">4</a>-A and B. We trained a simple attention UNet model <span class="citation" data-cites="OCow1hly">[<a href="#ref-OCow1hly" role="doc-biblioref">26</a>]</span>. Evaluated on the two different hold-out test sets, the model achieved F1-score, 0.904 ± 0.060 and 0.861 ± 0.117 on test set A and test set B, respectively. The performance was competitive compared to the methods reported in the challenge report <span class="citation" data-cites="XAffSYIR">[<a href="#ref-XAffSYIR" role="doc-biblioref">30</a>]</span>, especially with much more consistent performance across the two different test sets. Example results can be found in Figure <a href="#fig:2d_gland">4</a>-C.</p>
 <div id="fig:2d_gland" class="fignos">
 <figure>
-<img src="images/2d_semantic_seg_justin.png" style="width:75.0%" alt="Figure 4: Example results of 2D semantic segmentation of gland in H&amp;E images." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> Example results of 2D semantic segmentation of gland in H&amp;E images.</figcaption>
+<img src="images/2d_semantic_seg_justin.png" style="width:75.0%" alt="Figure 4: Example results of 2D semantic segmentation of gland in H&amp;E images. A and B provide insight into the stain normalization implemented in MMV_Im2Im. C compares a raw example image before stain normalization and prediction to the ground truth for each test set." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> Example results of 2D semantic segmentation of gland in H&amp;E images. A and B provide insight into the stain normalization implemented in <em>MMV_Im2Im</em>. C compares a raw example image before stain normalization and prediction to the ground truth for each test set.</figcaption>
 </figure>
 </div>
-<h3 id="instance-segmentation-in-microscopy-images">Instance segmentation in microscopy images</h3>
+<h3 id="instance-segmentation-in-microscopy-imagestodo-maybe-update-3d-instance-seg-mitotic-example-1583-but-bf-pred-is-not-good">Instance segmentation in microscopy images(TODO: maybe update 3d instance seg mitotic example =&gt; 1583 but bf pred is not good)</h3>
 <p>Instance segmentation is a type of segmentation problem that goes beyond semantic segmentation. The goal is to differentiate not only between different types of objects, but also different instances of the same type of objects. Currently, the <em>MMV_Im2Im</em> package supports <em>EmbedSeg</em>-type models. The major benefit of EmbedSeg-type models is their agnosticism to the morphology and dimensionality of the object instances, compared to other models such as StarDist <span class="citation" data-cites="tIIG2f8K 14h90Vfg0">[<a href="#ref-tIIG2f8K" role="doc-biblioref">32</a>,<a href="#ref-14h90Vfg0" role="doc-biblioref">33</a>]</span>, SplineDist <span class="citation" data-cites="17Yrl6WGQ">[<a href="#ref-17Yrl6WGQ" role="doc-biblioref">34</a>]</span> and Cellpose <span class="citation" data-cites="TugPkOLy">[<a href="#ref-TugPkOLy" role="doc-biblioref">35</a>]</span>. For example, different from the others, <em>EmbedSeg</em>-type models are even able to generate instance segmentation where each instance contains multiple connected components. Additional frameworks such as Omnipose <span class="citation" data-cites="lXzmjM5n">[<a href="#ref-lXzmjM5n" role="doc-biblioref">36</a>]</span> will be supported in future versions. Another mainstream category of instance segmentation methods are detection-based models, such as Mask-RCNN <span class="citation" data-cites="xi8wnibR">[<a href="#ref-xi8wnibR" role="doc-biblioref">37</a>]</span>. However, these models are better suited to the detection framework rather than image-to-image transformation (see Discussion section for details).</p>
 <p>The <em>EmbedSeg</em>-type models were re-implemented according to the original paper <span class="citation" data-cites="K2ugNcVa QmYuUQ5K">[<a href="#ref-K2ugNcVa" role="doc-biblioref">10</a>,<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span> following the generic boilerplate in <em>MMV_Im2Im</em>, with significant improvement. First of all, following the modular design of <em>MMV_Im2Im</em>, it is flexible to use different neural network models as the backbone. For 3D anisotropic microscopy image, the original backbone ERFNet <span class="citation" data-cites="XAkgs3Nh">[<a href="#ref-XAkgs3Nh" role="doc-biblioref">38</a>]</span> doesn’t take the anisotropic dimensions into account and therefore may not perform well or even not applicable. In this scenario, it is straighforward to employ another anisotropic neural network bone, such as the anisotropic U-Net in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> or the anisotropic version of Dynamic U-Net in MONAI. Second, we significantly improve training strategy. The original version requires pre-cropping patches centered around each instance and pre-calculated the center images and class images. This may generate a massive amount of additional data on the disk. More importantly, such pre-cropping makes data augmentation nearly impossible, except the simple ones like flipping (otherwise, the pre-calculated centers might be wrong), and also greatly undersamples around negative cases (e.g., background). For example, we have observed that for an Embedseg model training only with patches centered around instances, the model may suffer from degraded performance during inference when there are a large amount of background areas without any instances. Again, following the modular design of <em>MMV_Im2Im</em>, it is now possible to do on-the-fly data augmentation and patch sampling, even weighted patch sampling. Third, our improved <em>Embedseg</em>-type models can accept an exclusion mask so that certain parts of the images can be ignored during training. This is especially useful for partially annotated ground truth. For large images, it could be extremely time-consuming to require every single instance to be annotated. The exclusion masks can address this bottleneck. Another extension comparing to the original implementation was that the <em>MMV_Im2Im</em> package made sliding windowing inference straightforward, and therefore permitted easy handling of images of any size during inference.</p>
 <p>In this work, we tested on both 2D and 3D instance segmentation problems. Going from 2D to 3D is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. <em>MMV_Im2Im</em> is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, one can greatly reduce GPU memory workload for each sample and therefore increase the batch size or the patch size. When multiple GPUs are available, it is also possible to easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. As a demonstration, we applied <em>EmbedSeg</em>-like models to a 2D problem of segmenting <em>C. elegans</em> from widefield images <span class="citation" data-cites="138foKNOh">[<a href="#ref-138foKNOh" role="doc-biblioref">39</a>]</span>, as well as a 3D problem of nuclear segmentation from fluorescent and brightfield images from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>.</p>
-<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper. Example results on a small holdout set are shown in Figure <a href="#fig:instance">5</a>-A (IoU = 0.879 ± 0.026), which is comparable to the original published results <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>. For the 3D problem, the original backbone is not directly applicable, due to the aforementioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> is used here. The segmentation results obtained from the public dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> contain nuclear instance segmentation of all cells. But, the cells touching the image borders are ignored from downstream analysis <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> and therefore not curated. In other words, the segmentation from this public dataset can only be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. Therefore, the exclusion masking function in <em>MMV_Im2Im</em> is very helpful in this example.</p>
-<p>Example results were presented in <a href="#fig:instance">5</a>-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). Besides roughly separating the DNA signals from background, the model was also able to correctly identify the instance identity, which would be theoretically infeasible for other instance segmentation models like StarDist or CellPose. Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images. Arguably, this could be thought of as one single model doing two transformations: predicting the DNA signals from brightfield and running instance segmentation on predicted DNA signals. From Figure <a href="#fig:instance">5</a>-B, it was shown that the segmentation from brightfield images was comparable to the segmentation from fluorescent images, but with two caveats. First, the performance on mitotic cells was worse than the model using fluorescent images. We hypothesized this could be due to the limited information in brightfield images for mitotic cells, compounded with limited number of mitotic cells in the whole training set (less than 10%). Second, the performance along Z dimension was also worse than the fluorescent model, as explained by the side view in Figure <a href="#fig:instance">5</a>-B. This could be explained by the different properties of brightfield imaging and fluorescent imaging, but would need further comprehensive studies to investigate and confirm.</p>
+<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper. Example results on a small holdout set of 5 images are shown in Figure <a href="#fig:instance">5</a>-A (average precision at 50 = 0.866), which is comparable to the original published results <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>. For the 3D problem, the original backbone is not directly applicable, due to the aforementioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> is used here. The segmentation results obtained from the public dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> contain nuclear instance segmentation of all cells. But, the cells touching the image borders are ignored from downstream analysis <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span> and therefore not curated. In other words, the segmentation from this public dataset can only be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. Therefore, the exclusion masking function in <em>MMV_Im2Im</em> is very helpful in this example.</p>
+<p>Example results were presented in <a href="#fig:instance">5</a>-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). The average precision at 50 for the fluorescence model is 0.827 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically infeasbile for other instance segmentation models like StarDist or Cellpose. Additionally, EmbedSeg is able to assign spatially unrelated structures to the same instance (see Figure {fig:3dseg} bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622). Arguably, this could be thought of as one single model doing two transformations: predicting the DNA signals from brightfield and running instance segmentation on predicted DNA signals.</p>
+<p>?? TODO This needs to be updated/removed:
+From Figure <a href="#fig:instance">5</a>-B, it was shown that the segmentation from brightfield images was comparable to the segmentation from fluorescent images, but with two caveats. First, the performance on mitotic cells was worse than the model using fluorescent images. We hypothesized this could be due to the limited information in brightfield images for mitotic cells, compounded with limited number of mitotic cells in the whole training set (less than 10%). Second, the performance along Z dimension was also worse than the fluorescent model, as explained by the side view in Figure <a href="#fig:instance">5</a>-B. This could be explained by the different properties of brightfield imaging and fluorescent imaging, but would need further comprehensive studies to investigate and confirm.</p>
 <div id="fig:instance" class="fignos">
 <figure>
 <img src="images/embedseg.png" style="width:75.0%" alt="Figure 5: (A) Results 2D instance segmentation of C. elegans. Some minor errors can be observed in the zoom-in window, which could be refined with post-processing. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side." />
@@ -256,17 +258,17 @@ As a result, in our stress test, training a 3D nuclei instance segmentation mode
 </figure>
 </div>
 <h3 id="comparing-semantic-segmentation-and-instance-segmentation-of-organelles-from-3d-confocal-microscopy-images">Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images</h3>
-<p>We did a special comparison in this subsection to further illustrate the difference between semantic and instance segmentations. We took the 3D fibrillarin dataset from <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. There are multiple channels in each 3D images, including DNA dye, membrane dye, and the structure channel (i.e., fibrillarin in this case). The original fibrillarin segmentation released with the dataset is a semantic segmentation (0=background, 1=fibrillarin). With the additional cell segmentation available in the dataset, we can know which groups of segmented fibrillarin belong to the same cell. Then, we can convert the original 3D fibrillarin semantic segmentation ground truth into 3D instance segmentation ground truth (fibrillarin pixels belonging to the same cell are grouped as a unique instance). Sample images and results are shown in Figure <a href="#fig:3dseg">6</a>. We can observe that the semantic segmentation model is able to achieve good accuracy in determining pixels from the fibrillarin signals. Meanwhile, the instance segmentation can group them properly so that fibrillarin masks from the same cell are successfully identified as unique instances, even without referring to the cell membrane channel or cell segmentation results. This is not a simple grouping step based on distance, since the fibrillarin signals from tightly touching nuclei may exist very close to each other.</p>
+<p>We did a special comparison in this subsection to further illustrate the difference between semantic and instance segmentations. We took the 3D fibrillarin dataset from <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>. There are multiple channels in each 3D images, including DNA dye, membrane dye, and the structure channel (i.e., fibrillarin in this case). The original fibrillarin segmentation released with the dataset is a semantic segmentation (0=background, 1=fibrillarin). With the additional cell segmentation available in the dataset, we can know which groups of segmented fibrillarin belong to the same cell. Then, we can convert the original 3D fibrillarin semantic segmentation ground truth into 3D instance segmentation ground truth (fibrillarin pixels belonging to the same cell are grouped as a unique instance). Sample images and results are shown in Figure <a href="#fig:3dseg">6</a>. We can observe that the semantic segmentation model is able to achieve good accuracy in determining pixels from the fibrillarin signals (F1 = 0.958 ± 0.008). Meanwhile, the instance segmentation can group them properly (average precision at 50 = 0.795) so that fibrillarin masks from the same cell are successfully identified as unique instances, even without referring to the cell membrane channel or cell segmentation results. This is not a simple grouping step based on distance, since the fibrillarin signals from tightly touching nuclei may exist very close to each other.</p>
 <div id="fig:3dseg" class="fignos">
 <figure>
-<img src="images/semantic_seg3d_justin.png" style="width:75.0%" alt="Figure 6: Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). From left to right: raw fibrillarin image, semantic segmentation, instance segmentation, instance ground truth, a reference images with all the channels (DNA dye in cyan, membrane dye in magenta, and fibrillarin in white) to show all the neighering cells." />
-<figcaption aria-hidden="true"><span>Figure 6:</span> Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). From left to right: raw fibrillarin image, semantic segmentation, instance segmentation, instance ground truth, a reference images with all the channels (DNA dye in cyan, membrane dye in magenta, and fibrillarin in white) to show all the neighering cells.</figcaption>
+<img src="images/semantic_seg3d_justin.png" style="width:75.0%" alt="Figure 6: Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). Shown are the raw image, the prediction of the instance segmentation, and for both segmentations a mask that gives an overview of true positive, false negative, and false positive pixels." />
+<figcaption aria-hidden="true"><span>Figure 6:</span> Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). Shown are the raw image, the prediction of the instance segmentation, and for both segmentations a mask that gives an overview of true positive, false negative, and false positive pixels.</figcaption>
 </figure>
 </div>
 <h3 id="unsupervised-semantic-segmentation-of-intracellular-structures-from-2d3d-confocal-microscopy-images-todo-adjust-text-2d-results-are-not-more-plausible-as-before">Unsupervised semantic segmentation of intracellular structures from 2D/3D confocal microscopy images (TODO: adjust text, 2d results are not more plausible as before)</h3>
 <p>Large amounts of high-quality segmentation ground truth is not always available, or may require endless effort to collect for a segmentation task. CycleGAN-based methods have opened up a new avenue for segmentation without the need for pixel-wise ground truth <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>. In this subsection, we demonstrate an unsupervised learning-based segmentation method on four examples: 2D tight-junction (via ZO1) segmentation from 2D FP-tagged ZO1 images (max-projected from 3D stacks), and segmentation of nuclei, mitochondria, and golgi from 3D confocal microscopy images.</p>
-<p>To perform unsupervised learning, we used raw images from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>, as well as their corresponding segmentations (may not be absolute pixel-wise ground truth, but have gone through systematic evaluation to ensure the overall quality). We shuffled the raw images and their segmentations to generate a set of simulated segmentation masks. A demonstration of the concept is illustrated in Figure <a href="#fig:unsupervised">7</a>-A. Example results for all 3D models are shown in Figure <a href="#fig:unsupervised">7</a>-B, and the F1-scores on the test set are summarized in Table <a href="#tbl:unsuper">2</a>.</p>
-<p>Interestingly, on the 2D ZO1 example, we observed that the segmentation generated by the unsupervised learning method was actually slightly better than the original segmentation obtained from a classic image segmentation workflow as in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>. For the 3D examples, it has been suggested that the quality of unsupervised nuclei segmentation could be further improved with additional simulation strategies <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>. Overall, we believe that unsupervised learning offers an effective way to generate preliminary segmentation, which can be further refined through active learning such as the iterative DL workflow described in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span></p>
+<p>To perform unsupervised learning, we used raw images from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>, as well as their corresponding segmentations (may not be absolute pixel-wise ground truth, but have gone through systematic evaluation to ensure the overall quality). We shuffled the raw images and their segmentations to generate a set of simulated segmentation masks. A demonstration of the concept is illustrated in Figure <a href="#fig:unsupervised">7</a>-A. Example results for all 3D models are shown in Figure <a href="#fig:unsupervised">7</a>-B, and the F1-scores on the test set are summarized in Table <a href="#tbl:unsuper">3</a>.</p>
+<p>For the 2D example, we saw that the unsupervised training provides a valuable segmentation, which is reflected by the F1 Score in Table <a href="#tbl:unsuper">3</a>. For the 3D examples, it has been suggested that the quality of unsupervised nuclei segmentation could be further improved with additional simulation strategies <span class="citation" data-cites="RuFP3CS3">[<a href="#ref-RuFP3CS3" role="doc-biblioref">12</a>]</span>. Overall, we believe that unsupervised learning offers an effective way to generate preliminary segmentation, which can be further refined through active learning such as the iterative DL workflow described in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>.</p>
 <div id="tbl:unsuper" class="tablenos">
 <table id="tbl:unsuper" width="90%">
 <caption><span>Table 2:</span> F1 scores of the unsupervised semantic segmentation predictions. </caption>
@@ -308,14 +310,14 @@ As a result, in our stress test, training a 3D nuclei instance segmentation mode
 </div>
 <div id="fig:unsupervised" class="fignos">
 <figure>
-<img src="images/unsupervised_seg_justin.png" style="width:80.0%" alt="Figure 7: (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. The yellow arrows indicate a region where the unsupervised learning method actually predicted better than the original segmentation results by classic image processing methods. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning." />
-<figcaption aria-hidden="true"><span>Figure 7:</span> (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. The yellow arrows indicate a region where the unsupervised learning method actually predicted better than the original segmentation results by classic image processing methods. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning.</figcaption>
+<img src="images/unsupervised_seg_justin.png" style="width:80.0%" alt="Figure 7: (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> (A) Illustration of the unsupervised learning scheme and results in the 2D tight-junction segmentation problem. (B) Example 3D segmentation results (only showing a middle z-slice) from models obtained by unsupervised learning.</figcaption>
 </figure>
 </div>
 <h3 id="generating-synthetic-microscopy-images-from-binary-masks">Generating synthetic microscopy images from binary masks</h3>
 <p>Generating a large amount of synthetic microscopy images can be an important step in developing image analysis methods. Synthetic images offer a way to train other DL models, such as self-supervised pre-training, using a diverse set of images without the need for large amounts of real-world data. As long as the synthetic images are generated with sufficient quality, it is possible to have an unlimited amount of training data for certain applications. Moreover, synthetic images can be used to evaluate other models when validation data is difficult to obtain. In this study, we demonstrate that <em>MMV_Im2Im</em> can generate 2D/3D synthetic microscopy images with high realism and validity, using a subset of data collected from the hiPS single-cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">24</a>]</span>, either in a supervised or unsupervised manner.</p>
 <p>For 2D demonstration, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary mask. With the paired “mask + microscopy image” data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data which can be trained in an unsupervised fashion using the CycleGAN framework implemented in <em>MMV_Im2Im</em>. Example results can be found in Figure <a href="#fig:synthetic">8</a>-A. In general, the supervised synthesization can generate more realistic images than the unsupervised model.</p>
-<p>For 3D demonstration, we use 3D H2B images with two different types of input masks. First, we attempted to generate synthetic images from a coarse mask (i.e., only the overall shape of the nucleus, available as nuclear segmentation from the dataset) with both supervised training and unsupervised training. The unsupervised model in <em>MMV_Im2Im</em> uses the CycleGAN-based approaches. So, the unsupervised training is actually already done within the unsupervised segmentation experiments. In other words, the unsupervised model works in a bi-directional way, from real microscopy images to binary masks, and also from binary masks to simulated microscopy images. Here, we just do the inference in a different direction (from binary to simulated microscopy) using the model trained in unsupervised segmentation section. The results are shown in Figure <a href="#fig:synthetic">8</a>-B (row 1). Similar to the results in 2D demonstration, the unsupervised synthesization can mostly “paint” the mask with homogeneous grayscale intensity, while the supervised model can simulate the textures to some extent. For a relatively large mask, it could be chanllenging for a model to fill in sufficient details to simulate real microscopy images (might be improved with diffusion-based models, see Discussions).</p>
+<p>For 3D demonstration, we use 3D H2B images with two different types of input masks. First, we attempted to generate synthetic images from a coarse mask (i.e., only the overall shape of the nucleus, available as nuclear segmentation from the dataset) with both supervised training and unsupervised training. The unsupervised model in <em>MMV_Im2Im</em> uses the CycleGAN-based approaches. So, the unsupervised training is actually already done within the unsupervised segmentation experiments. In other words, the unsupervised model works in a bi-directional way, from real microscopy images to binary masks, and also from binary masks to simulated microscopy images. Here, we just do the inference in a different direction (from binary to simulated microscopy) using the model trained in unsupervised segmentation section. The results are shown in Figure <a href="#fig:synthetic">8</a>-B (row 1). The unsupervised synthesization can mostly “paint” the mask with homogeneous grayscale intensity, while the supervised model can simulate the textures to some extent. For a relatively large mask, it could be challenging for a model to fill in sufficient details to simulate real microscopy images (might be improved with diffusion-based models, see Discussions).</p>
 <p>We made another attempt with 3D masks containing finer details beyond the overall shapes. So, we employed the H2B structure segmentation results from the dataset (capturing the detailed nuclear components marked by histon H2B) as the input for supervsied synthesization. The result is shown in Figure <a href="#fig:synthetic">8</a>-B (row 2). Compared to the synthesization with coarse masks, the images simulated from fine masks exhibit a much more realistic appearance. As we can see, it is important to design the solutions with proper data.</p>
 <div id="fig:synthetic" class="fignos">
 <figure>
@@ -323,37 +325,186 @@ As a result, in our stress test, training a 3D nuclei instance segmentation mode
 <figcaption aria-hidden="true"><span>Figure 8:</span> Example results of (A) 2D synthetic fluorescent images of nucleoli (via NPM1) and (B) 3D synthetic fluorescent images of H2B (middle z-slices of a z-stack) with a coarse mask and a fine mask as the input.</figcaption>
 </figure>
 </div>
-<h3 id="image-denoising-for-microscopy-images">Image denoising for microscopy images</h3>
+<div id="tbl:unsuper" class="tablenos">
+<table id="tbl:unsuper" width="90%">
+<caption><span>Table 3:</span> Results of the synthetic generation of microscopy images from binary masks. </caption>
+<thead>
+<tr class="header">
+<th>Dimensionality</th>
+<th>Dataset</th>
+<th>Training</th>
+<th>Pearson Correlation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2D</td>
+<td>NPM1</td>
+<td>supervised</td>
+<td>0.925 ± 0.019</td>
+</tr>
+<tr class="even">
+<td>2D</td>
+<td>NPM1</td>
+<td>unsupervised</td>
+<td>0.913 ± 0.023</td>
+</tr>
+<tr class="odd">
+<td>3D</td>
+<td>H2B_coarse</td>
+<td>supervised</td>
+<td>0.841 ± 0.023</td>
+</tr>
+<tr class="even">
+<td>3D</td>
+<td>H2B_coarse</td>
+<td>unsupervised</td>
+<td>0.796 ± 0.035</td>
+</tr>
+<tr class="odd">
+<td>3D</td>
+<td>H2B_fine</td>
+<td>supervised</td>
+<td>0.939 ± 0.009</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="image-denoising-for-microscopy-images-todo-rename-planaria-in-figure">Image denoising for microscopy images (TODO: rename planaria in figure)</h3>
 <p><em>MMV_Im2Im</em> can also be used to computationally reduce image noise or restore the data from various sources of imaging artifacts, so as to increase the feasibility and efficiency in downstream analysis. In the current version of <em>MMV_Im2Im</em>, the restoration model can only be trained in a fully supervised manner. Therefore, aligned low-quality and high-quality images are required for supervision, even though such pair data can be partially simulated <span class="citation" data-cites="wcCVn8av">[<a href="#ref-wcCVn8av" role="doc-biblioref">6</a>]</span>. Other methods, such as unsupervised learning-based solutions <span class="citation" data-cites="JVOCBBq0">[<a href="#ref-4vnyY9J9" role="doc-biblioref">41</a>]</span>, will be made available within <em>MMV_Im2Im</em> in future versions.</p>
-<p>In this example, we presented an image denoising demonstration with sample data from <span class="citation" data-cites="12G712Zky">[<a href="#ref-12G712Zky" role="doc-biblioref">42</a>]</span>. The goal was to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models were trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.923 ± 0.029 and structural similarity of 0.627 ± 0.175. Based on the results in Figure <a href="#fig:denoising">9</a>, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations would be necessary to confirm the biological validity, but beyond the scope of this paper.</p>
+<p>In this example, we presented an image denoising demonstration with sample data from <span class="citation" data-cites="12G712Zky">[<a href="#ref-12G712Zky" role="doc-biblioref">42</a>]</span>. The goal was to increase the quality of low signal-to-noise ratio (SNR) images of nucleus-stained flatworm (Schmidtea mediterranea) and lightsheet images of Tribolium castaneum (red flour beetle) embryos. The models were trained with paired data acquired with low and high laser intensity on fixed samples, and then applied on live imaging data. For the nucleus-stained flatworm data (a test set of 20 images are available), the model achieved pearson correlation of 0.392 ± 0.065, while the pearson correlation between the noisy raw and ground truth images was 0.065 ± 0.057. For the red flour beetle dataset, the model has improved the pearson colleration from 0.219 ± 0.045 to 0.444 ± 0.077 (6 images). Based on this and the results in Figure <a href="#fig:denoising">9</a>, it can be observed that the low SNR images can be greatly improved. Systematic quantitative evaluations would be necessary to confirm the biological validity, but beyond the scope of this paper.</p>
 <div id="fig:denoising" class="fignos">
 <figure>
-<img src="images/denoising_justin.png" style="width:75.0%" alt="Figure 9: (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction." />
-<figcaption aria-hidden="true"><span>Figure 9:</span> (A) Denoising results of 3D images of nucleus-stained flatworm at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. (B) Denoising results of 3D lightsheet images of Tribolium castaneum (fixed samples) at two different z-slices. Left: raw images (low SNR), middle: Reference images (high SNR), right: predictions. (C) Denoising results of 3D lightsheet images of Tribolium castaneum (live samples) without high SNR reference. Top: the raw image, bottom: the prediction.</figcaption>
+<img src="images/denoising_justin.png" style="width:75.0%" alt="Figure 9: Denoising results of 3D images of nucleus-stained flatworm (planaria) and Tribolium castaneum embryos at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions." />
+<figcaption aria-hidden="true"><span>Figure 9:</span> Denoising results of 3D images of nucleus-stained flatworm (planaria) and Tribolium castaneum embryos at two different z-slices. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions.</figcaption>
 </figure>
 </div>
-<h3 id="imaging-modality-transformation-from-3d-confocal-microscopy-images-to-stimulated-emission-depletion-sted-microscopy-images-todo-update-figure-add-stds">Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images (TODO: Update figure, add stds)</h3>
-<p>Another important application of image-to-image transformation is imaging modality transformation <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>, usually from one “cheaper” modality with lower resolution (e.g., with larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of <em>MMV_Im2Im</em> in this scenario, we took an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures, microtubule and nuclear pore <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. Sample results were summarized in Figure <a href="#fig:modality_np">10</a> and Figure <a href="#fig:modality_mt">11</a>. The corresponding error plots show pixel-based absolute differences between ground truth and prediction. Intensities were normalized to the interval from -1 to 1 for training, with intensity limits restricted to the 0.01-percentile and 99.99-percentile values of the intensity distribution.
-For microtubule, the model achieved pearson correlation of 0.786 ± 0.020 and a peak signal to noise ratio of 21.201 ± 0.586, while for nuclear pore complex, the pearson correlation was 0.784 ± 0.031 and the peak signal to noise ratio was 25.170 ± 0.708. Considering a pearson correlation of 0.699 ± 0.030 and a peak signal to noise ratio of 18.847 ± 0.649 for the microtubule dataset and a pearson correlation of 0.656 ± 0.033 and a peak signal to noise ratio of 20.352 ± 1.009 of the lower resolution raw images with the higher resolution ground truth, this approach improved data quality. Also, visual inspection can confirm the effectiveness of the models. Again, it would be necessary to conduct further quantitative evaluation to ensure the validity in users’ specific problems.</p>
-<div id="fig:modality_np" class="fignos">
-<figure>
-<img src="images/np_manuscript.png" style="width:65.0%;height:70.0%" alt="Figure 10: Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots (TODO: description)" />
-<figcaption aria-hidden="true"><span>Figure 10:</span> Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots (TODO: description)</figcaption>
-</figure>
-</div>
+<h3 id="imaging-modality-transformation-from-3d-confocal-microscopy-images-to-stimulated-emission-depletion-sted-microscopy-images">Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images</h3>
+<p>Another important application of image-to-image transformation is imaging modality transformation <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>, usually from one “cheaper” modality with lower resolution (e.g., with larger field-of-view, easier to acquire and scale up) to another modality with higher resolution but expensive to obtain. Such models will permit a new way in assay development strategy to take advantage of all the benefits of the cheaper modality with lower resolution and still able to enhance the resolution computationally post hoc. To demonstrate the application of <em>MMV_Im2Im</em> in this scenario, we took an example dataset with paired 3D confocal and Stimulated Emission Depletion (STED) images of two different cellular structures, microtubule and nuclear pore <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. Sample results were summarized in Figure <a href="#fig:modality_np">11</a> and Figure <a href="#fig:modality_mt">10</a>. The corresponding error plots show pixel-based absolute differences between ground truth and prediction. Intensities were normalized to the interval from -1 to 1 for training, with intensity limits restricted to the 0.01-percentile and 99.99-percentile values of the intensity distribution.</p>
 <div id="fig:modality_mt" class="fignos">
 <figure>
-<img src="images/mt_manuscript.png" style="width:65.0%;height:70.0%" alt="Figure 11: Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots (TODO: description)." />
-<figcaption aria-hidden="true"><span>Figure 11:</span> Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots (TODO: description).</figcaption>
+<img src="images/mt_manuscript.png" style="width:65.0%;height:70.0%" alt="Figure 10: Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text." />
+<figcaption aria-hidden="true"><span>Figure 10:</span> Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text.</figcaption>
 </figure>
 </div>
-<h3 id="staining-transformation-in-multiplex-experiments-todo-add-pearson-std-ssim-to-text-update-figure">Staining transformation in multiplex experiments (TODO: add pearson std + ssim to text, update figure)</h3>
-<p>DL has emerged as a powerful tool for multiplex imaging, a powerful technique that enables the simultaneous detection and visualization of multiple biomolecules within a single tissue sample. This technique is increasingly being used in biomedical experiments but demands efficient image analysis solutions to accurately identify and quantify the different biomolecules of interest at scale. DL has demonstrated great potentials in analyzing multiplex datasets, as it can automatically learn the complex relationships between different biomolecules and their spatial distribution within tissues. Specially, in this study, we present the effectiveness of <em>MMV_Im2Im</em> in transforming tissue images from one staining to another, which will permit efficient co-registration, co-localization, and quantitative analysis of multiplex datasets. We used the sample dataset from <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. In this example, we trained three different models to transform IHC images to images of standard hematoxylin stain, mpIF nuclear (DAPI) and mpIF LAP2beta (a nuclear envelope stain). Example results can be observed in Figure <a href="#fig:multiplex">12</a> to verify the results qualitatively, the respective pearson correlation 0.860 ± 0.075 (HE-stain), 0.920 ± 0.049 (DAPI) and 0.435 ± 0.087 (mpIF LAP2beta). It is worth mentioning that there is a pixel shift in the mpIF LAP2beta holdout dataset, which explains the reduced pearson correlation despite the visually plausible result. These transformed images can provide valuable insights into the localization and expression patterns of specific biomolecules spatially.</p>
+<p>For microtubule, the model achieved pearson correlation of 0.786 ± 0.020 and a peak signal to noise ratio of 21.201 ± 0.586, while for nuclear pore complex, the pearson correlation was 0.744 ± 0.025 and the peak signal to noise ratio was 22.939 ± 1.896. Considering a pearson correlation of 0.699 ± 0.030 and a peak signal to noise ratio of 18.847 ± 0.649 for the microtubule dataset and a pearson correlation of 0.656 ± 0.033 and a peak signal to noise ratio of 20.352 ± 1.009 of the lower resolution raw images with the higher resolution ground truth, this approach improved data quality. Also, visual inspection can confirm the effectiveness of the models. Again, it would be necessary to conduct further quantitative evaluation to ensure the validity in users’ specific problems.</p>
+<div id="fig:modality_np" class="fignos">
+<figure>
+<img src="images/np_manuscript.png" style="width:65.0%;height:70.0%" alt="Figure 11: Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text." />
+<figcaption aria-hidden="true"><span>Figure 11:</span> Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text.</figcaption>
+</figure>
+</div>
+<h3 id="staining-transformation-in-multiplex-experiments">Staining transformation in multiplex experiments</h3>
+<p>DL has emerged as a powerful tool for multiplex imaging, a powerful technique that enables the simultaneous detection and visualization of multiple biomolecules within a single tissue sample. This technique is increasingly being used in biomedical experiments but demands efficient image analysis solutions to accurately identify and quantify the different biomolecules of interest at scale. DL has demonstrated great potentials in analyzing multiplex datasets, as it can automatically learn the complex relationships between different biomolecules and their spatial distribution within tissues. Specially, in this study, we present the effectiveness of <em>MMV_Im2Im</em> in transforming tissue images from one staining to another, which will permit efficient co-registration, co-localization, and quantitative analysis of multiplex datasets. We used the sample dataset from <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. In this example, we trained three different models to transform IHC images to images of standard hematoxylin stain, mpIF nuclear (DAPI) and mpIF LAP2beta (a nuclear envelope stain). Example results can be observed in Figure <a href="#fig:multiplex">12</a> to verify the results qualitatively, the respective metrics can be found in Table <a href="#tbl:multiplex">4</a>. It is worth mentioning that there is a pixel shift in the mpIF LAP2beta holdout dataset, but image registration is beyond the scope of this manuscript. We show the metrics as an example of an evaluation of the transformed images, but we leave an application-specific evaluation to the appropriate researchers. But it is evident that these transformed images can provide valuable insights into the localization and expression patterns of specific biomolecules spatially.</p>
+<div id="tbl:multiplex" class="tablenos">
+<table id="tbl:multiplex" width="90%">
+<caption><span>Table 4:</span> Results of the staining transformation in multiplex experiments, derived from 51 holdout images each. </caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Pearson Correlation</th>
+<th>Structural Similrarity</th>
+<th>Peak Signal to Noise Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hematoxylin</td>
+<td>0.860 ± 0.075</td>
+<td>0.453 ± 0.063</td>
+<td>23.855 ± 1.742</td>
+</tr>
+<tr class="even">
+<td>DAPI</td>
+<td>0.920 ± 0.049</td>
+<td>0.770 ± 0.067</td>
+<td>26.754 ± 2.129</td>
+</tr>
+<tr class="odd">
+<td>LAP2beta</td>
+<td>0.435 ± 0.087</td>
+<td>0.597 ± 0.083</td>
+<td>22.415 ± 1.586</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="fig:multiplex" class="fignos">
 <figure>
 <img src="images/multiplex_justin.png" alt="Figure 12: Qualitative visualization of staining transformation results with the MMV_Im2Im package." />
 <figcaption aria-hidden="true"><span>Figure 12:</span> Qualitative visualization of staining transformation results with the <em>MMV_Im2Im</em> package.</figcaption>
 </figure>
+</div>
+<h3 id="overview-of-used-frameworks">Overview of used frameworks</h3>
+<p>Since we performed a total of 37 experiments for the results presented previously, providing all the configurations performed in detail is beyond the scope of this manuscript. With the help of these experiments, we want to demonstrate the great flexibility of MMV_Im2Im and not optimize every task in detail. However, we hope that the information provided in Table {tbl:framework_overview} will provide a valuable starting point for researchers to optimize their DL-based image-to-image transformation using <em>MMV_Im2Im</em>. Additionally, we provide a lot of the configuration details used in our GitHub repository.</p>
+<div id="tbl:framework_overview" class="tablenos">
+<table id="tbl:framework_overview" width="90%">
+<caption><span>Table 5:</span> Overview of the used frameworks for the demonstrated tasks. </caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Taskt</th>
+<th>Dim</th>
+<th>Framework</th>
+<th>Backbone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Labelfree</td>
+<td>2D/3D</td>
+<td>FCN, Pix2pix, cyleGAN</td>
+<td>fnet, UNet, AttentionUnet, SwinUNETR, …</td>
+</tr>
+<tr class="even">
+<td>Semantic segmentation</td>
+<td>2D/3D</td>
+<td>FCN, cycleGAN</td>
+<td>AttentionUnet, DynUnet, UNet3D</td>
+</tr>
+<tr class="odd">
+<td>Instance segmentation</td>
+<td>2D/3D</td>
+<td>EmbedSeg</td>
+<td>BranchedERFNet_2d, UNet3D</td>
+</tr>
+<tr class="even">
+<td>Synthetic</td>
+<td>2D/3D</td>
+<td>Pix2pix</td>
+<td>AttentionUnet, fnet</td>
+</tr>
+<tr class="odd">
+<td>Denoising</td>
+<td>3D</td>
+<td>FCN</td>
+<td>UNet</td>
+</tr>
+<tr class="even">
+<td>Modality transformation</td>
+<td>3D</td>
+<td>FCN</td>
+<td>UNet3D</td>
+</tr>
+<tr class="odd">
+<td>Staining transformation</td>
+<td>2D</td>
+<td>Pix2pix</td>
+<td>predefined_unet</td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="methods">Methods</h2>
 <h3 id="overview-of-the-code-base">Overview of the code base</h3>
@@ -367,206 +518,12 @@ For microtubule, the model achieved pearson correlation of 0.786 ± 0.020 and a 
 <p>A big challenge in the dataloader in bioimaging applications is that there could be not only a large amount of files, but also files of very large sizes. To deal with each individual large image, we used the delayed loading from aicsimageio for efficient image reading. Besides, we adopted the PersistentDataloader from MONAI to further optimize the efficiency. In specific, after loading a large image and running through all the deterministic operations, like intensity normalization or spatial padding, the PersistentDataLoader will pickle and save the data in a temporary folder, to avoid repeating the heavy computation on large files in each training iteration. To handle the potentially large number of files, we implemented the data_module with capability of loading only a certain portion of the data into the memory in each epoch and reloading with a different portion every certain number of epochs. By doing this, we were able to efficiently train an instance segmentation model with more than 125K images, where each raw image is about 15MB.</p>
 <h3 id="state-of-the-art-training-with-the-pytorch-lightning-trainer">State-of-the-art training with the pytorch-lightning Trainer</h3>
 <p>We fully adopted the Trainer from pytorch-lightning, which has been widely used by the machine learning community, and wildly tested on both R&amp;D problems and industrial-scale applications. In a nutshell, simply by specifying the training parameters in the yaml file, users can setup multi-GPU training, half-precision training, automatic learning rate finder, automatic batch size finder, early stopping, stochastic weight averaging, etc.. This allows users to focus on the research problems without worrying about the ML engineering.</p>
-<h3 id="overview-over-used-frameworks-todo-find-right-section-in-manuscript">Overview over used frameworks (TODO: Find right section in manuscript)</h3>
-<p>To demonstrate the flexibility of our frame</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Taskt</th>
-<th>Dim</th>
-<th>Framework</th>
-<th>Backbone</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Labelfree</td>
-<td>2d</td>
-<td>FCN</td>
-<td>monai.networks.nets.BasicUNet/mmv_im2im.models.nets.fnet_nn_2d</td>
-</tr>
-<tr class="even">
-<td>Labelfree</td>
-<td>3d</td>
-<td>Pix2pix</td>
-<td>mmv_im2im.models.nets.fnet_nn_3d (or refer to original repo?)</td>
-</tr>
-<tr class="odd">
-<td>Semantic segmentation</td>
-<td>2d</td>
-<td>FCN</td>
-<td>monai.networks.nets.AttentionUnet</td>
-</tr>
-<tr class="even">
-<td>Semantic segmentation</td>
-<td>3d</td>
-<td>FCN</td>
-<td>monai.networks.nets.DynUnet</td>
-</tr>
-<tr class="odd">
-<td>Instance segmentation</td>
-<td>2d</td>
-<td>EmbedSeg</td>
-<td>mmv_im2im.models.nets.BranchedERFNet_2d</td>
-</tr>
-<tr class="even">
-<td>Instance segmentation</td>
-<td>3d</td>
-<td>EmbedSeg</td>
-<td>aicsmlsegment.NetworkArchitecture.unet_xy_zoom_0pad_single.UNet3D</td>
-</tr>
-<tr class="odd">
-<td>Unsupervised semantic segmentation</td>
-<td>2d</td>
-<td>Cyclegan</td>
-<td>monai.networks.nets.AttentionUnet</td>
-</tr>
-<tr class="even">
-<td>Unsupervised semantic segmentation</td>
-<td>3d</td>
-<td>Cyclegan</td>
-<td>aicsmlsegment.NetworkArchitecture.unet_xy_zoom_0pad_single.UNet3D</td>
-</tr>
-<tr class="odd">
-<td>Synthetic</td>
-<td>2d</td>
-<td>Pix2pix</td>
-<td>monai.networks.nets.AttentionUnet</td>
-</tr>
-<tr class="even">
-<td>Synthetic</td>
-<td>3d</td>
-<td>Pix2pix</td>
-<td>mmv_im2im.models.nets.fnet_nn_3d</td>
-</tr>
-<tr class="odd">
-<td>Denoising</td>
-<td>3d</td>
-<td>FCN</td>
-<td>monai.networks.nets.UNet</td>
-</tr>
-<tr class="even">
-<td>Modality transformation</td>
-<td>3d</td>
-<td>FCN</td>
-<td>aicsmlsegment.NetworkArchitecture.unet_xy_zoom_0pad_single.UNet3D</td>
-</tr>
-<tr class="odd">
-<td>Staining transformation</td>
-<td>2d</td>
-<td>pix2pix</td>
-<td>predefined_unet</td>
-</tr>
-</tbody>
-</table>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Taskt</th>
-<th>Dim</th>
-<th>Framework</th>
-<th>Backbone</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Labelfree</td>
-<td>2d</td>
-<td>FCN</td>
-<td>BasicUNet (monai)/ fnet_nn_2d (mmv_im2im/??)</td>
-</tr>
-<tr class="even">
-<td>Labelfree</td>
-<td>3d</td>
-<td>Pix2pix</td>
-<td>fnet_nn_3d (mmv_im2im/ or refer to original repo?)</td>
-</tr>
-<tr class="odd">
-<td>Semantic segmentation</td>
-<td>2d</td>
-<td>FCN</td>
-<td>AttentionUnet (monai)</td>
-</tr>
-<tr class="even">
-<td>Semantic segmentation</td>
-<td>3d</td>
-<td>FCN</td>
-<td>DynUnet (monai)</td>
-</tr>
-<tr class="odd">
-<td>Instance segmentation</td>
-<td>2d</td>
-<td>EmbedSeg</td>
-<td>BranchedERFNet_2d (mmv_im2im)</td>
-</tr>
-<tr class="even">
-<td>Instance segmentation</td>
-<td>3d</td>
-<td>EmbedSeg</td>
-<td>UNet3D (aicsmlsegment)</td>
-</tr>
-<tr class="odd">
-<td>Unsupervised semantic segmentation</td>
-<td>2d</td>
-<td>Cyclegan</td>
-<td>AttentionUnet (monai)</td>
-</tr>
-<tr class="even">
-<td>Unsupervised semantic segmentation</td>
-<td>3d</td>
-<td>Cyclegan</td>
-<td>UNet3D (aicsmlsegment)</td>
-</tr>
-<tr class="odd">
-<td>Synthetic</td>
-<td>2d</td>
-<td>Pix2pix</td>
-<td>AttentionUnet (monai)</td>
-</tr>
-<tr class="even">
-<td>Synthetic</td>
-<td>3d</td>
-<td>Pix2pix</td>
-<td>fnet_nn_3d (mmv_im2im/??)</td>
-</tr>
-<tr class="odd">
-<td>Denoising</td>
-<td>3d</td>
-<td>FCN</td>
-<td>UNet (monai)</td>
-</tr>
-<tr class="even">
-<td>Modality transformation</td>
-<td>3d</td>
-<td>FCN</td>
-<td>UNet3D (aicsmlsegment)</td>
-</tr>
-<tr class="odd">
-<td>Staining transformation</td>
-<td>2d</td>
-<td>pix2pix</td>
-<td>predefined_unet</td>
-</tr>
-</tbody>
-</table>
 <h2 id="discussions">Discussions</h2>
 <p>In this work, we presented a new open source Python package <em>MMV_Im2Im</em> package for image-to-image transformations in bioimaging applications. We demonstrated the applicability on more than ten different problems or datasets to give biomedical researchers a holistic view of the general image-to-image transformation concepts with diverse examples. This package was not a simple collection of existing methods. Instead, we distilled the knowledge from existing methods and created this generic version with state-of-the-art ML engineering techniques, which made the package easy to understand, easy to use, and easy to extend for future. We hope this package can serve the starting point for other researchers doing AI-based image-to-image transformation research, and eventually build a large shared community in the field of image-to-image transformation for bioimaging.</p>
-<h3 id="microscopy-images-with-temporal-information">Microscopy images with temporal information</h3>
 <h3 id="further-works">Further works</h3>
 <p>One of main directions for extending <em>MMV_Im2Im</em> is to pre-pack common bioimaging datasets as a <em>Dataset</em> module, so that DL researchers can use for algorithm development and benchmarking, and new users can easily use for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models <span class="citation" data-cites="1A3yurr7m">[<a href="#ref-1A3yurr7m" role="doc-biblioref">44</a>]</span>, unsupervised denoising <span class="citation" data-cites="JVOCBBq0">[<a href="#ref-4vnyY9J9" role="doc-biblioref">41</a>]</span> or Imaginaire (<a href="https://github.com/NVlabs/imaginaire" class="uri">https://github.com/NVlabs/imaginaire</a>). Besides, we also plan to develop two auxillary packages <em>MMV_Im2Im_Auto</em> and <em>MMV_Im2Im_Active</em>. In specific, when you have a reasonable amount of training data, MMV_Im2Im_Auto will take advantage of the fact that <em>MMV_Im2Im</em> is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, <em>MMV_Im2Im_Active</em> will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span>. All the packages will also be wrapped into napari plugins <span class="citation" data-cites="YEMgt2T4">[<a href="#ref-YEMgt2T4" role="doc-biblioref">45</a>]</span> to allow no-code operation and therefore be more friendly to users without experience in programming.</p>
-<p>Another type of microscopy image analysis problem related to image to image transformation is image registration, where we learn how to transform the “floating” image spatially so that it is optimally aligned with the refernece image in the physcially space. Elastix … image-to-image transformation without well aligned training data.</p>
+<p>The image-to-image transformation frameworks implemented in the current version do not explicitly take temporal information into account. We treat images (2D or 3D) at each time step independently. Thanks for the flexibility of aicsimageio, our package is able to directly read even multi-channel 3D timelapse data (i.e, 5D) during training or inference, if necessary. But, the computation is done at individual time steps. A common method to integrate the temporal context with spatial information is the convolutional recurrent neural network (CRNN)<span class="citation" data-cites="s2RBSHdH">[<a href="#ref-s2RBSHdH" role="doc-biblioref">46</a>]</span>. The support of CRNN will be part of our future works.</p>
+<p>Another type of microscopy image analysis problem related to image to image transformation is image registration, where we learn how to transform the “floating” image spatially so that it is optimally aligned with the reference image in the physically space. Recent methods are able to transform the floating image into its registered version through a deep neural networks <span class="citation" data-cites="1Fh9QLxl9">[<a href="#ref-1Fh9QLxl9" role="doc-biblioref">47</a>]</span>. This will be another important direction for future extension.</p>
 <p>Beyond <em>MMV_Im2Im</em>, we hope to build develop similar package for other problems (without re-inventing wheels). For example, as we mentioned in the instance segmentation application, Mask-RCNN type models are also very powerful instance segmentation methods and, in theory, can also be generalized beyond 2D images. However, Mask-RCNN would fit more to a detection framework, instead of image-to-image transformation. It will be supported in our <em>MMV_NDet</em> (NDet = N-dimensional detection) package, currently under development.</p>
 <h2 id="code-availability-and-requirements">Code availability and requirements</h2>
 <p>Project name: MMV_Im2Im (Microscopy Machine Vision, Image-to-Image transformation)</p>
@@ -756,6 +713,12 @@ For microtubule, the model achieved pearson correlation of 0.786 ± 0.020 and a 
 </div>
 <div id="ref-YEMgt2T4" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>napari: a multi-dimensional image viewer for Python</strong> <div class="csl-block">Jannis Ahlers, Daniel Althviz Moré, Oren Amsalem, Ashley Anderson, Grzegorz Bokota, Peter Boone, Jordão Bragantini, Genevieve Buckley, Alister Burt, Matthias Bussonnier, … Kevin Yamauchi</div> <em>Zenodo</em> (2023-07-05) <a href="https://doi.org/gjpsxz">https://doi.org/gjpsxz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3555620">10.5281/zenodo.3555620</a></div></div>
+</div>
+<div id="ref-s2RBSHdH" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>Self-Supervised Visual Feature Learning With Deep Neural Networks: A Survey</strong> <div class="csl-block">Longlong Jing, Yingli Tian</div> <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (2021-11-01) <a href="https://doi.org/gg8fm7">https://doi.org/gg8fm7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/tpami.2020.2992393">10.1109/tpami.2020.2992393</a></div></div>
+</div>
+<div id="ref-1Fh9QLxl9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>Fast Symmetric Diffeomorphic Image Registration with Convolutional Neural Networks</strong> <div class="csl-block">Tony CW Mok, Albert CS Chung</div> <em>2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> (2020-06) <a href="https://doi.org/gg99pz">https://doi.org/gg99pz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cvpr42600.2020.00470">10.1109/cvpr42600.2020.00470</a></div></div>
 </div>
 </div>
 <!-- default theme -->
