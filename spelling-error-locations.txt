@@ -106,7 +106,6 @@ content/03.results.md:16:grayscale
 content/03.results.md:16:ImageJ's
 content/03.results.md:16:labelfree
 content/03.results.md:16:labelfree
-content/03.results.md:18:labelfree
 content/03.results.md:18:rescale
 content/03.results.md:18:rescaling
 content/03.results.md:21:attentionUnet
@@ -123,7 +122,6 @@ content/03.results.md:23:FCN
 content/03.results.md:23:fnet
 content/03.results.md:23:fnet
 content/03.results.md:23:fnet
-content/03.results.md:23:labelfree
 content/03.results.md:23:pre
 content/03.results.md:25:brightfield
 content/03.results.md:25:brightfield
@@ -208,12 +206,10 @@ content/03.results.md:65:fibrillarin
 content/03.results.md:65:fibrillarin
 content/03.results.md:65:fibrillarin
 content/03.results.md:65:fibrillarin
-content/03.results.md:65:fibrillarin
-content/03.results.md:65:fibrillarin
+content/03.results.md:65:segmentations
 content/03.results.md:65:segmentations
 content/03.results.md:67:confocal
 content/03.results.md:67:fibrillarin
-content/03.results.md:67:segmentations
 content/03.results.md:70:confocal
 content/03.results.md:70:intracellular
 content/03.results.md:72:confocal
@@ -280,7 +276,6 @@ content/03.results.md:126:microtubule
 content/03.results.md:126:STED
 content/03.results.md:129:autoscale
 content/03.results.md:129:confocal
-content/03.results.md:129:confocal
 content/03.results.md:129:grayscale
 content/03.results.md:129:ImageJ's
 content/03.results.md:129:microtubule
@@ -290,7 +285,6 @@ content/03.results.md:131:dataset
 content/03.results.md:131:microtubule
 content/03.results.md:131:microtubule
 content/03.results.md:133:autoscale
-content/03.results.md:133:confocal
 content/03.results.md:133:confocal
 content/03.results.md:133:grayscale
 content/03.results.md:133:ImageJ's
