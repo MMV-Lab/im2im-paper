@@ -1,9 +1,5 @@
 ---
 title: "MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation"
-keywords:
-  - deep learning
-  - microscopy image analysis
-  - open source
 lang: en-US
 authors:
   - github: Justin-Sonneck
