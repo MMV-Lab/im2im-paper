@@ -162,7 +162,6 @@ content/03.results.md:52:anisotropic
 content/03.results.md:52:embedseg
 content/03.results.md:52:EmbedSeg
 content/03.results.md:52:EmbedSeg
-content/03.results.md:52:EmbedSeg
 content/03.results.md:52:ERFNet
 content/03.results.md:52:MONAI
 content/03.results.md:52:pre
@@ -178,8 +177,6 @@ content/03.results.md:54:GPUs
 content/03.results.md:54:widefield
 content/03.results.md:56:anisotropic
 content/03.results.md:56:anisotropic
-content/03.results.md:56:dataset
-content/03.results.md:56:dataset
 content/03.results.md:56:dataset
 content/03.results.md:56:embedseg
 content/03.results.md:56:EmbedSeg

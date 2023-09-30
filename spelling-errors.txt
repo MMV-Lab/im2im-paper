@@ -14,7 +14,7 @@ biomolecules
 BJ
 BMBF
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -37,10 +37,10 @@ DeepLIIF
 denoising
 des
 dimensionalities
-Dimensionality
+dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 DynUnet
 EGFP
@@ -66,7 +66,7 @@ Glas
 GPUs
 grayscale
 HeLa
-hematoxylin
+Hematoxylin
 hiPSC
 histone
 histones
@@ -84,7 +84,7 @@ JianxuChen
 JustinSonneck
 jxchen
 Kultur
-Labelfree
+labelfree
 lamin
 Landes
 lightsheet
@@ -145,7 +145,7 @@ tubulin
 tunable
 und
 undersamples
-UNet
+unet
 UNETR
 unsuper
 voxel
