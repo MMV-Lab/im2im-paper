@@ -22,11 +22,11 @@ chanllengs
 codebase
 codebases
 configurability
-Confocal
+confocal
 convolutional
 CRNN
 csv
-cycleGAN
+CycleGAN
 cyleGAN
 cyto
 DAPI
@@ -34,7 +34,7 @@ dataloader
 dataset
 datasets
 DeepLIIF
-denoising
+Denoising
 des
 dimensionalities
 dimensionality
@@ -45,7 +45,7 @@ dseg
 DynUnet
 EGFP
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 eternalaudreys
@@ -66,7 +66,7 @@ Glas
 GPUs
 grayscale
 HeLa
-Hematoxylin
+hematoxylin
 hiPSC
 histone
 histones
@@ -93,7 +93,7 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-microtubule
+Microtubule
 Ministerium
 MKW
 MMSegmentation
@@ -135,7 +135,6 @@ subcellular
 SwinUNETR
 synthesization
 synthetization
-Taskt
 Tensorboard
 timelapse
 TJP
@@ -145,7 +144,7 @@ tubulin
 tunable
 und
 undersamples
-unet
+UNet
 UNETR
 unsuper
 voxel

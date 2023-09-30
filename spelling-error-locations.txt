@@ -312,7 +312,6 @@ content/03.results.md:149:hematoxylin
 content/03.results.md:149:IHC
 content/03.results.md:154:DL
 content/03.results.md:154:MMV
-content/03.results.md:156:Taskt
 content/03.results.md:158:AttentionUnet
 content/03.results.md:158:cyleGAN
 content/03.results.md:158:FCN

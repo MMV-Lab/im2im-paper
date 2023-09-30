@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-30" />
   <meta name="citation_publication_date" content="2023-09-30" />
   <meta property="article:published_time" content="2023-09-30" />
-  <meta name="dc.modified" content="2023-09-30T09:08:27+00:00" />
-  <meta property="article:modified_time" content="2023-09-30T09:08:27+00:00" />
+  <meta name="dc.modified" content="2023-09-30T14:58:17+00:00" />
+  <meta property="article:modified_time" content="2023-09-30T14:58:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/46c1a7b20f669efe684592c05b2b9fc37fb62af4/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/46c1a7b20f669efe684592c05b2b9fc37fb62af4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/46c1a7b20f669efe684592c05b2b9fc37fb62af4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/46c1a7b20f669efe684592c05b2b9fc37fb62af4/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/))
 was automatically generated
-from [MMV-Lab/im2im-paper@46c1a7b](https://github.com/MMV-Lab/im2im-paper/tree/46c1a7b20f669efe684592c05b2b9fc37fb62af4)
+from [MMV-Lab/im2im-paper@ea8d01d](https://github.com/MMV-Lab/im2im-paper/tree/ea8d01d4ecd397ce1a10f438734ee13bcba943e9)
 on September 30, 2023.
 </em></small>
 
@@ -129,9 +129,6 @@ Over the past decade, deep learning (DL) research in computer vision has been gr
 
 For computational biomedical researchers, *MMV_Im2Im* provides a starting point for developing new biomedical image analysis or machine learning algorithms, where they can either reuse the code in this package or fork and extend this package to facilitate the development of new methods. Experimental biomedical researchers can benefit from this work by gaining a comprehensive view of the image-to-image transformation concept through diversified examples and use cases. We hope this work can give the community inspirations on how DL-based image-to-image transformation can be integrated into the assay development process, enabling new biomedical studies that cannot be done only with traditional experimental assays. To help researchers get started, we have provided source code, documentation, and tutorials for *MMV_Im2Im* at https://github.com/MMV-Lab/mmv_im2im under MIT license.
 
-## Keywords
-
-Deep learning, biomedical image analysis, image-to-image transformation, open-source
 
 ## Introduction
 
@@ -332,7 +329,7 @@ Table: Results of the staining transformation in multiplex experiments, derived 
 
 From all experiments above (37 in total), we want to demonstrate the great flexibility of *MMV_Im2Im* and not to optimize every task in details. Presenting all detailed configurations in these 37 experiments in the manuscript could lead to more confusion than clarity. To this end, we give a high-level overview of the key information of each task in Table {@tbl:framework_overview}, hoping to serve as a valuable starting point for researchers to optimize their DL-based image-to-image transformation using *MMV_Im2Im*. The full configuration details are available in human-readable formats in our GitHub repository (https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs).
 
-| Taskt | Dim | Framework| Backbone|
+| Task | Dim | Framework| Backbone|
 |----------|----------|----------|----------|
 | Labelfree | 2D/3D | FCN, Pix2pix, cyleGAN| fnet, UNet, AttentionUnet, SwinUNETR, ...|
 | Semantic segmentation | 2D/3D | FCN, cycleGAN| AttentionUnet, DynUnet, UNet3D|
