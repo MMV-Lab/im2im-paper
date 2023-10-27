@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -24,7 +24,7 @@ chanllengs
 codebase
 codebases
 configurability
-Confocal
+confocal
 convolutional
 CRNN
 csv
@@ -39,7 +39,7 @@ DeepLIIF
 denoising
 des
 dimensionalities
-dimensionality
+Dimensionality
 DL
 downscaled
 DPC
@@ -68,13 +68,13 @@ Glas
 GPUs
 grayscale
 HeLa
-hematoxylin
+Hematoxylin
 hiPSC
 histone
 histones
 hoc
 IHC
-Im
+im
 ImageJ’s
 ImageNet
 Imaginaire
@@ -86,7 +86,7 @@ JianxuChen
 JustinSonneck
 jxchen
 Kultur
-labelfree
+Labelfree
 lamin
 Landes
 lightsheet
@@ -95,11 +95,11 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-Microtubule
+microtubule
 Ministerium
 MKW
 MMSegmentation
-MMV
+mmv
 modularization
 modularized
 MONAI
@@ -148,7 +148,7 @@ tubulin
 tunable
 und
 undersamples
-UNet
+unet
 UNETR
 unsuper
 voxel
