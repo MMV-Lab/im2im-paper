@@ -7,7 +7,7 @@
   <meta name="author" content="Justin Sonneck" />
   <meta name="author" content="Yu Zhou" />
   <meta name="author" content="Jianxu Chen" />
-  <meta name="dcterms.date" content="2023-09-30" />
+  <meta name="dcterms.date" content="2023-10-27" />
   <title>MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation</title>
   <style>
     code{white-space: pre-wrap;}
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-09-30" />
-  <meta name="citation_publication_date" content="2023-09-30" />
-  <meta property="article:published_time" content="2023-09-30" />
-  <meta name="dc.modified" content="2023-09-30T14:58:17+00:00" />
-  <meta property="article:modified_time" content="2023-09-30T14:58:17+00:00" />
+  <meta name="dc.date" content="2023-10-27" />
+  <meta name="citation_publication_date" content="2023-10-27" />
+  <meta property="article:published_time" content="2023-10-27" />
+  <meta name="dc.modified" content="2023-10-27T12:18:50+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T12:18:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -64,6 +64,7 @@
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Justin Sonneck" />
   <meta name="citation_author_institution" content="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany" />
+  <meta name="citation_author_institution" content="Faculty of Computer Science, Ruhr-University Bochum, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-1640-3045" />
   <meta name="twitter:creator" content="@JustinSonneck" />
   <meta name="citation_author" content="Yu Zhou" />
@@ -80,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/e3d3aa97e37dd21386af3560a76b766120d18211/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e3d3aa97e37dd21386af3560a76b766120d18211/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e3d3aa97e37dd21386af3560a76b766120d18211/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -99,10 +100,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://MMV-Lab.github.io/im2im-paper/v/ea8d01d4ecd397ce1a10f438734ee13bcba943e9/">permalink</a>)
+(<a href="https://MMV-Lab.github.io/im2im-paper/v/e3d3aa97e37dd21386af3560a76b766120d18211/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/MMV-Lab/im2im-paper/tree/ea8d01d4ecd397ce1a10f438734ee13bcba943e9">MMV-Lab/im2im-paper@ea8d01d</a>
-on September 30, 2023.
+from <a href="https://github.com/MMV-Lab/im2im-paper/tree/e3d3aa97e37dd21386af3560a76b766120d18211">MMV-Lab/im2im-paper@e3d3aa9</a>
+on October 27, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -116,7 +117,7 @@ on September 30, 2023.
 <a href="https://twitter.com/JustinSonneck">JustinSonneck</a>
 <br>
 <small>
-Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany
+Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, Germany; Faculty of Computer Science, Ruhr-University Bochum, Germany
 </small></p></li>
 <li><p><strong>Yu Zhou</strong>
 <br>
@@ -252,8 +253,8 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, 
 <p>Instance segmentation is a type of segmentation problem that goes beyond semantic segmentation. The goal is to differentiate not only between different types of objects, but also different instances of the same type of objects. Currently, the <em>MMV_Im2Im</em> package supports EmbedSeg-type models. The major benefit of EmbedSeg-type models is their agnosticism to the morphology and dimensionality of the object instances, compared to other models such as StarDist <span class="citation" data-cites="tIIG2f8K 14h90Vfg0">[<a href="#ref-tIIG2f8K" role="doc-biblioref">33</a>,<a href="#ref-14h90Vfg0" role="doc-biblioref">34</a>]</span>, SplineDist <span class="citation" data-cites="17Yrl6WGQ">[<a href="#ref-17Yrl6WGQ" role="doc-biblioref">35</a>]</span> and Cellpose <span class="citation" data-cites="TugPkOLy">[<a href="#ref-TugPkOLy" role="doc-biblioref">36</a>]</span>. For example, different from the others, EmbedSeg-type models are even able to generate instance segmentation where each instance contains multiple connected components. Additional frameworks such as Omnipose <span class="citation" data-cites="lXzmjM5n">[<a href="#ref-lXzmjM5n" role="doc-biblioref">37</a>]</span> will be supported in future versions. Another mainstream category of instance segmentation methods are detection-based models, such as Mask-RCNN <span class="citation" data-cites="xi8wnibR">[<a href="#ref-xi8wnibR" role="doc-biblioref">38</a>]</span>. However, these models are better suited to the detection framework rather than image-to-image transformation (see Discussion section for details).</p>
 <p>The <em>EmbedSeg</em>-type models were re-implemented according to the original paper <span class="citation" data-cites="K2ugNcVa QmYuUQ5K">[<a href="#ref-K2ugNcVa" role="doc-biblioref">10</a>,<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span> following the generic boilerplate in <em>MMV_Im2Im</em>, with significant improvement. First of all, following the modular design of <em>MMV_Im2Im</em>, it is flexible to use different neural network models as the backbone. For 3D anisotropic microscopy images, the original backbone ERFNet <span class="citation" data-cites="XAkgs3Nh">[<a href="#ref-XAkgs3Nh" role="doc-biblioref">39</a>]</span> doesn’t take the anisotropic dimensions into account and therefore may not perform well or even be applicable. In this scenario, it is straightforward to employ another anisotropic neural network bone, such as the anisotropic U-Net in <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> or the anisotropic version of Dynamic U-Net in MONAI. Second, we significantly improve training strategy. The original version requires pre-cropping patches centered around each instance and pre-calculated the center images and class images. This may generate a massive amount of additional data on the disk. More importantly, such pre-cropping makes data augmentation nearly impossible, except the simple ones like flipping (otherwise, the pre-calculated centers might be wrong), and also greatly undersamples around negative cases (e.g., background). For example, we have observed that for an EmbedSeg model training only with patches centered around instances, the model may suffer from degraded performance during inference when there are a large amount of background areas without any instances. Again, following the modular design of <em>MMV_Im2Im</em>, it is now possible to do on-the-fly data augmentation and patch sampling, even weighted patch sampling. Another extension compared to the original implementation was that the <em>MMV_Im2Im</em> package made sliding windowing inference straightforward, and therefore permitted easy handling of images of any size during inference.</p>
 <p>In this work, we tested on both 2D and 3D instance segmentation problems. Going from 2D to 3D is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. <em>MMV_Im2Im</em> is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, one can greatly reduce GPU memory workload for each sample and therefore increase the batch size or the patch size. When multiple GPUs are available, it is also possible to easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. As a demonstration, we applied <em>EmbedSeg</em>-like models to a 2D problem of segmenting <em>C. elegans</em> from widefield images <span class="citation" data-cites="138foKNOh">[<a href="#ref-138foKNOh" role="doc-biblioref">40</a>]</span>, as well as a 3D problem of nuclear segmentation from fluorescent and brightfield images from the hiPS single cell image dataset <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">25</a>]</span>.</p>
-<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper. Example results on a small holdout set of 5 images are shown in Figure <a href="#fig:instance">5</a>-A (average precision at 50 = 0.866), which is comparable to the original published results <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>. For the 3D problem, the original backbone is not directly applicable, due to the aforementioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> is used here.</p>
-<p>Example results were presented in Figure <a href="#fig:instance">5</a>-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). The average precision at 50 for the fluorescence model is 0.827 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically not feasible for other instance segmentation models like StarDist or Cellpose. Additionally, <em>EmbedSeg</em>-type models are able to assign spatially unrelated structures to the same instance (see Figure <a href="#fig:instance">5</a> bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622).</p>
+<p>For the 2D problem, we adopted the same network backbone as in the original <em>EmbedSeg</em> paper. Example results on a small holdout set of 5 images are shown in Figure <a href="#fig:instance">5</a>-A (average precision at 50 = 0.866 ± 0.163), which is comparable to the original published results <span class="citation" data-cites="QmYuUQ5K">[<a href="#ref-QmYuUQ5K" role="doc-biblioref">11</a>]</span>. For the 3D problem, the original backbone is not directly applicable, due to the aforementioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet <span class="citation" data-cites="jM3v1UjQ">[<a href="#ref-jM3v1UjQ" role="doc-biblioref">19</a>]</span> is used here.</p>
+<p>Example results were presented in Figure <a href="#fig:instance">5</a>-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). The average precision at 50 for the fluorescence model is 0.827 ± 0.082 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically not feasible for other instance segmentation models like StarDist or Cellpose. Additionally, <em>EmbedSeg</em>-type models are able to assign spatially unrelated structures to the same instance (see Figure <a href="#fig:instance">5</a> bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622 ± 0.101).</p>
 <div id="fig:instance" class="fignos">
 <figure>
 <img src="images/embedseg.png" style="width:75.0%" alt="Figure 5: (A) Results 2D instance segmentation of C. elegans. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images was adjusted using ImageJ’s autoscale." />
@@ -261,7 +262,7 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, 
 </figure>
 </div>
 <h3 id="comparing-semantic-segmentation-and-instance-segmentation-of-organelles-from-3d-confocal-microscopy-images">Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images</h3>
-<p>We did a special comparison in this subsection to further illustrate the difference between semantic and instance segmentations. We took the 3D fibrillarin dataset from <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">25</a>]</span>. There are multiple channels in each 3D image, including DNA dye, membrane dye, and the structure channel (i.e., fibrillarin). The original fibrillarin segmentation released with the dataset is binary semantic segmentation. With additional cell segmentations available in the dataset, we can know which groups of segmented fibrillarin belong to the same cell. Then, we can convert the semantic segmentation into 3D instance segmentation ground truth (fibrillarin pixels belonging to the same cell are grouped as a unique instance). Sample images and results are shown in Figure <a href="#fig:3dseg">6</a>. We can observe that the semantic segmentation model is able to achieve good accuracy in determining pixels from the fibrillarin signals (F1 = 0.958 ± 0.008). Meanwhile, the instance segmentation can group them properly (average precision at 50 = 0.795) so that fibrillarin masks from the same cell are successfully identified as unique instances, even without referring to cell segmentation results. This is not a simple distance-based grouping, since the fibrillarin signals from tightly touching nuclei may exist close to each other.</p>
+<p>We did a special comparison in this subsection to further illustrate the difference between semantic and instance segmentations. We took the 3D fibrillarin dataset from <span class="citation" data-cites="5sGcmDuy">[<a href="#ref-5sGcmDuy" role="doc-biblioref">25</a>]</span>. There are multiple channels in each 3D image, including DNA dye, membrane dye, and the structure channel (i.e., fibrillarin). The original fibrillarin segmentation released with the dataset is binary semantic segmentation. With additional cell segmentations available in the dataset, we can know which groups of segmented fibrillarin belong to the same cell. Then, we can convert the semantic segmentation into 3D instance segmentation ground truth (fibrillarin pixels belonging to the same cell are grouped as a unique instance). Sample images and results are shown in Figure <a href="#fig:3dseg">6</a>. We can observe that the semantic segmentation model is able to achieve good accuracy in determining pixels from the fibrillarin signals (F1 = 0.958 ± 0.008). Meanwhile, the instance segmentation can group them properly (average precision at 50 = 0.795 ± 0.055) so that fibrillarin masks from the same cell are successfully identified as unique instances, even without referring to cell segmentation results. This is not a simple distance-based grouping, since the fibrillarin signals from tightly touching nuclei may exist close to each other.</p>
 <div id="fig:3dseg" class="fignos">
 <figure>
 <img src="images/semantic_seg3d_justin.png" style="width:75.0%" alt="Figure 6: Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack), showing true positive, false negative, and false positive pixels." />
@@ -534,7 +535,8 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, 
 <p>Programming language: Python</p>
 <p>Other requirements: PyTorch 2.0.1 or higher, PyTorch Lightning &gt; 2.0.0, and all other additional dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py</p>
 <p>License: MIT license</p>
-<h2 id="data-availability">Data availability</h2>
+<p>To enhance the accessibility and traceability of our toolbox, we registered it with https://scicrunch.org/ (RRID: SCR_024630), https://bio.tools/ (bio.tools ID: biotools:mmv_im2im) and https://workflowhub.eu/ (https://doi.org/10.48546/workflowhub.workflow.626.1).</p>
+<h2 id="data-and-model-availability">Data and model availability</h2>
 <p>In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section.</p>
 <p><strong>1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:</strong></p>
 <p><strong>2D:</strong> The data were downloaded from <a href="https://zenodo.org/record/6139958#.Y78QJKrMLtU" class="uri">https://zenodo.org/record/6139958#.Y78QJKrMLtU</a> and <a href="https://zenodo.org/record/6140064#.Y78YeqrMLtU" class="uri">https://zenodo.org/record/6140064#.Y78YeqrMLtU</a>. We used all the data from the two sources, while 15% of the data were held-out for testing. In specific, for data source 1 (<a href="https://zenodo.org/record/6139958#.Y78QJKrMLtU" class="uri">https://zenodo.org/record/6139958#.Y78QJKrMLtU</a>), it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).</p>
@@ -574,6 +576,8 @@ Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V., Dortmund 44139, 
 <p>The data were downloaded from <a href="https://zenodo.org/record/4624364#.Y9bWOoHMIqJ" class="uri">https://zenodo.org/record/4624364#.Y9bWOoHMIqJ</a>, which was released with the publication <span class="citation" data-cites="UEBDZ3tI">[<a href="#ref-UEBDZ3tI" role="doc-biblioref">8</a>]</span>. We used two datasets <em>Microtubule</em> and <em>Nuclear_Pore_complex</em> from “Confocal_2_STED.zip”. We kept the original train/test splitting in the datasets.</p>
 <p><strong>9. Staining transformation in multiplex experiments</strong></p>
 <p>This dataset were downloaded from <a href="https://zenodo.org/record/4751737#.Y9gbv4HMLVZ" class="uri">https://zenodo.org/record/4751737#.Y9gbv4HMLVZ</a>, which was released with the publication <span class="citation" data-cites="WwenuBHa">[<a href="#ref-WwenuBHa" role="doc-biblioref">5</a>]</span>. We used the dataset “BC-DeepLIIF_Training_Set.zip” and “BC-DeepLIIF_Validation_Set.zip”. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.</p>
+<p><strong>10. Models and sample data</strong></p>
+<p>To help researchers get started with our tool, we have deposited all models used in the manuscript as well as sample data at https://doi.org/10.5281/zenodo.10034416.</p>
 <h2 id="conflict-of-interest">Conflict of interest</h2>
 <p>The authors report no conflict of interest.</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
