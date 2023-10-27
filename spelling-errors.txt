@@ -11,10 +11,12 @@ Bildung
 binarized
 bioimaging
 biomolecules
+biotools
 BJ
 BMBF
+Bochum
 BranchedERFNet
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -22,7 +24,7 @@ chanllengs
 codebase
 codebases
 configurability
-confocal
+Confocal
 convolutional
 CRNN
 csv
@@ -34,7 +36,7 @@ dataloader
 dataset
 datasets
 DeepLIIF
-Denoising
+denoising
 des
 dimensionalities
 dimensionality
@@ -45,7 +47,7 @@ dseg
 DynUnet
 EGFP
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 eternalaudreys
@@ -121,7 +123,9 @@ rescale
 rescaling
 reusability
 RGB
+RRID
 Schmidtea
+SCR
 segmentations
 Segmenter
 Similrarity
