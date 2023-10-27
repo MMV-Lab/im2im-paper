@@ -188,7 +188,6 @@ content/03.results.md:58:StarDist
 content/03.results.md:61:autoscale
 content/03.results.md:61:brightfield
 content/03.results.md:61:elegans
-content/03.results.md:61:embedseg
 content/03.results.md:61:grayscale
 content/03.results.md:61:ImageJ's
 content/03.results.md:63:confocal

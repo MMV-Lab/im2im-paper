@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T14:29:15+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T14:29:15+00:00" />
+  <meta name="dc.modified" content="2023-10-27T14:32:06+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T14:32:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/489b570261ad55cb98e2b969b432a5ddabce03ae/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/489b570261ad55cb98e2b969b432a5ddabce03ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/489b570261ad55cb98e2b969b432a5ddabce03ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/a66b2deaac1df041285ed3fcaad6976564efd38f/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/a66b2deaac1df041285ed3fcaad6976564efd38f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/a66b2deaac1df041285ed3fcaad6976564efd38f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/489b570261ad55cb98e2b969b432a5ddabce03ae/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/a66b2deaac1df041285ed3fcaad6976564efd38f/))
 was automatically generated
-from [MMV-Lab/im2im-paper@489b570](https://github.com/MMV-Lab/im2im-paper/tree/489b570261ad55cb98e2b969b432a5ddabce03ae)
+from [MMV-Lab/im2im-paper@a66b2de](https://github.com/MMV-Lab/im2im-paper/tree/a66b2deaac1df041285ed3fcaad6976564efd38f)
 on October 27, 2023.
 </em></small>
 
@@ -236,7 +236,7 @@ For the 2D problem, we adopted the same network backbone as in the original *Emb
 Example results were presented in Figure {@fig:instance}-B. The green box highlighted a mitotic cell (the DNA signals forming "spaghetti” shapes). The average precision at 50 for the fluorescence model is 0.827 ± 0.082 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically not feasible for other instance segmentation models like StarDist or Cellpose. Additionally, *EmbedSeg*-type models are able to assign spatially unrelated structures to the same instance (see Figure {@fig:instance} bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622 ± 0.101). 
 
 
-![(A) Results 2D instance segmentation of *C. elegans*. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images was adjusted using ImageJ's autoscale.](images/embedseg.png){#fig:instance width="75%"}
+![(A) Results 2D instance segmentation of *C. elegans*. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images was adjusted using ImageJ's autoscale.](images/instance_seg_justin.png){#fig:instance width="75%"}
 
 ### Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images 
 
@@ -342,6 +342,7 @@ From all experiments above (37 in total), we want to demonstrate the great flexi
 | Staining transformation | 2D | Pix2pix | predefined_unet|
 
 Table: Overview of the used frameworks for the demonstrated tasks. {#tbl:framework_overview width="90%"}
+
 
 ## Methods
 

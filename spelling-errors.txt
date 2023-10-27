@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -28,7 +28,7 @@ confocal
 convolutional
 CRNN
 csv
-cycleGAN
+CycleGAN
 cyleGAN
 cyto
 DAPI
@@ -39,7 +39,7 @@ DeepLIIF
 denoising
 des
 dimensionalities
-dimensionality
+Dimensionality
 DL
 downscaled
 DPC
@@ -47,7 +47,7 @@ dseg
 DynUnet
 EGFP
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 eternalaudreys
@@ -68,7 +68,7 @@ Glas
 GPUs
 grayscale
 HeLa
-hematoxylin
+Hematoxylin
 hiPSC
 histone
 histones
@@ -86,7 +86,7 @@ JianxuChen
 JustinSonneck
 jxchen
 Kultur
-labelfree
+Labelfree
 lamin
 Landes
 lightsheet
@@ -95,7 +95,7 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-Microtubule
+microtubule
 Ministerium
 MKW
 MMSegmentation
