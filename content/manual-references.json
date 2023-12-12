@@ -305,5 +305,59 @@
         ]
       ]
     }
-  }  
+  },
+  {
+    "id": "pyrallis",
+    "type": "webpage",
+    "title": "Pyrallis - Simple Configuration with Dataclasses",
+    "URL": "https://github.com/eladrich/pyrallis",
+    "publisher": "Github",
+
+    "author": [
+      {
+        "family": "Richardson",
+        "given": "Elad"
+      },
+      {
+        "family": "Weiss",
+        "given": "Ido"
+      },
+      {
+        "family": "Feldman",
+        "given": "Yair"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  },      
+  {
+    "id": "imaginaire",
+    "type": "webpage",
+    "title": "Imaginaire",
+    "URL": "https://github.com/NVlabs/imaginaire",
+    "publisher": "Github",
+
+    "author": [
+      {
+        "family": "Contributors",
+        "given": "Imaginaire"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  }        
 ]
