@@ -282,5 +282,28 @@
         ]
       ]
     }
-  }
+  },
+  {
+    "id": "MMSegmentation",
+    "type": "webpage",
+    "title": "MMSegmentation: OpenMMLab Semantic Segmentation Toolbox and Benchmark",
+    "URL": "https://github.com/open-mmlab/mmsegmentation",
+    "publisher": "Github",
+
+    "author": [
+      {
+        "family": "Contributors",
+        "given": "MMSegmentation"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  }  
 ]
