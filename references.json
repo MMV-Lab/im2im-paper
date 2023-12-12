@@ -35,6 +35,29 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: HDN"
   },
   {
+    "id": "EcizztLg",
+    "type": "webpage",
+    "title": "MMSegmentation: OpenMMLab Semantic Segmentation Toolbox and Benchmark",
+    "URL": "https://github.com/open-mmlab/mmsegmentation",
+    "publisher": "Github",
+    "author": [
+      {
+        "family": "Contributors",
+        "given": "MMSegmentation"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    },
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: MMSegmentation"
+  },
+  {
     "id": "gsfWGJKf",
     "type": "webpage",
     "title": "AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python",
