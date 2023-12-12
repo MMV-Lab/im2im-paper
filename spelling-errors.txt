@@ -34,13 +34,13 @@ dataloader
 dataset
 datasets
 DeepLIIF
-denoising
+Denoising
 des
 dimensionalities
-Dimensionality
+dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 DynUnet
 EGFP
@@ -95,7 +95,7 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-Microtubule
+microtubule
 Ministerium
 MKW
 MMSegmentation

@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-12" />
   <meta name="citation_publication_date" content="2023-12-12" />
   <meta property="article:published_time" content="2023-12-12" />
-  <meta name="dc.modified" content="2023-12-12T13:33:16+00:00" />
-  <meta property="article:modified_time" content="2023-12-12T13:33:16+00:00" />
+  <meta name="dc.modified" content="2023-12-12T13:38:08+00:00" />
+  <meta property="article:modified_time" content="2023-12-12T13:38:08+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/37e2614eb04e670de6ac563628b1b830ff055e6f/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/37e2614eb04e670de6ac563628b1b830ff055e6f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/37e2614eb04e670de6ac563628b1b830ff055e6f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/37e2614eb04e670de6ac563628b1b830ff055e6f/))
 was automatically generated
-from [MMV-Lab/im2im-paper@f4aeb90](https://github.com/MMV-Lab/im2im-paper/tree/f4aeb90fb62535045c66cedb190c0d8e1c3373b7)
+from [MMV-Lab/im2im-paper@37e2614](https://github.com/MMV-Lab/im2im-paper/tree/37e2614eb04e670de6ac563628b1b830ff055e6f)
 on December 12, 2023.
 </em></small>
 
@@ -402,7 +402,7 @@ To enhance the accessibility and traceability of our toolbox, we registered it w
 
 ## Data and model availability
 
-In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section. Snapshots of our code and other data further supporting this work are openly available in the GigaScience repository, GigaDB [xx##]. In addition, we uploaded all the trained models and sample data to a Zenodo bucket [@doi:10.5281/zenodo.10034416] to ensure the reproducibility of our work.
+In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section. Snapshots of our code and other data further supporting this work are openly available in the GigaScience repository, GigaDB [xx##]. In addition, we deposited all the trained models and sample data at Zenodo [@doi:10.5281/zenodo.10034416] to ensure the reproducibility of our work.
 
 **1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:**
 
