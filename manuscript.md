@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-12" />
   <meta name="citation_publication_date" content="2023-12-12" />
   <meta property="article:published_time" content="2023-12-12" />
-  <meta name="dc.modified" content="2023-12-12T12:31:51+00:00" />
-  <meta property="article:modified_time" content="2023-12-12T12:31:51+00:00" />
+  <meta name="dc.modified" content="2023-12-12T13:33:16+00:00" />
+  <meta property="article:modified_time" content="2023-12-12T13:33:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/2dd6a10f7098d9d0ba158bfa18b15f0c218196e6/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/2dd6a10f7098d9d0ba158bfa18b15f0c218196e6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/2dd6a10f7098d9d0ba158bfa18b15f0c218196e6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/2dd6a10f7098d9d0ba158bfa18b15f0c218196e6/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/f4aeb90fb62535045c66cedb190c0d8e1c3373b7/))
 was automatically generated
-from [MMV-Lab/im2im-paper@2dd6a10](https://github.com/MMV-Lab/im2im-paper/tree/2dd6a10f7098d9d0ba158bfa18b15f0c218196e6)
+from [MMV-Lab/im2im-paper@f4aeb90](https://github.com/MMV-Lab/im2im-paper/tree/f4aeb90fb62535045c66cedb190c0d8e1c3373b7)
 on December 12, 2023.
 </em></small>
 
@@ -199,7 +199,7 @@ We conducted three groups of comparisons (see results in Figure {@fig:labelfree_
 
 Second, we compared different network backbone architectures, including the original fnet model [@doi:10.1038/s41592-018-0111-2], an enhanced UNet [@doi:10.1007/978-3-030-12029-0_40], the attention UNet [@attentionUnet], two transformer-based models, SwinUNETR [@doi:10.1007/978-3-031-08999-2_22] and UNETR[@doi:10.1109/WACV51458.2022.00181] (all with center normalization). Inspecting the predictions on a holdout validation set suggested that fnet achieved the best performance.
 
-Finally, we showed the comparison between three different types of models, an FCN-type model (i.e., fnet), a pix2pix-type model, and a cycleGAN-type model. For fair comparison, we used fnet as the same backbone for all three types of models. In theory, the pix2pix-type model can be trained in two different ways: from scratch or initializing the generator with a pre-trained fnet (trained as FCN). Examples of the comparison results were shown in the last two rows in Figure {@fig:labelfree_all_structures}-B. Visually, it is evident that the additional adversarial components (i.e., the discriminator) could generate images with more realistic appearance than a typical FCN-type model alone, but again, we leave the appropriate quantitative evaluations to users’ specific biomedical studies.
+Finally, we showed the comparison between three different types of models, an FCN-type model (i.e., fnet), a pix2pix-type model, and a CycleGAN-type model. For fair comparison, we used fnet as the same backbone for all three types of models. In theory, the pix2pix-type model can be trained in two different ways: from scratch or initializing the generator with a pre-trained fnet (trained as FCN). Examples of the comparison results were shown in the last two rows in Figure {@fig:labelfree_all_structures}-B. Visually, it is evident that the additional adversarial components (i.e., the discriminator) could generate images with more realistic appearance than a typical FCN-type model alone, but again, we leave the appropriate quantitative evaluations to users’ specific biomedical studies.
 
 From the experiments above, we found that center normalization + pix2pix with fnet as the generator achieved the best overall performance qualitatively. So, we employed the same strategy on all other nuclear structures. At the end, we had four different labelfree models, each predicting one different nuclear structure from 3D brightfield images. As an example of evaluation, we calculated the Pearson correlation, the structural similarity and the peak signal to noise ratio on holdout validation sets. The results were summarized in Table {@tbl:labelfree_table}. Again, these numbers were merely examples of evaluation, systematic evaluation based on each specific biological problem would be necessary before deployment. Figure {@fig:labelfree_all_structures}-A shows the comparison of each predicted structure and its ground truth, while Figure {@fig:labelfree_all_structures}-B shows one example of all four different structures predicted from a single unseen brightfield image. This would permit an integrated analysis of four different nuclear components that could hardly be acquired simultaneously in real experiments and real images.
 
@@ -234,7 +234,7 @@ In this work, we tested on both 2D and 3D instance segmentation problems. Going 
 
 For the 2D problem, we adopted the same network backbone as in the original *EmbedSeg* paper. Example results on a small holdout set of 5 images are shown in Figure {@fig:instance}-A (average precision at 50 = 0.866 ± 0.163), which is comparable to the original published results [@embedseg]. For the 3D problem, the original backbone is not directly applicable, due to the before mentioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet [@doi:10.1101/491035] is used here. The segmentation results obtained from the public dataset [@doi:10.1038/s41586-022-05563-7] contain nuclear instance segmentation of all cells. But, the cells touching the image borders are ignored from downstream analysis [@doi:10.1038/s41586-022-05563-7] and therefore not curated. In other words, the segmentation from this public dataset can only be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders [@doi:10.1038/s41586-022-05563-7]. Therefore, the exclusion masking function in MMV_Im2Im is very helpful in this example.
 
-Example results were presented in Figure {@fig:instance}-B. The green box highlighted a mitotic cell (the DNA signals forming "spaghetti" shapes). The average precision at 50 for the fluorescence model is 0.827 ± 0.082 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically not feasible for other instance segmentation models like StarDist or Cellpose. Additionally, *EmbedSeg*-type models are able to assign spatially unrelated structures to the same instance (see Figure {@fig:instance} bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622 ± 0.101). 
+Example results were presented in Figure {@fig:instance}-B. The green box highlighted a mitotic cell (the DNA signals forming “spaghetti” shapes). The average precision at 50 for the fluorescence model is 0.827 ± 0.082 and it can be seen that the fluorescence model is able to distinguish the complex DNA signal from the background. Even holes can appear in the predicted segmentation, allowing the prediction of very complex shapes that are theoretically not feasible for other instance segmentation models like StarDist or Cellpose. Additionally, *EmbedSeg*-type models are able to assign spatially unrelated structures to the same instance (see Figure {@fig:instance} bottom). Nuclear instance segmentation from brightfield images was much more challenging than from fluorescent images (average precision at 50 = 0.622 ± 0.101). 
 
 
 ![(A) Results 2D instance segmentation of *C. elegans*. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images was adjusted using ImageJ's autoscale.](images/instance_seg_justin.png){#fig:instance width="75%"}
@@ -272,7 +272,7 @@ Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:un
 
 Generating a large amount of synthetic microscopy images can be an important step in developing image analysis methods. Synthetic images offer a way to train other DL models, such as self-supervised pre-training, using a diverse set of images without the need for large amounts of real-world data. As long as the synthetic images are generated with sufficient quality, it is possible to have an unlimited amount of training data for certain applications. Moreover, synthetic images can be used to evaluate other models when validation data is difficult to obtain. In this study, we demonstrate that *MMV_Im2Im* can generate 2D/3D synthetic microscopy images with high realism and validity, using a subset of data collected from the hiPS single-cell image dataset [@doi:10.1038/s41586-022-05563-7], either in a supervised or unsupervised manner.
 
-For 2D demonstration, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary masks. With the paired “mask + microscopy image” data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data which can be trained in an unsupervised fashion using the cycleGAN-type framework implemented in *MMV_Im2Im*. Example results can be found in Figure {@fig:synthetic}-A and Table {@tbl:syn}. In general, the supervised synthesization can generate more realistic images than the unsupervised model.
+For 2D demonstration, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary masks. With the paired “mask + microscopy image” data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data which can be trained in an unsupervised fashion using the CycleGAN-type framework implemented in *MMV_Im2Im*. Example results can be found in Figure {@fig:synthetic}-A and Table {@tbl:syn}. In general, the supervised synthesization can generate more realistic images than the unsupervised model.
 
 For 3D demonstration, we use 3D H2B images with two different types of input masks. First, we attempted to generate synthetic images from a coarse mask (i.e., only the overall shape of the nucleus, available as nuclear segmentation from the dataset) with both supervised training and unsupervised training. The unsupervised model in *MMV_Im2Im* uses the CycleGAN-based approaches. So, the unsupervised training is actually already done within the unsupervised segmentation experiments. In other words, the unsupervised model works in a bi-directional way, from real microscopy images to binary masks, and also from binary masks to simulated microscopy images. Here, we could also do the inference in a different direction (from binary to simulated microscopy) using the model trained in the unsupervised segmentation section. The results are shown in Figure {@fig:synthetic}-B (row 1). The unsupervised synthesization can mostly “paint” the mask with homogeneous grayscale intensity, while the supervised model can simulate the textures to some extent. For a relatively large mask, it could be challenging for a model to fill in sufficient details to simulate real microscopy images (might be improved with diffusion-based models, see Discussions).
 
@@ -334,8 +334,8 @@ From all experiments above (37 in total), we want to demonstrate the great flexi
 
 | Task | Dim | Framework| Backbone|
 |----------|----------|----------|----------|
-| Labelfree | 2D/3D | FCN, Pix2pix, cyleGAN| fnet, UNet, AttentionUnet, SwinUNETR, ...|
-| Semantic segmentation | 2D/3D | FCN, cycleGAN| AttentionUnet, DynUnet, UNet3D|
+| Labelfree | 2D/3D | FCN, Pix2pix, CycleGAN| fnet, UNet, AttentionUnet, SwinUNETR, ...|
+| Semantic segmentation | 2D/3D | FCN, CycleGAN| AttentionUnet, DynUnet, UNet3D|
 | Instance segmentation | 2D/3D | EmbedSeg | BranchedERFNet_2d, UNet3D|
 | Synthetic | 2D/3D | Pix2pix | AttentionUnet, fnet|
 | Denoising | 3D | FCN | UNet|
@@ -349,7 +349,7 @@ Table: Overview of the used frameworks for the demonstrated tasks. {#tbl:framewo
 
 ### Overview of the code base
 
-Overall, the package inherited the boilerplate concept from pytorch-lightning (<https://www.pytorchlightning.ai/>), and was made fully configurable via yaml files supported by pyrallis (<https://github.com/eladrich/pyrallis>), as well as largely employed state-of-the-art DL components from MONAI (<https://monai.io/>). The three key parts in the package: `mmv_im2im.models`, `mmv_im2im.data_modules`, and `Trainers`, will be further described below.
+Overall, the package inherited the boilerplate concept from pytorch-lightning [@doi:10.5281/zenodo.3828935], and was made fully configurable via yaml files supported by pyrallis [@pyrallis], as well as largely employed state-of-the-art DL components from MONAI [@doi:10.5281/zenodo.4323059]. The three key parts in the package: `mmv_im2im.models`, `mmv_im2im.data_modules`, and `Trainers`, will be further described below.
 
 ### Main frameworks for mmv_im2im.models
 
@@ -357,7 +357,7 @@ Overall, the package inherited the boilerplate concept from pytorch-lightning (<
 
 In general, there are mainly four major DL frameworks that could be applied to microscopy image-to-image transformation: supervised learning with a fully convolutional networks (FCN) type models, supervised learning with pix2pix type models, unsupervised learning to learn mapping between visual domains, and Self2Self-type self-supervised learning [@doi:10.1007/978-3-031-16440-8_10]. The major difference between FCN based supervised learning and pix2pix based supervised learning is that the pix2pix framework extends an FCN model with an adversarial head as a discriminator to further improve the realism of the prediction. The major difference between the unsupervised framework and the self-supervised framework is that the unsupervised methods still require examples of the target images, even though the source images and target images do not need to be from the same sample or pixel-wise aligned. But, the self-supervised framework would only need the original images, which could be really helpful when it is impossible to acquire the target images (e.g., there is no truly noise-free or artifact-free image).
 
-Currently, for supervised frameworks, both the FCN-type and pix2pix-type are well supported in the MMV_Im2Im (RRID:SCR_024630) package. Since our package is designed in a very generic way, it is possible to continuously expand the functionalities when available (ideally with community contributions). For example, diffusion models [@doi:10.48550/arXiv.2208.14125] can be thought of as a modern extension of the pix2pix-type framework and therefore are within our horizon to include into *MMV_Im2Im*. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire (<https://github.com/NVlabs/imaginaire>), which will greatly extend the applicability of *MMV_Im2Im* (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone.
+Currently, for supervised frameworks, both the FCN-type and pix2pix-type are well supported in the MMV_Im2Im (RRID:SCR_024630) package. Since our package is designed in a very generic way, it is possible to continuously expand the functionalities when available (ideally with community contributions). For example, diffusion models [@doi:10.48550/arXiv.2208.14125] can be thought of as a modern extension of the pix2pix-type framework and therefore are within our horizon to include into *MMV_Im2Im*. For the unsupervised framework, only CycleGAN-type methods are supported. We are planning to extend the unsupervised framework with Imaginaire [@imaginaire], which will greatly extend the applicability of *MMV_Im2Im* (e.g., learning the transformation from one single image to another single image or one set of images to another set of images). Meanwhile, supporting the self-supervised framework will be our next major milestone.
 
 
 ### Customized mmv_im2im.data_modules for bioimaging applications
@@ -402,11 +402,11 @@ To enhance the accessibility and traceability of our toolbox, we registered it w
 
 ## Data and model availability
 
-In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section.
+In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section. Snapshots of our code and other data further supporting this work are openly available in the GigaScience repository, GigaDB [xx##]. In addition, we uploaded all the trained models and sample data to a Zenodo bucket [@doi:10.5281/zenodo.10034416] to ensure the reproducibility of our work.
 
 **1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:**
 
-**2D:** The data were downloaded from <https://zenodo.org/record/6139958#.Y78QJKrMLtU> and <https://zenodo.org/record/6140064#.Y78YeqrMLtU>. We used all the data from the two sources, while 15% of the data were held-out for testing. In specific, for data source 1 (<https://zenodo.org/record/6139958#.Y78QJKrMLtU>), it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).
+**2D:** The data were downloaded from [@doi:10.5281/zenodo.6139958] and [@doi:10.5281/zenodo.6140063]. We used all the data from the two sources, while 15% of the data were held-out for testing. In specific, for data source 1 (<https://zenodo.org/record/6139958#.Y78QJKrMLtU>), it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).
 
 * Channel 1 : Low Contrast Digital Phase Contrast (DPC)
 * Channel 2 : High Contrast DPC
@@ -414,7 +414,7 @@ In general, all data used in this work were from open-accessible public reposito
 * Channel 4 : EGFP-α-tubulin
 * Channel 5 : mCherry-H2B (the ground truth in our study)
 
-For data source 2 (<https://zenodo.org/record/6140064#.Y78YeqrMLtU>), it contains two sub-folders (train and test), each with snapshots sliced from different time lapse data. Each snapshot is saved as six different tiff files (only the _bf and the second channel of _fluo were used in this work):
+For data source 2 [@doi:10.5281/zenodo.6140063], it contains two sub-folders (train and test), each with snapshots sliced from different time lapse data. Each snapshot is saved as six different tiff files (only the _bf and the second channel of _fluo were used in this work):
 
 * _bf: bright field (the input in our study),
 * _cyto: cytoplasm segmentation mask
