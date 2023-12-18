@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-18" />
   <meta name="citation_publication_date" content="2023-12-18" />
   <meta property="article:published_time" content="2023-12-18" />
-  <meta name="dc.modified" content="2023-12-18T12:55:30+00:00" />
-  <meta property="article:modified_time" content="2023-12-18T12:55:30+00:00" />
+  <meta name="dc.modified" content="2023-12-18T13:34:41+00:00" />
+  <meta property="article:modified_time" content="2023-12-18T13:34:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/84088b2f37c9a2d894b35f3c9aae1ab1282165c7/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84088b2f37c9a2d894b35f3c9aae1ab1282165c7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84088b2f37c9a2d894b35f3c9aae1ab1282165c7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/84088b2f37c9a2d894b35f3c9aae1ab1282165c7/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/))
 was automatically generated
-from [MMV-Lab/im2im-paper@84088b2](https://github.com/MMV-Lab/im2im-paper/tree/84088b2f37c9a2d894b35f3c9aae1ab1282165c7)
+from [MMV-Lab/im2im-paper@84a03aa](https://github.com/MMV-Lab/im2im-paper/tree/84a03aa1376ce7a4793ae4c2260615baa8ed7714)
 on December 18, 2023.
 </em></small>
 
@@ -376,7 +376,7 @@ In this work, we presented a new open-source Python package *MMV_Im2Im* package 
 
 ### Further works
 
-One of main directions for extending *MMV_Im2Im* is to pre-pack common bioimaging datasets as a Dataset module, so that DL researchers can use it for algorithm development and benchmarking, and new users can easily use it for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models [@doi:10.48550/arXiv.2208.14125], unsupervised denoising [@HDN] or Imaginaire (<https://github.com/NVlabs/imaginaire>). Besides, we also plan to develop two auxiliary packages *MMV_Im2Im_Auto* and *MMV_Im2Im_Active*. In specific, when you have a reasonable amount of training data, *MMV_Im2Im_Auto* will take advantage of the fact that MMV_Im2Im is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, *MMV_Im2Im_Active* will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning [@doi:10.1101/491035]. All the packages will also be wrapped into napari plugins [@doi:10.5281/zenodo.3555620] to allow no-code operation and therefore be more friendly to users without experience in programming.
+One of main directions for extending *MMV_Im2Im* is to pre-pack common bioimaging datasets as a Dataset module, so that DL researchers can use it for algorithm development and benchmarking, and new users can easily use it for learning microscopy image-to-image transformation. We will continue improving the functionalities of the package, such as supporting more models and methods, such as diffusion based models [@doi:10.48550/arXiv.2208.14125], unsupervised denoising [@HDN] or Imaginaire [@imaginaire]. Besides, we also plan to develop two auxiliary packages *MMV_Im2Im_Auto* and *MMV_Im2Im_Active*. In specific, when you have a reasonable amount of training data, *MMV_Im2Im_Auto* will take advantage of the fact that MMV_Im2Im is fully configurable with yaml files, and automatically generate a set of potentially good configurations, then find the optimal solution for you by cross validation. On the other hand, when you only have very limited training data, or even with only pseudo ground truth, *MMV_Im2Im_Active* will help to build preliminary models from the limited training data, and gradually refine the model with human-in-the-loop by active learning [@doi:10.1101/491035]. All the packages will also be wrapped into napari plugins [@doi:10.5281/zenodo.3555620] to allow no-code operation and therefore be more friendly to users without experience in programming.
 
 The image-to-image transformation frameworks implemented in the current version do not explicitly take temporal information into account. We treat images (2D or 3D) at each time step independently. Thanks to the flexibility of aicsimageio, our package can directly read even multi-channel 3D timelapse data (i.e, 5D) during training or inference, if necessary. But the computation is done at individual time steps. A common method to integrate the temporal context with spatial information is the convolutional recurrent neural network (CRNN) [@doi:10.1109/TPAMI.2020.2992393]. The support of CRNN will be part of our future work.
 

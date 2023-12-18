@@ -16,14 +16,14 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 Cellpose
 codebase
 codebases
 configurability
-Confocal
+confocal
 convolutional
 CRNN
 csv
@@ -45,7 +45,7 @@ dseg
 DynUnet
 EGFP
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 eternalaudreys
@@ -150,7 +150,7 @@ tubulin
 tunable
 und
 undersamples
-unet
+UNet
 UNETR
 unsuper
 voxel
