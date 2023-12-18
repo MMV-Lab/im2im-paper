@@ -359,5 +359,84 @@
         ]
       ]
     }
-  }        
+  },     
+  {
+    "id": "single_cell_dataset",
+    "type": "webpage",
+    "title": "The hiPSC single-cell image dataset",
+    "URL": "https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset",
+
+    "author": [
+      {
+        "family": "Chen",
+        "given": "Jianxu"
+      },
+      {
+        "family": "Metzler",
+        "given": "Kimverly"
+      },      
+      {
+        
+        "family": "Contributors",
+        "given": "Allen Institute"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  },
+  {
+    "id": "broad",
+    "type": "webpage",
+    "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
+    "URL": "https://bbbc.broadinstitute.org/BBBC010",
+
+    "author": [
+      {
+        "family": "Ausubel",
+        "given": "Fred"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  },          
+  {
+    "id": "denoising",
+    "type": "webpage",
+    "title": "Content Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy - Supplemental Data",
+    "URL": "https://publications.mpi-cbg.de/publications-sites/7207/",
+
+    "author": [
+      {
+        "family": "Weigert",
+        "given": "Martin"
+      },
+      {
+        "family": "Schmidt",
+        "given": "Uwe"
+      }      
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          12
+        ]
+      ]
+    }
+  }     
 ]
