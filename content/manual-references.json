@@ -386,7 +386,7 @@
         [
           "2023",
           12,
-          12
+          18
         ]
       ]
     }
@@ -408,7 +408,7 @@
         [
           "2023",
           12,
-          12
+          18
         ]
       ]
     }
@@ -434,9 +434,36 @@
         [
           "2023",
           12,
-          12
+          18
         ]
       ]
     }
-  }     
+  },
+  {
+    "id": "stain_transformation",
+    "type": "webpage",
+    "title": "Deep Learning-Inferred Multiplex ImmunoFluorescence for Immunohistochemical Image Quantification",
+    "URL": "https://zenodo.org/record/4751737#.Y9gbv4HMLVZ",
+    "publisher": "Zenodo",
+
+    "author": [
+      {
+        "family": "Ghahremani",
+        "given": "Parmida"
+      },
+      {
+        "family": "Li",
+        "given": "Yanyun"
+      }      
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          18
+        ]
+      ]
+    }
+  }        
 ]
