@@ -1,8 +1,8 @@
 This manuscript
-(\href{https://MMV-Lab.github.io/im2im-paper/v/37e2614eb04e670de6ac563628b1b830ff055e6f/}{permalink})
+(\href{https://MMV-Lab.github.io/im2im-paper/v/84088b2f37c9a2d894b35f3c9aae1ab1282165c7/}{permalink})
 was automatically generated
-from \href{https://github.com/MMV-Lab/im2im-paper/tree/37e2614eb04e670de6ac563628b1b830ff055e6f}{MMV-Lab/im2im-paper@37e2614}
-on December 12, 2023.
+from \href{https://github.com/MMV-Lab/im2im-paper/tree/84088b2f37c9a2d894b35f3c9aae1ab1282165c7}{MMV-Lab/im2im-paper@84088b2}
+on December 18, 2023.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -496,7 +496,7 @@ In general, all data used in this work were from open-accessible public reposito
 
 \textbf{1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:}
 
-\textbf{2D:} The data were downloaded from {[}\protect\hyperlink{ref-xv2VIyRP}{25}{]} and {[}\protect\hyperlink{ref-8ywSgqrJ}{52}{]}. We used all the data from the two sources, while 15\% of the data were held-out for testing. In specific, for data source 1 (\url{https://zenodo.org/record/6139958\#.Y78QJKrMLtU}), it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).
+\textbf{2D:} The data were downloaded from {[}\protect\hyperlink{ref-xv2VIyRP}{25}{]} and {[}\protect\hyperlink{ref-8ywSgqrJ}{52}{]}. We used all the data from the two sources, while 15\% of the data were held-out for testing. In specific, for data source 1 {[}\protect\hyperlink{ref-xv2VIyRP}{25}{]}, it contains a timelapse tiff of 240 time steps, each with 5 channels (only channel 3 and 5 were used in this work).
 
 \begin{itemize}
 \tightlist
@@ -530,7 +530,7 @@ For data source 2 {[}\protect\hyperlink{ref-8ywSgqrJ}{52}{]}, it contains two su
   \_sqrdpc: square-root phase contrast
 \end{itemize}
 
-\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}, which was released with the publication {[}\protect\hyperlink{ref-5sGcmDuy}{26}{]}. Each field-of-view (FOV) is a multi-channel 3D image, of which the brightfield and the corresponding structure channels were used as input and ground truth, respectively. Experiments were done on four different cell lines: fibrillarin (structure\_name = ``FBL''), nucleophosmin (structure\_name = ``NPM1''), lamin b1 (structure\_name = ``LMNB1''), and histone H2B (structure\_name = ``HIST1H2BJ''), with 20\% of the data were held-out for testing.
+\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}, which was released with the publication {[}\protect\hyperlink{ref-5sGcmDuy}{26}{]}. Each field-of-view (FOV) is a multi-channel 3D image, of which the brightfield and the corresponding structure channels were used as input and ground truth, respectively. Experiments were done on four different cell lines: fibrillarin (structure\_name = ``FBL''), nucleophosmin (structure\_name = ``NPM1''), lamin b1 (structure\_name = ``LMNB1''), and histone H2B (structure\_name = ``HIST1H2BJ''), with 20\% of the data were held-out for testing.
 
 \textbf{2. 2D semantic segmentation of tissues from H\&E images}
 
@@ -538,44 +538,50 @@ The data were downloaded from \url{https://warwick.ac.uk/fac/cross_fac/tia/data/
 
 \textbf{3. Instance segmentation in microscopy images}
 
-\textbf{2D:} The data were downloaded from \url{https://bbbc.broadinstitute.org/BBBC010} for segmenting C. elegans from widefield images {[}\protect\hyperlink{ref-138foKNOh}{41}{]}. We used all images from the dataset, while 5\% of the data were held-out for testing.
+\textbf{2D:} The data were downloaded from {[}\protect\hyperlink{ref-zvJ4kB9e}{54}{]} for segmenting C. elegans from widefield images {[}\protect\hyperlink{ref-138foKNOh}{41}{]}. We used all images from the dataset, while 5\% of the data were held-out for testing.
 
-\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used the lamin b1 cell line (structure\_name = ``LMNB1'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20\% of the data were held-out for testing.
+\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used the lamin b1 cell line (structure\_name = ``LMNB1'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20\% of the data were held-out for testing.
 
 \textbf{4. Comparing semantic segmentation and instance segmentation of organelles from 3D confocal microscopy images}
 
-The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used the fibrillarin cell line (structure\_name = ``FBL'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel). The input is always the structure channel. Then, we used the FBL\_fine workflow in the Allen Cell and Structure Segmenter {[}\protect\hyperlink{ref-jM3v1UjQ}{20}{]} to generate the semantic segmentation ground truth, and we used the cell instance segmentation to group fibrillarin segmentations belonging to the same cell as unique instances (see more details in Results section), which will be used as the instance segmentation ground truth. The FBL\_fine segmentation workflow was optimized for this cell line, which can be considered as a good approximation of the real truth. To be conservative, we excluded images where the mean intensity of the structure channel is outside the range of {[}450, 500{]}, so that the results from the FBL\_fine workflow can be a better approximation of the real truth. After removing the ``outlier'' images, we held-out 20\% of the data for testing.
+The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used the fibrillarin cell line (structure\_name = ``FBL'') for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel). The input is always the structure channel. Then, we used the FBL\_fine workflow in the Allen Cell and Structure Segmenter {[}\protect\hyperlink{ref-jM3v1UjQ}{20}{]} to generate the semantic segmentation ground truth, and we used the cell instance segmentation to group fibrillarin segmentations belonging to the same cell as unique instances (see more details in Results section), which will be used as the instance segmentation ground truth. The FBL\_fine segmentation workflow was optimized for this cell line, which can be considered as a good approximation of the real truth. To be conservative, we excluded images where the mean intensity of the structure channel is outside the range of {[}450, 500{]}, so that the results from the FBL\_fine workflow can be a better approximation of the real truth. After removing the ``outlier'' images, we held-out 20\% of the data for testing.
 
 \textbf{5. Unsupervised semantic segmentation of intracellular structures from 2D/3D confocal microscopy images}
 
-\textbf{2D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used the tight junction cell line (structure\_name = ``TJP1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for experimenting unsupervised 2D segmentation. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
+\textbf{2D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used the tight junction cell line (structure\_name = ``TJP1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for experimenting unsupervised 2D segmentation. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
 
-\textbf{3D:} The data were also downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used three different cell lines for these experiments: Golgi (structure\_name = ``ST6GAL1''), mitochondria (structure\_name = ``TOMM20''), and histone H2B (structure\_name = ``HIST12BJ''). For Golgi and mitochondria, we simply used the corresponding structure segmentation from the dataset. For histone H2B, we took the released nuclear instance segmentation and converted it to binary as semantic segmentation results. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
+\textbf{3D:} The data were also downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used three different cell lines for these experiments: Golgi (structure\_name = ``ST6GAL1''), mitochondria (structure\_name = ``TOMM20''), and histone H2B (structure\_name = ``HIST12BJ''). For Golgi and mitochondria, we simply used the corresponding structure segmentation from the dataset. For histone H2B, we took the released nuclear instance segmentation and converted it to binary as semantic segmentation results. The correspondence between images and segmentations were shuffled to simulate unpaired ground truth. 20\% of the data were held-out for testing.
 
 \textbf{6. Generating synthetic microscopy images from binary Masks}
 
-\textbf{2D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used the nucleophosmin cell line (structure\_name = ``NPM1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for this experiment. The input is binary segmentation, while the ground truth is the raw image.
+\textbf{2D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used the nucleophosmin cell line (structure\_name = ``NPM1'') for this experiment. The original image and corresponding structure segmentation were both in 3D. We took the max intensity projection of the raw structure channel and the corresponding structure segmentation for this experiment. The input is binary segmentation, while the ground truth is the raw image.
 
-\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}. We used the histone H2B cell line (structure\_name = ``HIST1H2BJ'') for these experiments. For the experiment with coarse masks, we used the binarized nuclear segmentation as the input, while for the experiment with detailed masks, we used the structure segmentation of H2B as the input. The ground truth is always the raw 3D structure image.
+\textbf{3D:} The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: {[}\protect\hyperlink{ref-vm45dW9e}{53}{]}. We used the histone H2B cell line (structure\_name = ``HIST1H2BJ'') for these experiments. For the experiment with coarse masks, we used the binarized nuclear segmentation as the input, while for the experiment with detailed masks, we used the structure segmentation of H2B as the input. The ground truth is always the raw 3D structure image.
 
 \textbf{7. Image denoising for microscopy images}
 
-The data were downloaded from \url{https://publications.mpi-cbg.de/publications-sites/7207/}, which was released with the publication {[}\protect\hyperlink{ref-12G712Zky}{43}{]}. We used two datasets ``Denoising\_Planaria.tar.gz'' and ``Denoising\_Tribolium.tar.gz''. We kept the original train/test splitting in the datasets.
+The data were downloaded from {[}\protect\hyperlink{ref-b6GmFJlO}{55}{]}, which was released with the publication {[}\protect\hyperlink{ref-12G712Zky}{43}{]}. We used two datasets ``Denoising\_Planaria.tar.gz'' and ``Denoising\_Tribolium.tar.gz''. We kept the original train/test splitting in the datasets.
 
 \textbf{8. Imaging modality transformation from 3D confocal microscopy images to stimulated emission depletion (STED) microscopy images}
 
-The data were downloaded from \url{https://zenodo.org/record/4624364\#.Y9bWOoHMIqJ}, which was released with the publication {[}\protect\hyperlink{ref-UEBDZ3tI}{8}{]}. We used two datasets \emph{Microtubule} and \emph{Nuclear\_Pore\_complex} from ``Confocal\_2\_STED.zip''. We kept the original train/test splitting in the datasets.
+The data were downloaded from {[}\protect\hyperlink{ref-ExHf2uD2}{56}{]}, which was released with the publication {[}\protect\hyperlink{ref-UEBDZ3tI}{8}{]}. We used two datasets \emph{Microtubule} and \emph{Nuclear\_Pore\_complex} from ``Confocal\_2\_STED.zip''. We kept the original train/test splitting in the datasets.
 
 \textbf{9. Staining transformation in multiplex experiments}
 
-This dataset weas downloaded from \url{https://zenodo.org/record/4751737\#.Y9gbv4HMLVZ}, which was released with the publication {[}\protect\hyperlink{ref-WwenuBHa}{5}{]}. We used the dataset ``BC-DeepLIIF\_Training\_Set.zip'' and ``BC-DeepLIIF\_Validation\_Set.zip''. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
+This dataset weas downloaded from {[}?? stain\_tranformation{]}, which was released with the publication {[}\protect\hyperlink{ref-WwenuBHa}{5}{]}. We used the dataset ``BC-DeepLIIF\_Training\_Set.zip'' and ``BC-DeepLIIF\_Validation\_Set.zip''. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
 
 \textbf{10. Models and sample data}
 
-To help researchers get started with our tool, we have deposited all models used in the manuscript as well as sample data at https://doi.org/10.5281/zenodo.10034416.
+To help researchers get started with our tool, we have deposited all models used in the manuscript as well as sample data at {[}\protect\hyperlink{ref-FBoj3fXM}{51}{]}.
 
 \hypertarget{abbreviations}{%
 \subsection{Abbreviations}\label{abbreviations}}
+
+\begin{itemize}
+\tightlist
+\item
+  Deep Learning (DL)
+\end{itemize}
 
 \hypertarget{conflict-of-interest}{%
 \subsection{Conflict of interest}\label{conflict-of-interest}}
@@ -901,5 +907,26 @@ We would like to thank the MONAI team for their support in our process of develo
 \CSLRightInline{\textbf{Automatic labelling of HeLa "Kyoto" cells using Deep Learning tools}
 \CSLBlock{Romain Guiet} \emph{Zenodo} (2022-02-25) \url{https://doi.org/gs8p4s}
 \CSLBlock{DOI: \href{https://doi.org/10.5281/zenodo.6140063}{10.5281/zenodo.6140063}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vm45dW9e}{}}%
+\CSLLeftMargin{53. }%
+\CSLRightInline{\textbf{The hiPSC single-cell image dataset}
+\CSLBlock{Jianxu Chen, Kimverly Metzler, Allen Institute Contributors} \url{https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zvJ4kB9e}{}}%
+\CSLLeftMargin{54. }%
+\CSLRightInline{\textbf{Broad Bioimage Benchmark Collection: C. elegangs live/dead assay}
+\CSLBlock{Fred Ausubel} \url{https://bbbc.broadinstitute.org/BBBC010}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-b6GmFJlO}{}}%
+\CSLLeftMargin{55. }%
+\CSLRightInline{\textbf{Content Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy - Supplemental Data}
+\CSLBlock{Martin Weigert, Uwe Schmidt} \url{https://publications.mpi-cbg.de/publications-sites/7207/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ExHf2uD2}{}}%
+\CSLLeftMargin{56. }%
+\CSLRightInline{\textbf{3D residual channel attention networks denoise and sharpen fluorescence microscopy image volumes}
+\CSLBlock{JIJI CHEN} \emph{Zenodo} (2021) \url{https://doi.org/gs9dft}
+\CSLBlock{DOI: \href{https://doi.org/10.5281/zenodo.4624364}{10.5281/zenodo.4624364}}}
 
 \end{CSLReferences}
