@@ -427,7 +427,43 @@
       {
         "family": "Schmidt",
         "given": "Uwe"
-      }      
+      },
+      {
+        "family": "Boothe",
+        "given": "Tobias"
+      },
+      {
+        "family": "Müller",
+        "given": "Andreas"
+      },
+      {
+        "family": "Dibrov",
+        "given": "Alexandr"
+      },
+      {
+        "family": "Jain",
+        "given": "Akanksha"
+      },
+      {
+        "family": "Wilhelm",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Schmidt",
+        "given": "Deborah"
+      },
+      {
+        "family": "Broaddus",
+        "given": "Coleman"
+      },
+      {
+        "family": "Culley",
+        "given": "Sian"
+      },
+      {
+        "family": "Myers",
+        "given": " ... Eugene W."
+      }                  
     ],
     "accessed": {
       "date-parts": [
@@ -454,7 +490,31 @@
       {
         "family": "Li",
         "given": "Yanyun"
-      }      
+      },      
+      {
+        "family": "Kaufman",
+        "given": "Arie"
+      },
+      {
+        "family": "Rami",
+        "given": "Vanguri"
+      },
+      {
+        "family": "Greenwald",
+        "given": "Noah"
+      },
+      {
+        "family": "Angelo",
+        "given": "Michael"
+      },
+      {
+        "family": "Hollmann",
+        "given": "Travis"
+      },
+      {
+        "family": "Nadeem",
+        "given": "Saad"
+      }                                                      
     ],
     "accessed": {
       "date-parts": [
