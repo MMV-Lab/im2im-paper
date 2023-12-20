@@ -16,15 +16,15 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
 codebase
 codebases
 configurability
-Confocal
-convolutional
+confocal
+Convolutional
 CRNN
 csv
 CycleGAN
@@ -34,7 +34,7 @@ dataloader
 dataset
 datasets
 DeepLIIF
-denoising
+Denoising
 des
 dimensionalities
 dimensionality
