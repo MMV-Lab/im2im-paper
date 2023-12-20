@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -31,13 +31,13 @@ CycleGAN
 cyto
 DAPI
 dataloader
-dataset
+Dataset
 datasets
 DeepLIIF
 denoising
 des
 dimensionalities
-dimensionality
+Dimensionality
 DL
 downscaled
 dpc
@@ -45,7 +45,7 @@ dseg
 DynUnet
 EGFP
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 eternalaudreys
@@ -68,7 +68,7 @@ GlaS
 GPUs
 grayscale
 HeLa
-hematoxylin
+Hematoxylin
 hiPSC
 histone
 histones
@@ -151,7 +151,7 @@ tubulin
 tunable
 und
 undersamples
-unet
+UNet
 UNETR
 unsuper
 voxel
