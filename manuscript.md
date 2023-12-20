@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-20" />
   <meta name="citation_publication_date" content="2023-12-20" />
   <meta property="article:published_time" content="2023-12-20" />
-  <meta name="dc.modified" content="2023-12-20T09:19:56+00:00" />
-  <meta property="article:modified_time" content="2023-12-20T09:19:56+00:00" />
+  <meta name="dc.modified" content="2023-12-20T17:39:51+00:00" />
+  <meta property="article:modified_time" content="2023-12-20T17:39:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/))
 was automatically generated
-from [MMV-Lab/im2im-paper@3587e45](https://github.com/MMV-Lab/im2im-paper/tree/3587e45ed5b57a2b3dda176e1e9881404c079911)
+from [MMV-Lab/im2im-paper@e6eb162](https://github.com/MMV-Lab/im2im-paper/tree/e6eb162509453733a8199f707362ed7e13ff9adf)
 on December 20, 2023.
 </em></small>
 
@@ -128,7 +128,7 @@ on December 20, 2023.
 
 Over the past decade, deep learning (DL) research in computer vision has been growing rapidly, with many advances in DL-based image analysis methods for biomedical problems. In this work, we introduce *MMV_Im2Im*, a new open-source Python package for image-to-image transformation in bioimaging applications. *MMV_Im2Im* is designed with a generic image-to-image transformation framework that can be used for a wide range of tasks, including semantic segmentation, instance segmentation, image restoration, and image generation, etc.. Our implementation takes advantage of state-of-the-art machine learning engineering techniques, allowing researchers to focus on their research without worrying about engineering details. We demonstrate the effectiveness of *MMV_Im2Im* on more than ten different biomedical problems, showcasing its general potentials and applicabilities.
 
-For computational biomedical researchers, *MMV_Im2Im* provides a starting point for developing new biomedical image analysis or machine learning algorithms, where they can either reuse the code in this package or fork and extend this package to facilitate the development of new methods. Experimental biomedical researchers can benefit from this work by gaining a comprehensive view of the image-to-image transformation concept through diversified examples and use cases. We hope this work can give the community inspirations on how DL-based image-to-image transformation can be integrated into the assay development process, enabling new biomedical studies that cannot be done only with traditional experimental assays. To help researchers get started, we have provided source code, documentation, and tutorials for *MMV_Im2Im* at https://github.com/MMV-Lab/mmv_im2im under MIT license.
+For computational biomedical researchers, *MMV_Im2Im* provides a starting point for developing new biomedical image analysis or machine learning algorithms, where they can either reuse the code in this package or fork and extend this package to facilitate the development of new methods. Experimental biomedical researchers can benefit from this work by gaining a comprehensive view of the image-to-image transformation concept through diversified examples and use cases. We hope this work can give the community inspirations on how DL-based image-to-image transformation can be integrated into the assay development process, enabling new biomedical studies that cannot be done only with traditional experimental assays. To help researchers get started, we have provided source code, documentation, and tutorials for *MMV_Im2Im* at [@github_mmv_im2im] under MIT license.
 
 
 ## Introduction
@@ -161,7 +161,7 @@ In addition, the modularization and configuration system is designed to allow no
 
 *Bottleneck: Not enough consideration for specific challenges in microscopy images in general DL toolboxes*
 
-The original idea of a general toolbox actually stemmed from the OpenMMLab project (<https://openmmlab.com/>), which provides generic codebases for a wide range of computer vision research topics. For instance, *MMSegmentation* [@MMSegmentation] is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box. It has become one of most widely used codebase for research in semantic segmentation (2.3K forks and 6.5K stars on Github as of September 29, 2023). This inspires us to develop *MMV_Im2Im* to facilitate research in image-to-image transformation with a special focus on biomedical applications.
+The original idea of a general toolbox actually stemmed from the OpenMMLab project (<https://openmmlab.com/>), which provides generic codebases for a wide range of computer vision research topics. For instance, *MMSegmentation* [@MMSegmentation] is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box. It has become one of most widely used codebase for research in semantic segmentation (2.3K forks and 6.5K stars on GitHub as of September 29, 2023). This inspires us to develop *MMV_Im2Im* to facilitate research in image-to-image transformation with a special focus on biomedical applications.
 
 First of all, different from general computer vision datasets, such as ImageNet [@doi:10.1109/CVPR.2009.5206848], where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), biomedical applications usually involves large-scale high dimensional data (e.g., 500 images of 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI [@doi:10.5281/zenodo.4323059] with partial loading and sampling support, as well as delayed image reading powered by aicsimageio [@aicsimageio] as default (configurable if another dataloader is preferred). As a result, in our stress test, training a 3D nuclei instance segmentation model with more than 125,000 3D images can be conducted efficiently in a day, even with limited resources.
 
@@ -171,7 +171,7 @@ Third, the toolbox pre-packs common functionalities specific to microscopy image
 
 Finally, to deploy the model in production, a model trained on small 3D patches sometimes needs to be applied not only on much larger images. Combining the efficient data handling of aicsimageio [@aicsimageio] and the sliding window inference with gaussian weighted blending, the toolbox can yield efficient inference without visible stitching artifacts in production.
 
-All in all, the *MMV_Im2Im* toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&D for biomedical applications. The source code of *MMV_Im2Im* is available at <https://github.com/MMV-Lab/mmv_im2im>. This manuscript is generated with the open-source package Manubot [@doi:10.1371/journal.pcbi.1007128]. The manuscript source code is available at <https://github.com/MMV-Lab/im2im-paper>.
+All in all, the *MMV_Im2Im* toolbox stands on the shoulders of many giants in the open-source software and ML engineering communities (pytorch-lightning, MONAI, aicsimageio, etc.) and is systematically designed for image-to-image transformation R&D for biomedical applications. The source code of *MMV_Im2Im* is available at [@github_mmv_im2im]. This manuscript is generated with the open-source package Manubot [@doi:10.1371/journal.pcbi.1007128]. The manuscript source code is available at [@github_manuscript].
 
 
 ![Overview of the image-to-image transformation concept and its example applications.](images/overview_figure.png){#fig:overview width="100%" height="53%"}
@@ -330,7 +330,7 @@ Table: Results of the staining transformation in multiplex experiments, derived 
 
 ### Overview of used frameworks
 
-From all experiments above (37 in total), we want to demonstrate the great flexibility of *MMV_Im2Im* and not to optimize every task in detail. Presenting all detailed configurations in these 37 experiments in the manuscript could lead to more confusion than clarity. To this end, we give a high-level overview of the key information of each task in Table {@tbl:framework_overview}, hoping to serve as a valuable starting point for researchers to optimize their DL-based image-to-image transformation using *MMV_Im2Im*. The full configuration details are available in human-readable formats in our GitHub repository (https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs).
+From all experiments above (37 in total), we want to demonstrate the great flexibility of *MMV_Im2Im* and not to optimize every task in detail. Presenting all detailed configurations in these 37 experiments in the manuscript could lead to more confusion than clarity. To this end, we give a high-level overview of the key information of each task in Table {@tbl:framework_overview}, hoping to serve as a valuable starting point for researchers to optimize their DL-based image-to-image transformation using *MMV_Im2Im*. The full configuration details are available in human-readable formats in our GitHub repository [@github_mmv_im2im].
 
 | Task | Dim | Framework| Backbone|
 |----------|----------|----------|----------|
@@ -388,21 +388,21 @@ Beyond *MMV_Im2Im*, we hope to develop a similar package for other problems (wit
 
 * Project name: MMV_Im2Im (Microscopy Machine Vision, Image-to-Image transformation)
 
-* Project home page: https://github.com/mmv-lab/mmv_im2im
+* Project home page: [@github_mmv_im2im]
 
 * Operating system(s): Linux and Windows (when using GPU), also MacOS (when only using CPU)
 
 * Programming language: Python
 
-* Other requirements: PyTorch 2.0.1 or higher, PyTorch Lightning > 2.0.0, and all other additional dependencies are specified as in https://github.com/MMV-Lab/mmv_im2im/blob/main/setup.py
+* Other requirements: PyTorch 2.0.1 or higher, PyTorch Lightning > 2.0.0, and all other additional dependencies are specified as in [@github_mmv_im2im]
 
 * License: MIT license
 
-To enhance the accessibility and traceability of our toolbox, we registered it with biotools (bio.tools ID: biotools:mmv_im2im) and workflow hub (??REF?? (https://doi.org/10.48546/workflowhub.workflow.626.1).). 
+To enhance the accessibility and traceability of our toolbox, we registered it with biotools (bio.tools ID: biotools:mmv_im2im) and workflow hub[@doi:10.48546/workflowhub.workflow.626.1]. 
 
 ## Data and model availability
 
-In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. The scripts we used to download and re-organize the data can be found in our release repository: https://github.com/MMV-Lab/mmv_im2im/tree/main/paper_configs/prepare_data. Detailed information about each dataset is listed below, in the same order as the Results section. Snapshots of our code and other data further supporting this work are openly available in the GigaScience repository, GigaDB [xx##]. In addition, we deposited all the trained models and sample data at Zenodo [@doi:10.5281/zenodo.10034416] to ensure the reproducibility of our work.
+In general, all data used in this work were from open-accessible public repositories, released with other publications under open-source licenses. All data used in this work were only for research purposes, and we confirm that we didn’t use these for any other non-commercial purpose or commercial purpose. he scripts we used to download and re-organize the data can be found in the release branch called "paper_version" within our repository [@github_mmv_im2im]. Detailed information about each dataset is listed below, in the same order as the Results section. Snapshots of our code and other data further supporting this work are openly available in the GigaScience repository, GigaDB [xx##]. In addition, we deposited all the trained models and sample data at Zenodo [@doi:10.5281/zenodo.10034416] to ensure the reproducibility of our work.
 
 **1. Labelfree prediction of nuclear structure from 2D/3D brightfield images:**
 
@@ -427,12 +427,12 @@ For data source 2 [@doi:10.5281/zenodo.6140063], it contains two sub-folders (tr
  
  **2. 2D semantic segmentation of tissues from H&E images**
 
-The data were downloaded from <https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/>, which was originally used for MICCAI Glas challenge [@doi:10.1109/TMI.2015.2433900;@doi:10.1016/j.media.2016.08.008]. There were one training set (85 images) and two test sets (60 and 20 images). We kept the same train/test split as in the challenge.
+These data were originally used for the MICCAI GlaS challenge [@glas_warwick], and are also available from a number of other sources [@glas_kaggle;@glas_academic_torrent]. There were one training set (85 images) and two test sets (60 and 20 images). We kept the same train/test split as in the challenge.
 
 
 **3. Instance segmentation in microscopy images**
 
-**2D:** The data were downloaded from [@broad] for segmenting C. elegans from widefield images [@doi:10.1021/cb900084v]. We used all images from the dataset, while 5% of the data were held-out for testing.
+**2D:** The data were downloaded from [@broad] for segmenting C. elegans from widefield images [@doi:10.1038/nmeth.2083]. We used all images from the dataset, while 5% of the data were held-out for testing.
 
 
 **3D:** The data were downloaded from the hiPSC single cell image dataset from the Allen Cell Quilt Bucket: [@single_cell_dataset]. We used the lamin b1 cell line (structure_name = “LMNB1”) for these experiments. Each raw field-of-view (FOV) is a multi-channel 3D image (DNA dye channel, membrane dye channel, structure channel and brightfield channel), with the instance segmentation of all nuclei available. In our two experiments, we used the DNA dye channel and the brightfield channel as input, respectively, while using the same 3D instance segmentation ground truth. 20% of the data were held-out for testing.

@@ -1,257 +1,5 @@
 [
   {
-    "id": "4vnyY9J9",
-    "type": "paper-conference",
-    "title": "Interpretable Unsupervised Diversity Denoising and Artefact Removal",
-    "container-title": "Proceedings of the Tenth International Conference on Learning Representations",
-    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
-    "author": [
-      {
-        "family": "Prakash",
-        "given": "Mangal"
-      },
-      {
-        "family": "Delbracio",
-        "given": "Mauricio"
-      },
-      {
-        "family": "Milanfar",
-        "given": "Peyman"
-      },
-      {
-        "family": "Jug",
-        "given": "Florian"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          6,
-          26
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: HDN"
-  },
-  {
-    "id": "EcizztLg",
-    "type": "webpage",
-    "title": "MMSegmentation: OpenMMLab Semantic Segmentation Toolbox and Benchmark",
-    "URL": "https://github.com/open-mmlab/mmsegmentation",
-    "publisher": "Github",
-    "author": [
-      {
-        "family": "Contributors",
-        "given": "MMSegmentation"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          12
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: MMSegmentation"
-  },
-  {
-    "id": "gsfWGJKf",
-    "type": "webpage",
-    "title": "AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python",
-    "URL": "https://github.com/AllenCellModeling/aicsimageio",
-    "publisher": "Github",
-    "author": [
-      {
-        "family": "Brown",
-        "given": "Eva Maxfield"
-      },
-      {
-        "family": "Toloudis",
-        "given": "Dan"
-      },
-      {
-        "family": "Sherman",
-        "given": "Jamie"
-      },
-      {
-        "family": "Swain-Bowden",
-        "given": "Madison"
-      },
-      {
-        "family": "Lambert",
-        "given": "Talley"
-      },
-      {
-        "family": "AICSImageIO Contributors",
-        "given": " "
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          4,
-          1
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: aicsimageio"
-  },
-  {
-    "id": "OCow1hly",
-    "type": "paper-conference",
-    "title": "Attention U-Net: Learning Where to Look for the Pancreas",
-    "container-title": "Proceedings of Medical Imaging with Deep Learning 2018",
-    "URL": "https://openreview.net/forum?id=Skft7cijM",
-    "author": [
-      {
-        "family": "Oktay",
-        "given": "Ozan"
-      },
-      {
-        "family": "Schlemper",
-        "given": "Jo"
-      },
-      {
-        "family": "Le Folgoc",
-        "given": "Loic"
-      },
-      {
-        "family": "Lee",
-        "given": "Matthew"
-      },
-      {
-        "family": "Heinrich",
-        "given": "Matthias"
-      },
-      {
-        "family": "Misawa",
-        "given": "Kazunari"
-      },
-      {
-        "family": "Mori",
-        "given": "Kensaku"
-      },
-      {
-        "family": "McDonagh",
-        "given": "Steven"
-      },
-      {
-        "family": "Hammerla",
-        "given": "Nils Y."
-      },
-      {
-        "family": "Kainz",
-        "given": "Bernhard"
-      },
-      {
-        "family": "Glocker",
-        "given": "Ben"
-      },
-      {
-        "family": "Rueckert",
-        "given": "Daniel"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          6,
-          24
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: attentionUnet"
-  },
-  {
-    "id": "zvJ4kB9e",
-    "type": "webpage",
-    "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
-    "URL": "https://bbbc.broadinstitute.org/BBBC010",
-    "author": [
-      {
-        "family": "Ausubel",
-        "given": "Fred"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          18
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: broad"
-  },
-  {
-    "id": "b6GmFJlO",
-    "type": "webpage",
-    "title": "Content Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy - Supplemental Data",
-    "URL": "https://publications.mpi-cbg.de/publications-sites/7207/",
-    "author": [
-      {
-        "family": "Weigert",
-        "given": "Martin"
-      },
-      {
-        "family": "Schmidt",
-        "given": "Uwe"
-      },
-      {
-        "family": "Boothe",
-        "given": "Tobias"
-      },
-      {
-        "family": "Müller",
-        "given": "Andreas"
-      },
-      {
-        "family": "Dibrov",
-        "given": "Alexandr"
-      },
-      {
-        "family": "Jain",
-        "given": "Akanksha"
-      },
-      {
-        "family": "Wilhelm",
-        "given": "Benjamin"
-      },
-      {
-        "family": "Schmidt",
-        "given": "Deborah"
-      },
-      {
-        "family": "Broaddus",
-        "given": "Coleman"
-      },
-      {
-        "family": "Culley",
-        "given": "Sian"
-      },
-      {
-        "family": "Myers",
-        "given": " ... Eugene W."
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          18
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: denoising"
-  },
-  {
     "publisher": "Springer International Publishing",
     "DOI": "10.1007/978-3-030-00934-2_30",
     "type": "chapter",
@@ -658,6 +406,47 @@
     "PMID": "19572548",
     "id": "138foKNOh",
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1021/cb900084v"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7",
+    "DOI": "10.1038/nmeth.2083",
+    "type": "article-journal",
+    "page": "637-637",
+    "source": "Crossref",
+    "title": "Annotated high-throughput microscopy image sets for validation",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Vebjorn",
+        "family": "Ljosa"
+      },
+      {
+        "given": "Katherine L",
+        "family": "Sokolnicki"
+      },
+      {
+        "given": "Anne E",
+        "family": "Carpenter"
+      }
+    ],
+    "container-title": "Nature Methods",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          6,
+          28
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gf6hxm",
+    "container-title-short": "Nat Methods",
+    "PMCID": "PMC3627348",
+    "PMID": "22743765",
+    "id": "wJGDcP0t",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nmeth.2083"
   },
   {
     "publisher": "Springer Science and Business Media LLC",
@@ -2465,6 +2254,29 @@
   },
   {
     "type": "article",
+    "id": "xl7YzUeX",
+    "author": [
+      {
+        "family": "Sonneck",
+        "given": "Justin"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "abstract": "# MMV Im2Im Transformation [![Build Status](https://github.com/MMV-Lab/mmv_im2im/workflows/Build%20Main/badge.svg)](https://github.com/MMV-Lab/mmv_im2im/actions) A generic python package for deep learning based image-to-image transformation in biomedical applications The main branch will be further developed in order to be able to use the latest state of the art techniques and methods in the future. To reproduce the results of our manuscript, we refer to the branch [paper_version](https://github.com/MMV-Lab/mmv_im2im/tree/paper_version). (We are actively working on the documentation and tutorials. Submit a feature request if there is anything you need.) --- ## Overview The overall package is designed with a generic image-to-image transformation framework, which could be directly used for semantic segmentation, instance segmentation, image restoration, image generation, labelfree prediction, staining transformation, etc.. The implementation takes advantage of the state-of-the-art ML engineering techniques for users to focus on researches without worrying about the engineering details. In our pre-print [arxiv link](https://arxiv.org/abs/2209.02498), we demonstrated the effectiveness of *MMV_Im2Im* in more than ten different biomedical problems/datasets. * For computational biomedical researchers (e.g., AI algorithm development or bioimage analysis workflow development), we hope this package could serve as the starting point for their specific problems, since the image-to-image \"boilerplates\" can be easily extended further development or adapted for users' specific problems. * For experimental biomedical researchers, we hope this work provides a comprehensive view of the image-to-image transformation concept through diversified examples and use cases, so that deep learning based image-to-image transformation could be integrated into the assay development process and permit new biomedical studies that can hardly be done only with traditional experimental methods ## Installation Before starting, we recommend to [create a new conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or [a virtual environment](https://docs.python.org/3/library/venv.html) with Python 3.9+. Please note that the proper setup of hardware is beyond the scope of this pacakge. This package was tested with GPU/CPU on Linux/Windows and CPU on MacOS. [Special note for MacOS users: Directly pip install in MacOS may need [additional setup of xcode](https://developer.apple.com/forums/thread/673827).] ### Install MONAI To reproduce our results, we need to install MONAI's code version of a specific commit. To do this: ``` git clone https://github.com/Project-MONAI/MONAI.git cd ./MONAI git checkout 37b58fcec48f3ec1f84d7cabe9c7ad08a93882c0 pip install . ``` We will remove this step for the main branch in the future to ensure a simplified installation of our tool. ### Install MMV_Im2Im for basic usage: (For users only using this package, not planning to change any code or make any extension): **Option 1: core functionality only** `pip install mmv_im2im` **Option 2: advanced functionality (core + logger)** `pip install mmv_im2im[advance]` **Option 3: to reproduce paper:** `pip install mmv_im2im[paper]` **Option 4: install everything:** `pip install mmv_im2im[all]` For MacOS users, additional ' ' marks are need when using installation tags in zsh. For example, `pip install mmv_im2im[paper]` should be `pip install mmv_im2im'[paper]'` in MacOS. ### Install MMV_Im2Im for customization or extension: ``` git clone https://github.com/MMV-Lab/mmv_im2im.git cd mmv_im2im pip install -e .[all] ``` Note: The `-e` option is the so-called \"editable\" mode. This will allow code changes taking effect immediately. The installation tags, `advance`, `paper`, `all`, are be selected based on your needs. ### (Optional) Install using Docker It is also possible to use our package through [docker](https://www.docker.com/). The installation tutorial is [here](docker/tutorial.md). ### (Optional) Use MMV_Im2Im with Google Colab We provide a web-based demo, if cloud computing is preferred. you can [![Open a 2D labelfree DEMO in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MMV-Lab/mmv_im2im/blob/main/tutorials/colab/labelfree_2d.ipynb). The same demo can de adapted for different applications. ## Quick start You can try out on a simple example following [the quick start guide](tutorials/quick_start.md) Basically, you can specify your training configuration in a yaml file and run training with `run_im2im --config /path/to/train_config.yaml`. Then, you can specify the inference configuration in another yaml file and run inference with `run_im2im --config /path/to/inference_config.yaml`. You can also run the inference as a function with the provided API. This will be useful if you want to run the inference within another python script or workflow. Here is an example: ``` from pathlib import Path from aicsimageio import AICSImage from aicsimageio.writers import OmeTiffWriter from mmv_im2im.configs.config_base import ProgramConfig, parse_adaptor, configuration_validation from mmv_im2im import ProjectTester # load the inference configuration cfg = parse_adaptor(config_class=ProgramConfig, config=\"./paper_configs/semantic_seg_2d_inference.yaml\") cfg = configuration_validation(cfg) # define the executor for inference executor = ProjectTester(cfg) executor.setup_model() executor.setup_data_processing() # get the data, run inference, and save the result fn = Path(\"./data/img_00_IM.tiff\") img = AICSImage(fn).get_image_data(\"YX\", Z=0, C=0, T=0) # or using delayed loading if the data is large # img = AICSImage(fn).get_image_dask_data(\"YX\", Z=0, C=0, T=0) seg = executor.process_one_image(img) OmeTiffWriter.save(seg, \"output.tiff\", dim_orders=\"YX\") ``` ## Tutorials, examples, demonstrations and documentations The overall package aims to achieve both simplicty and flexibilty with the modularized image-to-image boilerplates. To help different users to best use this package, we provide documentations from four different aspects: * [Examples (i.e., scripts and config files)](tutorials/example_by_use_case.md) for reproducing all the experiments in our [pre-print](https://arxiv.org/abs/2209.02498) * A bottom-up tutorials on [how to understand the modularized image-to-image boilerplates](tutorials/how_to_understand_boilerplates.md) (for extending or adapting the package) and [how to understand the configuration system in details](tutorials/how_to_understand_config.md) (for advance usage to make specific customization). * A top-down tutorials as [FAQ](tutorials/FAQ.md), which will continuously grow as we receive more questions. * All the models used in the manuscript and sample data can be found here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10034416.svg)](https://doi.org/10.5281/zenodo.10034416) ### Contribute models to [BioImage Model Zoo](https://bioimage.io/#/) We highly appreciate the BioImage Model Zoo's initiative to provide a comprehensive collection of pre-trained models for a wide range of applications. To make MMV_Im2Im trained models available as well, the first step involves extracting the state_dict from the PyTorch Lightning checkpoint. This can be done via: ```python import torch ckpt_path = \"./lightning_logs/version_0/checkpoints/last.ckpt\" checkpoint = torch.load(ckpt_path, map_location=torch.device('cpu')) state_dict = checkpoint['state_dict'] torch.save(state_dict, \"./state_dict.pt\") ``` All further steps to provide models can be found in the [official documentation](https://bioimage.io/docs/#/contribute_models/README). ## Development See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code. **MIT license**",
+    "DOI": "10.48546/workflowhub.workflow.626.1",
+    "publisher": "WorkflowHub",
+    "title": "MMV_Im2Im",
+    "URL": "https://doi.org/gs9p8r",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.48546/workflowhub.workflow.626.1"
+  },
+  {
+    "type": "article",
     "id": "1A3yurr7m",
     "categories": [
       "Computer Vision and Pattern Recognition (cs.CV)",
@@ -3390,241 +3202,5 @@
     "URL": "https://doi.org/gs8p4s",
     "version": "v0",
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.6140063"
-  },
-  {
-    "id": "QmYuUQ5K",
-    "type": "paper-conference",
-    "title": "Embedding-based Instance Segmentation in Microscopy",
-    "container-title": "Proceedings of the Fourth Conference on Medical Imaging with Deep Learning",
-    "collection-title": "Proceedings of Machine Learning Research",
-    "publisher": "PMLR",
-    "page": "399--415",
-    "volume": "143",
-    "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
-    "author": [
-      {
-        "family": "Lalit",
-        "given": "Manan"
-      },
-      {
-        "family": "Tomancak",
-        "given": "Pavel"
-      },
-      {
-        "family": "Jug",
-        "given": "Florian"
-      }
-    ],
-    "editor": [
-      {
-        "family": "Heinrich",
-        "given": "Mattias"
-      },
-      {
-        "family": "Dou",
-        "given": "Qi"
-      },
-      {
-        "family": "de Bruijne",
-        "given": "Marleen"
-      },
-      {
-        "family": "Lellmann",
-        "given": "Jan"
-      },
-      {
-        "family": "Schläfer",
-        "given": "Alexander"
-      },
-      {
-        "family": "Ernst",
-        "given": "Floris"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          6,
-          22
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: embedseg"
-  },
-  {
-    "id": "vzOBQiEH",
-    "type": "webpage",
-    "title": "Imaginaire",
-    "URL": "https://github.com/NVlabs/imaginaire",
-    "publisher": "Github",
-    "author": [
-      {
-        "family": "Contributors",
-        "given": "Imaginaire"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          12
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: imaginaire"
-  },
-  {
-    "id": "17WhsEZko",
-    "type": "webpage",
-    "title": "Pyrallis - Simple Configuration with Dataclasses",
-    "URL": "https://github.com/eladrich/pyrallis",
-    "publisher": "Github",
-    "author": [
-      {
-        "family": "Richardson",
-        "given": "Elad"
-      },
-      {
-        "family": "Weiss",
-        "given": "Ido"
-      },
-      {
-        "family": "Feldman",
-        "given": "Yair"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          12
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: pyrallis"
-  },
-  {
-    "id": "vm45dW9e",
-    "type": "webpage",
-    "title": "The hiPSC single-cell image dataset",
-    "URL": "https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset",
-    "author": [
-      {
-        "family": "Chen",
-        "given": "Jianxu"
-      },
-      {
-        "family": "Metzler",
-        "given": "Kimverly"
-      },
-      {
-        "family": "Contributors",
-        "given": "Allen Institute"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          18
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: single_cell_dataset"
-  },
-  {
-    "id": "cjAzGPun",
-    "type": "webpage",
-    "title": "Deep Learning-Inferred Multiplex ImmunoFluorescence for Immunohistochemical Image Quantification",
-    "URL": "https://zenodo.org/record/4751737#.Y9gbv4HMLVZ",
-    "publisher": "Zenodo",
-    "author": [
-      {
-        "family": "Ghahremani",
-        "given": "Parmida"
-      },
-      {
-        "family": "Li",
-        "given": "Yanyun"
-      },
-      {
-        "family": "Kaufman",
-        "given": "Arie"
-      },
-      {
-        "family": "Rami",
-        "given": "Vanguri"
-      },
-      {
-        "family": "Greenwald",
-        "given": "Noah"
-      },
-      {
-        "family": "Angelo",
-        "given": "Michael"
-      },
-      {
-        "family": "Hollmann",
-        "given": "Travis"
-      },
-      {
-        "family": "Nadeem",
-        "given": "Saad"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          12,
-          18
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: stain_transformation"
-  },
-  {
-    "id": "qzeQFRn9",
-    "type": "paper-conference",
-    "title": "Averaging Weights Leads to Wider Optima and Better Generalization",
-    "container-title": "34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018",
-    "page": "876--885",
-    "URL": "http://auai.org/uai2018/proceedings/papers/313.pdf",
-    "author": [
-      {
-        "family": "Izmailov",
-        "given": "Pavel"
-      },
-      {
-        "family": "Podoprikhin",
-        "given": "Dmitrii"
-      },
-      {
-        "family": "Garipov",
-        "given": "Timur"
-      },
-      {
-        "family": "Vetrov",
-        "given": "Dmitry"
-      },
-      {
-        "family": "Wilson",
-        "given": "Andrew Gordon"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          6,
-          22
-        ]
-      ]
-    },
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: swatrain"
   }
 ]

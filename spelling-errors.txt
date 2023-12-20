@@ -24,7 +24,7 @@ codebase
 codebases
 configurability
 confocal
-convolutional
+Convolutional
 CRNN
 csv
 CycleGAN
@@ -40,7 +40,7 @@ dimensionalities
 Dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 DynUnet
 EGFP
@@ -64,7 +64,7 @@ für
 für
 GigaDB
 GigaScience
-Glas
+GlaS
 GPUs
 grayscale
 HeLa

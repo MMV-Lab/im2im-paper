@@ -4,7 +4,6 @@ content/01.abstract.md:3:bioimaging
 content/01.abstract.md:3:DL
 content/01.abstract.md:3:DL
 content/01.abstract.md:5:DL
-content/01.abstract.md:5:MMV
 content/02.intro.md:3:bioimaging
 content/02.intro.md:3:codebase
 content/02.intro.md:3:DL
@@ -64,8 +63,6 @@ content/02.intro.md:37:XY
 content/02.intro.md:39:aicsimageio
 content/02.intro.md:39:aicsimageio
 content/02.intro.md:41:aicsimageio
-content/02.intro.md:41:MMV
-content/02.intro.md:41:MMV
 content/02.intro.md:41:MONAI
 content/03.results.md:3:dataset
 content/03.results.md:3:datasets
@@ -320,7 +317,6 @@ content/03.results.md:149:DAPI
 content/03.results.md:149:hematoxylin
 content/03.results.md:149:IHC
 content/03.results.md:154:DL
-content/03.results.md:154:MMV
 content/03.results.md:158:AttentionUnet
 content/03.results.md:158:CycleGAN
 content/03.results.md:158:FCN
@@ -389,15 +385,12 @@ content/05.discussions.md:9:timelapse
 content/05.discussions.md:13:NDet
 content/05.discussions.md:13:RCNN
 content/05.discussions.md:13:RCNN
-content/05.discussions.md:19:mmv
 content/05.discussions.md:21:MacOS
-content/05.discussions.md:25:MMV
 content/05.discussions.md:29:biotools
 content/05.discussions.md:29:biotools
 content/05.discussions.md:33:dataset
 content/05.discussions.md:33:GigaDB
 content/05.discussions.md:33:GigaScience
-content/05.discussions.md:33:MMV
 content/05.discussions.md:33:reproducibility
 content/05.discussions.md:33:zenodo
 content/05.discussions.md:33:Zenodo
@@ -423,7 +416,7 @@ content/05.discussions.md:54:hiPSC
 content/05.discussions.md:54:histone
 content/05.discussions.md:54:lamin
 content/05.discussions.md:54:nucleophosmin
-content/05.discussions.md:58:Glas
+content/05.discussions.md:58:GlaS
 content/05.discussions.md:58:MICCAI
 content/05.discussions.md:63:dataset
 content/05.discussions.md:63:elegans
