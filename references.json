@@ -202,6 +202,42 @@
       {
         "family": "Schmidt",
         "given": "Uwe"
+      },
+      {
+        "family": "Boothe",
+        "given": "Tobias"
+      },
+      {
+        "family": "Müller",
+        "given": "Andreas"
+      },
+      {
+        "family": "Dibrov",
+        "given": "Alexandr"
+      },
+      {
+        "family": "Jain",
+        "given": "Akanksha"
+      },
+      {
+        "family": "Wilhelm",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Schmidt",
+        "given": "Deborah"
+      },
+      {
+        "family": "Broaddus",
+        "given": "Coleman"
+      },
+      {
+        "family": "Culley",
+        "given": "Sian"
+      },
+      {
+        "family": "Myers",
+        "given": " ... Eugene W."
       }
     ],
     "accessed": {
@@ -3499,6 +3535,57 @@
       ]
     },
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: single_cell_dataset"
+  },
+  {
+    "id": "cjAzGPun",
+    "type": "webpage",
+    "title": "Deep Learning-Inferred Multiplex ImmunoFluorescence for Immunohistochemical Image Quantification",
+    "URL": "https://zenodo.org/record/4751737#.Y9gbv4HMLVZ",
+    "publisher": "Zenodo",
+    "author": [
+      {
+        "family": "Ghahremani",
+        "given": "Parmida"
+      },
+      {
+        "family": "Li",
+        "given": "Yanyun"
+      },
+      {
+        "family": "Kaufman",
+        "given": "Arie"
+      },
+      {
+        "family": "Rami",
+        "given": "Vanguri"
+      },
+      {
+        "family": "Greenwald",
+        "given": "Noah"
+      },
+      {
+        "family": "Angelo",
+        "given": "Michael"
+      },
+      {
+        "family": "Hollmann",
+        "given": "Travis"
+      },
+      {
+        "family": "Nadeem",
+        "given": "Saad"
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          18
+        ]
+      ]
+    },
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: stain_transformation"
   },
   {
     "id": "qzeQFRn9",

@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -40,7 +40,7 @@ dimensionalities
 Dimensionality
 DL
 downscaled
-DPC
+dpc
 dseg
 DynUnet
 EGFP
@@ -68,16 +68,17 @@ Glas
 GPUs
 grayscale
 HeLa
-Hematoxylin
+hematoxylin
 hiPSC
 histone
 histones
 hoc
 IHC
-Im
+im
 ImageJ’s
 ImageNet
 Imaginaire
+immunofluorescence
 Institut
 intracellular
 ISAS
@@ -99,7 +100,7 @@ microtubule
 Ministerium
 MKW
 MMSegmentation
-MMV
+mmv
 modularization
 modularized
 MONAI
@@ -116,6 +117,7 @@ optimizers
 PersistentDataset
 phototoxicity
 planaria
+pluripotent
 pre
 pyrallis
 RCNN
@@ -144,7 +146,6 @@ Tensorboard
 timelapse
 TJP
 TOMM
-tranformation
 Tribolium
 tubulin
 tunable
@@ -155,7 +156,6 @@ UNETR
 unsuper
 voxel
 voxels
-weas
 Westfalen
 widefield
 Wissenschaft

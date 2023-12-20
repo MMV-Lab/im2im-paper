@@ -1,7 +1,7 @@
 ---
 title: 'MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation'
 lang: en-US
-date-meta: '2023-12-18'
+date-meta: '2023-12-20'
 author-meta:
 - Justin Sonneck
 - Yu Zhou
@@ -17,11 +17,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-12-18" />
-  <meta name="citation_publication_date" content="2023-12-18" />
-  <meta property="article:published_time" content="2023-12-18" />
-  <meta name="dc.modified" content="2023-12-18T13:34:41+00:00" />
-  <meta property="article:modified_time" content="2023-12-18T13:34:41+00:00" />
+  <meta name="dc.date" content="2023-12-20" />
+  <meta name="citation_publication_date" content="2023-12-20" />
+  <meta property="article:published_time" content="2023-12-20" />
+  <meta name="dc.modified" content="2023-12-20T09:19:56+00:00" />
+  <meta property="article:modified_time" content="2023-12-20T09:19:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/84a03aa1376ce7a4793ae4c2260615baa8ed7714/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/3587e45ed5b57a2b3dda176e1e9881404c079911/))
 was automatically generated
-from [MMV-Lab/im2im-paper@84a03aa](https://github.com/MMV-Lab/im2im-paper/tree/84a03aa1376ce7a4793ae4c2260615baa8ed7714)
-on December 18, 2023.
+from [MMV-Lab/im2im-paper@3587e45](https://github.com/MMV-Lab/im2im-paper/tree/3587e45ed5b57a2b3dda176e1e9881404c079911)
+on December 20, 2023.
 </em></small>
 
 
@@ -190,7 +190,7 @@ It should be noted that while we recognize the importance of systematically eval
 
 *2D Labelfree:* We started with a simple problem using 2D images from the HeLa “Kyoto” cells dataset [@doi:10.5281/zenodo.6139958]. For all images, we took the brightfield channel and the mCherry-H2B channel out of the multi-channel timelapse movies. 2D images were acquired at 20x with 0.8 N.A. and then downscaled by 4 (pixel size: 0.299 nm x 0.299 nm). Example predictions can be found in Figure {@fig:labelfree_comparison}-A. We compared a basic UNet model [@doi:10.1007/978-3-319-24574-4_28] and a 2D version of the fnet model in [@doi:10.1038/s41592-018-0111-2]. The fnet model achieved slightly more accurate predictions than the basic UNet, as seen in Figure {@fig:labelfree_comparison}-A.
 
-*3D Labelfree:* We tested with 3D images from the hiPS single cell image dataset [@doi:10.1038/s41586-022-05563-7]. Specifically, we extracted the brightfield channel and the structure channel from the full field-of-view (FOV) multi-channel images, from the HIST1H2BJ, FBL, NPM1, LMNB1 cell lines, so as to predict from one brightfield image various nuclear structures, histones, nucleoli (dense fibrillar component via fibrillarin), nucleoli (granular component via nucleophosmin), and nuclear envelope, respectively. Images were acquired at 100x with 1.25 NA (voxel size: 0.108 micron x 0.108 micron x 0.29 micron).
+*3D Labelfree:* We tested with 3D images from the hiPSC single cell image dataset [@doi:10.1038/s41586-022-05563-7]. Specifically, we extracted the brightfield channel and the structure channel from the full field-of-view (FOV) multi-channel images, from the HIST1H2BJ, FBL, NPM1, LMNB1 cell lines, so as to predict from one brightfield image various nuclear structures, histones, nucleoli (dense fibrillar component via fibrillarin), nucleoli (granular component via nucleophosmin), and nuclear envelope, respectively. Images were acquired at 100x with 1.25 NA (voxel size: 0.108 micron x 0.108 micron x 0.29 micron).
 
 ![A. Example of 2D labelfree results. B. Overview of various 3D labelfree results obtained by different training strategies. p/c/s refers to percentile normalization, center normalization, and standard normalization, respectively (see main text for details). (The contrast of grayscale images was adjusted using ImageJ's autoscale.)](images/labelfree_comparison_justin.png){#fig:labelfree_comparison width="76%" height="90%"} 
 
@@ -230,7 +230,7 @@ Instance segmentation is a type of segmentation problem that goes beyond semanti
 
 The *EmbedSeg*-type models were re-implemented according to the original paper [@doi:10.1016/j.media.2022.102523;@embedseg] following the generic boilerplate in *MMV_Im2Im*, with significant improvement. First of all, following the modular design of *MMV_Im2Im*, it is flexible to use different neural network models as the backbone. For 3D anisotropic microscopy images, the original backbone ERFNet [@doi:10.1109/TITS.2017.2750080] doesn’t take the anisotropic dimensions into account and therefore may not perform well or even be applicable. In this scenario, it is straightforward to employ another anisotropic neural network bone, such as the anisotropic U-Net in [@doi:10.1101/491035] or the anisotropic version of Dynamic U-Net in MONAI. Second, we significantly improve training strategy. The original version requires pre-cropping patches centered around each instance and pre-calculated the center images and class images. This may generate a massive amount of additional data on the disk. More importantly, such pre-cropping makes data augmentation nearly impossible, except the simple ones like flipping (otherwise, the pre-calculated centers might be wrong), and also greatly undersamples around negative cases (e.g., background). For example, we have observed that for an EmbedSeg model training only with patches centered around instances, the model may suffer from degraded performance during inference when there are a large amount of background areas without any instances. Again, following the modular design of *MMV_Im2Im*, it is now possible to do on-the-fly data augmentation and patch sampling, even weighted patch sampling. Third, our improved *EmbedSeg*-type models can accept an exclusion mask so that certain parts of the images can be ignored during training. This is especially useful for partially annotated ground truth. For large images, it could be extremely time-consuming to require every single instance to be annotated. The exclusion masks can address this bottleneck. Another extension compared to the original implementation was that the *MMV_Im2Im* package made sliding windowing inference straightforward, and therefore permitted easy handling of images of any size during inference.
 
-In this work, we tested on both 2D and 3D instance segmentation problems. Going from 2D to 3D is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. *MMV_Im2Im* is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, one can greatly reduce GPU memory workload for each sample and therefore increase the batch size or the patch size. When multiple GPUs are available, it is also possible to easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. As a demonstration, we applied *EmbedSeg*-like models to a 2D problem of segmenting *C. elegans* from widefield images [@doi:10.1021/cb900084v], as well as a 3D problem of nuclear segmentation from fluorescent and brightfield images from the hiPS single cell image dataset [@doi:10.1038/s41586-022-05563-7].
+In this work, we tested on both 2D and 3D instance segmentation problems. Going from 2D to 3D is not a simple generalization from 2D models by switching 2D operations with 3D operations, but with many practical challenges. Large GPU footprint is one of the biggest issues, which makes many training strategies common in 2D not feasible in 3D, e.g. limited mini-batch size. *MMV_Im2Im* is able to take advantage of state-of-the-art ML engineering methods to efficiently handle 3D problems. For example, by using effective half-precision training, one can greatly reduce GPU memory workload for each sample and therefore increase the batch size or the patch size. When multiple GPUs are available, it is also possible to easily take advantage of the additional resources to scale up the training to multiple GPU cards, even multiple GPU nodes. As a demonstration, we applied *EmbedSeg*-like models to a 2D problem of segmenting *C. elegans* from widefield images [@doi:10.1021/cb900084v], as well as a 3D problem of nuclear segmentation from fluorescent and brightfield images from the hiPSC single cell image dataset [@doi:10.1038/s41586-022-05563-7].
 
 For the 2D problem, we adopted the same network backbone as in the original *EmbedSeg* paper. Example results on a small holdout set of 5 images are shown in Figure {@fig:instance}-A (average precision at 50 = 0.866 ± 0.163), which is comparable to the original published results [@embedseg]. For the 3D problem, the original backbone is not directly applicable, due to the before mentioned anisotropic issue and the images in the dataset do not contain enough Z-slices to run through all down sampling blocks in 3D. The anisotropic UNet [@doi:10.1101/491035] is used here. The segmentation results obtained from the public dataset [@doi:10.1038/s41586-022-05563-7] contain nuclear instance segmentation of all cells. But, the cells touching the image borders are ignored from downstream analysis [@doi:10.1038/s41586-022-05563-7] and therefore not curated. In other words, the segmentation from this public dataset can only be used as high-quality nuclear instance segmentation ground truth after excluding the areas covered by cells touching the image borders [@doi:10.1038/s41586-022-05563-7]. Therefore, the exclusion masking function in MMV_Im2Im is very helpful in this example.
 
@@ -250,7 +250,7 @@ We did a special comparison in this subsection to further illustrate the differe
 
 Large amounts of high-quality segmentation ground truth is not always available, or may require endless effort to collect for a segmentation task. CycleGAN-based methods have opened up a new avenue for segmentation without the need for pixel-wise ground truth [@doi:10.1038/s42256-019-0096-2]. In this subsection, we demonstrate an unsupervised learning-based segmentation method on four examples: 2D tight-junction (via ZO1) segmentation from 2D FP-tagged ZO1 images (max-projected from 3D stacks), and segmentation of nuclei, mitochondria, and golgi from 3D confocal microscopy images.
 
-To perform unsupervised learning, we used raw images from the hiPS single-cell image dataset [@doi:10.1038/s41586-022-05563-7], as well as their corresponding segmentations (may not be absolute pixel-wise ground truth, but have gone through systematic evaluation to ensure the overall quality). We shuffled the raw images and their segmentations to generate a set of simulated segmentation masks. A demonstration of the concept is illustrated in Figure {@fig:unsupervised}-A. Example results for all 3D models are shown in Figure {@fig:unsupervised}-B, and the F1-scores on the test set are summarized in Table {@tbl:unsuper}.
+To perform unsupervised learning, we used raw images from the hiPSC single-cell image dataset [@doi:10.1038/s41586-022-05563-7], as well as their corresponding segmentations (may not be absolute pixel-wise ground truth, but have gone through systematic evaluation to ensure the overall quality). We shuffled the raw images and their segmentations to generate a set of simulated segmentation masks. A demonstration of the concept is illustrated in Figure {@fig:unsupervised}-A. Example results for all 3D models are shown in Figure {@fig:unsupervised}-B, and the F1-scores on the test set are summarized in Table {@tbl:unsuper}.
 
 For the 2D example, we saw that the unsupervised training provides a valuable segmentation, which is reflected by the F1 Score in Table {@tbl:unsuper}. For the 3D examples, it has been suggested that the quality of unsupervised nuclei segmentation could be further improved with additional simulation strategies [@doi:10.1038/s42256-019-0096-2]. Overall, we believe that unsupervised learning offers an effective way to generate preliminary segmentation, which can be further refined through active learning such as the iterative DL workflow described in [@doi:10.1101/491035].
 
@@ -270,7 +270,7 @@ Table: F1 scores of the unsupervised semantic segmentation predictions. {#tbl:un
 
 ### Generating synthetic microscopy images from binary masks 
 
-Generating a large amount of synthetic microscopy images can be an important step in developing image analysis methods. Synthetic images offer a way to train other DL models, such as self-supervised pre-training, using a diverse set of images without the need for large amounts of real-world data. As long as the synthetic images are generated with sufficient quality, it is possible to have an unlimited amount of training data for certain applications. Moreover, synthetic images can be used to evaluate other models when validation data is difficult to obtain. In this study, we demonstrate that *MMV_Im2Im* can generate 2D/3D synthetic microscopy images with high realism and validity, using a subset of data collected from the hiPS single-cell image dataset [@doi:10.1038/s41586-022-05563-7], either in a supervised or unsupervised manner.
+Generating a large amount of synthetic microscopy images can be an important step in developing image analysis methods. Synthetic images offer a way to train other DL models, such as self-supervised pre-training, using a diverse set of images without the need for large amounts of real-world data. As long as the synthetic images are generated with sufficient quality, it is possible to have an unlimited amount of training data for certain applications. Moreover, synthetic images can be used to evaluate other models when validation data is difficult to obtain. In this study, we demonstrate that *MMV_Im2Im* can generate 2D/3D synthetic microscopy images with high realism and validity, using a subset of data collected from the hiPSC single-cell image dataset [@doi:10.1038/s41586-022-05563-7], either in a supervised or unsupervised manner.
 
 For 2D demonstration, we extracted the middle Z-slice from NPM1 images as the training target, while using the NPM1 segmentation results as the input binary masks. With the paired “mask + microscopy image” data, we could train the model in a supervised fashion, or randomly shuffle the data to simulate the situation without paired data which can be trained in an unsupervised fashion using the CycleGAN-type framework implemented in *MMV_Im2Im*. Example results can be found in Figure {@fig:synthetic}-A and Table {@tbl:syn}. In general, the supervised synthesization can generate more realistic images than the unsupervised model.
 
@@ -467,7 +467,7 @@ The data were downloaded from [@doi:10.5281/zenodo.4624364], which was released 
 
 **9. Staining transformation in multiplex experiments**
 
-This dataset weas downloaded from [?? stain_tranformation], which was released with the publication [@doi:10.1038/s42256-022-00471-x]. We used the dataset “BC-DeepLIIF_Training_Set.zip” and “BC-DeepLIIF_Validation_Set.zip”. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
+This dataset was downloaded from [@stain_transformation], which was released with the publication [@doi:10.1038/s42256-022-00471-x]. We used the dataset “BC-DeepLIIF_Training_Set.zip” and “BC-DeepLIIF_Validation_Set.zip”. In our three experiments, we always used the IHC image as the input, and used standard hematoxylin stain image, mpIF nuclear image and mpIF LAP2beta image as ground truth, correspondingly.
 
 **10. Models and sample data**
 
@@ -475,7 +475,16 @@ To help researchers get started with our tool, we have deposited all models used
 
 ## Abbreviations
 
-* Deep Learning (DL)
+* Artificial intelligence (AI)
+* Convolutional recurrent neural network (CRNN)
+* Deep learning (DL)
+* Fully convolutional network (FCN)
+* Graphics processing unit (GPU)
+* Human induced pluripotent stem cells (hiPSC)
+* Machine learning (ML)
+* Multiplex immunofluorescence (mpIF)
+* Research and development (R&D)
+* Stimulated emission depletion (STED)
 
 
 ## Conflict of interest
@@ -484,12 +493,16 @@ The authors report no conflict of interest.
 
 ## Funding
 
+This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272, and by the Ministry of Culture and Science of the State of North Rhine-Westphalia (Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen, MKW NRW).
+
 ## Authors' contributions
+
+J.C. planned the project and implemented most of the software. J.S. tested the software and ran all the experiments. Y.Z. added Docker support to the software, while J.S. and Y.Z. contributed minor fixes to the code. J.C. wrote the paper together with J.S., Y.Z. contributed to proofreading.
 
 
 ## Acknowledgments
 
-We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advice on how to integrate aicsimageio into the package. This work is supported by the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung, BMBF) under the funding reference 161L0272, and by the Ministry of Culture and Science of the State of North Rhine-Westphalia  (Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen, MKW NRW).
+We would like to thank the MONAI team for their support in our process of development, and the aicsimageio team for advice on how to integrate aicsimageio into the package. 
 
 ## References {.page_break_before}
 
