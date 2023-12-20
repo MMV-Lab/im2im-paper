@@ -366,6 +366,12 @@
     "title": "The hiPSC single-cell image dataset",
     "URL": "https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset",
 
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],    
     "accessed": {
       "date-parts": [
         [
@@ -381,13 +387,12 @@
     "type": "webpage",
     "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
     "URL": "https://bbbc.broadinstitute.org/BBBC010",
-
-    // "author": [
-    //   {
-    //     "family": "Ausubel",
-    //     "given": "Fred"
-    //   }
-    // ],
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],    
     "accessed": {
       "date-parts": [
         [
@@ -520,6 +525,13 @@
     "type": "webpage",
     "title": "GlaS@MICCAI'2015: Gland Segmentation Challenge Contest",
     "URL": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
     "accessed": {
       "date-parts": [
         [
@@ -535,6 +547,13 @@
     "type": "webpage",
     "title": "Gland Segmentation in Histology Images Challenge (GlaS) Dataset",
     "URL": "https://academictorrents.com/details/208814dd113c2b0a242e74e832ccac28fcff74e5",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
     "accessed": {
       "date-parts": [
         [
@@ -550,6 +569,13 @@
     "type": "webpage",
     "title": "GlaS@MICCAI'2015: Gland Segmentation",
     "URL": "https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
     "accessed": {
       "date-parts": [
         [
@@ -566,6 +592,13 @@
     "title": "MMV_Im2Im Transformation",
     "URL": "https://github.com/mmv-lab/mmv_im2im",
     "publisher": "Github",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
     "accessed": {
       "date-parts": [
         [
@@ -582,6 +615,13 @@
     "title": "MMV_Im2im: An Open Source Toolbox for Image-to-Image Transformation in Microscopy Images",
     "URL": "https://github.com/MMV-Lab/im2im-paper",
     "publisher": "Github",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+        
     "accessed": {
       "date-parts": [
         [
