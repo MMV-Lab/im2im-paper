@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-20" />
   <meta name="citation_publication_date" content="2023-12-20" />
   <meta property="article:published_time" content="2023-12-20" />
-  <meta name="dc.modified" content="2023-12-20T17:39:51+00:00" />
-  <meta property="article:modified_time" content="2023-12-20T17:39:51+00:00" />
+  <meta name="dc.modified" content="2023-12-20T18:05:56+00:00" />
+  <meta property="article:modified_time" content="2023-12-20T18:05:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/9e8e8c612f56fb5296c1a4e6be2cb6cd579e4008/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/9e8e8c612f56fb5296c1a4e6be2cb6cd579e4008/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/9e8e8c612f56fb5296c1a4e6be2cb6cd579e4008/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/e6eb162509453733a8199f707362ed7e13ff9adf/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/9e8e8c612f56fb5296c1a4e6be2cb6cd579e4008/))
 was automatically generated
-from [MMV-Lab/im2im-paper@e6eb162](https://github.com/MMV-Lab/im2im-paper/tree/e6eb162509453733a8199f707362ed7e13ff9adf)
+from [MMV-Lab/im2im-paper@9e8e8c6](https://github.com/MMV-Lab/im2im-paper/tree/9e8e8c612f56fb5296c1a4e6be2cb6cd579e4008)
 on December 20, 2023.
 </em></small>
 
