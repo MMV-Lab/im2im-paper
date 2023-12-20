@@ -34,7 +34,7 @@ dataloader
 dataset
 datasets
 DeepLIIF
-Denoising
+denoising
 des
 dimensionalities
 dimensionality
@@ -74,7 +74,7 @@ histone
 histones
 hoc
 IHC
-im
+Im
 ImageJ’s
 ImageNet
 Imaginaire
@@ -96,7 +96,7 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-microtubule
+Microtubule
 Ministerium
 MKW
 MMSegmentation
@@ -151,7 +151,7 @@ tubulin
 tunable
 und
 undersamples
-UNet
+unet
 UNETR
 unsuper
 voxel
