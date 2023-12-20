@@ -366,21 +366,6 @@
     "title": "The hiPSC single-cell image dataset",
     "URL": "https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset",
 
-    "author": [
-      {
-        "family": "Chen",
-        "given": "Jianxu"
-      },
-      {
-        "family": "Metzler",
-        "given": "Kimverly"
-      },      
-      {
-        
-        "family": "Contributors",
-        "given": "Allen Institute"
-      }
-    ],
     "accessed": {
       "date-parts": [
         [
@@ -397,12 +382,12 @@
     "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
     "URL": "https://bbbc.broadinstitute.org/BBBC010",
 
-    "author": [
-      {
-        "family": "Ausubel",
-        "given": "Fred"
-      }
-    ],
+    // "author": [
+    //   {
+    //     "family": "Ausubel",
+    //     "given": "Fred"
+    //   }
+    // ],
     "accessed": {
       "date-parts": [
         [
@@ -459,6 +444,10 @@
       {
         "family": "Culley",
         "given": "Sian"
+      },
+      {
+        "family": "...", 
+        "given": ""
       },
       {
         "family": "Myers",
@@ -525,5 +514,50 @@
         ]
       ]
     }
-  }        
-]
+  },
+  {
+    "id": "glas_warwick",
+    "type": "webpage",
+    "title": "GlaS@MICCAI'2015: Gland Segmentation Challenge Contest",
+    "URL": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },            
+  {
+    "id": "glas_academic_torrent",
+    "type": "webpage",
+    "title": "Gland Segmentation in Histology Images Challenge (GlaS) Dataset",
+    "URL": "https://academictorrents.com/details/208814dd113c2b0a242e74e832ccac28fcff74e5",
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },    
+  {
+    "id": "glas_kaggle",
+    "type": "webpage",
+    "title": "GlaS@MICCAI'2015: Gland Segmentation",
+    "URL": "https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation",
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  }    
+]  
