@@ -1,1 +1,563 @@
-{"payload":{"allShortcutsEnabled":false,"fileTree":{"content":{"items":[{"name":"images","path":"content/images","contentType":"directory"},{"name":"00.front-matter.md","path":"content/00.front-matter.md","contentType":"file"},{"name":"01.abstract.md","path":"content/01.abstract.md","contentType":"file"},{"name":"02.intro.md","path":"content/02.intro.md","contentType":"file"},{"name":"03.results.md","path":"content/03.results.md","contentType":"file"},{"name":"04.methods.md","path":"content/04.methods.md","contentType":"file"},{"name":"05.discussions.md","path":"content/05.discussions.md","contentType":"file"},{"name":"90.back-matter.md","path":"content/90.back-matter.md","contentType":"file"},{"name":"manual-references.json","path":"content/manual-references.json","contentType":"file"},{"name":"metadata.yaml","path":"content/metadata.yaml","contentType":"file"}],"totalCount":10},"":{"items":[{"name":".github","path":".github","contentType":"directory"},{"name":"build","path":"build","contentType":"directory"},{"name":"ci","path":"ci","contentType":"directory"},{"name":"content","path":"content","contentType":"directory"},{"name":"output","path":"output","contentType":"directory"},{"name":"webpage","path":"webpage","contentType":"directory"},{"name":".gitignore","path":".gitignore","contentType":"file"},{"name":"LICENSE-CC0.md","path":"LICENSE-CC0.md","contentType":"file"},{"name":"LICENSE.md","path":"LICENSE.md","contentType":"file"},{"name":"README.md","path":"README.md","contentType":"file"},{"name":"SETUP.md","path":"SETUP.md","contentType":"file"},{"name":"USAGE.md","path":"USAGE.md","contentType":"file"},{"name":"setup.bash","path":"setup.bash","contentType":"file"}],"totalCount":13}},"fileTreeProcessingTime":5.726947,"foldersToFetch":[],"reducedMotionEnabled":null,"repo":{"id":532577719,"defaultBranch":"main","name":"im2im-paper","ownerLogin":"MMV-Lab","currentUserCanPush":false,"isFork":false,"isEmpty":false,"createdAt":"2022-09-04T15:21:27.000Z","ownerAvatar":"https://avatars.githubusercontent.com/u/85467623?v=4","public":true,"private":false,"isOrgOwned":true},"symbolsExpanded":false,"treeExpanded":true,"refInfo":{"name":"3587e45ed5b57a2b3dda176e1e9881404c079911","listCacheKey":"v0:1702384275.0","canEdit":false,"refType":"tree","currentOid":"3587e45ed5b57a2b3dda176e1e9881404c079911"},"path":"content/manual-references.json","currentUser":null,"blob":{"rawLines":["[","  {","    \"id\": \"embedseg\",","    \"type\": \"paper-conference\",","    \"title\": \"Embedding-based Instance Segmentation in Microscopy\",","    \"container-title\": \"Proceedings of the Fourth Conference on Medical Imaging with Deep Learning\",","    \"collection-title\": \"Proceedings of Machine Learning Research\",","    \"publisher\": \"PMLR\",","    \"page\": \"399--415\",","    \"volume\": \"143\",","    \"URL\": \"https://proceedings.mlr.press/v143/lalit21a.html\",","    \"author\": [","      {","        \"family\": \"Lalit\",","        \"given\": \"Manan\"","      },","      {","        \"family\": \"Tomancak\",","        \"given\": \"Pavel\"","      },","      {","        \"family\": \"Jug\",","        \"given\": \"Florian\"","      }","    ],","    \"editor\": [","      {","        \"family\": \"Heinrich\",","        \"given\": \"Mattias\"","      },","      {","        \"family\": \"Dou\",","        \"given\": \"Qi\"","      },","      {","        \"family\": \"de Bruijne\",","        \"given\": \"Marleen\"","      },","      {","        \"family\": \"Lellmann\",","        \"given\": \"Jan\"","      },","      {","        \"family\": \"Schläfer\",","        \"given\": \"Alexander\"","      },","      {","        \"family\": \"Ernst\",","        \"given\": \"Floris\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2022\",","          6,","          22","        ]","      ]","    }","  },","  {","    \"id\": \"swatrain\",","    \"type\": \"paper-conference\",","    \"title\": \"Averaging Weights Leads to Wider Optima and Better Generalization\",","    \"container-title\": \"34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018\",","    \"page\": \"876--885\",","    \"URL\": \"http://auai.org/uai2018/proceedings/papers/313.pdf\",","    \"author\": [","      {","        \"family\": \"Izmailov\",","        \"given\": \"Pavel\"","      },","      {","        \"family\": \"Podoprikhin\",","        \"given\": \"Dmitrii\"","      },","      {","        \"family\": \"Garipov\",","        \"given\": \"Timur\"","      },","      {","        \"family\": \"Vetrov\",","        \"given\": \"Dmitry\"","      },","      {","        \"family\": \"Wilson\",","        \"given\": \"Andrew Gordon\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2022\",","          6,","          22","        ]","      ]","    }","  },","  {","    \"id\": \"attentionUnet\",","    \"type\": \"paper-conference\",","    \"title\": \"Attention U-Net: Learning Where to Look for the Pancreas\",","    \"container-title\": \"Proceedings of Medical Imaging with Deep Learning 2018\",","    \"URL\": \"https://openreview.net/forum?id=Skft7cijM\",","    \"author\": [","      {","        \"family\": \"Oktay\",","        \"given\": \"Ozan\"","      },","      {","        \"family\": \"Schlemper\",","        \"given\": \"Jo\"","      },","      {","        \"family\": \"Le Folgoc\",","        \"given\": \"Loic\"","      },","      {","        \"family\": \"Lee\",","        \"given\": \"Matthew\"","      },","      {","        \"family\": \"Heinrich\",","        \"given\": \"Matthias\"","      },","      {","        \"family\": \"Misawa\",","        \"given\": \"Kazunari\"","      },","      {","        \"family\": \"Mori\",","        \"given\": \"Kensaku\"","      },","      {","        \"family\": \"McDonagh\",","        \"given\": \"Steven\"","      },","      {","        \"family\": \"Hammerla\",","        \"given\": \"Nils Y.\"","      },","      {","        \"family\": \"Kainz\",","        \"given\": \"Bernhard\"","      },","      {","        \"family\": \"Glocker\",","        \"given\": \"Ben\"","      },","      {","        \"family\": \"Rueckert\",","        \"given\": \"Daniel\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2022\",","          6,","          24","        ]","      ]","    }","  },","  {","    \"id\": \"swin\",","    \"type\": \"manuscript\",","    \"title\": \"Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images\",","    \"publisher-place\": \"Arxiv\",","    \"URL\": \"https://arxiv.org/abs/2201.01266\",","    \"author\": [","      {","        \"family\": \"Hatamizadeh\",","        \"given\": \"Ali\"","      },","      {","        \"family\": \"Vishwesh\",","        \"given\": \"Nath\"","      },","      {","        \"family\": \"Tang\",","        \"given\": \"Yucheng\"","      },","      {","        \"family\": \"Yang\",","        \"given\": \"Dong\"","      },","      {","        \"family\": \"Roth\",","        \"given\": \"Holger\"","      },","      {","        \"family\": \"Xu\",","        \"given\": \"Daguang\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2022\",","          6,","          24","        ]","      ]","    }","  },","  {","    \"id\": \"aicsimageio\",","    \"type\": \"webpage\",","    \"title\": \"AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python\",","    \"URL\": \"https://github.com/AllenCellModeling/aicsimageio\",","    \"publisher\": \"Github\",","","    \"author\": [","      {","        \"family\": \"Brown\",","        \"given\": \"Eva Maxfield\"","      },","      {","        \"family\": \"Toloudis\",","        \"given\": \"Dan\"","      },","      {","        \"family\": \"Sherman\",","        \"given\": \"Jamie\"","      },","      {","        \"family\": \"Swain-Bowden\",","        \"given\": \"Madison\"","      },","      {","        \"family\": \"Lambert\",","        \"given\": \"Talley\"","      },","      {","        \"family\": \"AICSImageIO Contributors\",","        \"given\": \" \"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          4,","          1","        ]","      ]","    }","  },","  {","    \"id\": \"HDN\",","    \"type\": \"paper-conference\",","    \"title\": \"Interpretable Unsupervised Diversity Denoising and Artefact Removal\",","    \"container-title\": \"Proceedings of the Tenth International Conference on Learning Representations\",","    \"URL\": \"https://proceedings.mlr.press/v143/lalit21a.html\",","    \"author\": [","      {","        \"family\": \"Prakash\",","        \"given\": \"Mangal\"","      },","      {","        \"family\": \"Delbracio\",","        \"given\": \"Mauricio\"","      },","      {","        \"family\": \"Milanfar\",","        \"given\": \"Peyman\"","      },","      {","        \"family\": \"Jug\",","        \"given\": \"Florian\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2022\",","          6,","          26","        ]","      ]","    }","  },","  {","    \"id\": \"MMSegmentation\",","    \"type\": \"webpage\",","    \"title\": \"MMSegmentation: OpenMMLab Semantic Segmentation Toolbox and Benchmark\",","    \"URL\": \"https://github.com/open-mmlab/mmsegmentation\",","    \"publisher\": \"Github\",","","    \"author\": [","      {","        \"family\": \"Contributors\",","        \"given\": \"MMSegmentation\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          12","        ]","      ]","    }","  },","  {","    \"id\": \"pyrallis\",","    \"type\": \"webpage\",","    \"title\": \"Pyrallis - Simple Configuration with Dataclasses\",","    \"URL\": \"https://github.com/eladrich/pyrallis\",","    \"publisher\": \"Github\",","","    \"author\": [","      {","        \"family\": \"Richardson\",","        \"given\": \"Elad\"","      },","      {","        \"family\": \"Weiss\",","        \"given\": \"Ido\"","      },","      {","        \"family\": \"Feldman\",","        \"given\": \"Yair\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          12","        ]","      ]","    }","  },      ","  {","    \"id\": \"imaginaire\",","    \"type\": \"webpage\",","    \"title\": \"Imaginaire\",","    \"URL\": \"https://github.com/NVlabs/imaginaire\",","    \"publisher\": \"Github\",","","    \"author\": [","      {","        \"family\": \"Contributors\",","        \"given\": \"Imaginaire\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          12","        ]","      ]","    }","  },     ","  {","    \"id\": \"single_cell_dataset\",","    \"type\": \"webpage\",","    \"title\": \"The hiPSC single-cell image dataset\",","    \"URL\": \"https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset\",","","    \"author\": [","      {","        \"family\": \"Chen\",","        \"given\": \"Jianxu\"","      },","      {","        \"family\": \"Metzler\",","        \"given\": \"Kimverly\"","      },      ","      {","        ","        \"family\": \"Contributors\",","        \"given\": \"Allen Institute\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          18","        ]","      ]","    }","  },","  {","    \"id\": \"broad\",","    \"type\": \"webpage\",","    \"title\": \"Broad Bioimage Benchmark Collection: C. elegangs live/dead assay\",","    \"URL\": \"https://bbbc.broadinstitute.org/BBBC010\",","","    \"author\": [","      {","        \"family\": \"Ausubel\",","        \"given\": \"Fred\"","      }","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          18","        ]","      ]","    }","  },          ","  {","    \"id\": \"denoising\",","    \"type\": \"webpage\",","    \"title\": \"Content Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy - Supplemental Data\",","    \"URL\": \"https://publications.mpi-cbg.de/publications-sites/7207/\",","","    \"author\": [","      {","        \"family\": \"Weigert\",","        \"given\": \"Martin\"","      },","      {","        \"family\": \"Schmidt\",","        \"given\": \"Uwe\"","      },","      {","        \"family\": \"Boothe\",","        \"given\": \"Tobias\"","      },","      {","        \"family\": \"Müller\",","        \"given\": \"Andreas\"","      },","      {","        \"family\": \"Dibrov\",","        \"given\": \"Alexandr\"","      },","      {","        \"family\": \"Jain\",","        \"given\": \"Akanksha\"","      },","      {","        \"family\": \"Wilhelm\",","        \"given\": \"Benjamin\"","      },","      {","        \"family\": \"Schmidt\",","        \"given\": \"Deborah\"","      },","      {","        \"family\": \"Broaddus\",","        \"given\": \"Coleman\"","      },","      {","        \"family\": \"Culley\",","        \"given\": \"Sian\"","      },","      {","        \"family\": \"Myers\",","        \"given\": \" ... Eugene W.\"","      }                  ","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          18","        ]","      ]","    }","  },","  {","    \"id\": \"stain_transformation\",","    \"type\": \"webpage\",","    \"title\": \"Deep Learning-Inferred Multiplex ImmunoFluorescence for Immunohistochemical Image Quantification\",","    \"URL\": \"https://zenodo.org/record/4751737#.Y9gbv4HMLVZ\",","    \"publisher\": \"Zenodo\",","","    \"author\": [","      {","        \"family\": \"Ghahremani\",","        \"given\": \"Parmida\"","      },","      {","        \"family\": \"Li\",","        \"given\": \"Yanyun\"","      },      ","      {","        \"family\": \"Kaufman\",","        \"given\": \"Arie\"","      },","      {","        \"family\": \"Rami\",","        \"given\": \"Vanguri\"","      },","      {","        \"family\": \"Greenwald\",","        \"given\": \"Noah\"","      },","      {","        \"family\": \"Angelo\",","        \"given\": \"Michael\"","      },","      {","        \"family\": \"Hollmann\",","        \"given\": \"Travis\"","      },","      {","        \"family\": \"Nadeem\",","        \"given\": \"Saad\"","      }                                                      ","    ],","    \"accessed\": {","      \"date-parts\": [","        [","          \"2023\",","          12,","          18","        ]","      ]","    }","  }        ","]"],"stylingDirectives":[[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":20,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":30,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":66,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":65,"end":66,"cssClass":"pl-pds"}],[{"start":4,"end":21,"cssClass":"pl-ent"},{"start":23,"end":99,"cssClass":"pl-s"},{"start":23,"end":24,"cssClass":"pl-pds"},{"start":98,"end":99,"cssClass":"pl-pds"}],[{"start":4,"end":22,"cssClass":"pl-ent"},{"start":24,"end":66,"cssClass":"pl-s"},{"start":24,"end":25,"cssClass":"pl-pds"},{"start":65,"end":66,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":22,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"},{"start":14,"end":19,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":61,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":60,"end":61,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":24,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":24,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":23,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":23,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":21,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":30,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":28,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":20,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":30,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":80,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":79,"end":80,"cssClass":"pl-pds"}],[{"start":4,"end":21,"cssClass":"pl-ent"},{"start":23,"end":97,"cssClass":"pl-s"},{"start":23,"end":24,"cssClass":"pl-pds"},{"start":96,"end":97,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":22,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":63,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":62,"end":63,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":24,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":31,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":24,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":32,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":25,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":30,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":71,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":70,"end":71,"cssClass":"pl-pds"}],[{"start":4,"end":21,"cssClass":"pl-ent"},{"start":23,"end":79,"cssClass":"pl-s"},{"start":23,"end":24,"cssClass":"pl-pds"},{"start":78,"end":79,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":54,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":53,"end":54,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":29,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":21,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":29,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":23,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":24,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":100,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":99,"end":100,"cssClass":"pl-pds"}],[{"start":4,"end":21,"cssClass":"pl-ent"},{"start":23,"end":30,"cssClass":"pl-s"},{"start":23,"end":24,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":45,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":44,"end":45,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":31,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":22,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":23,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":118,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":117,"end":118,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":61,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":60,"end":61,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":31,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":24,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":32,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":44,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":43,"end":44,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":15,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":14,"end":15,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":30,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":82,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":81,"end":82,"cssClass":"pl-pds"}],[{"start":4,"end":21,"cssClass":"pl-ent"},{"start":23,"end":102,"cssClass":"pl-s"},{"start":23,"end":24,"cssClass":"pl-pds"},{"start":101,"end":102,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":61,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":60,"end":61,"cssClass":"pl-pds"}],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":29,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":23,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":26,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":84,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":83,"end":84,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":57,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":56,"end":57,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":32,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":33,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":20,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":63,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":62,"end":63,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":49,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":48,"end":49,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":30,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":22,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":25,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":49,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":48,"end":49,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":32,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":29,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":31,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":50,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":49,"end":50,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":97,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":96,"end":97,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":32,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":34,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":33,"end":34,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":17,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":16,"end":17,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":79,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":78,"end":79,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":52,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":51,"end":52,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":21,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":113,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":112,"end":113,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":69,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":27,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":25,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":33,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"},{"start":10,"end":32,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":4,"end":10,"cssClass":"pl-ent"},{"start":12,"end":21,"cssClass":"pl-s"},{"start":12,"end":13,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":4,"end":11,"cssClass":"pl-ent"},{"start":13,"end":111,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":110,"end":111,"cssClass":"pl-pds"}],[{"start":4,"end":9,"cssClass":"pl-ent"},{"start":11,"end":59,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":58,"end":59,"cssClass":"pl-pds"}],[{"start":4,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[{"start":4,"end":12,"cssClass":"pl-ent"}],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":30,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":22,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":27,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":24,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":29,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":26,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":28,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":25,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[],[],[{"start":8,"end":16,"cssClass":"pl-ent"},{"start":18,"end":26,"cssClass":"pl-s"},{"start":18,"end":19,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":8,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":18,"cssClass":"pl-ent"}],[],[{"start":10,"end":16,"cssClass":"pl-s"},{"start":10,"end":11,"cssClass":"pl-pds"},{"start":15,"end":16,"cssClass":"pl-pds"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[{"start":10,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[]],"csv":null,"csvError":null,"dependabotInfo":{"showConfigurationBanner":false,"configFilePath":null,"networkDependabotPath":"/MMV-Lab/im2im-paper/network/updates","dismissConfigurationNoticePath":"/settings/dismiss-notice/dependabot_configuration_notice","configurationNoticeDismissed":null,"repoAlertsPath":"/MMV-Lab/im2im-paper/security/dependabot","repoSecurityAndAnalysisPath":"/MMV-Lab/im2im-paper/settings/security_analysis","repoOwnerIsOrg":true,"currentUserCanAdminRepo":false},"displayName":"manual-references.json","displayUrl":"https://github.com/MMV-Lab/im2im-paper/blob/3587e45ed5b57a2b3dda176e1e9881404c079911/content/manual-references.json?raw=true","headerInfo":{"blobSize":"10.2 KB","deleteInfo":{"deleteTooltip":"You must be signed in to make or propose changes"},"editInfo":{"editTooltip":"You must be signed in to make or propose changes"},"ghDesktopPath":null,"gitLfsPath":null,"onBranch":false,"shortPath":"6b93b33","siteNavLoginPath":"/login?return_to=https%3A%2F%2Fgithub.com%2FMMV-Lab%2Fim2im-paper%2Fblob%2F3587e45ed5b57a2b3dda176e1e9881404c079911%2Fcontent%2Fmanual-references.json","isCSV":false,"isRichtext":false,"toc":null,"lineInfo":{"truncatedLoc":"529","truncatedSloc":"520"},"mode":"file"},"image":false,"isCodeownersFile":null,"isPlain":false,"isValidLegacyIssueTemplate":false,"issueTemplateHelpUrl":"https://docs.github.com/articles/about-issue-and-pull-request-templates","issueTemplate":null,"discussionTemplate":null,"language":"JSON","languageID":174,"large":false,"loggedIn":false,"newDiscussionPath":"/MMV-Lab/im2im-paper/discussions/new","newIssuePath":"/MMV-Lab/im2im-paper/issues/new","planSupportInfo":{"repoIsFork":null,"repoOwnedByCurrentUser":null,"requestFullPath":"/MMV-Lab/im2im-paper/blob/3587e45ed5b57a2b3dda176e1e9881404c079911/content/manual-references.json","showFreeOrgGatedFeatureMessage":null,"showPlanSupportBanner":null,"upgradeDataAttributes":null,"upgradePath":null},"publishBannersInfo":{"dismissActionNoticePath":"/settings/dismiss-notice/publish_action_from_dockerfile","dismissStackNoticePath":"/settings/dismiss-notice/publish_stack_from_file","releasePath":"/MMV-Lab/im2im-paper/releases/new?marketplace=true","showPublishActionBanner":false,"showPublishStackBanner":false},"rawBlobUrl":"https://github.com/MMV-Lab/im2im-paper/raw/3587e45ed5b57a2b3dda176e1e9881404c079911/content/manual-references.json","renderImageOrRaw":false,"richText":null,"renderedFileInfo":null,"shortPath":null,"tabSize":8,"topBannersInfo":{"overridingGlobalFundingFile":false,"globalPreferredFundingPath":null,"repoOwner":"MMV-Lab","repoName":"im2im-paper","showInvalidCitationWarning":false,"citationHelpUrl":"https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files","showDependabotConfigurationBanner":false,"actionsOnboardingTip":null},"truncated":false,"viewable":true,"workflowRedirectUrl":null,"symbols":{"timedOut":false,"notAnalyzed":true,"symbols":[]}},"copilotInfo":null,"copilotAccessAllowed":false,"csrf_tokens":{"/MMV-Lab/im2im-paper/branches":{"post":"cB4E9RHoMKecDArhWZU7IsV5Jco4sz2JUNGw5trJAN3_bIwe56TNrxSVvjHpL8Wb3MZd4c4wdEk67lWm5ss57Q"},"/repos/preferences":{"post":"tYg5AZe9X_ANN9BJgor-tVF4iX-zoTZYwTVXW4tGm95XXnD2gBlH3TRtfpXf4V7344o8u7j1qDB2uFw3q9M-yA"}}},"title":"im2im-paper/content/manual-references.json at 3587e45ed5b57a2b3dda176e1e9881404c079911 · MMV-Lab/im2im-paper"}
+[
+    {
+      "id": "embedseg",
+      "type": "paper-conference",
+      "title": "Embedding-based Instance Segmentation in Microscopy",
+      "container-title": "Proceedings of the Fourth Conference on Medical Imaging with Deep Learning",
+      "collection-title": "Proceedings of Machine Learning Research",
+      "publisher": "PMLR",
+      "page": "399--415",
+      "volume": "143",
+      "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
+      "author": [
+        {
+          "family": "Lalit",
+          "given": "Manan"
+        },
+        {
+          "family": "Tomancak",
+          "given": "Pavel"
+        },
+        {
+          "family": "Jug",
+          "given": "Florian"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Heinrich",
+          "given": "Mattias"
+        },
+        {
+          "family": "Dou",
+          "given": "Qi"
+        },
+        {
+          "family": "de Bruijne",
+          "given": "Marleen"
+        },
+        {
+          "family": "Lellmann",
+          "given": "Jan"
+        },
+        {
+          "family": "Schläfer",
+          "given": "Alexander"
+        },
+        {
+          "family": "Ernst",
+          "given": "Floris"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2022",
+            6,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "swatrain",
+      "type": "paper-conference",
+      "title": "Averaging Weights Leads to Wider Optima and Better Generalization",
+      "container-title": "34th Conference on Uncertainty in Artificial Intelligence 2018, UAI 2018",
+      "page": "876--885",
+      "URL": "http://auai.org/uai2018/proceedings/papers/313.pdf",
+      "author": [
+        {
+          "family": "Izmailov",
+          "given": "Pavel"
+        },
+        {
+          "family": "Podoprikhin",
+          "given": "Dmitrii"
+        },
+        {
+          "family": "Garipov",
+          "given": "Timur"
+        },
+        {
+          "family": "Vetrov",
+          "given": "Dmitry"
+        },
+        {
+          "family": "Wilson",
+          "given": "Andrew Gordon"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2022",
+            6,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "attentionUnet",
+      "type": "paper-conference",
+      "title": "Attention U-Net: Learning Where to Look for the Pancreas",
+      "container-title": "Proceedings of Medical Imaging with Deep Learning 2018",
+      "URL": "https://openreview.net/forum?id=Skft7cijM",
+      "author": [
+        {
+          "family": "Oktay",
+          "given": "Ozan"
+        },
+        {
+          "family": "Schlemper",
+          "given": "Jo"
+        },
+        {
+          "family": "Le Folgoc",
+          "given": "Loic"
+        },
+        {
+          "family": "Lee",
+          "given": "Matthew"
+        },
+        {
+          "family": "Heinrich",
+          "given": "Matthias"
+        },
+        {
+          "family": "Misawa",
+          "given": "Kazunari"
+        },
+        {
+          "family": "Mori",
+          "given": "Kensaku"
+        },
+        {
+          "family": "McDonagh",
+          "given": "Steven"
+        },
+        {
+          "family": "Hammerla",
+          "given": "Nils Y."
+        },
+        {
+          "family": "Kainz",
+          "given": "Bernhard"
+        },
+        {
+          "family": "Glocker",
+          "given": "Ben"
+        },
+        {
+          "family": "Rueckert",
+          "given": "Daniel"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2022",
+            6,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "swin",
+      "type": "manuscript",
+      "title": "Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images",
+      "publisher-place": "Arxiv",
+      "URL": "https://arxiv.org/abs/2201.01266",
+      "author": [
+        {
+          "family": "Hatamizadeh",
+          "given": "Ali"
+        },
+        {
+          "family": "Vishwesh",
+          "given": "Nath"
+        },
+        {
+          "family": "Tang",
+          "given": "Yucheng"
+        },
+        {
+          "family": "Yang",
+          "given": "Dong"
+        },
+        {
+          "family": "Roth",
+          "given": "Holger"
+        },
+        {
+          "family": "Xu",
+          "given": "Daguang"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2022",
+            6,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "aicsimageio",
+      "type": "webpage",
+      "title": "AICSImageIO: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python",
+      "URL": "https://github.com/AllenCellModeling/aicsimageio",
+      "publisher": "Github",
+  
+      "author": [
+        {
+          "family": "Brown",
+          "given": "Eva Maxfield"
+        },
+        {
+          "family": "Toloudis",
+          "given": "Dan"
+        },
+        {
+          "family": "Sherman",
+          "given": "Jamie"
+        },
+        {
+          "family": "Swain-Bowden",
+          "given": "Madison"
+        },
+        {
+          "family": "Lambert",
+          "given": "Talley"
+        },
+        {
+          "family": "AICSImageIO Contributors",
+          "given": " "
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "HDN",
+      "type": "paper-conference",
+      "title": "Interpretable Unsupervised Diversity Denoising and Artefact Removal",
+      "container-title": "Proceedings of the Tenth International Conference on Learning Representations",
+      "URL": "https://proceedings.mlr.press/v143/lalit21a.html",
+      "author": [
+        {
+          "family": "Prakash",
+          "given": "Mangal"
+        },
+        {
+          "family": "Delbracio",
+          "given": "Mauricio"
+        },
+        {
+          "family": "Milanfar",
+          "given": "Peyman"
+        },
+        {
+          "family": "Jug",
+          "given": "Florian"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2022",
+            6,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "id": "MMSegmentation",
+      "type": "webpage",
+      "title": "MMSegmentation: OpenMMLab Semantic Segmentation Toolbox and Benchmark",
+      "URL": "https://github.com/open-mmlab/mmsegmentation",
+      "publisher": "Github",
+  
+      "author": [
+        {
+          "family": "Contributors",
+          "given": "MMSegmentation"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pyrallis",
+      "type": "webpage",
+      "title": "Pyrallis - Simple Configuration with Dataclasses",
+      "URL": "https://github.com/eladrich/pyrallis",
+      "publisher": "Github",
+  
+      "author": [
+        {
+          "family": "Richardson",
+          "given": "Elad"
+        },
+        {
+          "family": "Weiss",
+          "given": "Ido"
+        },
+        {
+          "family": "Feldman",
+          "given": "Yair"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            12
+          ]
+        ]
+      }
+    },      
+    {
+      "id": "imaginaire",
+      "type": "webpage",
+      "title": "Imaginaire",
+      "URL": "https://github.com/NVlabs/imaginaire",
+      "publisher": "Github",
+  
+      "author": [
+        {
+          "family": "Contributors",
+          "given": "Imaginaire"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            12
+          ]
+        ]
+      }
+    },     
+    {
+      "id": "single_cell_dataset",
+      "type": "webpage",
+      "title": "The hiPSC single-cell image dataset",
+      "URL": "https://open.quiltdata.com/b/allencell/packages/aics/hipsc_single_cell_image_dataset",
+  
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "broad",
+      "type": "webpage",
+      "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
+      "URL": "https://bbbc.broadinstitute.org/BBBC010",
+  
+      // "author": [
+      //   {
+      //     "family": "Ausubel",
+      //     "given": "Fred"
+      //   }
+      // ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            18
+          ]
+        ]
+      }
+    },          
+    {
+      "id": "denoising",
+      "type": "webpage",
+      "title": "Content Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy - Supplemental Data",
+      "URL": "https://publications.mpi-cbg.de/publications-sites/7207/",
+  
+      "author": [
+        {
+          "family": "Weigert",
+          "given": "Martin"
+        },
+        {
+          "family": "Schmidt",
+          "given": "Uwe"
+        },
+        {
+          "family": "Boothe",
+          "given": "Tobias"
+        },
+        {
+          "family": "Müller",
+          "given": "Andreas"
+        },
+        {
+          "family": "Dibrov",
+          "given": "Alexandr"
+        },
+        {
+          "family": "Jain",
+          "given": "Akanksha"
+        },
+        {
+          "family": "Wilhelm",
+          "given": "Benjamin"
+        },
+        {
+          "family": "Schmidt",
+          "given": "Deborah"
+        },
+        {
+          "family": "Broaddus",
+          "given": "Coleman"
+        },
+        {
+          "family": "Culley",
+          "given": "Sian"
+        },
+        {
+          "family": "...", 
+          "given": ""
+        },
+        {
+          "family": "Myers",
+          "given": " ... Eugene W."
+        }                  
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stain_transformation",
+      "type": "webpage",
+      "title": "Deep Learning-Inferred Multiplex ImmunoFluorescence for Immunohistochemical Image Quantification",
+      "URL": "https://zenodo.org/record/4751737#.Y9gbv4HMLVZ",
+      "publisher": "Zenodo",
+  
+      "author": [
+        {
+          "family": "Ghahremani",
+          "given": "Parmida"
+        },
+        {
+          "family": "Li",
+          "given": "Yanyun"
+        },      
+        {
+          "family": "Kaufman",
+          "given": "Arie"
+        },
+        {
+          "family": "Rami",
+          "given": "Vanguri"
+        },
+        {
+          "family": "Greenwald",
+          "given": "Noah"
+        },
+        {
+          "family": "Angelo",
+          "given": "Michael"
+        },
+        {
+          "family": "Hollmann",
+          "given": "Travis"
+        },
+        {
+          "family": "Nadeem",
+          "given": "Saad"
+        }                                                      
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "glas_warwick",
+      "type": "webpage",
+      "title": "GlaS@MICCAI'2015: Gland Segmentation Challenge Contest",
+      "URL": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            20
+          ]
+        ]
+      }
+    },            
+    {
+      "id": "glas_academic_torrent",
+      "type": "webpage",
+      "title": "Gland Segmentation in Histology Images Challenge (GlaS) Dataset",
+      "URL": "https://academictorrents.com/details/208814dd113c2b0a242e74e832ccac28fcff74e5",
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            20
+          ]
+        ]
+      }
+    },    
+    {
+      "id": "glas_kaggle",
+      "type": "webpage",
+      "title": "GlaS@MICCAI'2015: Gland Segmentation",
+      "URL": "https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation",
+      "accessed": {
+        "date-parts": [
+          [
+            "2023",
+            12,
+            20
+          ]
+        ]
+      }
+    }    
+  ]  
