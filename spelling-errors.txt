@@ -24,7 +24,7 @@ codebase
 codebases
 configurability
 confocal
-Convolutional
+convolutional
 CRNN
 csv
 CycleGAN
@@ -40,12 +40,12 @@ dimensionalities
 dimensionality
 DL
 downscaled
-DPC
+dpc
 dseg
 DynUnet
 EGFP
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 eternalaudreys
@@ -74,7 +74,7 @@ histone
 histones
 hoc
 IHC
-Im
+im
 ImageJ’s
 ImageNet
 Imaginaire
@@ -96,7 +96,7 @@ MacOS
 mCherry
 mediterranea
 MICCAI
-Microtubule
+microtubule
 Ministerium
 MKW
 MMSegmentation
