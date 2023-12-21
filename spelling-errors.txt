@@ -24,7 +24,7 @@ codebase
 codebases
 configurability
 confocal
-convolutional
+Convolutional
 CRNN
 csv
 CycleGAN
@@ -34,18 +34,18 @@ dataloader
 dataset
 datasets
 DeepLIIF
-denoising
+Denoising
 des
 dimensionalities
 Dimensionality
 DL
 downscaled
-dpc
+DPC
 dseg
 DynUnet
 EGFP
 elegans
-Embedseg
+EmbedSeg
 eosin
 ERFNet
 eternalaudreys
@@ -68,7 +68,7 @@ GlaS
 GPUs
 grayscale
 HeLa
-Hematoxylin
+hematoxylin
 hiPSC
 histone
 histones
@@ -87,7 +87,7 @@ JianxuChen
 JustinSonneck
 jxchen
 Kultur
-Labelfree
+labelfree
 lamin
 Landes
 lightsheet
@@ -100,7 +100,7 @@ microtubule
 Ministerium
 MKW
 MMSegmentation
-mmv
+MMV
 modularization
 modularized
 MONAI
