@@ -1,7 +1,7 @@
 This manuscript
-(\href{https://MMV-Lab.github.io/im2im-paper/v/b706a0f2a0baec0ce0e9d53b323e30ffcf269306/}{permalink})
+(\href{https://MMV-Lab.github.io/im2im-paper/v/caca35643212c4f226813571789c82478dc3f4ee/}{permalink})
 was automatically generated
-from \href{https://github.com/MMV-Lab/im2im-paper/tree/b706a0f2a0baec0ce0e9d53b323e30ffcf269306}{MMV-Lab/im2im-paper@b706a0f}
+from \href{https://github.com/MMV-Lab/im2im-paper/tree/caca35643212c4f226813571789c82478dc3f4ee}{MMV-Lab/im2im-paper@caca356}
 on December 21, 2023.
 
 \hypertarget{authors}{%
@@ -170,7 +170,7 @@ NPM1 & 0.939 ± 0.009 & 0.846 ± 0.027 & 32.636 ± 1.040 \\
 \hypertarget{fig:labelfree_all_structures}{%
 \centering
 \includegraphics[width=0.76\textwidth,height=0.9\textheight]{images/labelfree_all_justin.png}
-\caption{A. Comparison of predictions of different 3D labelfree models and ground truth. B. Predictions of the different labelfree models using the same brightfield image as input, which provides a deep insight into the nuclear structure. This would not be possible with brightfield imaging alone and is enabled by the application of the labelfree approach. (The contrast of grayscale images was adjusted using ImageJ's autoscale.)}\label{fig:labelfree_all_structures}
+\caption{A. Comparison of predictions of different 3D labelfree models and each ground truth. B. Predictions of the different labelfree models using the same brightfield image as input, which provides a deep insight into the nuclear structure. This would not be possible with brightfield imaging alone and is enabled by the application of the labelfree approach. (The contrast of grayscale images was adjusted using ImageJ's autoscale.)}\label{fig:labelfree_all_structures}
 }
 \end{figure}
 
@@ -183,7 +183,7 @@ Segmentation is a common image processing task, and can be considered as a speci
 \hypertarget{fig:2d_gland}{%
 \centering
 \includegraphics[width=0.75\textwidth,height=\textheight]{images/2d_semantic_seg_justin.png}
-\caption{Example results of 2D semantic segmentation of gland in H\&E images. (A) and (B) provide insight into the stain normalization implemented in \emph{MMV\_Im2Im}. (C) compares a raw example image before stain normalization and prediction to the ground truth for each test set.}\label{fig:2d_gland}
+\caption{Example results of 2D semantic segmentation of gland in H\&E images. A and B provide insight into the stain normalization implemented in \emph{MMV\_Im2Im}. C compares a raw example image before stain normalization and prediction to the ground truth for each test set.}\label{fig:2d_gland}
 }
 \end{figure}
 
@@ -204,7 +204,7 @@ Example results were presented in Figure \ref{fig:instance}-B. The green box hig
 \hypertarget{fig:instance}{%
 \centering
 \includegraphics[width=0.75\textwidth,height=\textheight]{images/instance_seg_justin.png}
-\caption{(A) Results 2D instance segmentation of \emph{C. elegans}. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:instance}
+\caption{(A) Results 2D instance segmentation of \emph{C. elegans}. A minor error can be observed in the zoom-in window. (B) Results of 3D nuclear instance segmentation from fluorescent images and brightfield images. The green box in the fluorescent image highlights a mitotic example. The side view panel shows the segmentation of one specific nucleus along the line annotated in the fluorescent image from the side. The contrast of grayscale images were adjusted using ImageJ's autoscale.}\label{fig:instance}
 }
 \end{figure}
 
@@ -217,7 +217,7 @@ We did a special comparison in this subsection to further illustrate the differe
 \hypertarget{fig:3dseg}{%
 \centering
 \includegraphics[width=0.75\textwidth,height=\textheight]{images/semantic_seg3d_justin.png}
-\caption{Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack), showing true positive, false negative, and false positive pixels.}\label{fig:3dseg}
+\caption{Comparing 3D semantic segmentation and 3D instance segmentation results on confocal microscopy images of fibrillarin (showing a middle Z-slice of a 3D stack). Shown are the raw image, the prediction of the instance segmentation, and for both segmentations a mask that gives an overview of true positive, false negative, and false positive pixels.}\label{fig:3dseg}
 }
 \end{figure}
 
@@ -303,7 +303,7 @@ In this example, we presented an image denoising demonstration with sample data 
 \hypertarget{fig:denoising}{%
 \centering
 \includegraphics[width=0.75\textwidth,height=\textheight]{images/denoising_justin.png}
-\caption{Denoising results of 3D images of nucleus-stained flatworm (planaria) and Tribolium castaneum embryos at a single z-slice each. It can be seen that the predicted images have a greatly reduced SNR. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. The contrast of grayscale images was adjusted using ImageJ's autoscale}\label{fig:denoising}
+\caption{Denoising results of 3D images of nucleus-stained flatworm (planaria) and Tribolium castaneum embryos at a single z-slice each. It can be seen that the predicted images have a greatly reduced SNR. Left: raw images (low SNR), middle: reference images (high SNR), right: predictions. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:denoising}
 }
 \end{figure}
 
@@ -316,7 +316,7 @@ Another important application of image-to-image transformation is imaging modali
 \hypertarget{fig:modality_mt}{%
 \centering
 \includegraphics[width=0.65\textwidth,height=0.7\textheight]{images/mt_manuscript.png}
-\caption{Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:modality_mt}
+\caption{Example results of confocal-to-STED modality transformation of microtubule in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:modality_mt}
 }
 \end{figure}
 
@@ -326,7 +326,7 @@ For microtubule, the model achieved Pearson correlation of 0.786 ± 0.020 and a 
 \hypertarget{fig:modality_np}{%
 \centering
 \includegraphics[width=0.65\textwidth,height=0.7\textheight]{images/np_manuscript.png}
-\caption{Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:modality_np}
+\caption{Example results of confocal-to-STED modality transformation nuclear pore in three consecutive z-slices. From top to bottom: raw confocal images, reference STED images, predicted images, error plots. For the error plots, the ground truth images were normalized as described in the main text. The contrast of grayscale images was adjusted using ImageJ's autoscale.}\label{fig:modality_np}
 }
 \end{figure}
 
