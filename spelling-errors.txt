@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-brightfield
+Brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -37,7 +37,7 @@ DeepLIIF
 denoising
 des
 dimensionalities
-Dimensionality
+dimensionality
 DL
 downscaled
 dpc
@@ -45,7 +45,7 @@ dseg
 DynUnet
 EGFP
 elegans
-EmbedSeg
+Embedseg
 eosin
 ERFNet
 eternalaudreys
@@ -68,7 +68,7 @@ GlaS
 GPUs
 grayscale
 HeLa
-Hematoxylin
+hematoxylin
 hiPSC
 histone
 histones
@@ -87,7 +87,7 @@ JianxuChen
 JustinSonneck
 jxchen
 Kultur
-labelfree
+Labelfree
 lamin
 Landes
 lightsheet

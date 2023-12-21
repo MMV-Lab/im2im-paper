@@ -1,7 +1,7 @@
 ---
 title: 'MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation'
 lang: en-US
-date-meta: '2023-12-20'
+date-meta: '2023-12-21'
 author-meta:
 - Justin Sonneck
 - Yu Zhou
@@ -17,11 +17,11 @@ header-includes: |
   <meta name="citation_title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="og:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
   <meta property="twitter:title" content="MMV_Im2Im: An Open Source Microscopy Machine Vision Toolbox for Image-to-Image Transformation" />
-  <meta name="dc.date" content="2023-12-20" />
-  <meta name="citation_publication_date" content="2023-12-20" />
-  <meta property="article:published_time" content="2023-12-20" />
-  <meta name="dc.modified" content="2023-12-20T18:33:53+00:00" />
-  <meta property="article:modified_time" content="2023-12-20T18:33:53+00:00" />
+  <meta name="dc.date" content="2023-12-21" />
+  <meta name="citation_publication_date" content="2023-12-21" />
+  <meta property="article:published_time" content="2023-12-21" />
+  <meta name="dc.modified" content="2023-12-21T09:47:39+00:00" />
+  <meta property="article:modified_time" content="2023-12-21T09:47:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -74,7 +74,7 @@ This manuscript
 ([permalink](https://MMV-Lab.github.io/im2im-paper/v/77b476d159419ad0a5a90137e64696ffcef93452/))
 was automatically generated
 from [MMV-Lab/im2im-paper@77b476d](https://github.com/MMV-Lab/im2im-paper/tree/77b476d159419ad0a5a90137e64696ffcef93452)
-on December 20, 2023.
+on December 21, 2023.
 </em></small>
 
 
