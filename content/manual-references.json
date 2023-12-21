@@ -631,5 +631,27 @@
         ]
       ]
     }
-  }       
+  },
+  {
+    "id": "openmmlab",
+    "type": "webpage",
+    "title": "OpenMMLab",
+    "URL": "https://openmmlab.com/",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+        
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          21
+        ]
+      ]
+    }
+  }            
 ]  
