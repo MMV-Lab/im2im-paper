@@ -368,19 +368,10 @@
 
     "author": [
       {
-        "family": "Chen",
-        "given": "Jianxu"
-      },
-      {
-        "family": "Metzler",
-        "given": "Kimberly"
-      },      
-      {
-        
-        "family": "Contributors",
-        "given": "Allen Institute"
+        "family": "",
+        "given": ""
       }
-    ],
+    ],    
     "accessed": {
       "date-parts": [
         [
@@ -396,13 +387,12 @@
     "type": "webpage",
     "title": "Broad Bioimage Benchmark Collection: C. elegangs live/dead assay",
     "URL": "https://bbbc.broadinstitute.org/BBBC010",
-
     "author": [
       {
-        "family": "Ausubel",
-        "given": "Fred"
+        "family": "",
+        "given": ""
       }
-    ],
+    ],    
     "accessed": {
       "date-parts": [
         [
@@ -459,6 +449,10 @@
       {
         "family": "Culley",
         "given": "Sian"
+      },
+      {
+        "family": "...", 
+        "given": ""
       },
       {
         "family": "Myers",
@@ -525,5 +519,117 @@
         ]
       ]
     }
-  }        
-]
+  },
+  {
+    "id": "glas_warwick",
+    "type": "webpage",
+    "title": "GlaS@MICCAI'2015: Gland Segmentation Challenge Contest",
+    "URL": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },            
+  {
+    "id": "glas_academic_torrent",
+    "type": "webpage",
+    "title": "Gland Segmentation in Histology Images Challenge (GlaS) Dataset",
+    "URL": "https://academictorrents.com/details/208814dd113c2b0a242e74e832ccac28fcff74e5",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },    
+  {
+    "id": "glas_kaggle",
+    "type": "webpage",
+    "title": "GlaS@MICCAI'2015: Gland Segmentation",
+    "URL": "https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },
+  {
+    "id": "github_mmv_im2im",
+    "type": "webpage",
+    "title": "MMV_Im2Im Transformation",
+    "URL": "https://github.com/mmv-lab/mmv_im2im",
+    "publisher": "Github",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  },      
+  {
+    "id": "github_manuscript",
+    "type": "webpage",
+    "title": "MMV_Im2im: An Open Source Toolbox for Image-to-Image Transformation in Microscopy Images",
+    "URL": "https://github.com/MMV-Lab/im2im-paper",
+    "publisher": "Github",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],   
+        
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          20
+        ]
+      ]
+    }
+  }       
+]  
