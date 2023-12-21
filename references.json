@@ -3656,6 +3656,28 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: imaginaire"
   },
   {
+    "id": "W2Aka9D9",
+    "type": "webpage",
+    "title": "OpenMMLab",
+    "URL": "https://openmmlab.com/",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ],
+    "accessed": {
+      "date-parts": [
+        [
+          "2023",
+          12,
+          21
+        ]
+      ]
+    },
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: openmmlab"
+  },
+  {
     "id": "17WhsEZko",
     "type": "webpage",
     "title": "Pyrallis - Simple Configuration with Dataclasses",

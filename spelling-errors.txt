@@ -16,7 +16,7 @@ BJ
 BMBF
 Bochum
 BranchedERFNet
-Brightfield
+brightfield
 Bundesministerium
 castaneum
 Cellpose
@@ -37,7 +37,7 @@ DeepLIIF
 Denoising
 des
 dimensionalities
-Dimensionality
+dimensionality
 DL
 downscaled
 DPC
@@ -74,7 +74,7 @@ histone
 histones
 hoc
 IHC
-im
+Im
 ImageJ’s
 ImageNet
 Imaginaire
@@ -151,7 +151,7 @@ tubulin
 tunable
 und
 undersamples
-UNet
+unet
 UNETR
 unsuper
 voxel

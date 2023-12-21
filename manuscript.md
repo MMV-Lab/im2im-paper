@@ -20,8 +20,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-21" />
   <meta name="citation_publication_date" content="2023-12-21" />
   <meta property="article:published_time" content="2023-12-21" />
-  <meta name="dc.modified" content="2023-12-21T12:10:54+00:00" />
-  <meta property="article:modified_time" content="2023-12-21T12:10:54+00:00" />
+  <meta name="dc.modified" content="2023-12-21T12:42:14+00:00" />
+  <meta property="article:modified_time" content="2023-12-21T12:42:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://MMV-Lab.github.io/im2im-paper/" />
   <meta name="citation_pdf_url" content="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://MMV-Lab.github.io/im2im-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/a0e471389ce35d6093a964f3b012b3e4d6b0c16b/" />
-  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/a0e471389ce35d6093a964f3b012b3e4d6b0c16b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/a0e471389ce35d6093a964f3b012b3e4d6b0c16b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://MMV-Lab.github.io/im2im-paper/v/b706a0f2a0baec0ce0e9d53b323e30ffcf269306/" />
+  <meta name="manubot_html_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b706a0f2a0baec0ce0e9d53b323e30ffcf269306/" />
+  <meta name="manubot_pdf_url_versioned" content="https://MMV-Lab.github.io/im2im-paper/v/b706a0f2a0baec0ce0e9d53b323e30ffcf269306/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://MMV-Lab.github.io/im2im-paper/v/a0e471389ce35d6093a964f3b012b3e4d6b0c16b/))
+([permalink](https://MMV-Lab.github.io/im2im-paper/v/b706a0f2a0baec0ce0e9d53b323e30ffcf269306/))
 was automatically generated
-from [MMV-Lab/im2im-paper@a0e4713](https://github.com/MMV-Lab/im2im-paper/tree/a0e471389ce35d6093a964f3b012b3e4d6b0c16b)
+from [MMV-Lab/im2im-paper@b706a0f](https://github.com/MMV-Lab/im2im-paper/tree/b706a0f2a0baec0ce0e9d53b323e30ffcf269306)
 on December 21, 2023.
 </em></small>
 
@@ -161,7 +161,7 @@ In addition, the modularization and configuration system is designed to allow no
 
 *Bottleneck: Not enough consideration for specific challenges in microscopy images in general DL toolboxes*
 
-The original idea of a general toolbox actually stemmed from the OpenMMLab project (<https://openmmlab.com/>), which provides generic codebases for a wide range of computer vision research topics. For instance, *MMSegmentation* [@MMSegmentation] is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box. It has become one of most widely used codebase for research in semantic segmentation (2.3K forks and 6.5K stars on GitHub as of September 29, 2023). This inspires us to develop *MMV_Im2Im* to facilitate research in image-to-image transformation with a special focus on biomedical applications.
+The original idea of a general toolbox actually stemmed from the OpenMMLab project [@openmmlab], which provides generic codebases for a wide range of computer vision research topics. For instance, *MMSegmentation* [@MMSegmentation] is an open source toolbox for semantic segmentation, supporting unified benchmarking and state-of-the-art models ready to use out-of-box. It has become one of most widely used codebase for research in semantic segmentation (2.3K forks and 6.5K stars on GitHub as of September 29, 2023). This inspires us to develop *MMV_Im2Im* to facilitate research in image-to-image transformation with a special focus on biomedical applications.
 
 First of all, different from general computer vision datasets, such as ImageNet [@doi:10.1109/CVPR.2009.5206848], where the images are usually small 2D RGB images (e.g., 3 x 256 x 256 pixels), biomedical applications usually involves large-scale high dimensional data (e.g., 500 images of 4 x 128 x 2048 x 2048 voxels). To deal with this issue, we employ the PersistentDataset in MONAI [@doi:10.5281/zenodo.4323059] with partial loading and sampling support, as well as delayed image reading powered by aicsimageio [@aicsimageio] as default (configurable if another dataloader is preferred). As a result, in our stress test, training a 3D nuclei instance segmentation model with more than 125,000 3D images can be conducted efficiently in a day, even with limited resources.
 
