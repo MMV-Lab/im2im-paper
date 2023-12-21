@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/MMV-Lab/im2im-paper/tree/gh-pages) branch hosts the contents of this directory at <https://MMV-Lab.github.io/im2im-paper/>.
-The permalink for this webpage version is <https://MMV-Lab.github.io/im2im-paper/v/dd4b489eea3392962ffb0d1388911c331d929bbb/>.
+The permalink for this webpage version is <https://MMV-Lab.github.io/im2im-paper/v/a0e471389ce35d6093a964f3b012b3e4d6b0c16b/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://MMV-Lab.github.io/im2im-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`dd4b489eea3392962ffb0d1388911c331d929bbb`](https://github.com/MMV-Lab/im2im-paper/commit/dd4b489eea3392962ffb0d1388911c331d929bbb).
+[`a0e471389ce35d6093a964f3b012b3e4d6b0c16b`](https://github.com/MMV-Lab/im2im-paper/commit/a0e471389ce35d6093a964f3b012b3e4d6b0c16b).
